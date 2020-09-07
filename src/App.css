@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Rubik+Mono+One&display=swap");
+
+@font-face {
+  font-family: "Folio";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Folio\ Std\ Bold\ Condensed.otf"); /* IE9 Compat Modes */
+  src: local("Folio"), local("Folio"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/FolioStd-BoldCondensed.woff") format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/FolioStd-BoldCondensed.ttf")
+      format("truetype");
+}
+
+body {
+  padding: 4px;
+  margin: 0;
+  font-family: "Folio", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(./assets/images/waltco-truck02.jpg);
+  background: #222 !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+p,
+nav,
+a {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0;
+}
+
+@media only screen and (max-width: 760px) {
+  .input-wrapper {
+    grid-template-columns: 100%;
+  }
+}
+
+.range-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 0px;
+  height: 2rem;
+  background-color: #e8e8e8;
+  outline: none;
+}
+/* Special styling for WebKit/Blink */
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 16px;
+  background: brown;
+  cursor: pointer;
+  margin-top: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+.range-slider::-moz-range-thumb {
+  height: 2rem;
+  width: 16px;
+  border-radius: 3px;
+  background: #444;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.range-slider::-ms-thumb {
+  height: 2rem;
+  width: 16px;
+  background: #444;
+  cursor: pointer;
+}
+
+/* for page css transition */
+/* simple - enter transition 300ms, exit 150ms */
+.page-transition {
+  position: absolute;
+  top: 170px;
+  padding: 0 2rem 2rem 2rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.fade-appear,
+.fade-enter {
+  z-index: 1;
+  opacity: 0;
+  /* transform: translate(100vw, 0px); */
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out 200ms;
+  /* transform: translate(0px, 0px); */
+  /* transition: transform 500ms ease-in-out 200ms; */
+}
+
+.fade-exit {
+  opacity: 1;
+  /* transform: translate(0px, 0px); */
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+  /* transform: translate(-100vw, 0px); */
+  /* transition: transform 600ms ease-in-out; */
+}
+/* end css transition */
