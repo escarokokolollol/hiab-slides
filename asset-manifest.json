@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/hiab-slides/static/css/main.855b76d6.chunk.css",
+    "main.js": "/hiab-slides/static/js/main.ae7e38d5.chunk.js",
+    "main.js.map": "/hiab-slides/static/js/main.ae7e38d5.chunk.js.map",
+    "runtime-main.js": "/hiab-slides/static/js/runtime-main.3dd0d665.js",
+    "runtime-main.js.map": "/hiab-slides/static/js/runtime-main.3dd0d665.js.map",
+    "static/css/2.8aa5a7f8.chunk.css": "/hiab-slides/static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.30a0c303.chunk.js": "/hiab-slides/static/js/2.30a0c303.chunk.js",
+    "static/js/2.30a0c303.chunk.js.map": "/hiab-slides/static/js/2.30a0c303.chunk.js.map",
+    "index.html": "/hiab-slides/index.html",
+    "precache-manifest.3278600dc8543a665d326572b5f8c0e7.js": "/hiab-slides/precache-manifest.3278600dc8543a665d326572b5f8c0e7.js",
+    "service-worker.js": "/hiab-slides/service-worker.js",
+    "static/css/2.8aa5a7f8.chunk.css.map": "/hiab-slides/static/css/2.8aa5a7f8.chunk.css.map",
+    "static/css/main.855b76d6.chunk.css.map": "/hiab-slides/static/css/main.855b76d6.chunk.css.map",
+    "static/js/2.30a0c303.chunk.js.LICENSE.txt": "/hiab-slides/static/js/2.30a0c303.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/hiab-slides/static/media/waltco-truck02.feff0356.jpg",
+    "static/media/waltco-head-right.png": "/hiab-slides/static/media/waltco-head-right.7f54073b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3dd0d665.js",
+    "static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.30a0c303.chunk.js",
+    "static/css/main.855b76d6.chunk.css",
+    "static/js/main.ae7e38d5.chunk.js"
+  ]
+}
