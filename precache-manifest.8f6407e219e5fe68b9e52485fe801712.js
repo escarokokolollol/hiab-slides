@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f8b7cda432c20a4c259b99dc9bdb43f0",
+    "revision": "7b9b1e864c6af9beb5559c5a840b0221",
     "url": "/hiab-slides/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hiab-slides/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "2d75f52585aea279c3fa",
+    "revision": "51b5368164d44117fc02",
     "url": "/hiab-slides/static/css/main.855b76d6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hiab-slides/static/js/2.30a0c303.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2d75f52585aea279c3fa",
-    "url": "/hiab-slides/static/js/main.ae7e38d5.chunk.js"
+    "revision": "51b5368164d44117fc02",
+    "url": "/hiab-slides/static/js/main.a16e473e.chunk.js"
   },
   {
     "revision": "62567f56410f6515309f",
