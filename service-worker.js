@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hiab-slides/precache-manifest.8f6407e219e5fe68b9e52485fe801712.js"
+  "/hiab-slides/precache-manifest.2a579d5934f4e57030a9a9b41ab674ee.js"
 );
 
 self.addEventListener('message', (event) => {
