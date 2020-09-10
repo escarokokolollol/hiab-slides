@@ -6,9 +6,8 @@ import ForwardButton from "../../components/ForwardButton";
 const Page02 = () => {
   return (
     <div className="page-transition">
-      <h1>Page02</h1>
-      <h2>About EFFER</h2>
-      <BackButton />
+      <h1>BUT WHAT DO YOU KNOW ABOUT EFFER?</h1>
+      <BackButton toWhere="/about-effer/page01"/>
       <ForwardButton />
     </div>
   );
