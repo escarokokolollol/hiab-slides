@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components"
 
 // components
-import BackButton from "../components/BackButton";
 import ForwardButton from "../components/ForwardButton";
 
 const Start = props => {
@@ -24,8 +23,7 @@ const Start = props => {
           <h2>TO THE HIAB/EFFER DIFFERENTIATION TOOL</h2>
           <h2>LEARN WHAT YOU NEED TO KNOW</h2>
         </div>
-        <BackButton />
-        <ForwardButton />
+        <ForwardButton toWhere="/work-with"/>
       </StyledDiv>
     </div>
   );

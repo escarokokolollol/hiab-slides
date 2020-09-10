@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BackButton = props => {
   return (
     <div>
-      <h1>BackButton</h1>
+      <Link to={props.toWhere}>
+        `{'<'}`
+      </Link>
     </div>
   );
 };

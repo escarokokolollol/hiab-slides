@@ -7,6 +7,7 @@ import DevNav from "./components/DevNav"
 
 // views
 import Start from "./pages/Start";
+import WorkWith from "./pages/WorkWith";
 
 import AboutHiabPage01 from "./pages/about-hiab/Page01";
 import AboutHiabPage02 from "./pages/about-hiab/Page02";
@@ -39,6 +40,7 @@ const App = () => {
                     <Route path="/about-effer/page03" component={AboutEfferPage03} />
                     <Route path="/about-effer/page04" component={AboutEfferPage04} />
 
+                    <Route path="/work-with" component={WorkWith} />
                     <Route path="/" component={Start} />
                 </Switch>
               </CSSTransition>
