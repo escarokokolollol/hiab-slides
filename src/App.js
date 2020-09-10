@@ -2,20 +2,23 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// components
-import BackButton from "./components/BackButton";
-import ForwardButton from "./components/ForwardButton";
+// dev
+import DevNav from "./components/DevNav"
 
 // views
-import Home from "./pages/Home";
-import Result from "./pages/Result";
-import PageOne from "./pages/pageOne";
-import PageTwo from "./pages/pageTwo";
-import PageThree from "./pages/pageThree";
+import Start from "./pages/Start";
+
+import AboutHiabPage01 from "./pages/about-hiab/Page01";
+import AboutHiabPage02 from "./pages/about-hiab/Page02";
+import AboutHiabPage03 from "./pages/about-hiab/Page03";
+import AboutHiabPage04 from "./pages/about-hiab/Page04";
+
+import AboutEfferPage01 from "./pages/about-effer/Page01";
+import AboutEfferPage02 from "./pages/about-effer/Page02";
+import AboutEfferPage03 from "./pages/about-effer/Page03";
+import AboutEfferPage04 from "./pages/about-effer/Page04";
 
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-
-const hej = 1
 
 const App = () => {
   return (
@@ -26,27 +29,24 @@ const App = () => {
             <TransitionGroup>
               <CSSTransition key={location.key} timeout={700} classNames="fade">
                 <Switch location={location}>
-                  <Route path="/pageone">
-                    <PageOne />
-                  </Route>
-                  <Route path="/pagetwo">
-                    <PageTwo />
-                  </Route>
-                  <Route path="/pagethree">
-                    <PageThree/>
-                  </Route>
-                  <Route path="/result">
-                    <Result/>
-                  </Route>
-                  <Route path="/">
-                    <Home />
-                  </Route>
+                    <Route path="/about-hiab/page01" component={AboutHiabPage01} />
+                    <Route path="/about-hiab/page02" component={AboutHiabPage02} />
+                    <Route path="/about-hiab/page03" component={AboutHiabPage03} />
+                    <Route path="/about-hiab/page04" component={AboutHiabPage04} />
+
+                    <Route path="/about-effer/page01" component={AboutEfferPage01} />
+                    <Route path="/about-effer/page02" component={AboutEfferPage02} />
+                    <Route path="/about-effer/page03" component={AboutEfferPage03} />
+                    <Route path="/about-effer/page04" component={AboutEfferPage04} />
+
+                    <Route path="/" component={Start} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
           )}
         />
-      </div>
+      </div> {/* App */}
+      <DevNav />
     </Router>
   );
 };
