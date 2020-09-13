@@ -1,13 +1,13 @@
 import React from "react";
-import styled from "styled-components"
+import styled from "styled-components";
 
 // components
+import BillboardHeading from "../components/BillboardHeading";
 import ForwardButton from "../components/ForwardButton";
 
 const Start = props => {
-
   const StyledDiv = styled.div`
-    .content{
+    .content {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -17,13 +17,16 @@ const Start = props => {
 
   return (
     <div className="page-transition">
-      <StyledDiv >
+      <StyledDiv>
         <div className="content">
-          <h1>WELCOME</h1>
-          <h2>TO THE HIAB/EFFER DIFFERENTIATION TOOL</h2>
-          <h2>LEARN WHAT YOU NEED TO KNOW</h2>
+          <BillboardHeading text="WELCOME" />
+          <BillboardHeading
+            text="TO THE HIAB/EFFER DIFFERENTIATION TOOL"
+            color="red"
+          />
+          <BillboardHeading text="LEARN WHAT YOU NEED TO KNOW" />
         </div>
-        <ForwardButton toWhere="/work-with"/>
+        <ForwardButton toWhere="/work-with" />
       </StyledDiv>
     </div>
   );

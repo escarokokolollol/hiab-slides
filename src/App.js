@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // dev
-import DevNav from "./components/DevNav"
+import DevNav from "./components/DevNav";
 
 // views
 import Start from "./pages/Start";
@@ -30,25 +30,50 @@ const App = () => {
             <TransitionGroup>
               <CSSTransition key={location.key} timeout={700} classNames="fade">
                 <Switch location={location}>
-                    <Route path="/about-hiab/page01" component={AboutHiabPage01} />
-                    <Route path="/about-hiab/page02" component={AboutHiabPage02} />
-                    <Route path="/about-hiab/page03" component={AboutHiabPage03} />
-                    <Route path="/about-hiab/page04" component={AboutHiabPage04} />
+                  <Route
+                    path="/about-hiab/page01"
+                    component={AboutHiabPage01}
+                  />
+                  <Route
+                    path="/about-hiab/page02"
+                    component={AboutHiabPage02}
+                  />
+                  <Route
+                    path="/about-hiab/page03"
+                    component={AboutHiabPage03}
+                  />
+                  <Route
+                    path="/about-hiab/page04"
+                    component={AboutHiabPage04}
+                  />
 
-                    <Route path="/about-effer/page01" component={AboutEfferPage01} />
-                    <Route path="/about-effer/page02" component={AboutEfferPage02} />
-                    <Route path="/about-effer/page03" component={AboutEfferPage03} />
-                    <Route path="/about-effer/page04" component={AboutEfferPage04} />
+                  <Route
+                    path="/about-effer/page01"
+                    component={AboutEfferPage01}
+                  />
+                  <Route
+                    path="/about-effer/page02"
+                    component={AboutEfferPage02}
+                  />
+                  <Route
+                    path="/about-effer/page03"
+                    component={AboutEfferPage03}
+                  />
+                  <Route
+                    path="/about-effer/page04"
+                    component={AboutEfferPage04}
+                  />
 
-                    <Route path="/work-with" component={WorkWith} />
-                    <Route path="/" component={Start} />
+                  <Route path="/work-with" component={WorkWith} />
+                  <Route path="/" component={Start} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
           )}
         />
-      </div> {/* App */}
-      <DevNav />
+      </div>{" "}
+      {/* App */}
+      {/* <DevNav /> */}
     </Router>
   );
 };
