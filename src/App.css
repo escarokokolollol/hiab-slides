@@ -13,7 +13,6 @@
 }
 
 body {
-  padding: 8px;
   margin: 0;
   font-family: "Folio", sans-serif !important;
   -webkit-font-smoothing: antialiased;
@@ -42,8 +41,9 @@ a {
   /* top 60px to show DevNav */
   top: 0;
   left: 0;
-  padding: 8px;
   z-index: 2;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .fade-appear,

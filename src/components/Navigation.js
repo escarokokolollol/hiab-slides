@@ -12,7 +12,10 @@ const Navigation = props => {
         width:100%;
         top: 50vh;
         div{
-            
+            background: #333;
+            *{
+                color: #fff;
+            }
         }
   `;
   return (
