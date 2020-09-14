@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 // images
 import efferImg01 from "../../assets/images/effer01.jpg";
@@ -6,6 +7,8 @@ import efferImg01 from "../../assets/images/effer01.jpg";
 // components
 import BackButton from "../../components/BackButton";
 import ForwardButton from "../../components/ForwardButton";
+import Navigation from "../../components/Navigation";
+
 import UnorderedList from "../../components/UnorderedList";
 import BillboardHeading from "../../components/BillboardHeading";
 import Paragraphs from "../../components/Paragraphs";
@@ -26,8 +29,8 @@ const Page01 = () => {
 
   return (
     <div className="page-transition">
-      <BillboardHeading text="THEN YOU ALREADY KNOW THAT" />
-      <BillboardHeading text="AT HIAB, WE’RE RECOGNISED AS" color="red" />
+      <BillboardHeading text="Then you already know that" />
+      <BillboardHeading text="At hiab, we're recognized as" color="red" />
 
       <UnorderedList items={listItems} />
 
@@ -35,8 +38,8 @@ const Page01 = () => {
 
       <ImageComponent src={efferImg01} />
 
-      <BackButton toWhere="/work-with" />
-      <ForwardButton toWhere="/about-effer/page02" />
+      <Navigation backToWhere="/work-with" forwardToWhere="/about-effer/page02"/>
+
     </div>
   );
 };
