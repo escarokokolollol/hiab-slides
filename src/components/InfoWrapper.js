@@ -28,7 +28,7 @@ const InfoWrapper = ({text}) => {
       right: 30px;
       max-width: 400px;
       background: #fff;
-      padding: 2.4rem 3rem;
+      padding: 1.5rem 2rem;
       display: flex;
       align-items: center;
       .info-paragraph{

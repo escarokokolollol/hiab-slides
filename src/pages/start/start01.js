@@ -64,16 +64,17 @@ const Start01 = props => {
           max-width: 800px;
           display: grid;
           grid-gap: 20px;  
-          align-items: end;
+          align-items: start;
           grid-template-columns: 70% 30%;
           .start-page-text{
             margin: 0; 
             text-align: right;      
             h1{
+              font-size: 120px;
               margin-bottom: 40px;
             }   
             p{
-              font-size: 20px;
+              font-size: 24px;
             }
           }
           .start-page-red-button {
