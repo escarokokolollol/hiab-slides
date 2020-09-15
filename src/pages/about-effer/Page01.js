@@ -4,8 +4,6 @@ import React from "react";
 import efferImg01 from "../../assets/images/effer01.jpg";
 
 // components
-// import BackButton from "../../components/BackButton";
-// import ForwardButton from "../../components/ForwardButton";
 import Navigation from "../../components/Navigation";
 
 import UnorderedList from "../../components/UnorderedList";

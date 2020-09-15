@@ -12,6 +12,7 @@ import WorkWith from "./pages/WorkWith";
 // startpages 
 import Start01 from "./pages/start/start01"
 import Start02 from "./pages/start/start02"
+import Start03 from "./pages/start/start03"
 
 // hiab pages
 import AboutHiabPage01 from "./pages/about-hiab/Page01";
@@ -49,6 +50,7 @@ const App = () => {
 
                   <Route path="/work-with" component={WorkWith} />
                   <Route path="/start02" component={Start02} />
+                  <Route path="/start03" component={Start03} />
                   <Route path="/" component={Start01} />
 
                 </Switch>

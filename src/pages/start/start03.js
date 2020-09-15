@@ -10,7 +10,7 @@ import Paragraphs from "../../components/Paragraphs";
 import Logos from "../../components/Logos";
 import Navigation from "../../components/Navigation";
 
-const Start02 = props => {
+const Start03 = props => {
   const paragraphText = [
     "In 2019 a long-term strategy called “Stronger Together” was introduced aimed at fulfilling customer needs and demands through an expanded product portfolio and greater service coverage. “Sfida”, which means “Challenge” in Italian, is a learning tool and resource kit originating from that strategy. It is designed to help those of us already working with one brand to become more familiar with the other, and to make it easier for all of us to match the needs of our customers with our exceptional offer."
   ];
@@ -65,11 +65,11 @@ const Start02 = props => {
         <div className="content">
           <div className="text-button-wrapper">
             <div className="start-page-text">
-              <BillboardHeading text="Why Sfida”?" />
+              <BillboardHeading text="start03" />
               <Paragraphs items={paragraphText}/>
             </div>
             <Logos />
-            <Navigation to="/start03" backTo="/"/>
+            <Navigation to="/start04" backTo="/start02"/>
           </div>
         </div>
       </StyledDiv>
@@ -77,4 +77,4 @@ const Start02 = props => {
   );
 };
 
-export default Start02;
+export default Start03;
