@@ -12,8 +12,8 @@ const UnorderedList = props => {
 
   return (
     <StyledList>
-      {props.items.map(item => (
-        <li>{item}</li>
+      {props.items.map((item, index) => (
+        <li key={index}>{item}</li>
       ))}
     </StyledList>
   );

@@ -3,10 +3,10 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // dev
-import DevNav from "./components/DevNav";
+// import DevNav from "./components/DevNav";
 
 // views
-import Start from "./pages/Start";
+// import Start from "./pages/Start";
 import WorkWith from "./pages/WorkWith";
 
 // startpages 
@@ -36,8 +36,6 @@ const App = () => {
             <TransitionGroup>
               <CSSTransition key={location.key} timeout={700} classNames="fade">
                 <Switch location={location}>
-                  <Route path="/" component={Start01} />
-                  <Route path="/start02" component={Start02} />
 
                   <Route path="/about-hiab/page01" component={AboutHiabPage01} />
                   <Route path="/about-hiab/page02" component={AboutHiabPage02} />
@@ -50,13 +48,15 @@ const App = () => {
                   <Route path="/about-effer/page04" component={AboutEfferPage04} />
 
                   <Route path="/work-with" component={WorkWith} />
+                  <Route path="/start02" component={Start02} />
+                  <Route path="/" component={Start01} />
+
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
           )}
         />
-      </div>{" "}
-      {/* App */}
+      </div>
       {/* <DevNav /> */}
     </Router>
   );

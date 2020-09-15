@@ -5,8 +5,8 @@ import React from "react";
 const Paragraphs = props => {
   return (
     <div>
-      {props.items.map(item => (
-        <p>{item}</p>
+      {props.items.map((item, index) => (
+        <p key={index}>{item}</p>
       ))}
     </div>
   );
