@@ -21,8 +21,8 @@ const Start01 = props => {
   const StyledDiv = styled.div`
     .content {
       padding: 1rem;
-      height: 100vh;
-      width: 100vw;
+      min-height: 100vh;
+      min-width: 100vw;
       background-image: url(${Background});
       background-size: cover;
       display: flex;
