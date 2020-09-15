@@ -1,27 +1,33 @@
 {
   "files": {
-    "main.css": "/hiab-slides/static/css/main.855b76d6.chunk.css",
-    "main.js": "/hiab-slides/static/js/main.205b4238.chunk.js",
-    "main.js.map": "/hiab-slides/static/js/main.205b4238.chunk.js.map",
+    "main.css": "/hiab-slides/static/css/main.22954f20.chunk.css",
+    "main.js": "/hiab-slides/static/js/main.3ce093fd.chunk.js",
+    "main.js.map": "/hiab-slides/static/js/main.3ce093fd.chunk.js.map",
     "runtime-main.js": "/hiab-slides/static/js/runtime-main.3dd0d665.js",
     "runtime-main.js.map": "/hiab-slides/static/js/runtime-main.3dd0d665.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/hiab-slides/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.30a0c303.chunk.js": "/hiab-slides/static/js/2.30a0c303.chunk.js",
-    "static/js/2.30a0c303.chunk.js.map": "/hiab-slides/static/js/2.30a0c303.chunk.js.map",
+    "static/js/2.f79367f0.chunk.js": "/hiab-slides/static/js/2.f79367f0.chunk.js",
+    "static/js/2.f79367f0.chunk.js.map": "/hiab-slides/static/js/2.f79367f0.chunk.js.map",
     "index.html": "/hiab-slides/index.html",
-    "precache-manifest.2a579d5934f4e57030a9a9b41ab674ee.js": "/hiab-slides/precache-manifest.2a579d5934f4e57030a9a9b41ab674ee.js",
+    "precache-manifest.7a10256496eef4cfe52ce9011c14c1d1.js": "/hiab-slides/precache-manifest.7a10256496eef4cfe52ce9011c14c1d1.js",
     "service-worker.js": "/hiab-slides/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/hiab-slides/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.855b76d6.chunk.css.map": "/hiab-slides/static/css/main.855b76d6.chunk.css.map",
-    "static/js/2.30a0c303.chunk.js.LICENSE.txt": "/hiab-slides/static/js/2.30a0c303.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/hiab-slides/static/media/waltco-truck02.feff0356.jpg",
-    "static/media/waltco-head-right.png": "/hiab-slides/static/media/waltco-head-right.7f54073b.png"
+    "static/css/main.22954f20.chunk.css.map": "/hiab-slides/static/css/main.22954f20.chunk.css.map",
+    "static/js/2.f79367f0.chunk.js.LICENSE.txt": "/hiab-slides/static/js/2.f79367f0.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/hiab-slides/static/media/FolioStd-BoldCondensed.adbf8788.woff",
+    "static/media/effer-logo.svg": "/hiab-slides/static/media/effer-logo.2e7cfb27.svg",
+    "static/media/effer01.jpg": "/hiab-slides/static/media/effer01.d87d9847.jpg",
+    "static/media/effer_hiab-background.jpg": "/hiab-slides/static/media/effer_hiab-background.6213f54b.jpg",
+    "static/media/hiab-logo.svg": "/hiab-slides/static/media/hiab-logo.9653a569.svg",
+    "static/media/info-icon.svg": "/hiab-slides/static/media/info-icon.75cfe781.svg",
+    "static/media/waltco-truck01.jpg": "/hiab-slides/static/media/waltco-truck01.e9945a57.jpg",
+    "static/media/waltco-truck02.jpg": "/hiab-slides/static/media/waltco-truck02.feff0356.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3dd0d665.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.30a0c303.chunk.js",
-    "static/css/main.855b76d6.chunk.css",
-    "static/js/main.205b4238.chunk.js"
+    "static/js/2.f79367f0.chunk.js",
+    "static/css/main.22954f20.chunk.css",
+    "static/js/main.3ce093fd.chunk.js"
   ]
 }
