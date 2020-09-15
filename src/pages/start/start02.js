@@ -65,7 +65,7 @@ const Start02 = props => {
         <div className="content">
           <div className="text-button-wrapper">
             <div className="start-page-text">
-              <BillboardHeading text="Why Sfida”?" />
+              <BillboardHeading text="Why ”Sfida”?" />
               <Paragraphs items={paragraphText}/>
             </div>
             <Logos />
