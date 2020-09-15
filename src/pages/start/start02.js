@@ -9,6 +9,7 @@ import EfferLogo from "../../assets/icons/effer-logo.svg";
 // components
 import BillboardHeading from "../../components/BillboardHeading";
 import Paragraphs from "../../components/Paragraphs";
+import Logos from "../../components/Logos";
 
 const Start02 = props => {
   const paragraphText = [
@@ -31,6 +32,7 @@ const Start02 = props => {
       }
       .logos-wrapper{
         width: 100%;
+        
         .logos{
           position: absolute;
           bottom: 10px;
@@ -46,8 +48,13 @@ const Start02 = props => {
       .content{
         justify-content: center;
         align-items: center;
-        .logos{
-          bottom: 40px;
+        .logos-wrapper{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .logos{
+            bottom: 40px;
+          }
         }
       }
     }
@@ -62,12 +69,7 @@ const Start02 = props => {
               <BillboardHeading text="Why Sfida”?" />
               <Paragraphs items={paragraphText}/>
             </div>
-            <div className="logos-wrapper">
-              <div className="logos">
-                <img src={HiabLogo} alt="Hiab logotype"/>
-                <img src={EfferLogo} alt="Effer logotype"/>
-              </div>
-            </div>
+            <Logos />
           </div>
         </div>
       </StyledDiv>
