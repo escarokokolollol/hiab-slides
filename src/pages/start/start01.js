@@ -69,7 +69,7 @@ const StyledDiv = styled.div`
             margin-bottom: 40px;
           }   
           p{
-            font-size: 24px;
+            font-size: 22px;
           }
         }
         .start-page-red-button {
