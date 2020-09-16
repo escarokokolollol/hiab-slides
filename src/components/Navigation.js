@@ -29,12 +29,16 @@ const NavigationWrapper = styled.div`
 const Navigation = ({to, backTo}) => {
   return (
     <NavigationWrapper>
-      <Link to={backTo}>
-        <img className="nav-button nav-button-back" src={NavIcon} alt="back-button"/>
-      </Link>
-      <Link to={to}>
-        <img className="nav-button nav-button-forward" src={NavIcon} alt="forward-button" />
-      </Link>
+      {backTo ?
+        <Link to={backTo}>
+          <img className="nav-button nav-button-back" src={NavIcon} alt="back-button"/>
+        </Link>
+      : ""}
+      {to ?
+        <Link to={to}>
+          <img className="nav-button nav-button-forward" src={NavIcon} alt="forward-button" />
+        </Link>
+      : ""}
     </NavigationWrapper>
   );
 };

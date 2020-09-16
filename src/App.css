@@ -32,10 +32,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 p,
 nav,
-a {
+a,
+li {
   font-family: "Open Sans", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* for page css transition */

@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 // takes array and formats multiple <p> tags
+// must have array
 
 const StyledDiv = styled.div`
   p{
-    margin: 0;
+    margin: 0 0 20px;
   }
 `;
 
