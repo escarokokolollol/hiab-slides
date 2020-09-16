@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b4dc98da502a8a386945bcb7c1abbe46",
+    "revision": "84b6e3639f5d84a688d2ce7d9e5f787f",
     "url": "/hiab-slides/index.html"
   },
   {
-    "revision": "448b1dc1326d7ca6f596",
+    "revision": "8c965023cfe325b7a441",
     "url": "/hiab-slides/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "1713bcc5ed54e5e27817",
+    "revision": "9db8b960aa9f1f046d89",
     "url": "/hiab-slides/static/css/main.22954f20.chunk.css"
   },
   {
-    "revision": "448b1dc1326d7ca6f596",
-    "url": "/hiab-slides/static/js/2.f79367f0.chunk.js"
+    "revision": "8c965023cfe325b7a441",
+    "url": "/hiab-slides/static/js/2.98b59a7f.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/hiab-slides/static/js/2.f79367f0.chunk.js.LICENSE.txt"
+    "url": "/hiab-slides/static/js/2.98b59a7f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1713bcc5ed54e5e27817",
-    "url": "/hiab-slides/static/js/main.3ce093fd.chunk.js"
+    "revision": "9db8b960aa9f1f046d89",
+    "url": "/hiab-slides/static/js/main.d159a22b.chunk.js"
   },
   {
     "revision": "62567f56410f6515309f",
@@ -58,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "75cfe781760134a936c1f628fc2739ad",
     "url": "/hiab-slides/static/media/info-icon.75cfe781.svg"
+  },
+  {
+    "revision": "d8b73b3a34e45a570a49bb4be4da7f1b",
+    "url": "/hiab-slides/static/media/red-nav-button.d8b73b3a.svg"
   },
   {
     "revision": "e9945a573ea375e38df8435692d58417",

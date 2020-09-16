@@ -1,33 +1,34 @@
 {
   "files": {
     "main.css": "/hiab-slides/static/css/main.22954f20.chunk.css",
-    "main.js": "/hiab-slides/static/js/main.3ce093fd.chunk.js",
-    "main.js.map": "/hiab-slides/static/js/main.3ce093fd.chunk.js.map",
+    "main.js": "/hiab-slides/static/js/main.d159a22b.chunk.js",
+    "main.js.map": "/hiab-slides/static/js/main.d159a22b.chunk.js.map",
     "runtime-main.js": "/hiab-slides/static/js/runtime-main.3dd0d665.js",
     "runtime-main.js.map": "/hiab-slides/static/js/runtime-main.3dd0d665.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/hiab-slides/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.f79367f0.chunk.js": "/hiab-slides/static/js/2.f79367f0.chunk.js",
-    "static/js/2.f79367f0.chunk.js.map": "/hiab-slides/static/js/2.f79367f0.chunk.js.map",
+    "static/js/2.98b59a7f.chunk.js": "/hiab-slides/static/js/2.98b59a7f.chunk.js",
+    "static/js/2.98b59a7f.chunk.js.map": "/hiab-slides/static/js/2.98b59a7f.chunk.js.map",
     "index.html": "/hiab-slides/index.html",
-    "precache-manifest.7a10256496eef4cfe52ce9011c14c1d1.js": "/hiab-slides/precache-manifest.7a10256496eef4cfe52ce9011c14c1d1.js",
+    "precache-manifest.006d728385cb3a7a9cbacfe5fa011bed.js": "/hiab-slides/precache-manifest.006d728385cb3a7a9cbacfe5fa011bed.js",
     "service-worker.js": "/hiab-slides/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/hiab-slides/static/css/2.8aa5a7f8.chunk.css.map",
     "static/css/main.22954f20.chunk.css.map": "/hiab-slides/static/css/main.22954f20.chunk.css.map",
-    "static/js/2.f79367f0.chunk.js.LICENSE.txt": "/hiab-slides/static/js/2.f79367f0.chunk.js.LICENSE.txt",
+    "static/js/2.98b59a7f.chunk.js.LICENSE.txt": "/hiab-slides/static/js/2.98b59a7f.chunk.js.LICENSE.txt",
     "static/media/App.css": "/hiab-slides/static/media/FolioStd-BoldCondensed.adbf8788.woff",
     "static/media/effer-logo.svg": "/hiab-slides/static/media/effer-logo.2e7cfb27.svg",
     "static/media/effer01.jpg": "/hiab-slides/static/media/effer01.d87d9847.jpg",
     "static/media/effer_hiab-background.jpg": "/hiab-slides/static/media/effer_hiab-background.6213f54b.jpg",
     "static/media/hiab-logo.svg": "/hiab-slides/static/media/hiab-logo.9653a569.svg",
     "static/media/info-icon.svg": "/hiab-slides/static/media/info-icon.75cfe781.svg",
+    "static/media/red-nav-button.svg": "/hiab-slides/static/media/red-nav-button.d8b73b3a.svg",
     "static/media/waltco-truck01.jpg": "/hiab-slides/static/media/waltco-truck01.e9945a57.jpg",
     "static/media/waltco-truck02.jpg": "/hiab-slides/static/media/waltco-truck02.feff0356.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3dd0d665.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.f79367f0.chunk.js",
+    "static/js/2.98b59a7f.chunk.js",
     "static/css/main.22954f20.chunk.css",
-    "static/js/main.3ce093fd.chunk.js"
+    "static/js/main.d159a22b.chunk.js"
   ]
 }
