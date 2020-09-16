@@ -1,5 +1,3 @@
-import React from "react";
-import styled from "styled-components";
 
 //      PROPS INFO
 //
@@ -9,6 +7,9 @@ import styled from "styled-components";
 // backTo           navigation
 //
 //
+
+import React from "react";
+import styled from "styled-components";
 
 // images
 import Background from "../assets/images/effer_hiab-background.jpg";
@@ -29,7 +30,7 @@ const StyledDiv = styled.div`
     .start-page-text{
       margin: 0 auto;
       margin-top: 20vh;
-      max-width: 800px;
+      max-width: 900px;
     }
 
     .start-page-text h1{

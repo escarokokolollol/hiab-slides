@@ -1,7 +1,12 @@
 import React from "react";
+import styled from "styled-components";
 
 import StartPage from "../../pagetemplates/StartPage";
 import UnorderedList from "../../components/UnorderedList";
+
+const StyledDiv = styled.div`
+
+`;
 
 const Start04 = () => {
   const items = [
@@ -17,7 +22,9 @@ const Start04 = () => {
       to="/start05" 
       backTo="/start03" 
     >
-    <UnorderedList items={items}/>
+    <StyledDiv>
+      <UnorderedList items={items}/>
+    </StyledDiv>
     </StartPage>
   );
 }

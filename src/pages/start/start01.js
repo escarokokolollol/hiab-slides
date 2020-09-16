@@ -33,7 +33,6 @@ const StyledDiv = styled.div`
     .start-page-red-button{
       img{
         float: right;
-        margin-top: 30px;
         width: 100px;
       }
     }
@@ -59,14 +58,14 @@ const StyledDiv = styled.div`
         max-width: 800px;
         display: grid;
         grid-gap: 20px;  
-        align-items: start;
+        align-items: center;
         grid-template-columns: 70% 30%;
         .start-page-text{
           margin: 0; 
           text-align: right;      
           h1{
             font-size: 120px;
-            margin-bottom: 40px;
+            margin-top: 0;
           }   
           p{
             font-size: 22px;

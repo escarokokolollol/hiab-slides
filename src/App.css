@@ -12,6 +12,10 @@
       format("truetype");
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Folio", sans-serif !important;
