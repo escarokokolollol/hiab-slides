@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 // dev
 // import DevNav from "./components/DevNav";
@@ -25,8 +26,6 @@ import AboutEfferPage01 from "./pages/about-effer/Page01";
 import AboutEfferPage02 from "./pages/about-effer/Page02";
 import AboutEfferPage03 from "./pages/about-effer/Page03";
 import AboutEfferPage04 from "./pages/about-effer/Page04";
-
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const App = () => {
   return (
