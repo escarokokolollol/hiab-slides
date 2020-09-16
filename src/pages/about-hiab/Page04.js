@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Page04 = () => {
   return (
     <div className="page-transition">

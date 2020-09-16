@@ -1,7 +1,5 @@
 import React from "react";
 
-import BackButton from "../../components/BackButton";
-
 const Page03 = () => {
   return (
     <div className="page-transition">

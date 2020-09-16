@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-const BillboardHeading = props => {
-  const StyledHeadingOne = styled.h1`
-    text-transform: uppercase;
-    color: ${props.color ? props.color : "#fff"};
-  `;
+const StyledHeadingOne = styled.h1`
+  text-transform: uppercase;
+`;
 
-  return <StyledHeadingOne>{props.text}</StyledHeadingOne>;
+const BillboardHeading = props => {
+  const style = {
+    color: props.color ? props.color : "#fff",
+  }
+
+  return <StyledHeadingOne style={style}>{props.text}</StyledHeadingOne>;
 };
 
 export default BillboardHeading;

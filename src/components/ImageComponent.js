@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const Paragraphs = props => {
-  const StyledDiv = styled.div`
-    img {
-      width: 100%;
-    }
-  `;
+const StyledDiv = styled.div`
+  img {
+    width: 100%;
+  }
+`;
 
+const Paragraphs = props => {
   return (
     <StyledDiv>
       <img src={props.src} alt={props.src} />
