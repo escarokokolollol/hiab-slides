@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 // images
 import efferImg01 from "../../assets/images/effer01.jpg";
@@ -23,20 +24,27 @@ const paragraphItems = [
   "Pellentesque volutpat, justo ac mattis scelerisque, ipsum purus euismod dui, nec sollicitudin odio masorci lobortis venenatis quis non enim."
 ];
 
+const StyledDiv = styled.div`
+  ${'' /* background: red; */}
+`;
+
 const Page01 = () => {
   return (
     <div className="page-transition">
-      <BillboardHeading text="Then you already know that" />
-      <BillboardHeading text="At hiab, we're recognized as" color="red" />
+      <StyledDiv>
+        <div className="content">
+          <BillboardHeading text="Then you already know that" />
+          <BillboardHeading text="At hiab, we're recognized as" color="red" />
 
-      <UnorderedList items={listItems} />
+          <UnorderedList items={listItems} />
 
-      <Paragraphs items={paragraphItems} />
+          <Paragraphs items={paragraphItems} />
 
-      <ImageComponent src={efferImg01} />
+          <ImageComponent src={efferImg01} />
 
-      <Navigation backToWhere="/work-with" forwardToWhere="/about-effer/page02"/>
-
+          <Navigation backToWhere="/work-with" forwardToWhere="/about-effer/page02"/>
+        </div>
+      </StyledDiv>
     </div>
   );
 };

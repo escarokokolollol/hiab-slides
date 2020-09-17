@@ -27,8 +27,8 @@ const Start05 = () => {
         backTo="/start04"
       >
         <div className="hiabOrEffer">
-          <RedArrowLink text="Via Emilia" toWhere="/start04"/>
-          <RedArrowLink text="Köpmanbergsvägen" toWhere="/start03"/>
+          <RedArrowLink text="Via Emilia" toWhere="/about-effer/page01"/>
+          <RedArrowLink text="Köpmanbergsvägen" toWhere="/about-hiab/page01"/>
         </div>
       </StartPage>
     </StyledDiv>
