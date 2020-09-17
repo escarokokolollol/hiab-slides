@@ -7,16 +7,13 @@ import DeviceOrientation, { Orientation } from 'react-screen-orientation'
 // dev
 // import DevNav from "./components/DevNav";
 
-// views
-// import Start from "./pages/Start";
-import WorkWith from "./pages/WorkWith";
-
+// VIEWS
 // startpages 
-import Start01 from "./pages/start/start01"
-import Start02 from "./pages/start/start02"
-import Start03 from "./pages/start/start03"
-import Start04 from "./pages/start/start04"
-import Start05 from "./pages/start/start05"
+import Start01 from "./pages/start/start01";
+import Start02 from "./pages/start/start02";
+import Start03 from "./pages/start/start03";
+import Start04 from "./pages/start/start04";
+import Start05 from "./pages/start/start05";
 
 // hiab pages
 import AboutHiabPage01 from "./pages/about-hiab/Page01";
@@ -30,6 +27,9 @@ import AboutEfferPage02 from "./pages/about-effer/Page02";
 import AboutEfferPage03 from "./pages/about-effer/Page03";
 import AboutEfferPage04 from "./pages/about-effer/Page04";
 
+// message for portrait mode
+import PortraitModeMessage from "../src/components/PortraitModeMessage";
+
 const App = () => {
   return (
     <DeviceOrientation lockOrientation={'landscape'}>
@@ -42,7 +42,6 @@ const App = () => {
                 <TransitionGroup>
                   <CSSTransition key={location.key} timeout={700} classNames="fade">
                     <Switch location={location}>
-
                       <Route path="/about-hiab/page01" component={AboutHiabPage01} />
                       <Route path="/about-hiab/page02" component={AboutHiabPage02} />
                       <Route path="/about-hiab/page03" component={AboutHiabPage03} />
@@ -53,13 +52,11 @@ const App = () => {
                       <Route path="/about-effer/page03" component={AboutEfferPage03}/>
                       <Route path="/about-effer/page04" component={AboutEfferPage04} />
 
-                      <Route path="/work-with" component={WorkWith} />
                       <Route path="/start02" component={Start02} />
                       <Route path="/start03" component={Start03} />
                       <Route path="/start04" component={Start04} />
                       <Route path="/start05" component={Start05} />
                       <Route path="/" component={Start01} />
-
                     </Switch>
                   </CSSTransition>
                 </TransitionGroup>
@@ -70,11 +67,8 @@ const App = () => {
         </Router>
       </Orientation>
       {/* Will stay in DOM, but is only visible in portrait */}
-      <Orientation orientation='portrait'>
-        <div className="App">
-          <p>Please rotate your device</p>
-          <p>Denna texten ska inte synas när man navigerar</p>
-        </div>
+      <Orientation orientation='portrait' alwaysRender={false}>
+        <PortraitModeMessage />
       </Orientation>
     </DeviceOrientation>
   );

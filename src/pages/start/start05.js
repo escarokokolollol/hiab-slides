@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import StartPage from "../../pagetemplates/StartPage";
 import RedArrowLink from "../../components/RedArrowLink";
-import LinkToAnywhere from "../../components/LinkToAnywhere";
 
 const StyledDiv = styled.div`
   .hiabOrEffer{
