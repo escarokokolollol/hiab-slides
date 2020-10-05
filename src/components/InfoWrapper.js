@@ -8,7 +8,8 @@ import styled from "styled-components";
 //
 /////////////////////
 
-import InfoIcon from "../assets/icons/info-icon.svg";
+import InfoIcon from "../assets/icons/info-red.svg";
+
 const StyledDiv = styled.div`
   width: 100%;
   background: #fff;
@@ -16,11 +17,24 @@ const StyledDiv = styled.div`
   padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
+  :after{
+    content: "";
+    background-image: url(${InfoIcon});
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -8px;
+    right:-8px;
+    z-index: 10;
+
+
+  }
   .info-paragraph{
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
-    padding-left: 30px;
     padding-top: 10px;
+    text-align: center;
   }
   .info-icon{
     width: 30px;
@@ -29,8 +43,8 @@ const StyledDiv = styled.div`
 const InfoWrapper = props => {
   return(
     <StyledDiv>
-      <img className="info-icon" src={InfoIcon} alt="info"/>
       <p className="info-paragraph">{props.text}</p>
+      {/* <img  src={InfoIcon}/> */}
     </StyledDiv>
   );
 }
