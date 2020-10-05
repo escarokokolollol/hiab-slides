@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-// images
-import efferImg01 from "../../assets/images/effer01.jpg";
-
 // components
 import Navigation from "../../components/Navigation";
 import BlackBoxHeading from "../../components/BlackBoxHeading"

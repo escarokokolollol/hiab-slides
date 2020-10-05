@@ -23,8 +23,11 @@ const StyledDiv = styled.div`
     font-size: 52px;
     line-height: 52px;
   }
-  p{
+  p.over{
     font-size: 20px;
+  }
+  p.under{
+    font-size: 16px;
   }
 
   @media ${props => props.theme.secondBreakpoint}{
@@ -32,8 +35,11 @@ const StyledDiv = styled.div`
       font-size: 76px;
       line-height: 76px;
     }
-    p{
+    p.over{
       font-size: 24px;
+    }
+    p.under{
+      font-size: 20px;
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
@@ -41,19 +47,21 @@ const StyledDiv = styled.div`
       font-size: 90px;
       line-height: 90px;
     }
-    p{
+    p.over{
       font-size: 28px;
     }
+    p.under{
+      font-size: 22px;
+    }
   }
-
 `;
 
 const BlackBoxHeading = (props) => {
   return(
     <StyledDiv>
-      {props.textOver ? <p>{props.textOver}</p> : ""}
+      {props.textOver ? <p className="over">{props.textOver}</p> : ""}
       {props.title ? <h1>{props.title}</h1> : ""}
-      {props.textUnder ? <p>{props.textUnder}</p> : ""}
+      {props.textUnder ? <p className="under">{props.textUnder}</p> : ""}
       {props.children}
     </StyledDiv>
   );
