@@ -17,6 +17,7 @@ const StyledDiv = styled.div`
     position: absolute;
     right: -280px;
     bottom: -90;
+    max-width: 350px;
   }
 `;
 

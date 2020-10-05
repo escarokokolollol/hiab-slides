@@ -17,6 +17,7 @@ const StyledDiv = styled.div`
   width: 50%;
   padding: 60px;
   background: rgba(20,20,20, 0.9);
+  max-width: 800px;
   h1{
     margin: 20px 0;
     font-size: 52px;
