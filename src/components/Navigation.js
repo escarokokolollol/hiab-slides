@@ -6,13 +6,12 @@ import NavIcon from "../assets/icons/red-nav-button.svg"
 
 const NavigationWrapper = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
   position: fixed;
   bottom: 40px;
   right: 40px;
   div{
-    background: #333;
     *{ 
       color: #fff;
     }
@@ -29,16 +28,20 @@ const NavigationWrapper = styled.div`
 const Navigation = ({to, backTo}) => {
   return (
     <NavigationWrapper>
-      {backTo ?
-        <Link to={backTo}>
-          <img className="nav-button nav-button-back" src={NavIcon} alt="back-button"/>
-        </Link>
-      : ""}
-      {to ?
-        <Link to={to}>
-          <img className="nav-button nav-button-forward" src={NavIcon} alt="forward-button" />
-        </Link>
-      : ""}
+      <div>
+        {backTo ?
+          <Link to={backTo}>
+            <img className="nav-button nav-button-back" src={NavIcon} alt="back-button"/>
+          </Link>
+        : ""}
+      </div>
+      <div>
+        {to ?
+          <Link to={to}>
+            <img className="nav-button nav-button-forward" src={NavIcon} alt="forward-button" />
+          </Link>
+        : ""}
+      </div>
     </NavigationWrapper>
   );
 };
