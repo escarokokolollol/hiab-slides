@@ -2,7 +2,10 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { ThemeProvider } from "styled-components";
 import DeviceOrientation, { Orientation } from 'react-screen-orientation'
+
+import theme from "./theme.js"
 
 // dev
 // import DevNav from "./components/DevNav";
@@ -32,45 +35,47 @@ import PortraitModeMessage from "../src/components/PortraitModeMessage";
 
 const App = () => {
   return (
-    <DeviceOrientation lockOrientation={'landscape'}>
-      {/* Will only be in DOM in landscape */}
-      <Orientation orientation='landscape' alwaysRender={false}>
-        <Router>
-          <div className="App">
-            <Route
-              render={({ location }) => (
-                <TransitionGroup>
-                  <CSSTransition key={location.key} timeout={700} classNames="fade">
-                    <Switch location={location}>
-                      <Route path="/about-hiab/page01" component={AboutHiabPage01} />
-                      <Route path="/about-hiab/page02" component={AboutHiabPage02} />
-                      <Route path="/about-hiab/page03" component={AboutHiabPage03} />
-                      <Route path="/about-hiab/page04" component={AboutHiabPage04} />
+    <ThemeProvider theme={theme}>
+      <DeviceOrientation lockOrientation={'landscape'}>
+        {/* Will only be in DOM in landscape */}
+        <Orientation orientation='landscape' alwaysRender={false}>
+          <Router>
+            <div className="App">
+              <Route
+                render={({ location }) => (
+                  <TransitionGroup>
+                    <CSSTransition key={location.key} timeout={700} classNames="fade">
+                      <Switch location={location}>
+                        <Route path="/about-hiab/page01" component={AboutHiabPage01} />
+                        <Route path="/about-hiab/page02" component={AboutHiabPage02} />
+                        <Route path="/about-hiab/page03" component={AboutHiabPage03} />
+                        <Route path="/about-hiab/page04" component={AboutHiabPage04} />
 
-                      <Route path="/about-effer/page01" component={AboutEfferPage01} />
-                      <Route path="/about-effer/page02" component={AboutEfferPage02} />
-                      <Route path="/about-effer/page03" component={AboutEfferPage03}/>
-                      <Route path="/about-effer/page04" component={AboutEfferPage04} />
+                        <Route path="/about-effer/page01" component={AboutEfferPage01} />
+                        <Route path="/about-effer/page02" component={AboutEfferPage02} />
+                        <Route path="/about-effer/page03" component={AboutEfferPage03}/>
+                        <Route path="/about-effer/page04" component={AboutEfferPage04} />
 
-                      <Route path="/start02" component={Start02} />
-                      <Route path="/start03" component={Start03} />
-                      <Route path="/start04" component={Start04} />
-                      <Route path="/start05" component={Start05} />
-                      <Route path="/" component={Start01} />
-                    </Switch>
-                  </CSSTransition>
-                </TransitionGroup>
-              )}
-            />
-          </div>
-          {/* <DevNav /> */}
-        </Router>
-      </Orientation>
-      {/* Will stay in DOM, but is only visible in portrait */}
-      <Orientation orientation='portrait' alwaysRender={false}>
-        <PortraitModeMessage />
-      </Orientation>
-    </DeviceOrientation>
+                        <Route path="/start02" component={Start02} />
+                        <Route path="/start03" component={Start03} />
+                        <Route path="/start04" component={Start04} />
+                        <Route path="/start05" component={Start05} />
+                        <Route path="/" component={Start01} />
+                      </Switch>
+                    </CSSTransition>
+                  </TransitionGroup>
+                )}
+              />
+            </div>
+            {/* <DevNav /> */}
+          </Router>
+        </Orientation>
+        {/* Will stay in DOM, but is only visible in portrait */}
+        <Orientation orientation='portrait' alwaysRender={false}>
+          <PortraitModeMessage />
+        </Orientation>
+      </DeviceOrientation>
+    </ThemeProvider>
   );
 };
 

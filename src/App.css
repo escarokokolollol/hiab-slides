@@ -18,7 +18,7 @@
 
 body {
   margin: 0;
-  font-family: "Folio", sans-serif !important;
+  /* font-family: "Folio", sans-serif !important; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #222 !important;
@@ -26,6 +26,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff !important;
+  font-family: Helvetica Neue;
+
 }
 
 code {

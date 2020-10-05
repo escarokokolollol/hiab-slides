@@ -52,8 +52,11 @@ const StyledDiv = styled.div`
     .content{
       justify-content: center;
       align-items: center;
-      
-
+      .info-wrapper-wrapper{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+      }
       .text-button-wrapper{
         max-width: 800px;
         display: grid;
@@ -80,6 +83,7 @@ const StyledDiv = styled.div`
       .logos{
         bottom: 40px;
       }
+     
     }
   }
 `;
@@ -108,8 +112,10 @@ const Start01 = props => {
             <img src={HiabLogo} alt="Hiab logotype"/>
             <img src={EfferLogo} alt="Effer logotype"/>
           </div>
+          <div className="info-wrapper-wrapper">
+            <InfoWrapper text="Set aside approximately 30 – 45 minutes to go through the entire tool the first time you use it."/>
+          </div>
         </div>
-        <InfoWrapper text="Set aside approximately 30 – 45 minutes to go through the entire tool the first time you use it."/>
       </StyledDiv>
     </div>
   );
