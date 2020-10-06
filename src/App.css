@@ -27,7 +27,8 @@ body {
   background-attachment: fixed;
   color: #fff !important;
   font-family: Helvetica Neue;
-
+  
+  overflow-x: hidden; /* to remove scrollx bar when site is more than 100vh*/
 }
 
 code {

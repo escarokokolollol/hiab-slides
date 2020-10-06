@@ -6,6 +6,10 @@ const BackgroundImageDiv = styled.div`
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
+  .content{
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 `;
 
 const BackgroundImage = props => {
@@ -14,7 +18,9 @@ const BackgroundImage = props => {
   }
   return(
     <BackgroundImageDiv style={style}>
-      {props.children}
+      <div className="content">
+        {props.children}
+      </div>
     </BackgroundImageDiv>
   );
 }

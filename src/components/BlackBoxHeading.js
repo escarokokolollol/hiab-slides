@@ -12,14 +12,14 @@ import styled from "styled-components";
 
 const StyledDiv = styled.div`
   width: 50%;
-  padding: 60px;
   background: rgba(20,20,20, 0.9);
   max-width: 800px;
   position: relative; ${'' /* relative is to position childs in this component */}
+  padding: 60px;
   h1{
     margin: 20px 0;
-    font-size: 52px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 32px;
   }
   p.over{
     font-size: 20px;
@@ -27,11 +27,17 @@ const StyledDiv = styled.div`
   p.under{
     font-size: 16px;
   }
+  @media ${props => props.theme.firstBreakpoint}{
+    h1{
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
 
   @media ${props => props.theme.secondBreakpoint}{
     h1{
-      font-size: 76px;
-      line-height: 76px;
+      font-size: 50px;
+      line-height: 50px;
     }
     p.over{
       font-size: 24px;
@@ -42,8 +48,8 @@ const StyledDiv = styled.div`
   }
   @media ${props => props.theme.thirdBreakpoint}{
     h1{
-      font-size: 90px;
-      line-height: 90px;
+      font-size: 64px;
+      line-height: 64px;
     }
     p.over{
       font-size: 28px;
