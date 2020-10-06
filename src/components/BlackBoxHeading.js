@@ -11,13 +11,11 @@ import styled from "styled-components";
 //////////////
 
 const StyledDiv = styled.div`
-  position: absolute;
-  top: 60px;
-  left: 60px;
   width: 50%;
   padding: 60px;
   background: rgba(20,20,20, 0.9);
   max-width: 800px;
+  position: relative; ${'' /* relative is to position childs in this component */}
   h1{
     margin: 20px 0;
     font-size: 52px;

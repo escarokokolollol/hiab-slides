@@ -17,6 +17,7 @@ const StyledDiv = styled.div`
   padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
+  position: relative;
   :after{
     content: "";
     background-image: url(${InfoIcon});
@@ -27,8 +28,6 @@ const StyledDiv = styled.div`
     top: -8px;
     right:-8px;
     z-index: 10;
-
-
   }
   .info-paragraph{
     font-size: 16px;

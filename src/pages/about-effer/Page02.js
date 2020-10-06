@@ -9,12 +9,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 import Background from "../../assets/images/background01.jpg";
 
 const StyledDiv = styled.div`
-  .info-wrapper-wrapper{
-    position: absolute;
-    right: -280px;
-    bottom: -90;
-    max-width: 350px;
-  }
+  padding: ${props => props.theme.windowPadding};
 `;
 
 const Page02 = () => {
