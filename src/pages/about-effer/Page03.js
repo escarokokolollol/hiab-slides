@@ -14,7 +14,7 @@ import image4 from "../../assets/images/effer/effer-inovation04.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
-  padding: 9%;
+  padding: 3% 9%;
   h1{
     margin-top:10px;
     text-align: center;
