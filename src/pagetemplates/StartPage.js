@@ -19,14 +19,13 @@ import BillboardHeading from "../components/BillboardHeading";
 import Paragraphs from "../components/Paragraphs";
 import Logos from "../components/Logos";
 import Navigation from "../components/Navigation";
+import BackgroundImage from "../components/styled/BackgroundImage";
 
 const StyledDiv = styled.div`
   .content {
     padding: 1rem;
     height: 100vh;
     width: 100vw;
-    background-image: url(${Background});
-    background-size: cover;
     .start-page-text{
       margin: 0 auto;
       margin-top: 20vh;
@@ -75,19 +74,21 @@ const StartPage = props => {
 
   return (
     <div className="page-transition">
-      <StyledDiv>
-        <div className="content">
-          <div className="text-button-wrapper">
-            <div className="start-page-text">
-              <BillboardHeading text={headingText} />
-              <Paragraphs items={paragraphText}/>
-              {props.children}
+      <BackgroundImage image={Background}>
+        <StyledDiv>
+          <div className="content">
+            <div className="text-button-wrapper">
+              <div className="start-page-text">
+                <BillboardHeading text={headingText} />
+                <Paragraphs items={paragraphText}/>
+                {props.children}
+              </div>
+              <Logos />
+              <Navigation to={props.to} backTo={props.backTo}/>
             </div>
-            <Logos />
-            <Navigation to={props.to} backTo={props.backTo}/>
           </div>
-        </div>
-      </StyledDiv>
+        </StyledDiv>
+      </BackgroundImage>
     </div>
   );
 };

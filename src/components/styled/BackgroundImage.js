@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import HamburgerMenu from "../HamburgerMenu";
+
 const BackgroundImageDiv = styled.div`
   min-width: 100vw;
   min-height: 100vh;
@@ -18,6 +20,7 @@ const BackgroundImage = props => {
   }
   return(
     <BackgroundImageDiv style={style}>
+      <HamburgerMenu />
       <div className="content">
         {props.children}
       </div>

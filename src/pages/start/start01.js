@@ -12,14 +12,13 @@ import InfoWrapper from "../../components/InfoWrapper";
 import BillboardHeading from "../../components/BillboardHeading";
 import Paragraphs from "../../components/Paragraphs";
 import LinkToAnywhere from "../../components/LinkToAnywhere";
+import BackgroundImage from "../../components/styled/BackgroundImage";
 
 const StyledDiv = styled.div`
   .content {
     padding: 1rem;
     min-height: 100vh;
     min-width: 100vw;
-    background-image: url(${Background});
-    background-size: cover;
     display: flex;
     flex-direction: column;
 
@@ -54,7 +53,7 @@ const StyledDiv = styled.div`
       align-items: center;
       .info-wrapper-wrapper{
         position: absolute;
-        top: 40px;
+        bottom: 40px;
         right: 40px;
       }
       .text-button-wrapper{
@@ -95,28 +94,30 @@ const Start01 = props => {
 
   return (
     <div className="page-transition">
-      <StyledDiv>
-        <div className="content">
-          <div className="text-button-wrapper">
-            <div className="start-page-text">
-              <BillboardHeading text="Welcome"/>
-              <Paragraphs items={paragraphText}/>
+      <BackgroundImage image={Background}>
+        <StyledDiv>
+          <div className="content">
+            <div className="text-button-wrapper">
+              <div className="start-page-text">
+                <BillboardHeading text="Welcome"/>
+                <Paragraphs items={paragraphText}/>
+              </div>
+              <div className="start-page-red-button">
+                <LinkToAnywhere toWhere="/start02">
+                  <img className="big-red-button" src={BigRedButton} alt="next page"/>
+                </LinkToAnywhere>
+              </div>
             </div>
-            <div className="start-page-red-button">
-              <LinkToAnywhere toWhere="/start02">
-                <img className="big-red-button" src={BigRedButton} alt="next page"/>
-              </LinkToAnywhere>
+            <div className="logos">
+              <img src={HiabLogo} alt="Hiab logotype"/>
+              <img src={EfferLogo} alt="Effer logotype"/>
+            </div>
+            <div className="info-wrapper-wrapper">
+              <InfoWrapper text="Set aside approximately 30 – 45 minutes to go through the entire tool the first time you use it."/>
             </div>
           </div>
-          <div className="logos">
-            <img src={HiabLogo} alt="Hiab logotype"/>
-            <img src={EfferLogo} alt="Effer logotype"/>
-          </div>
-          <div className="info-wrapper-wrapper">
-            <InfoWrapper text="Set aside approximately 30 – 45 minutes to go through the entire tool the first time you use it."/>
-          </div>
-        </div>
-      </StyledDiv>
+        </StyledDiv>
+      </BackgroundImage>
     </div>
   );
 };
