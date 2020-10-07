@@ -10,6 +10,11 @@ const StyledDiv = styled.div`
     grid-template-columns: 45% 45%;
     grid-column-gap: 10%;
   }
+  .start-page-text{
+    div{
+      margin-bottom: 90px;
+    }
+  }
 `;
 
 

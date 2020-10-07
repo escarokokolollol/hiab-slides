@@ -28,7 +28,7 @@ const StyledDiv = styled.div`
   ${'' /* background: red; */}
 `;
 
-const Page01 = () => {
+const Page9901 = () => {
   return (
     <div className="page-transition">
       <StyledDiv>
@@ -49,4 +49,4 @@ const Page01 = () => {
   );
 };
 
-export default Page01;
+export default Page9901;

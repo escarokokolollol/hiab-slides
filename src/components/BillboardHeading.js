@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledHeadingOne = styled.h1`
-  text-transform: uppercase;
   margin: 0;
 `;
 

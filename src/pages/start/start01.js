@@ -67,7 +67,7 @@ const StyledDiv = styled.div`
           margin: 0; 
           text-align: right;      
           h1{
-            font-size: 120px;
+            font-size: 100px;
             margin-top: 0;
           }   
           p{
@@ -99,7 +99,7 @@ const Start01 = props => {
         <div className="content">
           <div className="text-button-wrapper">
             <div className="start-page-text">
-              <BillboardHeading text="WELCOME"/>
+              <BillboardHeading text="Welcome"/>
               <Paragraphs items={paragraphText}/>
             </div>
             <div className="start-page-red-button">
