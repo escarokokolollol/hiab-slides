@@ -9,8 +9,8 @@ const NavigationWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 60px;
+  right: 60px;
   div{
     *{ 
       color: #fff;

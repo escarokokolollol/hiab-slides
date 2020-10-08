@@ -12,7 +12,7 @@ import styled from "styled-components";
 
 const StyledDiv = styled.div`
   width: 50%;
-  background: rgba(20,20,20, 0.9);
+  background: rgba(10,10,10, 0.9);
   max-width: 800px;
   position: relative; ${'' /* relative is to position childs in this component */}
   padding: 60px;
