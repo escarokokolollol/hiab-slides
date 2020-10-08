@@ -4,7 +4,6 @@ import styled from "styled-components";
 // components
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
-import BlackBoxHeading from "../../components/BlackBoxHeading";
 
 // images
 import Background from "../../assets/images/effer/effer-big-05.jpg";

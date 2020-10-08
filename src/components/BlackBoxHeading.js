@@ -71,12 +71,12 @@ const BlackBoxHeading = (props) => {
     <StyledDiv>
       {
         props.showEfferLogo ? 
-          <img src={EfferLogo}/>
+          <img src={EfferLogo} alt="effer logo"/>
         : ""
       }
       {
         props.showHiabLogo ? 
-          <img src={EfferLogo}/>
+          <img src={HiabLogo} alt="hiab logo"/>
         : ""
       }
       
