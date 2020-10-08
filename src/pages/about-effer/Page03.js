@@ -93,7 +93,7 @@ const Page03 = () => {
 
             <div className="post">
               <div className="image">
-                <img src={image1}/>
+                <img src={image1} alt="image1"/>
               </div>
               <div className="text">
                 <h2>1969</h2>
@@ -107,13 +107,13 @@ const Page03 = () => {
                 <p>Exhibited largest crane truck ever built at SAIE; lifting capacity of 200 Tm and working height of 50 m</p>
               </div>
               <div className="image">
-                <img src={image2}/>
+                <img src={image2} alt="image2"/>
               </div>
             </div>
 
             <div className="post">
               <div className="image">
-                <img src={image3}/>
+                <img src={image3} alt="image3"/>
               </div>
               <div className="text">
                 <h2>2001</h2>
@@ -127,7 +127,7 @@ const Page03 = () => {
                 <p>Patented the CroSStab stabilization system that increases load capacity and stability of the crane in front of the cabin</p>
               </div>
               <div className="image">
-                <img src={image4}/>
+                <img src={image4} alt="image4"/>
               </div>
             </div>
 

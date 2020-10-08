@@ -64,10 +64,10 @@ const HamburgerMenu = () => {
   }
   return(
     <StyledDiv>
-      <img className="hamburger-icon" onClick={() => setToggle(!toggle)}src={HamburgerIcon} />
+      <img className="hamburger-icon" alt="hamburger menu icon" onClick={() => setToggle(!toggle)}src={HamburgerIcon} />
 
       <div className="menu" style={showOrHide}>
-        <img className="close-icon" onClick={() => setToggle(!toggle)}src={CloseIcon} />
+        <img className="close-icon" alt="hamburger menu icon" onClick={() => setToggle(!toggle)}src={CloseIcon} />
         <ul>
           <li><Link to="/">Start</Link></li>
           <li><Link to="/start05">Choose a road</Link></li>
