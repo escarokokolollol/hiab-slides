@@ -18,6 +18,7 @@ const StyledDiv = styled.div`
     right:20px;
   }
   p {
+    font-size: 22px;
     color: #fff;
     text-transform: none;
   }
