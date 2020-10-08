@@ -18,7 +18,6 @@ const StyledDiv = styled.div`
   .content {
     padding: 1rem;
     min-height: 100vh;
-    min-width: 100vw;
     display: flex;
     flex-direction: column;
 
@@ -36,7 +35,7 @@ const StyledDiv = styled.div`
       }
     }
 
-    .logos{
+    .logos{ 
       position: absolute;
       bottom: 120px;
       display: grid;
