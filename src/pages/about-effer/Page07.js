@@ -28,7 +28,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Page04 = () => {
+const Page07 = () => {
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
@@ -43,4 +43,4 @@ const Page04 = () => {
   );
 }
 
-export default Page04;
+export default Page07;
