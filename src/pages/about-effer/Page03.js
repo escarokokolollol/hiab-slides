@@ -88,7 +88,7 @@ const Page03 = () => {
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <h1>EFFERs inovations</h1>
+          <h1>Innovating since 1965</h1>
           <div className="posts">
 
             <div className="post">
@@ -97,7 +97,7 @@ const Page03 = () => {
               </div>
               <div className="text">
                 <h2>1969</h2>
-                <p>Introduced first crane with lifting capacity of 40 Tm – a novelty for its time</p>
+                <p>Just four years after its start, EFFER introduced the first crane with a lifting capacity of 40 Tm – a novelty for its time</p>
               </div>
             </div>
 
