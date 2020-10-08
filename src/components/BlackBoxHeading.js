@@ -1,12 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
+import EfferLogo from "../assets/icons/effer-logo.svg";
+import HiabLogo from "../assets/icons/hiab-logo.svg";
+
+
 //////////////
 // 
 //  PROPS:
 //  textOver
 //  Title
 //  textUnder
+//  showEfferLogo
+//  showHiabLogo
 // 
 //////////////
 
@@ -63,6 +69,18 @@ const StyledDiv = styled.div`
 const BlackBoxHeading = (props) => {
   return(
     <StyledDiv>
+      {
+        props.showEfferLogo ? 
+          <img src={EfferLogo}/>
+        : ""
+      }
+      {
+        props.showHiabLogo ? 
+          <img src={EfferLogo}/>
+        : ""
+      }
+      
+
       {props.textOver ? <p className="over">{props.textOver}</p> : ""}
       {props.title ? <h1>{props.title}</h1> : ""}
       {props.textUnder ? <p className="under">{props.textUnder}</p> : ""}
