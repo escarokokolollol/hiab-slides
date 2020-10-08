@@ -20,7 +20,7 @@ const Page06 = () => {
       <BackgroundImage image={Background}>
         <StyledDiv>
           <BlackBoxHeading showEfferLogo title="Finally, do you know how people working at EFFER feel about the importance of what they do?"/>
-          <Navigation backTo="/about-effer/page04" to="/about-effer/page06"/>
+          <Navigation backTo="/about-effer/page05" to="/about-effer/page07"/>
         </StyledDiv>
       </BackgroundImage>
     </div>
