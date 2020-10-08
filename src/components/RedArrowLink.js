@@ -29,7 +29,7 @@ const RedArrowLink = (props) => {
     <Link to={props.toWhere}>
       <StyledDiv>
         <p>{props.text}</p>
-        <img src={arrowIconSvg} alt="lol"/>
+        <img src={arrowIconSvg} alt="link"/>
       </StyledDiv>
     </Link>
   );

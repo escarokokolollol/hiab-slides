@@ -22,12 +22,15 @@ const StyledDiv = styled.div`
   }
   @media ${props => props.theme.secondBreakpoint}{
     .RedArrowLink-wrapper{
-      width: 20%;
-      left: 40%;
+      width: 30%;
+      left: 35%;
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
-    
+    .RedArrowLink-wrapper{
+      width: 20%;
+      left: 40%;
+    }
   }
 `;
 
