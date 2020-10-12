@@ -78,9 +78,9 @@ const ParagraphMiddle = props => {
           {props.showHiabLogo ? <img className="logo" alt="hiab logo" src={HiabLogo} /> : ""}
     
           <p className={`paragraph-middle ${props.title.length > 140 ? "small-text" : ""}`}>{props.title}</p>
-          <div className="line"></div>
 
           {props.children}
+          <div className="line"></div>
         </StyledDiv>
       </BackgroundImage>
     </div>
