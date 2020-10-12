@@ -80,7 +80,10 @@ const ParagraphMiddle = props => {
           <p className={`paragraph-middle ${props.title.length > 140 ? "small-text" : ""}`}>{props.title}</p>
 
           {props.children}
-          <div className="line"></div>
+          
+          {props.hideLine ? "" :
+            <div className="line"></div>
+          }
         </StyledDiv>
       </BackgroundImage>
     </div>
