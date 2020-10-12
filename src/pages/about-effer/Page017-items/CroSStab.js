@@ -4,13 +4,12 @@ import styled from "styled-components";
 const StyledDiv = styled.div`
   h1{
     text-align: center;
-    margin-bottom: 100px;
   }
   .grid{
     max-width: 1340px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
     .left{
       h3{
@@ -41,11 +40,17 @@ const StyledDiv = styled.div`
     }
   }
   @media ${props => props.theme.secondBreakpoint}{
+    .grid{
+      grid-template-columns: 1fr 1fr;
+    }
     h1{
       font-size: 38px;
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
+    .grid{
+      grid-template-columns: 1fr 2fr;
+    }
     h1{
       font-size: 52px;
     }
