@@ -47,14 +47,23 @@ const StyledDiv = styled.div`
     left: 30%;
   }
   @media ${props => props.theme.firstBreakpoint}{
+    h2{
+      padding-top: 60px;
+    }
   }
   @media ${props => props.theme.secondBreakpoint}{
+    h2{
+      padding-top: 80px;
+    }
     .RedArrowLink-wrapper{
       width: 30%;
       left: 35%;
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
+    h2{
+      padding-top: 120px;
+    }
     .RedArrowLink-wrapper{
       width: 20%;
       left: 40%;
