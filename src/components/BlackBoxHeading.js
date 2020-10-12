@@ -68,7 +68,7 @@ const StyledDiv = styled.div`
 
 const BlackBoxHeading = (props) => {
   return(
-    <StyledDiv>
+    <StyledDiv className="BlackBoxHeading">
       {
         props.showEfferLogo ? 
           <img src={EfferLogo} className="logo" alt="effer logo"/>

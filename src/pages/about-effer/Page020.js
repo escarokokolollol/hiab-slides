@@ -23,6 +23,10 @@ const StyledDiv = styled.div`
     .logo{
       width:100px;
     }
+    .BlackBoxHeading{
+      max-width: 1370px;
+      width:60%;
+    }
   }
   @media ${props => props.theme.firstBreakpoint}{
     .BlackBoxHeading-wrapper{
@@ -30,24 +34,24 @@ const StyledDiv = styled.div`
         width: 120px;
       }
       h1{
-        font-size: 22px;
-        line-height: 22px;
+        font-size: 32px;
+        line-height:32px;
       }
     }
   }
   @media ${props => props.theme.secondBreakpoint}{
     .BlackBoxHeading-wrapper{
       h1{
-        font-size:36px;
-        line-height:36px;
+        font-size:46px;
+        line-height:46px;
       }
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
     .BlackBoxHeading-wrapper{
       h1{
-        font-size: 56px;
-        line-height: 56px;
+        font-size: 66px;
+        line-height: 66px;
       }
     }
   }
