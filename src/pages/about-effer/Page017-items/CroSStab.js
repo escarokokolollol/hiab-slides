@@ -71,7 +71,7 @@ const CroSStab = () => {
           <p>Very helpful for placing and handling the load that needs to be carried</p>
         </div>
         <div className="right">
-          <iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/m5xLC8FS-6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe className="video" title="CroSStab" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/m5xLC8FS-6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
       </div>
     </StyledDiv>

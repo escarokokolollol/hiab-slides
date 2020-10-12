@@ -82,7 +82,7 @@ const Page018 = props => {
           <h2>If we could boil it down to just one word, it would be…</h2>
           <h1>EXTREME</h1>
           <div className="video-container">
-            <iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/xC6J4T_hUKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/xC6J4T_hUKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
           </div>
 
           <div className="RedArrowLink-wrapper">

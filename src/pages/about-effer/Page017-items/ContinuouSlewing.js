@@ -61,7 +61,7 @@ const ContinuouSlewing = () => {
           <p>no text yet no text yet no text yet no text yet no text yet no text yet no text yet no text yet </p>
         </div>
         <div className="right">
-          <iframe className="video" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/BIUZU9nRN9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe className="video" title="Continuous slewing" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/BIUZU9nRN9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
       </div>
     </StyledDiv>

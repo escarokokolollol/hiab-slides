@@ -25,26 +25,27 @@ import AboutHiabPage03 from "./pages/about-hiab/Page03";
 import AboutHiabPage04 from "./pages/about-hiab/Page04";
 
 // effer pages
-import AboutEfferPage01 from "./pages/about-effer/Page01";
-import AboutEfferPage02 from "./pages/about-effer/Page02";
-import AboutEfferPage03 from "./pages/about-effer/Page03";
-import AboutEfferPage04 from "./pages/about-effer/Page04";
-import AboutEfferPage05 from "./pages/about-effer/Page05";
-import AboutEfferPage06 from "./pages/about-effer/Page06";
-import AboutEfferPage07 from "./pages/about-effer/Page07";
-import AboutEfferPage08 from "./pages/about-effer/Page08";
-import AboutEfferPage09 from "./pages/about-effer/Page09";
-import AboutEfferPage010 from "./pages/about-effer/Page010";
-import AboutEfferPage011 from "./pages/about-effer/Page011";
-import AboutEfferPage012 from "./pages/about-effer/Page012";
-import AboutEfferPage013 from "./pages/about-effer/Page013";
-import AboutEfferPage014 from "./pages/about-effer/Page014";
-import AboutEfferPage015 from "./pages/about-effer/Page015";
-import AboutEfferPage016 from "./pages/about-effer/Page016";
-import AboutEfferPage017 from "./pages/about-effer/Page017";
-import AboutEfferPage018 from "./pages/about-effer/Page018";
-import AboutEfferPage019 from "./pages/about-effer/Page019";
-import AboutEfferPage020 from "./pages/about-effer/Page020";
+import AboutEfferPage01 from "./pages/about-effer/Page01.js";
+import AboutEfferPage02 from "./pages/about-effer/Page02.js";
+import AboutEfferPage03 from "./pages/about-effer/Page03.js";
+import AboutEfferPage04 from "./pages/about-effer/Page04.js";
+import AboutEfferPage05 from "./pages/about-effer/Page05.js";
+import AboutEfferPage06 from "./pages/about-effer/Page06.js";
+import AboutEfferPage07 from "./pages/about-effer/Page07.js";
+import AboutEfferPage08 from "./pages/about-effer/Page08.js";
+import AboutEfferPage09 from "./pages/about-effer/Page09.js";
+import AboutEfferPage010 from "./pages/about-effer/Page010.js";
+import AboutEfferPage011 from "./pages/about-effer/Page011.js";
+import AboutEfferPage012 from "./pages/about-effer/Page012.js";
+import AboutEfferPage013 from "./pages/about-effer/Page013.js";
+import AboutEfferPage014 from "./pages/about-effer/Page014.js";
+import AboutEfferPage015 from "./pages/about-effer/Page015.js";
+import AboutEfferPage016 from "./pages/about-effer/Page016.js";
+import AboutEfferPage017 from "./pages/about-effer/Page017.js";
+import AboutEfferPage018 from "./pages/about-effer/Page018.js";
+import AboutEfferPage019 from "./pages/about-effer/Page019.js";
+import AboutEfferPage020 from "./pages/about-effer/Page020.js";
+import AboutEfferPage021 from "./pages/about-effer/Page021.js";
 
 
 // message for portrait mode
@@ -88,6 +89,7 @@ const App = () => {
                         <Route path="/about-effer/page018" component={AboutEfferPage018} />
                         <Route path="/about-effer/page019" component={AboutEfferPage019} />
                         <Route path="/about-effer/page020" component={AboutEfferPage020} />
+                        <Route path="/about-effer/page021" component={AboutEfferPage021} />
 
                         <Route path="/start02" component={Start02} />
                         <Route path="/start03" component={Start03} />

@@ -65,7 +65,7 @@ const Vstab = () => {
           <p>Also eliminates need and cost of front stabilizers, which are less effective.</p>
         </div>
         <div className="right">
-          <iframe className="video" allowfullscreen width="560" height="315" src="https://www.youtube.com/embed/BIxWkeqtYQk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe className="video" title="vstab" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/BIxWkeqtYQk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
       </div>
     </StyledDiv>
