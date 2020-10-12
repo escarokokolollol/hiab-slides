@@ -10,14 +10,20 @@ import HiabLogo from "../assets/icons/hiab-logo.svg";
 //  PROPS:
 //  backgroundImage
 //  title
+//  overTitle
+//  underTitle
 //  showEfferLogo
 //  showHiabLogo
 //
 //////////////
 
 const StyledDiv = styled.div`
+  margin: 0 auto;
   height: 100vh;
+  width: 80%;
   display: flex;
+  flex-direction: column;
+  text-align:center;
   justify-content: center;
   align-items: center;
   .logo{
@@ -55,7 +61,9 @@ const SingleHeadingMiddle = props => {
           {props.showEfferLogo ? <img className="logo" alt="effer logo" src={EfferLogo} /> : ""}
           {props.showHiabLogo ? <img className="logo" alt="hiab logo" src={HiabLogo} /> : ""}
     
+          <h1>{props.overTitle}</h1>
           <h1>{props.title}</h1>
+          <h1>{props.underTitle}</h1>
           {props.children}
         </StyledDiv>
       </BackgroundImage>
