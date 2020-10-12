@@ -4,7 +4,6 @@ import styled from "styled-components";
 const StyledDiv = styled.div`
   h1{
     text-align: center;
-    margin-bottom: 100px;
   }
   .grid{
     max-width: 1340px;
