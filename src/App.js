@@ -40,6 +40,7 @@ import AboutEfferPage012 from "./pages/about-effer/Page012";
 import AboutEfferPage013 from "./pages/about-effer/Page013";
 import AboutEfferPage014 from "./pages/about-effer/Page014";
 import AboutEfferPage015 from "./pages/about-effer/Page015";
+import AboutEfferPage016 from "./pages/about-effer/Page016";
 
 
 // message for portrait mode
@@ -78,6 +79,7 @@ const App = () => {
                         <Route path="/about-effer/page013" component={AboutEfferPage013} />
                         <Route path="/about-effer/page014" component={AboutEfferPage014} />
                         <Route path="/about-effer/page015" component={AboutEfferPage015} />
+                        <Route path="/about-effer/page016" component={AboutEfferPage016} />
 
                         <Route path="/start02" component={Start02} />
                         <Route path="/start03" component={Start03} />
