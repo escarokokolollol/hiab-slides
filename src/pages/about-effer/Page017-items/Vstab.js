@@ -53,27 +53,24 @@ const StyledDiv = styled.div`
   
 `;
 
-const CroSStab = () => {
+const Vstab = () => {
   return(
     <StyledDiv>
-      <h1>CroSStab – only on EFFER!</h1>
+      <h1>V-STAB</h1>
       <div className="grid">
         <div className="left">
-          <h3>A unique, patented feature</h3>
-          <p>Makes it possible to work with a 360° overview </p>
+          <p>Guarantees same advantages of the CroSStab, but with ‘set’ angle stabilizers.  </p>
 
-          <h3>Pivoting stabilizers</h3>
-          <p>Can be placed in most stable position for safest working conditions </p>
+          <p>Can fold completely into a closed position, making it possible to work in tight and small spaces.  </p>
 
-          <h3>Much more space between stabilizers</h3>
-          <p>Very helpful for placing and handling the load that needs to be carried</p>
+          <p>Also eliminates need and cost of front stabilizers, which are less effective.</p>
         </div>
         <div className="right">
-          <iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/m5xLC8FS-6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe className="video" allowfullscreen width="560" height="315" src="https://www.youtube.com/embed/BIxWkeqtYQk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </StyledDiv>
   );
 }
 
-export default CroSStab;
+export default Vstab;

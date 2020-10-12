@@ -53,27 +53,20 @@ const StyledDiv = styled.div`
   
 `;
 
-const CroSStab = () => {
+const ContinuouSlewing = () => {
   return(
     <StyledDiv>
-      <h1>CroSStab – only on EFFER!</h1>
+      <h1>Continuous slewing </h1>
       <div className="grid">
         <div className="left">
-          <h3>A unique, patented feature</h3>
-          <p>Makes it possible to work with a 360° overview </p>
-
-          <h3>Pivoting stabilizers</h3>
-          <p>Can be placed in most stable position for safest working conditions </p>
-
-          <h3>Much more space between stabilizers</h3>
-          <p>Very helpful for placing and handling the load that needs to be carried</p>
+          <p>no text yet no text yet no text yet no text yet no text yet no text yet no text yet no text yet </p>
         </div>
         <div className="right">
-          <iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/m5xLC8FS-6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe className="video" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/BIUZU9nRN9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </StyledDiv>
   );
 }
 
-export default CroSStab;
+export default ContinuouSlewing;
