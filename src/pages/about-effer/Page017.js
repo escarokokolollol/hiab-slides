@@ -21,11 +21,11 @@ const StyledDiv = styled.div`
   ${'' /* padding: 100px; */}
   .content-inner{
     background: rgba(0,0,0,0.6);
-    padding: 60px;
+    padding: 40px;
     text-align: center;
     h1{
       margin: 0 auto 40px;
-      max-width: 1000px;
+      max-width: 870px;
     }
     .grid{
       display: grid;
@@ -45,7 +45,6 @@ const StyledDiv = styled.div`
           cursor: pointer;
           color: ${props => props.theme.red};
           background: #fff;
-          text-decoration: underline;
           transition: all .4s ease;
         }
       }
@@ -71,8 +70,11 @@ const StyledDiv = styled.div`
       cursor: pointer;
     }
   }
+
   @media ${props => props.theme.thirdBreakpoint}{
+  .content-inner{
     h1{
+      max-width: 1200px;
     }
   }
  
