@@ -38,6 +38,10 @@ const StyledDiv = styled.div`
     height: 42px;
     width: 40%;
   }
+  p.paragraph-middle.small-text{
+    font-size: 32px;
+    line-height: 38px;
+  }
   @media ${props => props.theme.firstBreakpoint}{
     p.paragraph-middle{
       max-width: 600px;
@@ -62,6 +66,9 @@ const StyledDiv = styled.div`
 `;
 
 const ParagraphMiddle = props => {
+
+
+
   return(
     <div className="page-transition">
       <BackgroundImage image={props.backgroundImage}>
@@ -70,7 +77,7 @@ const ParagraphMiddle = props => {
           {props.showEfferLogo ? <img className="logo" alt="effer logo" src={EfferLogo} /> : ""}
           {props.showHiabLogo ? <img className="logo" alt="hiab logo" src={HiabLogo} /> : ""}
     
-          <p className="paragraph-middle">{props.title}</p>
+          <p className={`paragraph-middle ${props.title.length > 140 ? "small-text" : ""}`}>{props.title}</p>
           <div className="line"></div>
 
           {props.children}
