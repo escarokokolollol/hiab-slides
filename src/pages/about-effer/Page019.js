@@ -9,7 +9,7 @@ import Background from "../../assets/images/effer_hiab-background.jpg";
 const Page019 = () => {
   return (
     <SingleHeadingMiddle overTitle="So… " title="How can this knowledge help you when dealing with customers?" backgroundImage={Background} showEfferLogo={true} >
-      <Navigation backTo="/about-effer/page08" to="/about-effer/page010"/>
+      <Navigation backTo="/about-effer/page018" to="/about-effer/page020"/>
     </SingleHeadingMiddle>
   );
 }
