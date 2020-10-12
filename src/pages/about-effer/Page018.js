@@ -1,29 +1,43 @@
 import React from "react";
 import styled from "styled-components";
 
-// components 
-import RedArrowLink from "../../components/RedArrowLink";
+import BackgroundImage from "../../components/styled/BackgroundImage";
 import Navigation from "../../components/Navigation";
-// page template
-import ParagraphMiddle from "../../pagetemplates/ParagraphMiddle";
-// images
+import RedArrowLink from "../../components/RedArrowLink";
+
+import EfferLogo from "../../assets/icons/effer-logo.svg";
 import Background from "../../assets/images/effer_hiab-background.jpg";
 
 const StyledDiv = styled.div`
-  .video-container{
+  height: 70vh;
+  text-align: center;
+  h2{
+    margin: 0;
+    padding-top: 20px;
+  }
+  h1{
+    font-size: 66px;
+    margin: 0;
+    ${'' /* padding-bottom: 60px; */}
+  }
+  .logo{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+  ${'' /* .video-container{
     position: relative;
-    width: 500px;
+    width: 100%;
     height: 0;
     padding-bottom: 56.25%;
-    margin-top: 20px;
-    .video{
+    video{
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
     }
-  }
+  } */}
 
   .RedArrowLink-wrapper{
     display: inline;
@@ -33,21 +47,14 @@ const StyledDiv = styled.div`
     left: 30%;
   }
   @media ${props => props.theme.firstBreakpoint}{
-  
   }
   @media ${props => props.theme.secondBreakpoint}{
-    .video-container{
-      width: 600px;
-    }
     .RedArrowLink-wrapper{
       width: 30%;
       left: 35%;
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
-    .video-container{
-      width: 740px;
-    }
     .RedArrowLink-wrapper{
       width: 20%;
       left: 40%;
@@ -55,20 +62,28 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Page018 = () => {
-  return (
-    <ParagraphMiddle hideLine title="If we could boil it down to just one word, it would be… EXTREME" backgroundImage={Background} showEfferLogo={true} >
-      <StyledDiv>
-        <div className="video-container">
-          <iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/xC6J4T_hUKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        
-        <div className="RedArrowLink-wrapper">
-          <RedArrowLink text="Compare with hiab" toWhere="dont now yet"/>
-        </div>
-        <Navigation backTo="/about-effer/page017" to="/about-effer/page019"/>
-      </StyledDiv>
-    </ParagraphMiddle>
+
+const Page018 = props => {
+  return(
+    <div className="page-transition">
+      <BackgroundImage image={Background}>
+        <StyledDiv>
+          <img className="logo" alt="effer logo" src={EfferLogo} />
+          
+          <h2>If we could boil it down to just one word, it would be…</h2>
+          <h1>EXTREME</h1>
+          <div className="video-container">
+            <iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/xC6J4T_hUKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div className="RedArrowLink-wrapper">
+            <RedArrowLink text="Compare with hiab" toWhere="dont now yet"/>
+          </div>
+
+          <Navigation backTo="/about-effer/page017" to="/about-effer/page019"/>
+        </StyledDiv>
+      </BackgroundImage>
+    </div>
   );
 }
 
