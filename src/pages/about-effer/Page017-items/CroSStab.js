@@ -41,16 +41,13 @@ const StyledDiv = styled.div`
   }
   @media ${props => props.theme.secondBreakpoint}{
     .grid{
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 2fr;
     }
     h1{
       font-size: 38px;
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
-    .grid{
-      grid-template-columns: 1fr 2fr;
-    }
     h1{
       font-size: 52px;
     }
