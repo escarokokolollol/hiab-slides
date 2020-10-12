@@ -13,7 +13,7 @@ import HiabLogo from "../../assets/icons/hiab-logo.svg";
 import Background from "../../assets/images/effer_hiab-background.jpg";
 
 const StyledDiv = styled.div`
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
