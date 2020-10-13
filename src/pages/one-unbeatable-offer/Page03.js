@@ -6,10 +6,10 @@ import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // popup
-import Flexibility from "./Page022-items/Flexibility";
-import Simplicity from "./Page022-items/Simplicity";
-import Repetition from "./Page022-items/Repetition";
-import Basket from "./Page022-items/Basket";
+import Flexibility from "./views/Flexibility";
+import Simplicity from "./views/Simplicity";
+import Repetition from "./views/Repetition";
+import Basket from "./views/Basket";
 
 // images
 import Background from "../../assets/images/effer_hiab-background.jpg";
@@ -73,7 +73,6 @@ const StyledDiv = styled.div`
     left: 0;
     z-index: 100;
     padding: 60px;
-    box-shadow: 0 0 7px rgba(0,0,0,.9);
 
     .close-icon{
       position: absolute;
@@ -110,7 +109,7 @@ const StyledDiv = styled.div`
  
 `;
 
-const Page022 = () => {
+const Page03 = () => {
 
   const [flexibility, setFlexibility] = useState(false);
   const [simplicity, setSimplicity] = useState(false);
@@ -176,11 +175,11 @@ const Page022 = () => {
             : ""
           }
           
-          <Navigation backTo="/about-effer/page021" to="/about-effer/page023"/>
+          <Navigation backTo="/one-unbeatable-offer/page02" to="/one-unbeatable-offer/page04"/>
         </StyledDiv>
       </BackgroundImage>
     </div>
   );
 }
 
-export default Page022;
+export default Page03;

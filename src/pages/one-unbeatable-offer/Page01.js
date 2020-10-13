@@ -57,7 +57,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Page020 = () => {
+const Page01 = () => {
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
@@ -70,11 +70,11 @@ const Page020 = () => {
               titleUnder="One unbeatable offer"
             />
           </div>
-          <Navigation backTo="/about-effer/page019" to="/about-effer/page021"/>
+          <Navigation backTo="/about-effer/page019" to="/one-unbeatable-offer/page02"/>
         </StyledDiv>
       </BackgroundImage>
     </div>
   );
 }
 
-export default Page020;
+export default Page01;

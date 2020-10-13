@@ -8,7 +8,7 @@ const StyledDiv = styled.div`
   
 `;
 
-const Simplicity = () => {
+const Basket = () => {
   return(
     <StyledDiv>
       <Cases 
@@ -26,4 +26,4 @@ const Simplicity = () => {
   );
 }
 
-export default Simplicity;
+export default Basket;

@@ -84,7 +84,7 @@ const StyledDiv = styled.div`
 
 `;
 
-const Page021 = () => {
+const Page02 = () => {
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
@@ -110,13 +110,11 @@ const Page021 = () => {
               <img src={EfferLogo} alt="effer logo"/>
             </div>
           </div>
-
-
-          <Navigation backTo="/about-effer/page020" to="/about-effer/page022"/>
+          <Navigation backTo="/one-unbeatable-offer/page01" to="/one-unbeatable-offer/page03"/>
         </StyledDiv>
       </BackgroundImage>
     </div>
   );
 }
 
-export default Page021;
+export default Page02;

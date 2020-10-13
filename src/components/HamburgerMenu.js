@@ -96,7 +96,7 @@ const StyledDiv= styled.div`
   ${'' /* transition */}
   .hide{
     opacity: 0;
-    z-index: 0;
+    z-index: -10;
     transition: opacity .3s ease;
   }
   .show{
@@ -108,9 +108,6 @@ const StyledDiv= styled.div`
 
 const HamburgerMenu = () => {
   const [toggle, setToggle] = useState(false);
-  const showOrHide = {
-    display: toggle ? "flex" : "none",
-  }
   return(
     <StyledDiv>
       <img className="hamburger-icon" alt="hamburger menu icon" onClick={() => setToggle(!toggle)}src={HamburgerIcon} />

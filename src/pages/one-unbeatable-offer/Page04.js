@@ -27,7 +27,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Page023 = () => {
+const Page04 = () => {
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
@@ -35,11 +35,11 @@ const Page023 = () => {
           <div className="BlackBoxHeading-wrapper">
             <BlackBoxHeading title="Solutions for different applications"/>
           </div>
-          <Navigation backTo="/about-effer/page022" to="/about-effer/page024"/>
+          <Navigation backTo="/one-unbeatable-offer/page03" to="/one-unbeatable-offer/page05"/>
         </StyledDiv>
       </BackgroundImage>
     </div>
   );
 }
 
-export default Page023;
+export default Page04;
