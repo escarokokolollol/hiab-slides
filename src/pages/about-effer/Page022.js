@@ -75,6 +75,9 @@ const StyledDiv = styled.div`
 
   @media ${props => props.theme.secondBreakpoint}{
     .content-inner{
+      h1.title{
+        font-size: 67px;
+      }
       .grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
@@ -82,7 +85,8 @@ const StyledDiv = styled.div`
   }
   @media ${props => props.theme.thirdBreakpoint}{
   .content-inner{
-    h1{
+    h1.title{
+      font-size: 97px;
       max-width: 1200px;
     }
   }
@@ -102,7 +106,7 @@ const Page022 = () => {
         <StyledDiv>
 
           <div className="content-inner">
-            <h1>A few typical cases</h1>
+            <h1 className="title">A few typical cases</h1>
             <p>Let’s have a look at a few example cases to learn how we can match our offer with customer needs. </p>
             <div className="grid">
               <div className="grid-item">
