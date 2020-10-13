@@ -11,6 +11,7 @@ import SecondJib from "./Page017-items/SecondJib";
 
 // images
 import Background from "../../assets/images/effer/effer-inovation03.jpg";
+import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
   height: 100vh;
@@ -62,12 +63,15 @@ const StyledDiv = styled.div`
     left: 0;
     z-index: 100;
     padding: 20px;
-    .close{
-      color: ${props => props.theme.red};
-      text-align: center;
+    .close-icon{
+      width: 40px;
+      height: 40px;
+      transition: all .2s ease;
     }
-    .close:hover{
+    .close-icon:hover{
       cursor: pointer;
+      transform: scale(1.2);
+      transition: all .2s ease;
     }
   }
 
@@ -84,8 +88,8 @@ const Page017 = () => {
 
   const [crosstab, setCrosstab] = useState(false);
   const [vstab, setVstab] = useState(false);
-  const [continuouSlewing , setContinuouSlewing] = useState(false);
-  const [secondJib , setSecondJib] = useState(false);
+  const [continuouSlewing, setContinuouSlewing] = useState(false);
+  const [secondJib, setSecondJib] = useState(false);
 
   return (
     <div className="page-transition">
@@ -113,14 +117,14 @@ const Page017 = () => {
           {crosstab ? 
             <div className="popup">
               <CroSStab />
-              <h1 className="close" onClick={ () => setCrosstab(false)}>close</h1>
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setCrosstab(false)}/> 
             </div>
             : ""
           }
           {vstab ? 
             <div className="popup">
               <Vstab />
-              <h1 className="close" onClick={ () => setVstab(false)}>close</h1>
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setVstab(false)}/> 
             </div>
             : ""
           }
@@ -128,7 +132,7 @@ const Page017 = () => {
           {continuouSlewing ? 
             <div className="popup">
               <ContinuouSlewing />
-              <h1 className="close" onClick={ () => setContinuouSlewing(false)}>close</h1>
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setContinuouSlewing(false)}/> 
             </div>
             : ""
           }
@@ -136,7 +140,7 @@ const Page017 = () => {
           {secondJib ? 
             <div className="popup">
               <SecondJib />
-              <h1 className="close" onClick={ () => setSecondJib(false)}>close</h1>
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setSecondJib(false)}/> 
             </div>
             : ""
           }

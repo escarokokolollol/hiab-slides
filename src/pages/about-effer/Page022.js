@@ -4,13 +4,14 @@ import styled from "styled-components";
 // components
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
-import CroSStab from "./Page017-items/CroSStab";
-import Vstab from "./Page017-items/Vstab";
-import ContinuouSlewing from "./Page017-items/ContinuouSlewing";
-import SecondJib from "./Page017-items/SecondJib";
+
+// popup
+import Flexibility from "./Page022-items/Flexibility";
 
 // images
 import Background from "../../assets/images/effer_hiab-background.jpg";
+import BackgroundPopup from "../../assets/images/effer/effer-big-05.jpg";
+import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
   height: 100vh;
@@ -49,27 +50,39 @@ const StyledDiv = styled.div`
           background: #fff;
           transition: all .4s ease;
         }
+        h2{
+          line-height: 20px;
+          text-transform: uppercase;
+          margin-top:0;
+          color: ${props => props.theme.red};
+        }
       }
     }
   }
   .popup{
-    display: grid;
-    justify-items: center;
-    align-items: center;
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: #000;
+    background: rgba(55,55,55, 0.8);
+    background: url(${BackgroundPopup});
+    background-size: cover;
     top: 0;
     left: 0;
     z-index: 100;
     padding: 20px;
-    .close{
-      color: ${props => props.theme.red};
-      text-align: center;
+
+    .close-icon{
+      position: absolute;
+      bottom:60px;
+      right:60px;
+      width: 40px;
+      height: 40px;
+      transition: all .2s ease;
     }
-    .close:hover{
+    .close-icon:hover{
       cursor: pointer;
+      transform: scale(1.2);
+      transition: all .2s ease;
     }
   }
 
@@ -95,7 +108,7 @@ const StyledDiv = styled.div`
 
 const Page022 = () => {
 
-  const [flexibility, setFlexibility] = useState(false);
+  const [flexibility, setFlexibility] = useState(true);
   const [simplicity, setSimplicity] = useState(false);
   const [repetition , setRepetition] = useState(false);
   const [basket , setBasket] = useState(false);
@@ -110,15 +123,19 @@ const Page022 = () => {
             <p>Let’s have a look at a few example cases to learn how we can match our offer with customer needs. </p>
             <div className="grid">
               <div className="grid-item">
+                <h2>case 1:</h2>
                 <h1 onClick={ () => setFlexibility(true)}>flexibility</h1>
               </div>
               <div className="grid-item">
+                <h2>case 2:</h2>
                 <h1 onClick={ () => setSimplicity(true)}>simplicity</h1>
               </div>
               <div className="grid-item">
+                <h2>case 3:</h2>
                 <h1 onClick={ () => setRepetition(true)}>repetition</h1>
               </div>
               <div className="grid-item">
+                <h2>case 4:</h2>
                 <h1 onClick={ () => setBasket(true) }>basket</h1>
               </div>
             </div>
@@ -126,31 +143,31 @@ const Page022 = () => {
 
           {flexibility ? 
             <div className="popup">
-              ${'' /* <Flexibility /> */}
-              <h1 className="close" onClick={ () => setFlexibility(false)}>close</h1>
+              <Flexibility />
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setFlexibility(false)}/> 
             </div>
             : ""
           }
           {simplicity ? 
             <div className="popup">
-              ${'' /* <Simplicity /> */}
-              <h1 className="close" onClick={ () => setSimplicity(false)}>close</h1>
+              ${'' /* <Simplicity /> */}Simplicity
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setSimplicity(false)}/> 
             </div>
             : ""
           }
 
           {repetition ? 
             <div className="popup">
-              ${'' /* <Repetition /> */}
-              <h1 className="close" onClick={ () => setRepetition(false)}>close</h1>
+              ${'' /* <Repetition /> */}Repetition
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setRepetition(false)}/> 
             </div>
             : ""
           }
 
           {basket ? 
             <div className="popup">
-              ${'' /* <Basket /> */}
-              <h1 className="close" onClick={ () => setBasket(false)}>close</h1>
+              ${'' /* <Basket /> */}Basket
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setBasket(false)}/> 
             </div>
             : ""
           }
