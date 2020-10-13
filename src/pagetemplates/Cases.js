@@ -52,8 +52,8 @@ const StyledDiv = styled.div`
   }
   .answer-wrapper-wrapper{
     position: absolute;
-    bottom: -140px;
-    right: -300px;
+    bottom: -110px;
+    right: -200px;
     width: 500px;
   }  
   @media ${props => props.theme.firstBreakpoint}{
