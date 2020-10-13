@@ -29,7 +29,8 @@ const StyledDiv = styled.div`
     h1.question-title{
     }
     p.question-text{
-      font-size: 26px;
+      font-size: 22px;
+      line-height: 26px;
     }
     div.answer-wrapper{
       p.answer-wrapper-text{
@@ -53,7 +54,7 @@ const StyledDiv = styled.div`
   .answer-wrapper-wrapper{
     position: absolute;
     bottom: -110px;
-    right: -200px;
+    right: -240px;
     width: 500px;
   }  
   @media ${props => props.theme.firstBreakpoint}{
