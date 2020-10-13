@@ -4,7 +4,6 @@ import styled from "styled-components";
 // components
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
-import BlackBoxHeading from "../../components/BlackBoxHeading";
 
 import EfferLogo from "../../assets/icons/effer-logo.svg";
 import HiabLogo from "../../assets/icons/hiab-logo.svg";
