@@ -10,9 +10,8 @@ import styled from "styled-components";
 /////////////////////
 
 const StyledDiv = styled.div`
-  width: 100%;
+  width: 110%;
   background: #fff;
-  max-width: 800px;
   padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column;
@@ -24,7 +23,8 @@ const StyledDiv = styled.div`
   .info-paragraph{
     font-size: 14px;
     color: #333;
-    padding-top: 10px;
+    padding-top: 0px;
+    margin-top: 0px;
   }
   .info-icon{
     width: 30px;
