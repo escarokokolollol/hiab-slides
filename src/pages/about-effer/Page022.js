@@ -7,6 +7,9 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // popup
 import Flexibility from "./Page022-items/Flexibility";
+import Simplicity from "./Page022-items/Simplicity";
+import Repetition from "./Page022-items/Repetition";
+import Basket from "./Page022-items/Basket";
 
 // images
 import Background from "../../assets/images/effer_hiab-background.jpg";
@@ -69,7 +72,8 @@ const StyledDiv = styled.div`
     top: 0;
     left: 0;
     z-index: 100;
-    padding: 20px;
+    padding: 60px;
+    box-shadow: 0 0 7px rgba(0,0,0,.9);
 
     .close-icon{
       position: absolute;
@@ -108,7 +112,7 @@ const StyledDiv = styled.div`
 
 const Page022 = () => {
 
-  const [flexibility, setFlexibility] = useState(true);
+  const [flexibility, setFlexibility] = useState(false);
   const [simplicity, setSimplicity] = useState(false);
   const [repetition , setRepetition] = useState(false);
   const [basket , setBasket] = useState(false);
@@ -150,7 +154,7 @@ const Page022 = () => {
           }
           {simplicity ? 
             <div className="popup">
-              ${'' /* <Simplicity /> */}Simplicity
+              <Simplicity />
               <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setSimplicity(false)}/> 
             </div>
             : ""
@@ -158,7 +162,7 @@ const Page022 = () => {
 
           {repetition ? 
             <div className="popup">
-              ${'' /* <Repetition /> */}Repetition
+              <Repetition />
               <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setRepetition(false)}/> 
             </div>
             : ""
@@ -166,7 +170,7 @@ const Page022 = () => {
 
           {basket ? 
             <div className="popup">
-              ${'' /* <Basket /> */}Basket
+              <Basket />
               <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setBasket(false)}/> 
             </div>
             : ""

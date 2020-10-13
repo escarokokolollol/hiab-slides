@@ -26,13 +26,19 @@ const StyledDiv = styled.div`
   div.black-box{
     background: rgba(0,0,0,0.9);
     padding: 40px 60px;
+    h1.question-title{
+    }
+    p.question-text{
+      font-size: 26px;
+    }
     div.answer-wrapper{
       p.answer-wrapper-text{
-        margin-bottom: 0;
+        margin-bottom: 10px;
         font-weight: 800;
         font-size: 22px;
       }
       img{
+        padding: 0px 8px;
         width:150px;
         transition: all .1s ease;
         margin-right: 26px;
@@ -55,10 +61,20 @@ const StyledDiv = styled.div`
   }
   @media ${props => props.theme.secondBreakpoint}{
     width: 62%;
+    div.black-box{
+      h1.question-title{
+        font-size: 38px;
+      }
+    }
   }
   @media ${props => props.theme.thirdBreakpoint}{
-    max-width: 860px;
-    width: 50%;
+    max-width: 970px;
+    width: 60%;
+    div.black-box{
+      h1.question-title{
+        font-size: 58px;
+      }
+    }
   }
 `;
 
@@ -79,16 +95,18 @@ const Cases = props => {
   return(
     <StyledDiv>
       <div className="black-box">
-        {props.title ? <h1>{props.title}</h1> : ""}
-        {props.text ? <p><i>{props.text}</i></p> : ""}
+        {props.title ? <h1 className="question-title">{props.title}</h1> : ""}
+        {props.text ? <p className="question-text"><i>{props.text}</i></p> : ""}
         <div className="answer-wrapper">
           <p className="answer-wrapper-text">Which brand would you pitch?</p>
           <img 
+            style={efferAnswer ? { background: "#fff"} : {}}
             src={EfferLogo} 
             alt="effer logo" 
             onClick={() => toggleAnswers("effer")}
           />
           <img 
+            style={hiabAnswer ? { background: "#fff"} : {}}
             src={HiabLogo} 
             alt="hiab logo"
             onClick={() => toggleAnswers("hiab") }

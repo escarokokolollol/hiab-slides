@@ -33,7 +33,7 @@ const StyledDiv = styled.div`
 const AnswerWrapper = props => {
   return(
     <StyledDiv>
-      {props.title && <h1 style={props.title.length > 9 ? { fontSize: "22px"}: {} }>{props.title}</h1>}
+      {props.title && <h1 style={props.title.length > 40 ? { fontSize: "22px"}: {} }>{props.title}</h1>}
       {props.text && <p className="info-paragraph">{props.text}</p>}
     </StyledDiv>
   );
