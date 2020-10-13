@@ -5,6 +5,9 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { ThemeProvider } from "styled-components";
 import DeviceOrientation, { Orientation } from 'react-screen-orientation'
 
+// link to hiab/effer photos
+// https://drive.google.com/drive/u/1/folders/13LGoxD-L-IxPqnnxe0sOMMDpXwbej_Dh 
+
 import theme from "./theme.js"
 
 // dev
@@ -58,6 +61,7 @@ const App = () => {
       <DeviceOrientation lockOrientation={'landscape'}>
         {/* Will only be in DOM in landscape */}
         <Orientation orientation='landscape' alwaysRender={false}>
+          {/* <Router basename="/hiab-beta01"> */}
           <Router>
             <div className="App">
               <Route
