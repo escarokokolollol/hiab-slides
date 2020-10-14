@@ -8,6 +8,8 @@ import BlackBoxHeading from "../../components/BlackBoxHeading";
 
 // images
 import Background from "../../assets/images/effer/effer-big-05.jpg";
+import FacebookIcon from "../../assets/icons/facebook-icon.png";
+import InstagramIcon from "../../assets/icons/instagram-icon.png";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -16,6 +18,13 @@ const StyledDiv = styled.div`
     position: absolute;
     bottom: 60px;
     div{
+    }
+    .social-media{
+      text-align: center;
+      img{
+        width: 50px;
+        margin-right: 40px;
+      }
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
@@ -34,7 +43,16 @@ const Page04 = () => {
       <BackgroundImage image={Background}>
         <StyledDiv>
           <div className="BlackBoxHeading-wrapper">
-            <BlackBoxHeading title="EFFER fans are our best ambassadors" textUnder="Our customers love EFFER because of what they are able to do with our cranes that they can’t accomplish with others. But also because of how we treat them. For if there’s one thing we’ve always been very good at, it’s sitting down with them, listening to what they need and building solutions around those needs."/>
+            <BlackBoxHeading titleOver="Today," title="EFFER fans are our best ambassadors." textUnder="Our customers love EFFER because of what they are able to do with our cranes that they can’t accomplish with others. But also because of how we treat them. For if there’s one thing we’ve always been very good at, it’s sitting down with them, listening to what they need and building solutions around those needs.">
+              <div className="social-media"> 
+                <a href="https://www.facebook.com/Effer-Crane-182804252258767" target="_blank">
+                    <img className="facebook-icon" src={FacebookIcon} />
+                </a>
+                <a href="https://www.instagram.com/effer_crane" target="_blank">
+                  <img className="instagram-icon"src={InstagramIcon} />
+                </a>
+              </div>
+            </BlackBoxHeading>
           </div>
           <Navigation backTo="/about-effer/page03" to="/about-effer/page05"/>
         </StyledDiv>

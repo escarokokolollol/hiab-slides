@@ -81,6 +81,7 @@ const BlackBoxHeading = (props) => {
       }
 
       {props.textOver ? <p className="over">{props.textOver}</p> : ""}
+      {props.titleOver ? <h1>{props.titleOver}</h1> : ""}
       {props.title ? <h1>{props.title}</h1> : ""}
       {props.titleUnder ? <h1>{props.titleUnder}</h1> : ""}
       {props.textUnder ? <p className="under">{props.textUnder}</p> : ""}
