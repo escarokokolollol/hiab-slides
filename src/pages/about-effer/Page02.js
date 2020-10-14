@@ -62,8 +62,8 @@ const StyledDiv = styled.div`
       width: 900px;
       grid-template-columns: 1fr 1fr;
       h1{
-        font-size: 55px;
-        line-height: 55px;
+        font-size: 48px;
+        line-height: 48px;
       }
       .wordcloud-wrapper{
         .wordcloud{
