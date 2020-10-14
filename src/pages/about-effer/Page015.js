@@ -66,9 +66,9 @@ const StyledDiv = styled.div`
 
 const Page015 = () => {
   const listItems = [
-    "extreme performance and durability",
-    "highest level of customisation",
-    "unequalled personal attention"
+    "Extreme performance and durability",
+    "Highest level of customisation",
+    "Unequalled personal attention"
   ]
   return (
     <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showEfferLogo={true} >
