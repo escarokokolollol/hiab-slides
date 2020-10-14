@@ -19,12 +19,23 @@ const StyledDiv = styled.div`
     left: 30%;
   }
   @media ${props => props.theme.firstBreakpoint}{
-  
+    li{
+      font-size: 26px;
+    }
+    li::before {
+      top:10px;
+    }
   }
   @media ${props => props.theme.secondBreakpoint}{
     .RedArrowLink-wrapper{
       width: 30%;
       left: 35%;
+    }
+    li{
+      font-size: 32px;
+    }
+    li::before {
+      top:12px;
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
@@ -32,7 +43,14 @@ const StyledDiv = styled.div`
       width: 20%;
       left: 40%;
     }
+    li{
+      font-size: 38px;
+    }
+    li::before {
+      top:20px;
+    }
   }
+    
 `;
 
 const Page015 = () => {
@@ -45,9 +63,9 @@ const Page015 = () => {
     <ParagraphMiddle title="In a nutshell" backgroundImage={Background} showEfferLogo={true} >
       <StyledDiv>
         <UnorderedList items={listItems}/>
-        <div className="RedArrowLink-wrapper">
-          <RedArrowLink text="Compare with hiab" toWhere="dont now yet"/>
-        </div>
+          <div className="RedArrowLink-wrapper">
+            <RedArrowLink text="Compare with hiab" toWhere="dont now yet"/>
+          </div>
         <Navigation backTo="/about-effer/page014" to="/about-effer/page016"/>
       </StyledDiv>
     </ParagraphMiddle>

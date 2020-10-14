@@ -30,29 +30,29 @@ const StyledList = styled.ul`
     z-index: 99999;
   }
   @media ${props => props.theme.firstBreakpoint}{
-    li{
+    ${'' /* li{
       font-size: 26px;
     }
     li::before {
       top:10px;
-    }
+    } */}
   }
   @media ${props => props.theme.secondBreakpoint}{
-    li{
+    ${'' /* li{
       font-size: 32px;
     }
     li::before {
       top:12px;
-    }
+    } */}
   }
 
   @media ${props => props.theme.thirdBreakpoint}{
-    li{
+    ${'' /* li{
       font-size: 38px;
     }
     li::before {
       top:20px;
-    }
+    } */}
   }
 }
 `;
