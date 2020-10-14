@@ -14,7 +14,7 @@ import Basket from "./views/Basket";
 // images
 import Background from "../../assets/images/effer_hiab-background.jpg";
 import BackgroundPopup from "../../assets/images/effer/effer-big-05.jpg";
-import closeIcon from "../../assets/icons/close-menu.svg";
+import closeIcon from "../../assets/icons/big-red-button.png";
 
 const StyledDiv = styled.div`
   height: 100vh;
@@ -77,15 +77,12 @@ const StyledDiv = styled.div`
     .close-icon{
       position: absolute;
       bottom:60px;
-      right:60px;
-      width: 40px;
-      height: 40px;
-      transition: all .2s ease;
+      right:130px;
+      width: 70px;
+      transform: rotate(180deg);
     }
     .close-icon:hover{
       cursor: pointer;
-      transform: scale(1.2);
-      transition: all .2s ease;
     }
   }
 
@@ -108,6 +105,7 @@ const StyledDiv = styled.div`
   }
  
   ${'' /* transition */}
+  ${'' /* {`popup ${simplicity ? "show" : "hide"}`} */}
   .hide{
     opacity: 0;
     z-index: -10;
@@ -155,25 +153,33 @@ const Page03 = () => {
             </div>
           </div>
 
-          <div className={`popup ${flexibility ? "show" : "hide"}`}>
+          {flexibility ? 
+          <div className={`popup`}>
             <Flexibility />
             <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setFlexibility(false)}/> 
           </div>
-          
-          <div className={`popup ${simplicity ? "show" : "hide"}`}>
+          : "" }
+
+          {simplicity ? 
+          <div className={`popup`}>
             <Simplicity />
             <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setSimplicity(false)}/> 
           </div>
+          : "" }
 
-          <div className={`popup ${repetition ? "show" : "hide"}`}>
+          {repetition ? 
+          <div className={`popup`}>
             <Repetition />
             <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setRepetition(false)}/> 
           </div>
+          : "" }
 
-          <div className={`popup ${basket ? "show" : "hide"}`}>
+          {basket ? 
+          <div className={`popup`}>
             <Basket />
             <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setBasket(false)}/> 
           </div>
+          : "" }
           
           <Navigation backTo="/one-unbeatable-offer/page02" to="/one-unbeatable-offer/page04"/>
         </StyledDiv>
