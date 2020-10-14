@@ -7,7 +7,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 import BlackBoxHeading from "../../components/BlackBoxHeading";
 
 // images
-import Background from "../../assets/images/effer/efferinsta01.jpg";
+import Background from "../../assets/images/effer/efferarkiv03.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};

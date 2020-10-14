@@ -4,7 +4,7 @@ import SingleHeadingMiddle from "../../pagetemplates/SingleHeadingMiddle";
 import Navigation from "../../components/Navigation";
 
 // images
-import Background from "../../assets/images/effer_hiab-background.jpg";
+import Background from "../../assets/images/effer/efferarkiv01bg.jpg";
 
 const Page09 = () => {
   return (
