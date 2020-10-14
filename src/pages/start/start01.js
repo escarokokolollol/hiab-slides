@@ -23,14 +23,14 @@ const StyledDiv = styled.div`
 
     .start-page-text{
       margin-top: 60px;
+      h1{
+       font-size: 50px;
+     }
     }
-    .start-page-text h1{
-      font-size: 90px;
-    }
+    
 
     .start-page-red-button{
       img{
-        float: right;
         width: 100px;
       }
     }
@@ -39,7 +39,8 @@ const StyledDiv = styled.div`
       position: absolute;
       bottom: 120px;
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
       img{
         width: 140px;
       }
@@ -51,30 +52,33 @@ const StyledDiv = styled.div`
       justify-content: center;
       align-items: center;
       .info-wrapper-wrapper{
+        width: 250px;
         position: absolute;
         bottom: 40px;
         right: 40px;
       }
       .text-button-wrapper{
-        max-width: 800px;
         display: grid;
         grid-gap: 20px;  
         align-items: center;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 3fr 1fr;
         .start-page-text{
           margin: 0; 
           text-align: right;      
           h1{
-            font-size: 100px;
+            font-size: 60px;
             margin-top: 0;
           }   
           p{
+            max-width: 740px;
+            float: right;
             font-size: 22px;
           }
         }
         .start-page-red-button {
+          justify-self: start;
           .big-red-button{
-            width: 90%;
+            width: 60%;
           }
         }
       }
@@ -98,7 +102,7 @@ const Start01 = props => {
           <div className="content">
             <div className="text-button-wrapper">
               <div className="start-page-text">
-                <BillboardHeading text="Welcome"/>
+                <BillboardHeading text="Welcome to “la Sfida”"/>
                 <Paragraphs items={paragraphText}/>
               </div>
               <div className="start-page-red-button">
