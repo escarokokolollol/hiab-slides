@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // components 
 import RedArrowLink from "../../components/RedArrowLink";
@@ -11,13 +12,23 @@ import ParagraphMiddle from "../../pagetemplates/ParagraphMiddle";
 import Background from "../../assets/images/effer_hiab-background.jpg";
 
 const StyledDiv = styled.div`
-  .RedArrowLink-wrapper{
-    display: inline;
-    position: absolute;
-    bottom: 50px;
-    width: 40%;
-    left: 30%;
+    .compare{
+      font-size: 22px;
+      color: ${props => props.theme.red};
+      position: absolute;
+      bottom: 80px;
+      left: 42.5vw;
+      padding: 10px 20px;
+      font-weight: 900;
+      transition: all .3s ease;
+    }
+    .compare:hover{
+      background: ${props => props.theme.red};
+      color: #fff;
+      transition: all .3s ease;
+    }
   }
+ 
   @media ${props => props.theme.firstBreakpoint}{
     li{
       font-size: 26px;
@@ -60,13 +71,13 @@ const Page015 = () => {
     "unequalled personal attention"
   ]
   return (
-    <ParagraphMiddle title="In a nutshell" backgroundImage={Background} showEfferLogo={true} >
+    <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showEfferLogo={true} >
       <StyledDiv>
         <UnorderedList items={listItems}/>
-          <div className="RedArrowLink-wrapper">
-            <RedArrowLink text="Compare with HIAB" toWhere="dont now yet"/>
-          </div>
         <Navigation backTo="/about-effer/page012" to="/about-effer/page016"/>
+        <div className="flex">
+          <Link className="compare" to="Compare with HIAB">Compare with HIAB</Link>
+        </div>
       </StyledDiv>
     </ParagraphMiddle>
   );
