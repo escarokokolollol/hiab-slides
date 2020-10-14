@@ -86,7 +86,7 @@ const Page018 = props => {
           </div>
 
           <div className="RedArrowLink-wrapper">
-            <RedArrowLink text="Compare with hiab" toWhere="dont now yet"/>
+            <RedArrowLink text="Compare with HIAB" toWhere="dont now yet"/>
           </div>
 
           <Navigation backTo="/about-effer/page017" to="/about-effer/page019"/>

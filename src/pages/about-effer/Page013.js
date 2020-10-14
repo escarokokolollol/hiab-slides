@@ -39,7 +39,7 @@ const Page013 = () => {
     <ParagraphMiddle title="Unlike other manufacturers, EFFER offers customised loader cranes with exceptional reach and power-to-weight ratio in order to reach and carry what others can’t. Innovations such as CroSStab, V-Stab, continuous slewing and the use of second jibs all demonstrate technologies that make this possible." backgroundImage={Background} showEfferLogo={true} >
       <StyledDiv>
         <div className="RedArrowLink-wrapper">
-          <RedArrowLink text="Compare with hiab" toWhere="dont now yet"/>
+          <RedArrowLink text="Compare with HIAB" toWhere="dont now yet"/>
         </div>
         <Navigation backTo="/about-effer/page012" to="/about-effer/page014"/>
       </StyledDiv>

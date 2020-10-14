@@ -39,7 +39,7 @@ const Page011 = () => {
     <ParagraphMiddle title="We do this by passionately building and configuring cranes to meet these customers’ tough demands for extreme performance and durability." backgroundImage={Background} showEfferLogo={true} >
       <StyledDiv>
         <div className="RedArrowLink-wrapper">
-          <RedArrowLink text="Compare with hiab" toWhere="dont now yet"/>
+          <RedArrowLink text="Compare with HIAB" toWhere="dont now yet"/>
         </div>
         <Navigation backTo="/about-effer/page010" to="/about-effer/page012"/>
       </StyledDiv>

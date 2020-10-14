@@ -64,7 +64,7 @@ const Page015 = () => {
       <StyledDiv>
         <UnorderedList items={listItems}/>
           <div className="RedArrowLink-wrapper">
-            <RedArrowLink text="Compare with hiab" toWhere="dont now yet"/>
+            <RedArrowLink text="Compare with HIAB" toWhere="dont now yet"/>
           </div>
         <Navigation backTo="/about-effer/page014" to="/about-effer/page016"/>
       </StyledDiv>

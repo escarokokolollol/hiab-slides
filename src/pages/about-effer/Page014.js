@@ -39,7 +39,7 @@ const Page014 = () => {
     <ParagraphMiddle title="More than that, we are known for providing the industry’s highest level of crane customisation and personal attention, two of the most cited reasons why customers continue to make EFFER their number one choice." backgroundImage={Background} showEfferLogo={true} >
       <StyledDiv>
         <div className="RedArrowLink-wrapper">
-          <RedArrowLink text="Compare with hiab" toWhere="dont now yet"/>
+          <RedArrowLink text="Compare with HIAB" toWhere="dont now yet"/>
         </div>
         <Navigation backTo="/about-effer/page013" to="/about-effer/page015"/>
       </StyledDiv>
