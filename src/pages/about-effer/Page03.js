@@ -94,7 +94,7 @@ const StyledDiv = styled.div`
     display:flex;
     justify-content: center;
     h1{
-      margin-top: 50vh;
+      margin-top: 30vh;
       font-size: 22px;
     }
     img{
@@ -117,7 +117,7 @@ const Page03 = () => {
   useEffect( () => {
     setTimeout(() => {
       setToggle(false);
-    }, 200000);
+    }, 2000);
   });
 
   return (
