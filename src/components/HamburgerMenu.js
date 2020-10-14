@@ -143,7 +143,7 @@ const HamburgerMenu = () => {
 
           <h2>One unbeatable offer</h2>
           <ul>
-            <li><Link>Cases</Link></li>
+            <li><Link to="/one-unbeatable-offer/page01">Cases</Link></li>
             <li><Link>Applications</Link></li>
           </ul>
 
