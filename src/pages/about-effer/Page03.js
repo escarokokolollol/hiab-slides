@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 // components
@@ -6,6 +6,7 @@ import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // images
+import ScrollArrow from "../../assets/icons/scroll-arrow.svg";
 import Background from "../../assets/images/dark-background01.jpg";
 import image1 from "../../assets/images/effer/effer-inovation01.jpg";
 import image2 from "../../assets/images/effer/effer-inovation02.jpg";
@@ -81,13 +82,56 @@ const StyledDiv = styled.div`
       font-size: 24px;
     }
   }
+  .overlay-scroll{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0,0,0, 0.8);
+    opacity: 1;
+    transition: opacity 2s ease;
+    display:flex;
+    justify-content: center;
+    h1{
+      margin-top: 50vh;
+      font-size: 22px;
+    }
+    img{
+      width: 30px;
+      margin: 0 auto;
+      display: inherit;
+    }
+  }
+  .hide{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 2s ease;
+  }
 `;
 
 const Page03 = () => {
+
+  const [toggle, setToggle] = useState(true);
+  
+  useEffect( () => {
+    setTimeout(() => {
+      setToggle(false);
+    }, 200000);
+  });
+
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
+          <div className={`${toggle ? "overlay-scroll" : "overlay-scroll hide"}`}>
+            <div>
+              <h1>
+                SCROLL TO NAVIGATE
+              </h1>
+              <img src={ScrollArrow} />
+            </div>
+          </div>
           <h1>Innovating since 1965</h1>
           <div className="posts">
 
