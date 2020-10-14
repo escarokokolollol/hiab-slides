@@ -64,6 +64,9 @@ const StyledDiv = styled.div`
     z-index: 100;
     padding: 20px;
     .close-icon{
+      position: absolute;
+      top: 40px;
+      right: 40px;
       width: 40px;
       height: 40px;
       transition: all .2s ease;
