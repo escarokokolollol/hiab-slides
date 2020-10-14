@@ -40,25 +40,24 @@ const StyledDiv = styled.div`
       align-content: center;
       .grid-item{
         ${'' /* height: 20vh; */}
+        background: ${props => props.theme.red};
         color: #fff;
-        line-height: 100px;
+        padding: 20px;
+        transition: all .3s ease;
         h1{
           ${'' /* width: 80%; */}
-          background: ${props => props.theme.red};
-          transition: all .2s ease;
-        }
-        h1:hover{
-          cursor: pointer;
-          color: ${props => props.theme.red};
-          background: #fff;
-          transition: all .4s ease;
         }
         h2{
-          line-height: 20px;
+          font-size: 17px;
+          margin: 0 0 8px;
           text-transform: uppercase;
-          margin-top:0;
-          color: ${props => props.theme.red};
         }
+      }
+      .grid-item:hover{
+        cursor: pointer;
+        background: #fff;
+        color: ${props => props.theme.red};
+        transition: all .3s ease;
       }
     }
   }
@@ -77,7 +76,7 @@ const StyledDiv = styled.div`
     .close-icon{
       position: absolute;
       bottom:60px;
-      right:130px;
+      right:60px;
       width: 70px;
       transform: rotate(180deg);
     }
@@ -136,19 +135,19 @@ const Page03 = () => {
             <div className="grid">
               <div className="grid-item">
                 <h2>case 1:</h2>
-                <h1 onClick={ () => setFlexibility(true)}>flexibility</h1>
+                <h1 onClick={ () => setFlexibility(true)}>Flexibility</h1>
               </div>
               <div className="grid-item">
                 <h2>case 2:</h2>
-                <h1 onClick={ () => setSimplicity(true)}>simplicity</h1>
+                <h1 onClick={ () => setSimplicity(true)}>Simplicity</h1>
               </div>
               <div className="grid-item">
                 <h2>case 3:</h2>
-                <h1 onClick={ () => setRepetition(true)}>repetition</h1>
+                <h1 onClick={ () => setRepetition(true)}>Repetition</h1>
               </div>
               <div className="grid-item">
                 <h2>case 4:</h2>
-                <h1 onClick={ () => setBasket(true) }>basket</h1>
+                <h1 onClick={ () => setBasket(true) }>Basket</h1>
               </div>
             </div>
           </div>

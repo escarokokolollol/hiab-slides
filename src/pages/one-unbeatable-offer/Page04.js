@@ -33,7 +33,7 @@ const Page04 = () => {
       <BackgroundImage image={Background}>
         <StyledDiv>
           <div className="BlackBoxHeading-wrapper">
-            <BlackBoxHeading title="Solutions for different applications"/>
+            <BlackBoxHeading title="Solutions for different applications" textUnder="Another way to look at providing customers with the best solutions to meet their specific needs is to think in terms of applications. "/>
           </div>
           <Navigation backTo="/one-unbeatable-offer/page03" to="/one-unbeatable-offer/page05"/>
         </StyledDiv>
