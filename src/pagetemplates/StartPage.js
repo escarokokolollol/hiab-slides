@@ -62,6 +62,9 @@ const StyledDiv = styled.div`
         align-items: center;
         .logos{
           bottom: 40px;
+          img{
+            margin-right: 40px;
+          }
         }
       }
     }
