@@ -7,7 +7,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 import BlackBoxHeading from "../../components/BlackBoxHeading";
 
 // images
-import Background from "../../assets/images/effer/effer-big-05.jpg";
+import Background from "../../assets/images/effer/efferarkiv04.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -26,7 +26,7 @@ const Page16 = () => {
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <BlackBoxHeading showEfferLogo title="EFFER INNOVATIONS"/>
+          <BlackBoxHeading showEfferLogo title="INNOVATIONS"/>
           <Navigation backTo="/about-effer/page015" to="/about-effer/page017"/>
         </StyledDiv>
       </BackgroundImage>
