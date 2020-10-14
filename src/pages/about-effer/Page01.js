@@ -34,11 +34,12 @@ const StyledDiv = styled.div`
 
   .show{
     opacity: 1;
-    transition: opacity .3s ease;
+    transition: all .2s ease;
   }
   .hide{
     opacity: 0;
-    transition: opacity .3s ease;
+    transform: scale(1.5);
+    transition: all .1s ease;
   }
   
 `;
