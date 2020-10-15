@@ -38,16 +38,24 @@ const StyledDiv = styled.div`
         font-weight: 800;
         font-size: 22px;
       }
-      img{
-        padding: 0px 8px;
-        width:150px;
-        transition: all .1s ease;
-        margin-right: 26px;
-      }
-      img:hover{
-        transition: all .2s ease;
-        transform: scale(1.06);
-        cursor: pointer;
+      .logos{
+        overflow:hidden;
+        .logo{
+          float: left;
+          margin-right: 26px;
+          margin-left: 10px;
+          border-bottom: 5px solid rgba(0,0,0,0);
+          img{
+            
+            width:150px;
+            transition: all .1s ease;
+          }
+          img:hover{
+            transition: all .2s ease;
+            transform: scale(1.06);
+            cursor: pointer;
+          }
+        }
       }
     }
   }
@@ -100,18 +108,22 @@ const Cases = props => {
         {props.text ? <p className="question-text"><i>{props.text}</i></p> : ""}
         <div className="answer-wrapper">
           <p className="answer-wrapper-text">Which brand would you pitch?</p>
-          <img 
-            style={efferAnswer ? { background: "#fff"} : {}}
-            src={EfferLogo} 
-            alt="effer logo" 
-            onClick={() => toggleAnswers("effer")}
-          />
-          <img 
-            style={hiabAnswer ? { background: "#fff"} : {}}
-            src={HiabLogo} 
-            alt="hiab logo"
-            onClick={() => toggleAnswers("hiab") }
-          />
+          <div className="logos">
+            <div className="logo" style={efferAnswer ? { borderBottom: "5px solid #E12123" } : {}}>
+              <img 
+                src={EfferLogo} 
+                alt="effer logo" 
+                onClick={() => toggleAnswers("effer")}
+              />
+            </div>
+            <div className="logo" style={hiabAnswer ? { borderBottom: "5px solid #E12123" } : {}}>
+              <img 
+                src={HiabLogo} 
+                alt="hiab logo"
+                onClick={() => toggleAnswers("hiab") }
+              />
+            </div>
+          </div>
         </div>
       </div>
 
