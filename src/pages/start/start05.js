@@ -84,12 +84,12 @@ const Start05 = props => {
                 <BillboardHeading text="Choose a road" />
                 <div className="hiabOrEffer">
                   <div>
-                    <Paragraphs items={["If you work with HIAB, choose the “Via Emilia” to learn the story of EFFER. "]}/>
+                    <Paragraphs items={["If you work with HIAB, choose the “Via Emilia” to learn the story of EFFER"]}/>
                     <RedArrowLink text="Via Emilia" toWhere="/about-effer/page01"/>
                   </div>
 
                   <div>
-                    <Paragraphs items={["If you work with EFFER, take “E4 North” to learn more about HIAB. "]}/>
+                    <Paragraphs items={["If you work with EFFER, take “E4 North” to learn more about HIAB"]}/>
                     <RedArrowLink text="E4 North" toWhere="/about-hiab/page01"/>
                   </div>
                 </div>

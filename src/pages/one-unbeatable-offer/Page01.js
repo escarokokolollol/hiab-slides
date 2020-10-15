@@ -54,8 +54,8 @@ const StyledDiv = styled.div`
   @media ${props => props.theme.secondBreakpoint}{
     .BlackBoxHeading-wrapper{
       h1{
-        font-size:52px;
-        line-height:52px;
+        font-size:48px;
+        line-height:48px;
       }
     }
   }
@@ -68,8 +68,8 @@ const StyledDiv = styled.div`
         }
       }
       h1{
-        font-size: 72px;
-        line-height: 72px;
+        font-size: 68px;
+        line-height: 68px;
       }
     }
   }
@@ -86,7 +86,7 @@ const Page01 = () => {
               <img src={EfferLogo} />
               <img src={HiabLogo} />
             </div>
-            <h1>Two remarable brands</h1>
+            <h1>Two remarkable brands</h1>
             <h1>One unbeatable offer</h1>
           </div>
 

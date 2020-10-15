@@ -36,7 +36,7 @@ const Page07 = () => {
           <div className="BlackBoxHeading-wrapper">
             <BlackBoxHeading title="How we see ourselves" textUnder="is very much a reflection of the image created by our customers’ experiences. In their eyes, we are the company that provides specialised cranes that enable them to conquer the toughest challenges. In the next section we’ll see how this forms the basis of EFFER’s value proposition."/>
           </div>
-          <Navigation backTo="/about-effer/page06" to="/about-effer/page08"/>
+          <Navigation backTo="/about-effer/page05" to="/about-effer/page08"/>
         </StyledDiv>
       </BackgroundImage>
     </div>

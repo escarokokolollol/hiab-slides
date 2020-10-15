@@ -124,7 +124,7 @@ const HamburgerMenu = () => {
               <h2>EFFER</h2>
               <ul>
                 <li><Link to="/about-effer/page01">Story</Link></li>
-                <li><Link to="/about-effer/page06">Value proposition</Link></li>
+                <li><Link to="/about-effer/page07">Value proposition</Link></li>
                 <li><Link to="/about-effer/page016">Innovations</Link></li>
                 <li><Link to="/about-effer/page018">Video: EXTREME</Link></li>
               </ul>
@@ -136,14 +136,15 @@ const HamburgerMenu = () => {
                 <li><Link>Story</Link></li>
                 <li><Link>Value proposition</Link></li>
                 <li><Link>Innovations</Link></li>
-                <li><Link>Video: EXTREME</Link></li>
+                <li><Link>Video: SMART</Link></li>
               </ul>
             </div>
           </div>
 
-          <h2>One unbeatable offer</h2>
+          <h2>A portfolio for every need</h2>
           <ul>
-            <li><Link to="/one-unbeatable-offer/page01">Cases</Link></li>
+            <li><Link to="/one-unbeatable-offer/page01">One unbeatable offer</Link></li>
+            <li><Link to="/one-unbeatable-offer/page03">Cases</Link></li>
             <li><Link>Applications</Link></li>
           </ul>
 

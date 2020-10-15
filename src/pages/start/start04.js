@@ -6,11 +6,11 @@ import UnorderedList from "../../components/UnorderedList";
 
 const StyledDiv = styled.div`
   h1{
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     font-size: 60px !important;
   }
   p{
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 `;
 

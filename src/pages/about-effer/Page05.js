@@ -22,7 +22,7 @@ const Page05 = () => {
           <h1>Testamonials 2</h1>
           <h1>Testamonials 3</h1>
           <p>ej färdig, kanske blir  filmer, kanske blir något annat</p>
-          <Navigation backTo="/about-effer/page04" to="/about-effer/page06"/>
+          <Navigation backTo="/about-effer/page04" to="/about-effer/page07"/>
         </StyledDiv>
       </BackgroundImage>
     </div>
