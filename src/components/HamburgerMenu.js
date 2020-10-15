@@ -26,30 +26,26 @@ const StyledDiv= styled.div`
     z-index: 40;
   }
   .menu{
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     width: 100%;
     height: 100vh;
     background: rgba(0,0,0,0.9);
     z-index: 30;
-    overflow: scroll;
     overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     .menu-inner{
       max-width: 600px;
       margin: 0 auto;
-      align-self: center;
+      margin-top: 10vh;
+      text-align: center;
       h2{
         margin-bottom:0;
+        margin-top: 10px;
         color: ${props => props.theme.red};
-        text-align: center;
       }
       .grid{
         display: grid;
-        grid-gap: 40px;
         grid-template-columns: 1fr 1fr;
         .grid-item{
 
@@ -61,10 +57,10 @@ const StyledDiv= styled.div`
       margin-top:0;
       padding:0;
       li{
-          text-align:center;
+          ${'' /* text-align:center; */}
         a{
           color: #fff;
-          font-size: 24px;
+          font-size: 22px;
           font-weight: 800;
           ${'' /* text-transform: uppercase; */}
           margin: 4px 0;
@@ -80,13 +76,29 @@ const StyledDiv= styled.div`
   @media ${props => props.theme.secondBreakpoint}{
     .menu{
       h2{
-        font-size: 38px;
+        font-size: 28px;
       }
       ul{
         li{
           a{
             opacity: 1;
-            font-size: 32px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+  @media ${props => props.theme.thirdBreakpoint}{
+    .menu{
+      .menu-inner{
+        h2{
+          font-size: 32px;
+        }
+        ul{
+          li{
+            a{
+              font-size: 28px;
+            }
           }
         }
       }
