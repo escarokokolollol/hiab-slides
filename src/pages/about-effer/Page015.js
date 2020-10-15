@@ -31,10 +31,10 @@ const StyledDiv = styled.div`
  
   @media ${props => props.theme.firstBreakpoint}{
     li{
-      font-size: 26px;
+      ${'' /* font-size: 26px; */}
     }
     li::before {
-      top:10px;
+      ${'' /* top:10px; */}
     }
   }
   @media ${props => props.theme.secondBreakpoint}{
@@ -43,10 +43,10 @@ const StyledDiv = styled.div`
       left: 35%;
     }
     li{
-      font-size: 32px;
+      ${'' /* font-size: 32px; */}
     }
     li::before {
-      top:12px;
+      ${'' /* top:12px; */}
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
@@ -55,10 +55,10 @@ const StyledDiv = styled.div`
       left: 40%;
     }
     li{
-      font-size: 38px;
+      ${'' /* font-size: 38px; */}
     }
     li::before {
-      top:20px;
+      ${'' /* top:20px; */}
     }
   }
     
