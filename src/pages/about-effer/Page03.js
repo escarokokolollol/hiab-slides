@@ -24,10 +24,7 @@ const StyledDiv = styled.div`
     font-size:42px;
     text-align: center;
   }
-  .titleUnder{
-    text-align: center;
-    font-size:28px;
-  }
+  
   .posts{
     padding: 20px 0;
     .post{
@@ -144,7 +141,6 @@ const Page03 = () => {
             </div>
           </div>
           <h1 className="title">Est. 1965. Innovating ever since.</h1>
-          <h2 className="titleUnder">Raising value and built to perform across the whole spectrum</h2>
           <div className="posts">
 
             <div className="post">

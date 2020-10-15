@@ -89,7 +89,7 @@ const Page02 = () => {
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <h1>For every need </h1>
+          <h1>Covering the full spectrum</h1>
           <div className="grid">
             <div className="item">
               <h3>Low-Medium</h3>
