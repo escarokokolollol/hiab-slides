@@ -30,7 +30,7 @@ const StyledDiv = styled.div`
       grid-gap: 40px;
       grid-template-columns: 1fr 1fr;
       img{
-        width: 100px;
+        width: 80px;
       }
     }
     h1{
@@ -42,29 +42,34 @@ const StyledDiv = styled.div`
       width: 700px;
       .logos{
         img{
-          width: 200px;
+          width: 140px;
         }
       }
       h1{
-        font-size: 32px;
-        line-height:32px;
+        font-size: 42px;
+        line-height:42px;
       }
     }
   }
   @media ${props => props.theme.secondBreakpoint}{
     .BlackBoxHeading-wrapper{
       h1{
-        font-size:46px;
-        line-height:46px;
+        font-size:52px;
+        line-height:52px;
       }
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
     .BlackBoxHeading-wrapper{
       width: 900px;
+      .logos{
+        img{
+          width: 200px;
+        }
+      }
       h1{
-        font-size: 66px;
-        line-height: 66px;
+        font-size: 72px;
+        line-height: 72px;
       }
     }
   }
