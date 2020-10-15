@@ -36,7 +36,7 @@ const StyledDiv = styled.div`
       .grid-item{
         ${'' /* height: 20vh; */}
         color: #fff;
-        line-height: 160px;
+        line-height: 90px;
         h1{
           width: 80%;
           background: ${props => props.theme.red};
