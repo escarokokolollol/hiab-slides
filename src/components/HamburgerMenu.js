@@ -145,7 +145,7 @@ const HamburgerMenu = () => {
             <div className="grid-item">
               <h2>HIAB</h2>
               <ul>
-                <li><Link>Story</Link></li>
+                <li><Link to="/about-hiab/page01">Story</Link></li>
                 <li><Link>Value proposition</Link></li>
                 <li><Link>Innovations</Link></li>
                 <li><Link>Video: SMART</Link></li>

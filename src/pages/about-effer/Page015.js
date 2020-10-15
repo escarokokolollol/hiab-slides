@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 // components 
-import RedArrowLink from "../../components/RedArrowLink";
 import Navigation from "../../components/Navigation";
 import UnorderedList from "../../components/UnorderedList";
 // page template

@@ -4,7 +4,6 @@ import styled from "styled-components";
 // components
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
-import BlackBoxHeading from "../../components/BlackBoxHeading";
 
 // images
 import Background from "../../assets/images/effer/effer-big-05.jpg";
@@ -83,8 +82,8 @@ const Page01 = () => {
 
           <div className="BlackBoxHeading-wrapper">
             <div className="logos">
-              <img src={EfferLogo} />
-              <img src={HiabLogo} />
+              <img src={EfferLogo} alt="effer logo"/>
+              <img src={HiabLogo} alt="hiab logo"/>
             </div>
             <h1>Two remarkable brands</h1>
             <h1>One unbeatable offer</h1>

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 // components
-import SingleHeadingMiddle from "../../pagetemplates/SingleHeadingMiddle";
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 

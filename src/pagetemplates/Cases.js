@@ -92,7 +92,7 @@ const Cases = props => {
   const [hiabAnswer, setHiabAnswer] = useState(false);
 
   const toggleAnswers = (whichAnswer) =>{
-    if(whichAnswer == "effer"){
+    if(whichAnswer === "effer"){
       setHiabAnswer(false);
       setEfferAnswer(true);
     }else {

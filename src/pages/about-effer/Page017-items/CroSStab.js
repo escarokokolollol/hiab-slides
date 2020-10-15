@@ -130,7 +130,7 @@ const CroSStab = () => {
           <p>Very helpful for placing and handling the load that needs to be carried</p>
         </div>
         <div className="right" onClick={() => setToggle(!toggle)}>
-          <img className="video-image" src={crosstab}  alt="image"/>
+          <img className="video-image" src={crosstab}  alt="video placeholder"/>
           <img className="play-icon" src={playButton} alt="play video"/>
         </div>
 

@@ -137,7 +137,7 @@ const Page03 = () => {
               <h1>
                 SCROLL TO NAVIGATE
               </h1>
-              <img src={ScrollArrow} />
+              <img src={ScrollArrow} alt="image1"/>
             </div>
           </div>
           <h1 className="title">Est. 1965. Innovating ever since.</h1>

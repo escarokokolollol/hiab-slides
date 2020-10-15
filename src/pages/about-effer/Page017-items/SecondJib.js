@@ -123,7 +123,7 @@ const ContinuouSlewing = () => {
         </div>
 
         <div className="right" onClick={() => setToggle(!toggle)}>
-          <img className="video-image" src={secondJib}  alt="image"/>
+          <img className="video-image" src={secondJib}  alt="video placeholder"/>
           <img className="play-icon" src={playButton} alt="play video"/>
         </div>
 

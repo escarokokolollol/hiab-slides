@@ -52,7 +52,7 @@ const Page01 = () => {
         <StyledDiv>
           <BlackBoxHeading title="But what do you know about EFFER?" textOver="So you know the story of HIAB already">
 
-            <img onClick={() => setToggle(!toggle)} className="info-button" src={InfoIcon}/>
+            <img onClick={() => setToggle(!toggle)} className="info-button" src={InfoIcon} alt="button for toggle info"/>
 
               <div className={`info-wrapper-wrapper ${toggle ? "show" : "hide"}`}>
                 <InfoWrapper text="Did you know…The Via Emilia is a 2000 year old artery running through the vital region of Italy known as “Emilia Romagna”, and is a marvel of Roman engineering."/>

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import BackgroundImage from "../../components/styled/BackgroundImage";
 import Navigation from "../../components/Navigation";
-import RedArrowLink from "../../components/RedArrowLink";
 
 import EfferLogo from "../../assets/icons/effer-logo.svg";
 import Background from "../../assets/images/effer_hiab-background.jpg";

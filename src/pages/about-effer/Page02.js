@@ -86,7 +86,7 @@ const Page02 = () => {
               <p>The “Terra dei Motori”, or “Motor Valley” is home to some of the world’s most legendary and innovative motor companies including Ferrari, Lamborghini, Maserati and Ducati. No wonder EFFER is passionate about engineering.</p>
             </div>
             <div className="grid-item wordcloud-wrapper">
-              <img className="wordcloud" src={WordCloud} />
+              <img className="wordcloud" src={WordCloud} alt="wordcloud"/>
             </div>
           </div>
           <Navigation backTo="/about-effer/page01" to="/about-effer/page03"/>

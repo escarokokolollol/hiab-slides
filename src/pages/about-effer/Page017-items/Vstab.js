@@ -128,7 +128,7 @@ const Vstab = () => {
         </div>
 
         <div className="right" onClick={() => setToggle(!toggle)}>
-          <img className="video-image" src={vstab}  alt="image"/>
+          <img className="video-image" src={vstab}  alt="video placeholder"/>
           <img className="play-icon" src={playButton} alt="play video"/>
         </div>
 

@@ -120,14 +120,14 @@ const Page017 = () => {
           {crosstab ? 
             <div className="popup">
               <CroSStab />
-              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setCrosstab(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCrosstab(false)}/> 
             </div>
             : ""
           }
           {vstab ? 
             <div className="popup">
               <Vstab />
-              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setVstab(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setVstab(false)}/> 
             </div>
             : ""
           }
@@ -135,7 +135,7 @@ const Page017 = () => {
           {continuouSlewing ? 
             <div className="popup">
               <ContinuouSlewing />
-              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setContinuouSlewing(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setContinuouSlewing(false)}/> 
             </div>
             : ""
           }
@@ -143,7 +143,7 @@ const Page017 = () => {
           {secondJib ? 
             <div className="popup">
               <SecondJib />
-              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setSecondJib(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setSecondJib(false)}/> 
             </div>
             : ""
           }
