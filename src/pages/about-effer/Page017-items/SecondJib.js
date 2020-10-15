@@ -82,8 +82,8 @@ const StyledDiv = styled.div`
         top: 50%;
         right: 50%;
         transform: translate(50%, -50%);
-        width: 80%;
-        height: 80%;
+        width: 70%;
+        height: 100%;
       }
     }
   }
