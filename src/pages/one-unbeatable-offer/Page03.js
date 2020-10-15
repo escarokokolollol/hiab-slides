@@ -133,21 +133,21 @@ const Page03 = () => {
             <h1 className="title">A few typical cases</h1>
             <p>Let’s have a look at a few example cases to learn how we can match our offer with customer needs. </p>
             <div className="grid">
-              <div className="grid-item">
+              <div onClick={ () => setFlexibility(true)} className="grid-item">
                 <h2>case 1:</h2>
-                <h1 onClick={ () => setFlexibility(true)}>Flexibility</h1>
+                <h1>Flexibility</h1>
               </div>
-              <div className="grid-item">
+              <div onClick={ () => setSimplicity(true)} className="grid-item">
                 <h2>case 2:</h2>
-                <h1 onClick={ () => setSimplicity(true)}>Simplicity</h1>
+                <h1>Simplicity</h1>
               </div>
-              <div className="grid-item">
+              <div onClick={ () => setRepetition(true)} className="grid-item">
                 <h2>case 3:</h2>
-                <h1 onClick={ () => setRepetition(true)}>Repetition</h1>
+                <h1>Repetition</h1>
               </div>
-              <div className="grid-item">
+              <div onClick={ () => setBasket(true)} className="grid-item">
                 <h2>case 4:</h2>
-                <h1 onClick={ () => setBasket(true) }>Basket</h1>
+                <h1>Basket</h1>
               </div>
             </div>
           </div>
