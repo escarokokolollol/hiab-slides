@@ -45,12 +45,8 @@ const Page04 = () => {
           <div className="BlackBoxHeading-wrapper">
             <BlackBoxHeading titleOver="Today," title="EFFER fans are our best ambassadors." textUnder="Our customers love EFFER because of what they are able to do with our cranes that they can’t accomplish with others. But also because of how we treat them. For if there’s one thing we’ve always been very good at, it’s sitting down with them, listening to what they need and building solutions around those needs.">
               <div className="social-media"> 
-                <a href="https://www.facebook.com/Effer-Crane-182804252258767" target="_blank">
-                    <img className="facebook-icon" src={FacebookIcon} />
-                </a>
-                <a href="https://www.instagram.com/effer_crane" target="_blank">
-                  <img className="instagram-icon"src={InstagramIcon} />
-                </a>
+                <img className="facebook-icon" src={FacebookIcon} />
+                <img className="instagram-icon"src={InstagramIcon} />
               </div>
             </BlackBoxHeading>
           </div>
