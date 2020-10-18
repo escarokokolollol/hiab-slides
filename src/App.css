@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   /* font-family: "Folio", sans-serif !important; */
@@ -27,7 +31,7 @@ body {
   background-attachment: fixed;
   color: #fff !important;
   font-family: Helvetica Neue;
-  
+
   overflow-x: hidden; /* to remove scrollx bar when site is more than 100vh*/
 }
 

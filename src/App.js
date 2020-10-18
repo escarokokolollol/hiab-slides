@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components";
 import DeviceOrientation, { Orientation } from 'react-screen-orientation'
 
 // link to hiab/effer photos
-// https://drive.google.com/drive/u/1/folders/13LGoxD-L-IxPqnnxe0sOMMDpXwbej_Dh 
+// https://drive.google.com/drive/u/1/folders/13LGoxD-L-IxPqnnxe0sOMMDpXwbej_Dh
 
 import theme from "./theme.js"
 
@@ -14,7 +14,7 @@ import theme from "./theme.js"
 // import DevNav from "./components/DevNav";
 
 // VIEWS
-// startpages 
+// startpages
 import Start01 from "./pages/start/start01";
 import Start02 from "./pages/start/start02";
 import Start03 from "./pages/start/start03";
@@ -52,6 +52,7 @@ import OneUnbeatableOffer01 from "./pages/one-unbeatable-offer/Page01.js";
 import OneUnbeatableOffer02 from "./pages/one-unbeatable-offer/Page02.js";
 import OneUnbeatableOffer03 from "./pages/one-unbeatable-offer/Page03.js";
 import OneUnbeatableOffer04 from "./pages/one-unbeatable-offer/Page04.js";
+import OneUnbeatableOffer05 from "./pages/one-unbeatable-offer/Page05.js";
 
 
 // message for portrait mode
@@ -100,6 +101,7 @@ const App = () => {
                         <Route path="/one-unbeatable-offer/page02" component={OneUnbeatableOffer02} />
                         <Route path="/one-unbeatable-offer/page03" component={OneUnbeatableOffer03} />
                         <Route path="/one-unbeatable-offer/page04" component={OneUnbeatableOffer04} />
+                        <Route path="/one-unbeatable-offer/page05" component={OneUnbeatableOffer05} />
 
                         <Route path="/start02" component={Start02} />
                         <Route path="/start03" component={Start03} />

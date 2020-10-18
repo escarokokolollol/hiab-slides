@@ -123,7 +123,7 @@ const HamburgerMenu = () => {
   return(
     <StyledDiv>
       <img className="hamburger-icon" alt="hamburger menu icon" onClick={() => setToggle(!toggle)}src={HamburgerIcon} />
-     
+
       <div className={`menu ${toggle ? "show" : "hide"}`}  >
        <div className="menu-inner">
           <img className="close-icon" alt="hamburger menu icon" onClick={() => setToggle(!toggle)}src={CloseIcon} />
@@ -157,7 +157,7 @@ const HamburgerMenu = () => {
           <ul>
             <li><Link to="/one-unbeatable-offer/page01">One unbeatable offer</Link></li>
             <li><Link to="/one-unbeatable-offer/page03">Cases</Link></li>
-            <li><Link>Applications</Link></li>
+            <li><Link to="/applications">Applications</Link></li>
           </ul>
 
           <ul>
