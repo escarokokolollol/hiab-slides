@@ -78,7 +78,7 @@ const Page08 = () => {
 
           <p>We do this by providing smart solutions and intelligent services for achieving consistently <strong>smooth, safe and efficient performance.</strong></p>
 
-          <Link className="compare" to="Compare with EFFER">Compare with EFFER</Link>
+          <Link className="compare" to="/about-effer/page09">Compare with EFFER</Link>
           <Navigation backTo="/about-hiab/page07" to="/about-hiab/page09"/>
         </StyledDiv>
       </BackgroundImage>

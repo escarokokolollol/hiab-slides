@@ -85,7 +85,7 @@ const Page012 = () => {
               </strong> two of the most cited reasons why customers continue to make EFFER their number one choice.
            </p>
 
-          <Link className="compare" to="Compare with HIAB">Compare with HIAB</Link>
+          <Link className="compare" to="/about-hiab/page09">Compare with HIAB</Link>
           <Navigation backTo="/about-effer/page09" to="/about-effer/page015"/>
         </StyledDiv>
       </BackgroundImage>

@@ -75,7 +75,7 @@ const Page015 = () => {
         <UnorderedList items={listItems}/>
         <Navigation backTo="/about-effer/page012" to="/about-effer/page016"/>
         <div className="flex">
-          <Link className="compare" to="Compare with HIAB">Compare with HIAB</Link>
+          <Link className="compare" to="/about-hiab/page010">Compare with HIAB</Link>
         </div>
       </StyledDiv>
     </ParagraphMiddle>

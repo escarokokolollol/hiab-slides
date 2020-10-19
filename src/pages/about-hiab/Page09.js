@@ -79,7 +79,7 @@ const Page09 = () => {
 
           <p>More than that, we are appreciated for leading the way in <strong>intelligent, data-driven solutions</strong> such as HiConnect that enable optimal service and support, and ultimately smarter operations and maximised uptime.</p>
 
-          <Link className="compare" to="Compare with EFFER">Compare with EFFER</Link>
+          <Link className="compare" to="/about-effer/page012">Compare with EFFER</Link>
           <Navigation backTo="/about-hiab/page08" to="/about-hiab/page010"/>
         </StyledDiv>
       </BackgroundImage>

@@ -78,7 +78,7 @@ const Page09 = () => {
 
           <p>We do this by passionately building and configuring cranes to meet these customers’ tough demands for <strong>extreme performance and durability.</strong></p>
 
-          <Link className="compare" to="Compare with HIAB">Compare with HIAB</Link>
+          <Link className="compare" to="/about-hiab/page08">Compare with HIAB</Link>
           <Navigation backTo="/about-effer/page08" to="/about-effer/page012"/>
         </StyledDiv>
       </BackgroundImage>
