@@ -4,10 +4,10 @@ import styled from "styled-components";
 // components
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
-import CroSStab from "./Page017-items/CroSStab";
-import Vstab from "./Page017-items/Vstab";
-import ContinuouSlewing from "./Page017-items/ContinuouSlewing";
-import SecondJib from "./Page017-items/SecondJib";
+import CroSStab from "./innovations/CroSStab";
+import Vstab from "./innovations/Vstab";
+import ContinuouSlewing from "./innovations/ContinuouSlewing";
+import SecondJib from "./innovations/SecondJib";
 
 // images
 import Background from "../../assets/images/effer/effer-inovation03.jpg";
