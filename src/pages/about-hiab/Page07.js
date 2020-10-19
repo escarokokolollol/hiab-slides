@@ -50,7 +50,7 @@ const Page07 = () => {
           <div className="BlackBoxHeading-wrapper">
             <BlackBoxHeading className="BlackBoxHeading" showHiabLogo title="”To optimise your business”"/>
           </div>
-          <Navigation backTo="/about-effer/page07" to="/about-effer/page09"/>
+          <Navigation backTo="/about-hiab/page06" to="/about-hiab/page08"/>
         </StyledDiv>
       </BackgroundImage>
     </div>
