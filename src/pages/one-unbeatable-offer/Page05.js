@@ -15,12 +15,19 @@ import * as Construction from "./applications/Construction.js";
 const StyledDiv = styled.div`
   width:90%;
   margin: 0 auto;
-  h1{
-    margin: 0;
+  .first-text{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    p{
+      margin: 26vh 0 6vh;
+      font-size: 42px;
+      font-weight: 900;
+    }
   }
   .container-grid{
     display: grid;
-    grid-template-columns: 3fr 9fr;
+    grid-template-columns: 2fr 7fr;
     .menu{
       padding-top:90px;
       ul{
@@ -36,7 +43,7 @@ const StyledDiv = styled.div`
           margin: 6px 0;
           font-weight: 900;
           transition: all .3s ease;
-          font-size: 22px;
+          font-size: 20px;
         }
         li:hover{
           cursor: pointer;
@@ -96,6 +103,9 @@ const Page05 = () => {
               </ul>
             </div>
             <div className="content-wrapper">
+            <div className="first-text">
+              <p>Take a look at some of these most common applications to learn more.</p>
+            </div>
               <article ref={constructionRef}>
                 <Application
                   title="Construction"

@@ -25,9 +25,8 @@ import hiabLogo from "../assets/icons/hiab-logo.svg";
 const StyledDiv = styled.div`
   h1.intro-title{
     margin: 0;
-    color: ${props => props.theme.red};
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 52px;
     font-weight: 900;
   }
   p.intro-text{
@@ -39,17 +38,19 @@ const StyledDiv = styled.div`
       grid-template-columns: 1fr 1fr;
       justify-items: center;
       img{
-        width: 160px;
+        width: 120px;
       }
     }
     .section{
       margin: 10px;
       h3{
         ${'' /* text-align: center; */}
+        padding-bottom: 6px;
         margin-top: 40px;
         margin: 0;
         margin-bottom: 10px;
-        font-size: 32px;
+        font-size: 26px;
+        border-bottom: 3px solid #333;
       }
       .grid{
         display: grid;
