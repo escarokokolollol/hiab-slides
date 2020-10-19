@@ -7,6 +7,7 @@ import DeviceOrientation, { Orientation } from 'react-screen-orientation'
 
 // link to hiab/effer photos
 // https://drive.google.com/drive/u/1/folders/13LGoxD-L-IxPqnnxe0sOMMDpXwbej_Dh
+// https://drive.google.com/drive/folders/1Z050lJrWo6vhi5-504Ob0OwRH_G7J4Kn
 
 import theme from "./theme.js"
 

@@ -9,6 +9,9 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 // images
 import Background from "../../assets/images/effer_hiab-background.jpg";
 
+// applications
+import * as Construction from "./applications/Construction.js";
+
 const StyledDiv = styled.div`
   width:80%;
   margin: 0 auto;
@@ -17,17 +20,22 @@ const StyledDiv = styled.div`
   }
   .container-grid{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 20px;
     .menu{
+      padding-top:140px;
       ul{
         position: fixed;
         padding: 0;
         li{
+          ${'' /* text-align: right; */}
           list-style: none;
           margin: 4px 0;
-          padding: 4px 8px;
-          background: ${props => props.theme.red};
+          padding: 6px 12px;
+          margin: 6px 0;
+          font-weight: 900;
           transition: all .3s ease;
+          font-size: 22px;
         }
         li:hover{
           cursor: pointer;
@@ -37,14 +45,13 @@ const StyledDiv = styled.div`
         }
       }
     }
-
     .content-wrapper{
       h1{
         font-size: 44px;
       }
 
       article{
-        padding: 20px 0;
+        padding-top: 100px;
         min-height: 100vh;
       }
     }
@@ -53,6 +60,11 @@ const StyledDiv = styled.div`
         background: red;
       }
     }
+  }
+
+  .active{
+    background: #fff;
+    color: ${props => props.theme.red};
   }
 `;
 
@@ -70,33 +82,22 @@ const Page05 = () => {
   const arboricultureRef = useRef(null);
   const glassRef = useRef(null);
 
-
-
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+
+  console.log(Construction.Hiab);
 
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
           <div className="container-grid">
-            <div className="menu">
-              <ul>
-                <li onClick={() => scrollToRef(constructionRef)}>Construction</li>
-                <li onClick={() => scrollToRef(roofingRef)}>Roofing</li>
-                <li onClick={() => scrollToRef(wasteRef)}>Waste & Recycling</li>
-                <li onClick={() => scrollToRef(specialtyRef)}>Specialty</li>
-                <li onClick={() => scrollToRef(heavyRef)}>Heavy Loads</li>
-                <li onClick={() => scrollToRef(logisticsRef)}>Logistics</li>
-                <li onClick={() => scrollToRef(publicRef)}>Public Spaces</li>
-                <li onClick={() => scrollToRef(arboricultureRef)}>Arboriculture</li>
-                <li onClick={() => scrollToRef(glassRef)}>Glass Plate Handling</li>
-              </ul>
-            </div>
             <div className="content-wrapper">
               <article ref={constructionRef}>
                 <Application
                   title="Construction"
                   textUnderTitle="Involves a wide range of tasks, often carried out at very high heights, and a variety of materials, requiring appropriate accessories."
+                  hiabHtml={<Construction.Hiab />}
+                  efferHtml={<Construction.Effer />}
                 />
               </article>
 
@@ -155,6 +156,20 @@ const Page05 = () => {
                   textUnderTitle="Requires a high degree of safety, ease-of-use and efficiency, as well as attention to environmental issues and city limitations."
                 />
               </article>
+            </div>
+
+            <div className="menu">
+              <ul>
+                <li onClick={() => scrollToRef(constructionRef)}>Construction</li>
+                <li onClick={() => scrollToRef(roofingRef)}>Roofing</li>
+                <li onClick={() => scrollToRef(wasteRef)}>Waste & Recycling</li>
+                <li onClick={() => scrollToRef(specialtyRef)}>Specialty</li>
+                <li onClick={() => scrollToRef(heavyRef)}>Heavy Loads</li>
+                <li onClick={() => scrollToRef(logisticsRef)}>Logistics</li>
+                <li onClick={() => scrollToRef(publicRef)}>Public Spaces</li>
+                <li onClick={() => scrollToRef(arboricultureRef)}>Arboriculture</li>
+                <li onClick={() => scrollToRef(glassRef)}>Glass Plate Handling</li>
+              </ul>
             </div>
           </div>
 

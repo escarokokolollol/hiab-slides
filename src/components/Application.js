@@ -1,5 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
+
+import efferLogo from "../assets/icons/effer-logo.svg";
+import hiabLogo from "../assets/icons/hiab-logo.svg";
+
 
 ///////////////
 //
@@ -18,6 +22,7 @@ const StyledDiv = styled.div`
   .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
     .hiab{
 
     }
@@ -35,11 +40,11 @@ const Application = props => {
       <p>{props.textUnderTitle}</p>
       <div className="content">
         <div className="hiab">
-          <h1>HIAB</h1>
+          <img src={hiabLogo} alt="hiab logo"/>
           {props.hiabHtml}
         </div>
         <div className="effer">
-          <h1>EFFER</h1>
+          <img src={efferLogo} alt="effer logo"/>
           {props.efferHtml}
         </div>
 
