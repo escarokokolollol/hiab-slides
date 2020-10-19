@@ -150,6 +150,12 @@ const Page05 = () => {
                 <Application
                   title="Roofing"
                   textUnderTitle="Requires precise, powerful rotation as well excellent crane weight, boom length ratio and lifting capacity even at considerable heights."
+                  hiabRange="For  this application, choose EFFER."
+
+                  efferRange="Models from 50 Tm upward, and others too, are much appreciated in this sector. In Belgium EFFER cranes have replaced traditional telescopic aluminium cranes for the roofing sector."
+                  efferBenefits="Precise and powerful rotation thanks to slewing ring. Decagonal structure of arms and extensions allows operation at significant heights with large loads applied to the winch without the risk of uncontrolled side slipping."
+                  efferSolutions={["Light: E175 ", "Medium: E315", "Big: E395, E525 & E685"]}
+                  efferInnovations={["Progress 2.0 with Assisted Winch Control (AWC) ", "Slewing ring on 20 Tm crane "]}
                 />
               </article>
 
