@@ -89,7 +89,7 @@ const Page01 = () => {
             <h1>One unbeatable offer</h1>
           </div>
 
-          <Navigation backTo="/about-effer/page019" to="/one-unbeatable-offer/page02"/>
+          <Navigation to="/one-unbeatable-offer/page02"/>
 
         </StyledDiv>
       </BackgroundImage>

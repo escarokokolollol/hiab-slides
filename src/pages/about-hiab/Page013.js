@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 import Navigation from "../../components/Navigation";
 
-import EfferLogo from "../../assets/icons/effer-logo.svg";
-import Background from "../../assets/images/effer_hiab-background.jpg";
+import HiabLogo from "../../assets/icons/hiab-logo.svg";
+import Background from "../../assets/images/hiab/hiab-bg-dark.jpg";
 import closeIcon from "../../assets/icons/close-menu.svg";
 
 
@@ -128,7 +128,7 @@ const StyledDiv = styled.div`
 `;
 
 
-const Page018 = props => {
+const Page013 = props => {
 
   const [toggle, setToggle] = useState(false);
 
@@ -136,10 +136,10 @@ const Page018 = props => {
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <img className="logo" alt="effer logo" src={EfferLogo} />
+          <img className="logo" alt="effer logo" src={HiabLogo} />
           
           <h2>If we could boil it down to just one word, it would be…</h2>
-          <h1>EXTREME</h1>        
+          <h1>SMART</h1>        
 
           <p className="open-popup" onClick={ () => setToggle(!toggle)}>Play video</p>
 
@@ -153,13 +153,13 @@ const Page018 = props => {
             </div>
           : ""}
 
-          <Link className="compare" to="/about-hiab/page013">Compare with HIAB</Link>
+          <Link className="compare" to="/about-effer/page018">Compare with EFFER</Link>
 
-          <Navigation backTo="/about-effer/page017" to="/about-effer/page019"/>
+          <Navigation backTo="/about-hiab/page012" to="/about-hiab/page014"/>
         </StyledDiv>
       </BackgroundImage>
     </div>
   );
 }
 
-export default Page018;
+export default Page013;

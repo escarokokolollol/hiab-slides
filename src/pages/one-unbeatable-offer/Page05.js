@@ -104,8 +104,6 @@ const Page05 = () => {
 
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
-  console.log(Construction.Hiab);
-
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
