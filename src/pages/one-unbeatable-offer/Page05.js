@@ -13,6 +13,8 @@ import Background from "../../assets/images/effer_hiab-background.jpg";
 import * as Construction from "./applications/Construction.js";
 
 const StyledDiv = styled.div`
+  width:96%;
+  margin: 0 auto;
   .first-text{
     width: 90%;
     margin: 0 auto;
@@ -41,7 +43,7 @@ const StyledDiv = styled.div`
           margin: 6px 0;
           font-weight: 900;
           transition: all .3s ease;
-          font-size: 20px;
+          font-size: 14px;
         }
         li:hover{
           cursor: pointer;
@@ -51,16 +53,38 @@ const StyledDiv = styled.div`
         }
       }
     }
-    .content-wrapper{
+  }
+
+  .content-wrapper{
     article{
       padding-top: 100px;
       min-height: 100vh;
     }
   }
 
-  .active{
-    background: #fff;
-    color: ${props => props.theme.red};
+  @media ${props => props.theme.firstBreakpoint}{
+  }
+
+  @media ${props => props.theme.secondBreakpoint}{
+  .container-grid{
+    .menu{
+      ul{
+        li{
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+  @media ${props => props.theme.thirdBreakpoint}{
+  .container-grid{
+    .menu{
+      ul{
+        li{
+          font-size: 24px;
+        }
+      }
+    }
   }
 `;
 
