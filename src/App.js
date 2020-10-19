@@ -27,6 +27,10 @@ import AboutHiabPage01 from "./pages/about-hiab/Page01";
 import AboutHiabPage02 from "./pages/about-hiab/Page02";
 import AboutHiabPage03 from "./pages/about-hiab/Page03";
 import AboutHiabPage04 from "./pages/about-hiab/Page04";
+import AboutHiabPage05 from "./pages/about-hiab/Page05.js";
+import AboutHiabPage06 from "./pages/about-hiab/Page06.js";
+import AboutHiabPage07 from "./pages/about-hiab/Page07.js";
+
 
 // effer pages
 import AboutEfferPage01 from "./pages/about-effer/Page01.js";
@@ -77,7 +81,10 @@ const App = () => {
                         <Route path="/about-hiab/page02" component={AboutHiabPage02} />
                         <Route path="/about-hiab/page03" component={AboutHiabPage03} />
                         <Route path="/about-hiab/page04" component={AboutHiabPage04} />
-
+                        <Route path="/about-hiab/page05" component={AboutHiabPage05} />
+                        <Route path="/about-hiab/page06" component={AboutHiabPage06} />
+                        <Route path="/about-hiab/page07" component={AboutHiabPage07} />
+                        
                         <Route path="/about-effer/page01" component={AboutEfferPage01} />
                         <Route path="/about-effer/page02" component={AboutEfferPage02} />
                         <Route path="/about-effer/page03" component={AboutEfferPage03}/>
