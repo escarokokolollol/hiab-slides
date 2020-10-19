@@ -31,6 +31,7 @@ const StyledDiv = styled.div`
   }
   p.intro-text{
     font-size: 22px;
+    margin-bottom: 70px;
   }
   .content{
     .image-wrapper{
@@ -38,28 +39,31 @@ const StyledDiv = styled.div`
       grid-template-columns: 1fr 1fr;
       justify-items: center;
       img{
-        width: 120px;
+        width: 250px;
       }
     }
     .section{
       margin: 10px;
       h3{
-        ${'' /* text-align: center; */}
+        text-align: center;
         padding-bottom: 6px;
-        margin-top: 40px;
+        margin-top: 100px;
+        padding-top: 40px;
         margin: 0;
-        margin-bottom: 10px;
-        font-size: 26px;
-        border-bottom: 3px solid #333;
+        color: ${props => props.theme.red};
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 500;
+        ${'' /* border-bottom: 3px solid #333; */}
       }
       .grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+        grid-gap: 40px;
         .grid-item{
           p{
             margin:0 0 10px;
-            font-size: 20px;
+            font-size: 18px;
           }
           ul{
             margin: 0px;
