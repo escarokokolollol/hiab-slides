@@ -13,8 +13,6 @@ import Background from "../../assets/images/effer_hiab-background.jpg";
 import * as Construction from "./applications/Construction.js";
 
 const StyledDiv = styled.div`
-  width:90%;
-  margin: 0 auto;
   .first-text{
     width: 90%;
     margin: 0 auto;
