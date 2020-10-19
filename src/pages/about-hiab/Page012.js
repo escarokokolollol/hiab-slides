@@ -102,13 +102,13 @@ const Page012 = () => {
             <h1>Here are just a few of the many innovations that have set HIAB apart. Explore each one before moving on.</h1>
             <div className="grid">
               <div className="grid-item">
-                <h1 onClick={ () => setCtcToggle(true)}>Crane Tip Control (CTC)</h1>
+                <h1 onClick={ () => setCtcToggle(true)}>Crane Tip Control</h1>
               </div>
               <div className="grid-item">
-                <h1 onClick={ () => setSamToggle(true)}>Semi Automatic Motion (SAM)</h1>
+                <h1 onClick={ () => setSamToggle(true)}>Semi Automatic Motion</h1>
               </div>
               <div className="grid-item">
-                <h1 onClick={ () => setSafToggle(true)}>Semi Automatic Folding (SAF)</h1>
+                <h1 onClick={ () => setSafToggle(true)}>Semi Automatic Folding</h1>
               </div>
               <div className="grid-item">
                 <h1 onClick={ () => setHiConnectToggle(true) }>HiConnect</h1>
