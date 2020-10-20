@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -9,6 +9,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 // images
 import Background from "../../assets/images/effer_hiab-background.jpg";
 import EfferLogo from "../../assets/icons/effer-logo.svg";
+import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
   margin: 0 auto;
@@ -45,6 +46,7 @@ const StyledDiv = styled.div`
     transition: all .3s ease;
   }
   .compare:hover{
+    cursor: pointer;
     background: ${props => props.theme.red};
     color: #fff;
     transition: all .3s ease;
@@ -64,9 +66,48 @@ const StyledDiv = styled.div`
       font-size: 100px;
     }
   }
+
+  .popup{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px;
+    .compare-text{
+      padding: 30px 50px;
+      background: #fff;
+      color: #000;
+      width: 50%;
+      margin: 0 auto;
+      position: relative;
+      .close-icon{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        transition: all .2s ease;
+      }
+      .close-icon:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all .2s ease;
+      }
+    }
+  }
 `;
 
 const Page09 = () => {
+
+  const [compare, setCompare] = useState(false);
+
+
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
@@ -78,7 +119,20 @@ const Page09 = () => {
 
           <p>We do this by passionately building and configuring cranes to meet these customers’ tough demands for <strong>extreme performance and durability.</strong></p>
 
-          <Link className="compare" to="/about-hiab/page08">Compare with HIAB</Link>
+          {/* <Link className="compare" to="/about-hiab/page08">Compare with HIAB</Link> */}
+          <p onClick={() => setCompare(true)} className="compare">Compare with HIAB</p>
+
+          {compare && 
+            <div className="popup">
+              <div className="compare-text">
+                <h2>What HIAB offers</h2>
+                <p>HIAB helps customers who are seeking reliable, high quality loader cranes that will enable them to optimise their business.</p>
+                <p>We do this by providing smart solutions and intelligent services for achieving consistently smooth, safe and efficient performance.</p>
+                <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
+              </div>
+            </div>
+          }
+
           <Navigation backTo="/about-effer/page08" to="/about-effer/page012"/>
         </StyledDiv>
       </BackgroundImage>
