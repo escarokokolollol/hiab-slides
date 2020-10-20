@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 // components
@@ -13,6 +13,20 @@ import InfoIcon from "../../assets/icons/info-red.svg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
+  .jump{
+    animation-name: jumpAni; 
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+  }
+
+  @keyframes jumpAni {
+    0%   {transform: scale(1);}
+    10%   {transform: scale(1.2);}
+    50%  {transform: scale(1);}
+    60% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }
   .info-button{
     position: absolute;
     top: 0;
@@ -46,13 +60,25 @@ const StyledDiv = styled.div`
 
 const Page01 = () => {
   const [toggle, setToggle] = useState();
+  const [infoButtonJump, setInfoButtonJump] = useState(false);
+
+  useEffect( () => {
+    setTimeout( () => {
+      setInfoButtonJump(true);
+    },3000);
+  });
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}> 
         <StyledDiv>
           <BlackBoxHeading title="But what do you know about EFFER?" textOver="So you know the story of HIAB already">
 
-            <img onClick={() => setToggle(!toggle)} className="info-button" src={InfoIcon} alt="button for toggle info"/>
+            <img 
+              onClick={() => setToggle(!toggle)} 
+              className={`info-button ${infoButtonJump ? "jump" : ""}`}
+              src={InfoIcon} 
+              alt="button for toggle info"
+            />
 
               <div className={`info-wrapper-wrapper ${toggle ? "show" : "hide"}`}>
                 <InfoWrapper text="Did you know…The Via Emilia is a 2000 year old artery running through the vital region of Italy known as “Emilia Romagna”, and is a marvel of Roman engineering."/>

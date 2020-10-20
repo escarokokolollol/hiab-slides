@@ -13,13 +13,6 @@ import InfoIcon from "../../assets/icons/info-red.svg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
-  .info-button{
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: scale(1);
-    transition: transform .3s ease;
-  }
   .jump{
     animation-name: jumpAni; 
     animation-duration: 1.5s;
@@ -34,7 +27,13 @@ const StyledDiv = styled.div`
     60% {transform: scale(1.2);}
     100% {transform: scale(1);}
   }
-
+  .info-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(1);
+    transition: transform .3s ease;
+  }
   .info-button:hover{
     cursor: pointer;
     transform: scale(1.2);
