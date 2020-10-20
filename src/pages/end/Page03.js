@@ -15,7 +15,7 @@ const StyledDiv = styled.div`
   h1{
     margin: 0;
   }
-  
+
   .menu{
     padding-top: 90px;
     ul{
@@ -99,18 +99,18 @@ const Page03 = () => {
           </div>
 
           <div className="content">
-            {toggleMessages && 
+            {toggleMessages &&
               <KeyMessages />
             }
-            {toggleGlossary && 
+            {toggleGlossary &&
               <Glossary />
             }
-            {toggleLinks && 
+            {toggleLinks &&
               <Links />
             }
           </div>
 
-          <Navigation to="dont no" backTo="/end02"/>
+          <Navigation backTo="/end02" to="/end04"/>
 
         </StyledDiv>
       </BackgroundImage>
