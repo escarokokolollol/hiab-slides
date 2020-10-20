@@ -7,7 +7,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 import BlackBoxHeading from "../../components/BlackBoxHeading";
 
 // images
-import Background from "../../assets/images/effer/efferarkiv01.jpg";
+import Background from "../../assets/images/effer/effernew01.png";
 
 
 const StyledDiv = styled.div`

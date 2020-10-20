@@ -73,7 +73,7 @@ import PortraitModeMessage from "../src/components/PortraitModeMessage";
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <DeviceOrientation lockOrientation={'landscape'}>
+      {/* <DeviceOrientation lockOrientation={'landscape'}> */}
         {/* Will only be in DOM in landscape */}
         <Orientation orientation='landscape' alwaysRender={false}>
           {/* <Router basename="/hiab-beta01"> */}
@@ -140,10 +140,10 @@ const App = () => {
           </Router>
         </Orientation>
         {/* Will stay in DOM, but is only visible in portrait */}
-        <Orientation orientation='portrait' alwaysRender={false}>
+        {/* <Orientation orientation='portrait' alwaysRender={false}>
           <PortraitModeMessage />
-        </Orientation>
-      </DeviceOrientation>
+        </Orientation> */}
+      {/* </DeviceOrientation> */}
     </ThemeProvider>
   );
 };

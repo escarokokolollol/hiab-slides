@@ -6,7 +6,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 import Navigation from "../../components/Navigation";
 
 import EfferLogo from "../../assets/icons/effer-logo.svg";
-import Background from "../../assets/images/effer_hiab-background.jpg";
+import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
 import closeIcon from "../../assets/icons/close-menu.svg";
 
 
