@@ -66,8 +66,8 @@ const StyledDiv = styled.div`
 const Page010 = () => {
   const listItems = [
     "Smooth, safe and efficient performance",
-    "exceptional service and support",
-    "maximised uptime for optimising operations"
+    "Exceptional service and support",
+    "Maximised uptime for optimising operations"
   ]
   return (
     <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showHiabLogo>
