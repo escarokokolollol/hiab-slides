@@ -66,6 +66,9 @@ import OneUnbeatableOffer03 from "./pages/one-unbeatable-offer/Page03.js";
 import OneUnbeatableOffer04 from "./pages/one-unbeatable-offer/Page04.js";
 import OneUnbeatableOffer05 from "./pages/one-unbeatable-offer/Page05.js";
 
+import End01 from "./pages/end/Page01.js";
+import End02 from "./pages/end/Page02.js";
+
 
 // message for portrait mode
 import PortraitModeMessage from "../src/components/PortraitModeMessage";
@@ -129,6 +132,10 @@ const App = () => {
                         <Route path="/start03" component={Start03} />
                         <Route path="/start04" component={Start04} />
                         <Route path="/start05" component={Start05} />
+
+                        <Route path="/end01" component={End01} />
+                        <Route path="/end02" component={End02} />
+
                         <Route path="/" component={Start01} />
                       </Switch>
                     </CSSTransition>

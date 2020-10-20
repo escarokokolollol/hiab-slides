@@ -222,7 +222,7 @@ const Page05 = () => {
             </div>
           </div>
 
-          <Navigation backTo="/one-unbeatable-offer/page04" to="/one-unbeatable-offer/page06"/>
+          <Navigation backTo="/one-unbeatable-offer/page04" to="/end01"/>
         </StyledDiv>
       </BackgroundImage>
     </div>

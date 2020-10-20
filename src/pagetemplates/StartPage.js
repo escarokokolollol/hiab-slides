@@ -73,7 +73,7 @@ const StyledDiv = styled.div`
 
 const StartPage = props => {
   const headingText = props.headingText;
-  const paragraphText = [...props.paragraphText];
+  const paragraphText = props.paragraphText ? [...props.paragraphText] : [];
 
   return (
     <div className="page-transition">
