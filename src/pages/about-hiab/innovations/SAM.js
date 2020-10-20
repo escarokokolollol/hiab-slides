@@ -131,7 +131,7 @@ const SAM = () => {
         {toggle ? 
           <div className="video-popup" onClick={ () => setToggle(!toggle)}>
             <div className="video-popup-inner">
-               <iframe className="video" title="SAM" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/fqEVt1eUzo4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+               <iframe className="video" title="SAM" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/fqEVt1eUzo4?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
             <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setToggle(!toggle)}/> 
           </div>
