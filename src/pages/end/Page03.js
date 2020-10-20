@@ -4,6 +4,9 @@ import styled from "styled-components";
 // components
 import BackgroundImage from "../../components/styled/BackgroundImage.js";
 import Navigation from "../../components/Navigation";
+import KeyMessages from "./Page03Views/KeyMessages";
+import Glossary from "./Page03Views/Glossary";
+import Links from "./Page03Views/Links";
 
 // images
 import Background from "../../assets/images/effer_hiab-background.jpg";
@@ -16,10 +19,12 @@ const StyledDiv = styled.div`
   .menu{
     padding-top: 90px;
     ul{
-      padding: 0 10%;
+      padding: 0;
       margin: 0 auto;
+      width: 90%;
+      max-width: 600px;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       li{
         padding: 4px 8px;
         font-size: 28px;
@@ -52,7 +57,7 @@ const StyledDiv = styled.div`
 
 const Page03 = () => {
 
-  const [toggleMessages, setToggleMessages] = useState(false);
+  const [toggleMessages, setToggleMessages] = useState(true);
   const [toggleGlossary, setToggleGlossary] = useState(false);
   const [toggleLinks, setToggleLinks] = useState(false);
 
@@ -95,13 +100,13 @@ const Page03 = () => {
 
           <div className="content">
             {toggleMessages && 
-              <h1>toggleMessages</h1>
+              <KeyMessages />
             }
             {toggleGlossary && 
-              <h1>toggleGlossary</h1>
+              <Glossary />
             }
             {toggleLinks && 
-              <h1>toggleLinks</h1>
+              <Links />
             }
           </div>
 
