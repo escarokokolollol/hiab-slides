@@ -23,6 +23,16 @@ const StyledDiv = styled.div`
   .title{
     font-size:42px;
     text-align: center;
+    margin-bottom: 0;
+    margin-top: 30vh;
+  }
+  .under-title{
+    font-size: 52px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0;
+    max-width: 900px;
+    margin-bottom: 30vh;
   }
   
   .posts{
@@ -140,7 +150,8 @@ const Page03 = () => {
               <img src={ScrollArrow} alt="image1"/>
             </div>
           </div>
-          <h1 className="title">Est. 1965. Innovating ever since.</h1>
+          <h1 className="title">Est. 1965. </h1>
+          <h1 className="under-title">Innovating ever since.</h1>
           <div className="posts">
 
             <div className="post">
