@@ -10,39 +10,36 @@ const StyledDiv = styled.div`
   h1{
     text-align: center;
   }
-  .grid{
-    max-width: 1340px;
+  .wrapper{
+    max-width: 840px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    .left{
+    .text{
+      button.play-video{
+        display: block;
+        margin: 0 auto;
+        border: none;
+
+        padding: 10px 20px;
+        font-weight:900;
+        font-size: 22px;
+        background:${props => props.theme.red}; 
+        color: #fff;
+        text-transform: uppercase;
+        transition: all .3s ease;
+      }
+      button.play-video:hover{
+        background: #fff;
+        color: ${props => props.theme.red}; 
+        cursor: pointer;
+        transition: all .3s ease;
+      }
       h3{
         margin-bottom: 0;
+        font-size: 26px;
       }
       p{
+        font-size: 22px;
         margin-top:0;
-      }
-    }
-    .right{
-      position: relative;
-      
-      img.video-image{
-        width: 100%;
-      }
-      img.video-image:hover{
-        opacity: 0.5;
-        cursor: pointer;
-      }
-      img.play-icon{
-        pointer-events: none;
-        width: 100px;
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        background: transparent;
-
       }
     }
   }
@@ -95,10 +92,6 @@ const StyledDiv = styled.div`
     }
   }
   @media ${props => props.theme.secondBreakpoint}{
-    .grid{
-      padding: 0 80px;
-      grid-template-columns: 1fr 1fr;
-    }
     h1{
       font-size: 38px;
     }
@@ -108,7 +101,6 @@ const StyledDiv = styled.div`
       font-size: 52px;
     }
   }
-  
 `;
 
 const Vstab = () => {
@@ -118,18 +110,12 @@ const Vstab = () => {
   return(
     <StyledDiv>
       <h1>V-STAB</h1>
-      <div className="grid">
-        <div className="left">
+      <div className="wrapper">
+        <div className="text">
           <p>Guarantees same advantages of the CroSStab, but with ‘set’ angle stabilizers.  </p>
-
           <p>Can fold completely into a closed position, making it possible to work in tight and small spaces.  </p>
-
           <p>Also eliminates need and cost of front stabilizers, which are less effective.</p>
-        </div>
-
-        <div className="right" onClick={() => setToggle(!toggle)}>
-          <img className="video-image" src={vstab}  alt="video placeholder"/>
-          <img className="play-icon" src={playButton} alt="play video"/>
+          <button className="play-video" onClick={() => setToggle(!toggle)}>Play video</button>
         </div>
 
         {toggle ? 
