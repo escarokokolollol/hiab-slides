@@ -10,8 +10,8 @@ import ScrollArrow from "../../assets/icons/scroll-arrow.svg";
 import Background from "../../assets/images/hiab/hiab-forestbg.jpg";
 import image1 from "../../assets/images/hiab/hiab-192.jpg";
 import image2 from "../../assets/images/hiab/hiab-elefant.jpg";
-import image3 from "../../assets/images/effer/effer-inovation03.jpg";
-import image4 from "../../assets/images/effer/effer-inovation04.jpg";
+import image3 from "../../assets/images/hiab/hiab-million01.jpg";
+import image4 from "../../assets/images/hiab/hiabcool02.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
