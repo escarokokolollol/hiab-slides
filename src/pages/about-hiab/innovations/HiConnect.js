@@ -10,39 +10,35 @@ const StyledDiv = styled.div`
   h1{
     text-align: center;
   }
-  .grid{
-    max-width: 1340px;
+  .wrapper{
+    max-width: 840px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    .left{
+    .text{
+      button.play-video{
+        display: block;
+        margin: 0 auto;
+        border: none;
+
+        padding: 10px 20px;
+        font-weight:900;
+        font-size: 22px;
+        background:${props => props.theme.red}; 
+        color: #fff;
+        text-transform: uppercase;
+        transition: all .3s ease;
+      }
+      button.play-video:hover{
+        background: #fff;
+        color: ${props => props.theme.red}; 
+        cursor: pointer;
+        transition: all .3s ease;
+      }
       h3{
         margin-bottom: 0;
       }
       p{
+        font-size: 22px;
         margin-top:0;
-      }
-    }
-    .right{
-      position: relative;
-      
-      img.video-image{
-        width: 100%;
-      }
-      img.video-image:hover{
-        opacity: 0.5;
-        cursor: pointer;
-      }
-      img.play-icon{
-        pointer-events: none;
-        width: 100px;
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        background: transparent;
-
       }
     }
   }
@@ -95,10 +91,6 @@ const StyledDiv = styled.div`
     }
   }
   @media ${props => props.theme.secondBreakpoint}{
-    .grid{
-      padding: 0 80px;
-      grid-template-columns: 1fr 1fr;
-    }
     h1{
       font-size: 38px;
     }
@@ -108,7 +100,6 @@ const StyledDiv = styled.div`
       font-size: 52px;
     }
   }
-  
 `;
 
 const HiConnect = () => {
@@ -118,16 +109,12 @@ const HiConnect = () => {
   return(
     <StyledDiv>
       <h1>HiConnect</h1>
-      <div className="grid">
-        <div className="left">
+      <div className="wrapper">
+        <div className="text">
           <p>This intelligent, connected service provides fleet managers with real-time data about their HIAB cranes’ operation and condition, giving them the power to improve performance and safety, and to avoid unnecessary downtime.</p>
+          <button className="play-video" onClick={() => setToggle(!toggle)}>Play video</button>
         </div>
-        <div className="right" onClick={() => setToggle(!toggle)}>
-          <img className="video-image" src={hiconnectImg}  alt="video placeholder"/>
-          <img className="play-icon" src={playButton} alt="play video"/>
-        </div>
-
-
+       
         {toggle ? 
           <div className="video-popup" onClick={ () => setToggle(!toggle)}>
             <div className="video-popup-inner">
