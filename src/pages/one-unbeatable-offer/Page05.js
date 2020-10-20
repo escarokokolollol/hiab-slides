@@ -9,9 +9,6 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 // images
 import Background from "../../assets/images/effer_hiab-background.jpg";
 
-// applications
-import * as Construction from "./applications/Construction.js";
-
 const StyledDiv = styled.div`
   width:96%;
   margin: 0 auto;

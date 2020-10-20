@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import samImg from "../../../assets/images/hiab/innovations-sam.png";
-import playButton from "../../../assets/icons/play-button02.png";
 import closeIcon from "../../../assets/icons/close-menu.svg";
-
 
 const StyledDiv = styled.div`
   h1{

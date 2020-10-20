@@ -8,8 +8,6 @@ import BlackBoxHeading from "../../components/BlackBoxHeading";
 
 // images
 import Background from "../../assets/images/effer/effer-big-05.jpg";
-import FacebookIcon from "../../assets/icons/facebook-icon.png";
-import InstagramIcon from "../../assets/icons/instagram-icon.png";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};

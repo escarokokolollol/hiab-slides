@@ -20,8 +20,6 @@ const StyledDiv = styled.div`
 `;
 
 const Start02 = () => {
-  const paragraphText = ["After going through this learning tool you will"]
-  
   const items = [
     "be more familiar with the brand that you have least experience of ",
     "understand each brand’s value proposition",

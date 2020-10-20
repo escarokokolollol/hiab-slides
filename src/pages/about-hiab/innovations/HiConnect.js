@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import hiconnectImg from "../../../assets/images/hiab/innovations-hiconnect.png";
-import playButton from "../../../assets/icons/play-button02.png";
 import closeIcon from "../../../assets/icons/close-menu.svg";
-
 
 const StyledDiv = styled.div`
   h1{

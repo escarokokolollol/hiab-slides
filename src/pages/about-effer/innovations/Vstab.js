@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import vstab from "../../../assets/images/effer/vstab.png";
-import playButton from "../../../assets/icons/play-button02.png";
 import closeIcon from "../../../assets/icons/close-menu.svg";
-
 
 const StyledDiv = styled.div`
   h1{

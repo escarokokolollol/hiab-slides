@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-
-import slewing from "../../../assets/images/effer/slewing.png";
-import playButton from "../../../assets/icons/play-button02.png";
 import closeIcon from "../../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`

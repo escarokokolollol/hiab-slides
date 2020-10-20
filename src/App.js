@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { ThemeProvider } from "styled-components";
-import DeviceOrientation, { Orientation } from 'react-screen-orientation'
+// import DeviceOrientation, { Orientation } from 'react-screen-orientation'
 
 // link to hiab/effer photos
 // https://drive.google.com/drive/u/1/folders/13LGoxD-L-IxPqnnxe0sOMMDpXwbej_Dh
@@ -73,14 +73,14 @@ import End04 from "./pages/end/Page04.js";
 
 
 // message for portrait mode
-import PortraitModeMessage from "../src/components/PortraitModeMessage";
+// import PortraitModeMessage from "../src/components/PortraitModeMessage";
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       {/* <DeviceOrientation lockOrientation={'landscape'}> */}
         {/* Will only be in DOM in landscape */}
-        <Orientation orientation='landscape' alwaysRender={false}>
+        {/* <Orientation orientation='landscape' alwaysRender={false}> */}
           {/* <Router basename="/hiab-beta01"> */}
           <Router>
             <div className="App">
@@ -149,7 +149,7 @@ const App = () => {
             </div>
             {/* <DevNav /> */}
           </Router>
-        </Orientation>
+        {/* </Orientation> */}
         {/* Will stay in DOM, but is only visible in portrait */}
         {/* <Orientation orientation='portrait' alwaysRender={false}>
           <PortraitModeMessage />
