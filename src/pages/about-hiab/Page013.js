@@ -146,8 +146,7 @@ const Page013 = props => {
           {toggle ? 
             <div className="video-popup" onClick={ () => setToggle(!toggle)}>
               <div className="video-popup-inner">
-              {/* <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/X3QfnmKL3yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> */}
-              <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/sVkqRawzebo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                <iframe className="video" title="SMART" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/Nr7g_POwsYQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
               </div>
               <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setToggle(!toggle)}/> 
             </div>
