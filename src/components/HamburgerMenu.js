@@ -138,7 +138,7 @@ const HamburgerMenu = () => {
                 <li><Link to="/about-effer/page01">Story</Link></li>
                 <li><Link to="/about-effer/page07">Value proposition</Link></li>
                 <li><Link to="/about-effer/page016">Innovations</Link></li>
-                <li><Link to="/about-effer/page018">Video: EXTREME</Link></li>
+                <li><Link to="/about-effer/page018">EXTREME</Link></li>
               </ul>
             </div>
 
@@ -148,7 +148,7 @@ const HamburgerMenu = () => {
                 <li><Link to="/about-hiab/page01">Story</Link></li>
                 <li><Link to="/about-hiab/page06">Value proposition</Link></li>
                 <li><Link to="/about-hiab/page011">Innovations</Link></li>
-                <li><Link to="/about-hiab/page013">Video: SMART</Link></li>
+                <li><Link to="/about-hiab/page013">SMART</Link></li>
               </ul>
             </div>
           </div>
@@ -161,8 +161,7 @@ const HamburgerMenu = () => {
           </ul>
 
           <ul>
-            <li><Link>Key messages</Link></li>
-            <li><Link>Find out more</Link></li>
+            <li><Link to="/end03">Key messages</Link></li>
           </ul>
         </div>
       </div>
