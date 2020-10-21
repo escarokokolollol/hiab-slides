@@ -5,7 +5,6 @@ import styled from "styled-components";
 import BackgroundImage from "../../components/styled/BackgroundImage.js";
 import Navigation from "../../components/Navigation";
 import KeyMessages from "./Page03Views/KeyMessages";
-import Glossary from "./Page03Views/Glossary";
 import Links from "./Page03Views/Links";
 
 // images
@@ -58,29 +57,20 @@ const StyledDiv = styled.div`
 const Page03 = () => {
 
   const [toggleMessages, setToggleMessages] = useState(true);
-  const [toggleGlossary, setToggleGlossary] = useState(false);
   const [toggleLinks, setToggleLinks] = useState(false);
 
   const toggleMenu = (val) => {
     switch (val) {
       case "messages":
         setToggleLinks(false)
-        setToggleGlossary(false)
         setToggleMessages(true);
-        break;
-      case "glossary":
-        setToggleLinks(false)
-        setToggleMessages(false);
-        setToggleGlossary(true)
         break;
       case "links":
         setToggleMessages(false);
-        setToggleGlossary(false)
         setToggleLinks(true)
         break;
       default:
         setToggleLinks(false)
-        setToggleGlossary(false)
         setToggleMessages(false);
         break;
     }
@@ -93,7 +83,6 @@ const Page03 = () => {
           <div className="menu">
             <ul>
               <li className={`${toggleMessages && "active-menu-item"}`} onClick={() => toggleMenu("messages")}>Key Messages</li>
-              <li className={`${toggleGlossary && "active-menu-item"}`} onClick={() => toggleMenu("glossary")}>Glossary</li>
               <li className={`${toggleLinks && "active-menu-item"}`} onClick={() => toggleMenu("links")}>Links</li>
             </ul>
           </div>
@@ -101,9 +90,6 @@ const Page03 = () => {
           <div className="content">
             {toggleMessages &&
               <KeyMessages />
-            }
-            {toggleGlossary &&
-              <Glossary />
             }
             {toggleLinks &&
               <Links />
