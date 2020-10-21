@@ -1,5 +1,5 @@
 const theme = {
-  red: "#E21117", // waltco red
+  red: "#E10914", // waltco red
   windowPadding: "60px",
   firstBreakpoint: `(min-width: 768px)`,
   secondBreakpoint: `(min-width: 1024px)`,

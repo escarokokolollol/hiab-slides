@@ -117,12 +117,12 @@ const Page08 = () => {
 
           <p>We do this by providing smart solutions and intelligent services for achieving consistently <strong>smooth, safe and efficient performance.</strong></p>
           
-          <p onClick={() => setCompare(true)} className="compare">Compare with HIAB</p>
+          <p onClick={() => setCompare(true)} className="compare">Compare with EFFER</p>
 
           {compare && 
             <div className="popup">
               <div className="compare-text">
-                <h2>What we offer (HIAB)</h2>
+                <h3>What we offer (EFFER)</h3>
                 <p>EFFER helps customers who need specialized cranes designed to conquer the toughest challenges.</p>
                 <p>We do this by passionately building and configuring cranes to meet these customers’ tough demands for extreme performance and durability.</p>
                 <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 

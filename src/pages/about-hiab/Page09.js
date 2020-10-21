@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -9,6 +9,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 // images
 import Background from "../../assets/images/hiab/hiab-bg-dark.jpg";
 import HiabLogo from "../../assets/icons/hiab-logo.svg";
+import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
   margin: 0 auto;
@@ -39,12 +40,13 @@ const StyledDiv = styled.div`
     font-size: 22px;
     color: ${props => props.theme.red};
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
     padding: 10px 20px;
     font-weight: 900;
     transition: all .3s ease;
   }
   .compare:hover{
+    cursor: pointer;
     background: ${props => props.theme.red};
     color: #fff;
     transition: all .3s ease;
@@ -64,9 +66,46 @@ const StyledDiv = styled.div`
       font-size: 100px;
     }
   }
+  .popup{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px;
+    .compare-text{
+      padding: 30px 50px;
+      background: #fff;
+      color: #000;
+      width: 50%;
+      margin: 0 auto;
+      position: relative;
+      .close-icon{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        transition: all .2s ease;
+      }
+      .close-icon:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all .2s ease;
+      }
+    }
+  }
 `;
 
 const Page09 = () => {
+
+  const [compare, setCompare] = useState(false);
+
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
@@ -79,7 +118,18 @@ const Page09 = () => {
 
           <p>More than that, we are appreciated for leading the way in <strong>intelligent, data-driven solutions</strong> such as HiConnect that enable optimal service and support, and ultimately smarter operations and maximised uptime.</p>
 
-          <Link className="compare" to="/about-effer/page012">Compare with EFFER</Link>
+          <p onClick={() => setCompare(true)} className="compare">Compare with EFFER</p>
+
+          {compare && 
+            <div className="popup">
+              <div className="compare-text">
+                <h2>What sets us apart (EFFER)</h2>
+                <p>Unlike other manufacturers, EFFER offers customised loader cranes with exceptional reach and power-to-weight ratio in order to reach and carry what others can’t. Innovations such as CroSStab, V-Stab, continuous slewing and the use of second jibs all demonstrate technologies that make this possible.</p>
+                <p>More than that, we are known for providing the industry’s highest level of crane customisation and personal attention, two of the most cited reasons why customers continue to make EFFER their number one choice.</p>
+                <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
+              </div>
+            </div>
+          }
           <Navigation backTo="/about-hiab/page08" to="/about-hiab/page010"/>
         </StyledDiv>
       </BackgroundImage>
