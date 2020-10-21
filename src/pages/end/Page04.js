@@ -16,17 +16,13 @@ import RedArrowLink from "../../components/RedArrowLink";
 const StyledDiv = styled.div`
   .content {
     padding: 1rem;
-    height: 100vh;
     width: 100vw;
+    height: 80vh;
+    display: flex;
     .start-page-text{
       margin: 0 auto;
-      margin-top: 20vh;
+      ${'' /* margin-top: 20vh; */}
       max-width: 900px;
-      .links{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 40px;
-      }
       h1{
         font-size: 80px;
       }
@@ -79,11 +75,6 @@ const Page04 = props => {
               <div className="start-page-text">
                 <BillboardHeading text="That’s it!"/>
                 <Paragraphs items={["Good luck in your discussions with customers and feel free to return to this tool whenever you need a refresher."]}/>
-                <div className="links">
-                  <RedArrowLink text="Start over" toWhere="/"/>
-                  <div/>
-                  {/* <RedArrowLink text="Exit" onClick={() => window.close()}/> */}
-                </div>
               </div>
               <Logos />
               <Navigation backTo="/start04"/>
