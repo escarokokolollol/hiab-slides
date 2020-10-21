@@ -20,10 +20,11 @@ const StyledDiv = styled.div`
     text-align: center;
     font-size: 44px;
     margin: 0;
+    margin-bottom:40px;
   }
   .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
     justify-items: center;
     align-items: end;
@@ -41,11 +42,21 @@ const StyledDiv = styled.div`
           width: 120px;
         }
       }
+      .logo{
+        img{
+          margin: 0 10px;
+        }
+      }
     }
     .item.third{
       .title{
         img{
           width: 140px;
+        }
+      }
+      .logo{
+        img{
+          margin: 0 10px;
         }
       }
     }
@@ -65,14 +76,21 @@ const StyledDiv = styled.div`
         h3, h4{
           margin: 0;
         }
+        h3{
+          font-size: 22px;
+          text-transform: uppercase;
+        }
         h4{
-          margin-bottom: 10px;
+          font-size: 22px;
+          font-weight: 500;
+          margin-bottom: 20px;
         }
         img{
           width: 100px;
         }
       }
       .logo{
+        margin-top:10px;
         display: flex;
         justify-content: center;
         img{
@@ -106,7 +124,7 @@ const Page02 = () => {
             <div className="item first">
               <div className="title">
                 <h3>Low-Medium</h3>
-                <h4>0-11 tm</h4>
+                <h4>0-10 txm</h4>
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
               <div className="logo">
@@ -117,7 +135,7 @@ const Page02 = () => {
             <div className="item second">
               <div className="title">
                 <h3>Midrange</h3>
-                <h4>0-11 tm</h4>
+                <h4>10-30 txm</h4>
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
               <div className="logo">
@@ -129,7 +147,7 @@ const Page02 = () => {
             <div className="item third">
               <div className="title">
                 <h3>Heavy</h3>
-                <h4>0-11 tm</h4>
+                <h4>30-100 txm</h4>
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
               <div className="logo">
@@ -141,7 +159,7 @@ const Page02 = () => {
             <div className="item fourth">
               <div className="title">
                 <h3>Super heavy</h3>
-                <h4>0-11 tm</h4>
+                <h4>100-300 txm</h4>
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
               <div className="logo">
