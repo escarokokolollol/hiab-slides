@@ -136,8 +136,6 @@ const Page012 = () => {
               </div>
             </div>
           }
-
-          {/* <Link className="compare" to="/about-hiab/page09">Compare with HIAB</Link> */}
           <Navigation backTo="/about-effer/page09" to="/about-effer/page015"/>
         </StyledDiv>
       </BackgroundImage>
