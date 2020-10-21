@@ -40,7 +40,7 @@ const StyledDiv = styled.div`
     font-size: 22px;
     color: ${props => props.theme.red};
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
     padding: 10px 20px;
     font-weight: 900;
     transition: all .3s ease;
@@ -107,7 +107,6 @@ const Page09 = () => {
 
   const [compare, setCompare] = useState(false);
 
-
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
@@ -119,7 +118,6 @@ const Page09 = () => {
 
           <p>We do this by passionately building and configuring cranes to meet these customers’ tough demands for <strong>extreme performance and durability.</strong></p>
 
-          {/* <Link className="compare" to="/about-hiab/page08">Compare with HIAB</Link> */}
           <p onClick={() => setCompare(true)} className="compare">Compare with HIAB</p>
 
           {compare && 
