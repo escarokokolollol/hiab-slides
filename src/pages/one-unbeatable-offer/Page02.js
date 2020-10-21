@@ -124,7 +124,7 @@ const Page02 = () => {
             <div className="item first">
               <div className="title">
                 <h3>Low-Medium</h3>
-                <h4>0-10 txm</h4>
+                <h4>Max 10 tm</h4>
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
               <div className="logo">
@@ -135,7 +135,7 @@ const Page02 = () => {
             <div className="item second">
               <div className="title">
                 <h3>Midrange</h3>
-                <h4>10-30 txm</h4>
+                <h4>10-30 tm</h4>
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
               <div className="logo">
@@ -147,7 +147,7 @@ const Page02 = () => {
             <div className="item third">
               <div className="title">
                 <h3>Heavy</h3>
-                <h4>30-100 txm</h4>
+                <h4>30-100 tm</h4>
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
               <div className="logo">
@@ -159,7 +159,7 @@ const Page02 = () => {
             <div className="item fourth">
               <div className="title">
                 <h3>Super heavy</h3>
-                <h4>100-300 txm</h4>
+                <h4>100-300 tm</h4>
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
               <div className="logo">

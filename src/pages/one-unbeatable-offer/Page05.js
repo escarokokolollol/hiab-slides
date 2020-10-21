@@ -16,7 +16,6 @@ const StyledDiv = styled.div`
     margin: 0 auto;
     text-align: center;
     p{
-    width: 90%;
       margin: 26vh 0 6vh;
       font-size: 42px;
       font-weight: 900;
@@ -28,6 +27,7 @@ const StyledDiv = styled.div`
     .menu{
       padding-top:90px;
       ul{
+        margin: 0;
         position: fixed;
         padding: 0;
         padding: 10px;
@@ -48,15 +48,23 @@ const StyledDiv = styled.div`
           color: ${props => props.theme.red};
           transition: all .3s ease;
         }
+        li.active{
+          color: ${props => props.theme.red};
+          transition: all .3s ease;
+        }
       }
     }
   }
 
   .content-wrapper{
+    padding: 0 40px;
     article{
-      padding-top: 100px;
+      background: rgba(0,0,0, 0.5);
+      padding: 20px;
+      margin-top: 90px;
       min-height: 100vh;
-      padding-bottom: 300px;
+      padding-bottom: 40px;
+      margin-bottom: 300px;
     }
   }
 
@@ -68,7 +76,7 @@ const StyledDiv = styled.div`
     .menu{
       ul{
         li{
-          font-size: 17px;
+          font-size: 22px;
         }
       }
     }
@@ -79,7 +87,7 @@ const StyledDiv = styled.div`
     .menu{
       ul{
         li{
-          font-size: 24px;
+          font-size: 28px;
         }
       }
     }
@@ -135,15 +143,15 @@ const Page05 = () => {
           <div className="container-grid">
             <div className="menu">
               <ul>
-                <li onClick={() => whichContent("construction")}>Construction</li>
-                <li onClick={() => whichContent("roofing")}>Roofing</li>
-                <li onClick={() => whichContent("waste")}>Waste & Recycling</li>
-                <li onClick={() => whichContent("specialty")}>Specialty</li>
-                <li onClick={() => whichContent("heavy")}>Heavy Loads</li>
-                <li onClick={() => whichContent("logistics")}>Logistics</li>
-                <li onClick={() => whichContent("publicSpaces")}>Public Spaces</li>
-                <li onClick={() => whichContent("arboriculture")}>Arboriculture</li>
-                <li onClick={() => whichContent("glass")}>Glass Plate Handling</li>
+                <li className={`${construction && "active"}`} onClick={() => whichContent("construction")}>Construction</li>
+                <li className={`${roofing && "active"}`} onClick={() => whichContent("roofing")}>Roofing</li>
+                <li className={`${waste && "active"}`} onClick={() => whichContent("waste")}>Waste & Recycling</li>
+                <li className={`${specialty && "active"}`} onClick={() => whichContent("specialty")}>Specialty</li>
+                <li className={`${heavy && "active"}`} onClick={() => whichContent("heavy")}>Heavy Loads</li>
+                <li className={`${logistics && "active"}`} onClick={() => whichContent("logistics")}>Logistics</li>
+                <li className={`${publicSpaces && "active"}`} onClick={() => whichContent("publicSpaces")}>Public Spaces</li>
+                <li className={`${arboriculture && "active"}`} onClick={() => whichContent("arboriculture")}>Arboriculture</li>
+                <li className={`${glass && "active"}`} onClick={() => whichContent("glass")}>Glass Plate Handling</li>
               </ul>
             </div>
             <div className="content-wrapper">

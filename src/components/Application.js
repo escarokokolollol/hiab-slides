@@ -31,7 +31,6 @@ const StyledDiv = styled.div`
   }
   p.intro-text{
     font-size: 22px;
-    margin-bottom: 70px;
   }
   .content{
     .image-wrapper{
@@ -39,7 +38,7 @@ const StyledDiv = styled.div`
       grid-template-columns: 1fr 1fr;
       justify-items: center;
       img{
-        width: 250px;
+        width: 160px;
       }
     }
     .section{
@@ -48,7 +47,6 @@ const StyledDiv = styled.div`
         text-align: center;
         padding-bottom: 6px;
         margin-top: 100px;
-        padding-top: 40px;
         margin: 0;
         color: ${props => props.theme.red};
         margin-bottom: 20px;
