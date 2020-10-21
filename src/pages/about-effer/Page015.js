@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -9,61 +9,76 @@ import UnorderedList from "../../components/UnorderedList";
 import ParagraphMiddle from "../../pagetemplates/ParagraphMiddle";
 // images
 import Background from "../../assets/images/effer_hiab-background.jpg";
+import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
-    .compare{
-      font-size: 22px;
-      color: ${props => props.theme.red};
-      position: absolute;
-      bottom: 80px;
-      left: 42.5vw;
-      padding: 10px 20px;
-      font-weight: 900;
-      transition: all .3s ease;
-    }
-    .compare:hover{
-      background: ${props => props.theme.red};
-      color: #fff;
-      transition: all .3s ease;
-    }
+  .compare{
+    font-size: 22px;
+    color: ${props => props.theme.red};
+    position: absolute;
+    bottom: 50px;
+    left: 30%;
+    padding: 10px 20px;
+    font-weight: 900;
+    transition: all .3s ease;
   }
- 
+  .compare:hover{
+    cursor: pointer;
+    background: ${props => props.theme.red};
+    color: #fff;
+    transition: all .3s ease;
+  }
   @media ${props => props.theme.firstBreakpoint}{
-    li{
-      ${'' /* font-size: 26px; */}
-    }
-    li::before {
-      ${'' /* top:10px; */}
-    }
+    
   }
   @media ${props => props.theme.secondBreakpoint}{
-    .RedArrowLink-wrapper{
-      width: 30%;
-      left: 35%;
-    }
-    li{
-      ${'' /* font-size: 32px; */}
-    }
-    li::before {
-      ${'' /* top:12px; */}
+    .compare{
+      left: 38%;
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
-    .RedArrowLink-wrapper{
-      width: 20%;
-      left: 40%;
-    }
-    li{
-      ${'' /* font-size: 38px; */}
-    }
-    li::before {
-      ${'' /* top:20px; */}
+    .compare{
+      left: 42%;
     }
   }
-    
+  .popup{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px;
+    .compare-text{
+      padding: 30px 50px;
+      background: #fff;
+      color: #000;
+      width: 50%;
+      margin: 0 auto;
+      position: relative;
+      .close-icon{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        transition: all .2s ease;
+      }
+      .close-icon:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all .2s ease;
+      }
+    }
+  }
 `;
 
 const Page015 = () => {
+  const [compare, setCompare] = useState(false);
   const listItems = [
     "Extreme performance and durability",
     "Highest level of customisation",
@@ -74,9 +89,21 @@ const Page015 = () => {
       <StyledDiv>
         <UnorderedList items={listItems}/>
         <Navigation backTo="/about-effer/page012" to="/about-effer/page016"/>
-        <div className="flex">
-          <Link className="compare" to="/about-hiab/page010">Compare with HIAB</Link>
-        </div>
+        <p onClick={() => setCompare(true)} className="compare">Compare with EFFER</p>
+
+        {compare && 
+          <div className="popup">
+            <div className="compare-text">
+              <h2>In a nutshell (HIAB)</h2>
+              <ul>
+                <li>Smooth, safe and efficient performance</li>
+                <li>Exceptional service and support</li>
+                <li>Maximised uptime for optimising operations</li>
+              </ul>
+              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
+            </div>
+          </div>
+        }
       </StyledDiv>
     </ParagraphMiddle>
   );
