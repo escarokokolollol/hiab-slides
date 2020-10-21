@@ -19,7 +19,7 @@ import img09 from "../../assets/images/effer/testamonials/09.png";
 import img10 from "../../assets/images/effer/testamonials/10.png";
 
 // images
-import Background from "../../assets/images/effer/effer-big-05.jpg";
+import Background from "../../assets/images/effer_hiab-background.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -31,12 +31,18 @@ const StyledDiv = styled.div`
     padding: 10px;
     background: #000;
     width: 70%;
-    .image-gallery-right-nav{
-      margin-right: -100px;
-      color: ${props => props.theme.red};
-    }
+
+    .image-gallery-right-nav,
     .image-gallery-left-nav{
       color: ${props => props.theme.red};
+      svg.image-gallery-svg{
+        height: 70px;
+      }
+    }
+    .image-gallery-right-nav{
+      margin-right: -100px;
+    }
+    .image-gallery-left-nav{
       margin-left: -100px;
     }
   }
