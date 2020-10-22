@@ -70,6 +70,15 @@ const images = [
   {
     original: img07
   },
+  {
+    original: img08
+  },
+  {
+    original: img09
+  },
+  {
+    original: img10
+  },
 
 ];
 

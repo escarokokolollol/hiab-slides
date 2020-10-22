@@ -10,8 +10,6 @@ import Paragraphs from "../../components/Paragraphs";
 import Logos from "../../components/Logos";
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
-import RedArrowLink from "../../components/RedArrowLink";
-
 
 const StyledDiv = styled.div`
   .content {

@@ -7,7 +7,6 @@ import Background from "../../assets/images/effer_hiab-background.jpg";
 // components
 import BillboardHeading from "../../components/BillboardHeading";
 import Paragraphs from "../../components/Paragraphs";
-import Logos from "../../components/Logos";
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 import RedArrowLink from "../../components/RedArrowLink";
@@ -96,7 +95,6 @@ const Start05 = props => {
                 <Paragraphs items={["Feel free to start over as often as you like, or to revisit any section using the menu at the top right."]}/>
                 
               </div>
-              <Logos />
               <Navigation backTo="/start04"/>
             </div>
           </div>
