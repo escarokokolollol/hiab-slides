@@ -143,7 +143,7 @@ const Page09 = () => {
 
           <p onClick={() => setCompare(true)} className="compare">Compare with EFFER</p>
 
-           <div className={`popup ${compare ? "show-popup" : ""}`}>
+          <div className={`popup ${compare ? "show-popup" : ""}`}>
             <div className="compare-text">
               <h2>What sets EFFER apart</h2>
               <div className="paragraphs">

@@ -27,7 +27,6 @@ const StyledList = styled.ul`
     position: absolute;
     top:6px;
     left:16px;
-    z-index: 10;
   }
   @media ${props => props.theme.firstBreakpoint}{
     ${'' /* li{

@@ -40,6 +40,11 @@ const StyledDiv = styled.div`
       left: 42%;
     }
   }
+  .popup.show-popup{
+    opacity: 1;
+    z-index:11;
+    transition: all .3s ease;
+  }
   .popup{
     display: grid;
     justify-items: center;
@@ -50,15 +55,23 @@ const StyledDiv = styled.div`
     background: rgba(0,0,0,0.4);
     top: 0;
     left: 0;
-    z-index: 100;
     padding: 20px;
+    opacity: 0;
+    z-index:-1;
     .compare-text{
       padding: 30px 50px;
-      background: #fff;
-      color: #000;
-      width: 50%;
+      background: #555;
+      color: #fff;
       margin: 0 auto;
       position: relative;
+      h2{
+        text-align: center;
+      }
+      ul{
+        li{
+          font-size: 22px;
+        }
+      }
       .close-icon{
         position: absolute;
         top: 20px;
@@ -88,21 +101,19 @@ const Page015 = () => {
       <StyledDiv>
         <UnorderedList items={listItems}/>
         <Navigation backTo="/about-effer/page012" to="/about-effer/page016"/>
-        <p onClick={() => setCompare(true)} className="compare">Compare with EFFER</p>
+        <p onClick={() => setCompare(true)} className="compare">Compare with HIAB</p>
 
-        {compare && 
-          <div className="popup">
-            <div className="compare-text">
-              <h2>In a nutshell (HIAB)</h2>
-              <ul>
-                <li>Smooth, safe and efficient performance</li>
-                <li>Exceptional service and support</li>
-                <li>Maximised uptime for optimising operations</li>
-              </ul>
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
-            </div>
+        <div className={`popup ${compare ? "show-popup" : ""}`}>
+          <div className="compare-text">
+            <h2>HIAB a nutshell</h2>
+            <ul>
+              <li>Smooth, safe and efficient performance</li>
+              <li>Exceptional service and support</li>
+              <li>Maximised uptime for optimising operations</li>
+            </ul>
+            <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
           </div>
-        }
+        </div>
       </StyledDiv>
     </ParagraphMiddle>
   );
