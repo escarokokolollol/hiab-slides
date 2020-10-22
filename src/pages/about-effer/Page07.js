@@ -40,7 +40,6 @@ const Page07 = () => {
   const [showText, setShowText] = useState(false);
 
   useEffect(() =>{
-    console.log('asdaasd');
     setTimeout(() => {
       setShowText(true);
     }, 1000);
