@@ -65,7 +65,11 @@ const StyledDiv = styled.div`
       font-size: 100px;
     }
   }
-
+  .popup.show-popup{
+    opacity: 1;
+    z-index:1;
+    transition: all .3s ease;
+  }
   .popup{
     display: grid;
     justify-items: center;
@@ -73,18 +77,29 @@ const StyledDiv = styled.div`
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     top: 0;
     left: 0;
     z-index: 100;
     padding: 20px;
+    z-index:-1;
+    opacity: 0;
+    transition: all .3s ease;
     .compare-text{
       padding: 30px 50px;
-      background: #fff;
-      color: #000;
-      width: 50%;
+      background: #000;
+      color: #fff;
+      width: 70%;
+      max-width: 1000px;
+      border: 5px solid #fff;
       margin: 0 auto;
       position: relative;
+      h2{
+        color: ${props => props.theme.red};
+        margin:0;
+        margin-top: 10px;
+        font-size: 34px;
+      }
       .close-icon{
         position: absolute;
         top: 20px;
@@ -119,16 +134,14 @@ const Page09 = () => {
 
           <p onClick={() => setCompare(true)} className="compare">Compare with HIAB</p>
 
-          {compare && 
-            <div className="popup">
-              <div className="compare-text">
-                <h2>What HIAB offers</h2>
-                <p>HIAB helps customers who are seeking reliable, high quality loader cranes that will enable them to optimise their business.</p>
-                <p>We do this by providing smart solutions and intelligent services for achieving consistently smooth, safe and efficient performance.</p>
-                <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
-              </div>
+          <div className={`popup ${compare ? "show-popup" : ""}`}>
+            <div className="compare-text">
+              <h2>What HIAB offers</h2>
+              <p>HIAB helps customers who are seeking reliable, high quality loader cranes that will enable them to optimise their business.</p>
+              <p>We do this by providing smart solutions and intelligent services for achieving consistently smooth, safe and efficient performance.</p>
+              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
             </div>
-          }
+          </div>
 
           <Navigation backTo="/about-effer/page08" to="/about-effer/page012"/>
         </StyledDiv>
