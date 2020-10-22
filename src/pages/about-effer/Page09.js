@@ -91,11 +91,9 @@ const StyledDiv = styled.div`
       color: #fff;
       width: 70%;
       max-width: 1000px;
-      border: 5px solid #fff;
       margin: 0 auto;
       position: relative;
       h2{
-        color: ${props => props.theme.red};
         margin:0;
         margin-top: 10px;
         font-size: 34px;
