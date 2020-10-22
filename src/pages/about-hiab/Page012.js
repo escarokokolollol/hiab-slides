@@ -136,7 +136,7 @@ const Page012 = () => {
         <StyledDiv>
           <div className="content-inner">
             <h1 className="title">A few innovations</h1>
-            <p>Take a look at some of the innovations that have set EFFER apart. Explore each one before moving on.</p>
+            <p>Here are just a few of the many innovations that have set HIAB apart. Explore each one before moving on.</p>
             <div className="grid">
               <div onClick={ () => setCtcToggle(true)} className="grid-item">
                 <h1>Crane Tip Control</h1>
