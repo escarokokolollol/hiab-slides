@@ -41,6 +41,11 @@ const StyledDiv = styled.div`
       left: 42%;
     }
   }
+  .popup.show-popup{
+    opacity: 1;
+    z-index:11;
+    transition: all .3s ease;
+  }
   .popup{
     display: grid;
     justify-items: center;
@@ -53,13 +58,22 @@ const StyledDiv = styled.div`
     left: 0;
     z-index: 100;
     padding: 20px;
+    z-index:-1;
+    opacity:0;
     .compare-text{
       padding: 30px 50px;
-      background: #fff;
-      color: #000;
-      width: 50%;
+      background: #555;
+      color: #fff;
       margin: 0 auto;
       position: relative;
+      h2{
+        text-align: center;
+      }
+      ul{
+        li{
+          font-size: 22px;
+        }
+      }
       .close-icon{
         position: absolute;
         top: 20px;
@@ -94,19 +108,18 @@ const Page010 = () => {
 
         <p onClick={() => setCompare(true)} className="compare">Compare with EFFER</p>
 
-        {compare && 
-          <div className="popup">
-            <div className="compare-text">
-              <h2>In a nutshell (EFFER)</h2>
-              <ul>
-                <li>Extreme performance and durability</li>
-                <li>Highest level of customisation</li>
-                <li>Unequalled personal attention</li>
-              </ul>
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
-            </div>
+        <div className={`popup ${compare ? "show-popup" : ""}`}>
+          <div className="compare-text">
+            <h2>EFFER a nutshell</h2>
+            <ul>
+              <li>Extreme performance and durability</li>
+              <li>Highest level of customisation</li>
+              <li>Unequalled personal attention</li>
+            </ul>
+            <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
           </div>
-        }
+        </div>
+
       </StyledDiv>
     </ParagraphMiddle>
   );
