@@ -10,44 +10,45 @@ import SAF from "./innovations/SAF";
 import HiConnect from "./innovations/HiConnect";
 
 // images
-import Background from "../../assets/images/hiab/hiab-bg.png";
+import Background from "../../assets/images/hiab/hiab-bg-dark.jpg";
 import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
-  height: 100vh;
+ height: 100vh;
   display: grid;
-  justify-content: center;
   align-content: center;
 
-  ${'' /* padding: 100px; */}
   .content-inner{
-    background: rgba(0,0,0,0.6);
-    padding: 40px;
     text-align: center;
     h1{
-      margin: 0 auto 40px;
-      max-width: 870px;
+      margin: 0 auto;
+    }
+    p{
+      font-size: 22px;
+      margin-bottom: 40px;
+      padding: 0 60px;
     }
     .grid{
       display: grid;
+      padding: 0 60px;
+      grid-gap: 20px;
       grid-template-columns: 1fr 1fr;
-      justify-content: center;
       align-content: center;
       .grid-item{
         ${'' /* height: 20vh; */}
+        background: ${props => props.theme.red};
         color: #fff;
-        line-height: 90px;
+        padding: 30px 20px;
+        transition: all .3s ease;
         h1{
-          width: 90%;
-          background: ${props => props.theme.red};
-          transition: all .2s ease;
+          font-size: 17px;
         }
-        h1:hover{
-          cursor: pointer;
-          color: ${props => props.theme.red};
-          background: #fff;
-          transition: all .4s ease;
-        }
+      }
+      .grid-item:hover{
+        cursor: pointer;
+        background: #fff;
+        color: ${props => props.theme.red};
+        transition: all .3s ease;
       }
     }
   }
@@ -78,10 +79,45 @@ const StyledDiv = styled.div`
     }
   }
 
+  @media ${props => props.theme.secondBreakpoint}{
+    .content-inner{
+      h1.title{
+        font-size: 67px;
+      }
+      .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .grid-item{
+          h1{
+            font-size: 15px;
+          }  
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px){
+    .content-inner{
+      .grid{
+        .grid-item{
+          h1{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  
+  }
   @media ${props => props.theme.thirdBreakpoint}{
   .content-inner{
-    h1{
+    h1.title{
+      font-size: 97px;
       max-width: 1200px;
+    }
+    .grid{
+      .grid-item{
+        h1{
+          font-size: 24px;
+        }
+      }
     }
   }
  
@@ -99,19 +135,20 @@ const Page012 = () => {
       <BackgroundImage image={Background}>
         <StyledDiv>
           <div className="content-inner">
-            <h1>Here are just a few of the many innovations that have set HIAB apart. Explore each one before moving on.</h1>
+            <h1 className="title">A few innovations</h1>
+            <p>Take a look at some of the innovations that have set EFFER apart. Explore each one before moving on.</p>
             <div className="grid">
-              <div className="grid-item">
-                <h1 onClick={ () => setCtcToggle(true)}>Crane Tip Control</h1>
+              <div onClick={ () => setCtcToggle(true)} className="grid-item">
+                <h1>Crane Tip Control</h1>
               </div>
-              <div className="grid-item">
-                <h1 onClick={ () => setSamToggle(true)}>Semi Automatic Motion</h1>
+              <div onClick={ () => setSamToggle(true)} className="grid-item">
+                <h1>Semi Automatic Motion</h1>
               </div>
-              <div className="grid-item">
-                <h1 onClick={ () => setSafToggle(true)}>Semi Automatic Folding</h1>
+              <div onClick={ () => setSafToggle(true)} className="grid-item">
+                <h1>Semi Automatic Folding</h1>
               </div>
-              <div className="grid-item">
-                <h1 onClick={ () => setHiConnectToggle(true) }>HiConnect</h1>
+              <div onClick={ () => setHiConnectToggle(true)} className="grid-item">
+                <h1>HiConnect</h1>
               </div>
             </div>
           </div>

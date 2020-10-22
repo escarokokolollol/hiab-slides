@@ -105,7 +105,7 @@ const SAF = () => {
 
   return(
     <StyledDiv>
-      <h1>SAM</h1>
+      <h1>SAF</h1>
       <div className="wrapper">
         <div className="text">
           <p>Semi Automatic Folding makes it fast and easy for any operator to park the crane in a safe and controlled way. Both folding and unfolding can now be performed with a single control lever, rather than individually operating slewing, first boom, second boom. </p>
