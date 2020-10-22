@@ -13,6 +13,16 @@ import Background from "../../assets/images/effer/effernew01.png";
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
 
+  .BlackBoxHeading{
+    h1{
+      font-size: 52px;
+      line-height: 52px;
+    }
+    p.under{
+      font-size: 38px;
+    }
+  }
+
   @media ${props => props.theme.firstBreakpoint}{
     .BlackBoxHeading{
       h1{
@@ -46,7 +56,7 @@ const Page08 = () => {
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <BlackBoxHeading className="BlackBoxHeading" showEfferLogo title="”To conquer the toughest challenges”"/>
+          <BlackBoxHeading className="BlackBoxHeading" showEfferLogo title="”To conquer the toughest challenges”" textUnder="Our value proposition"/>
           <Navigation backTo="/about-effer/page07" to="/about-effer/page09"/>
         </StyledDiv>
       </BackgroundImage>
