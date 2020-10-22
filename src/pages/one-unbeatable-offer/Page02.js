@@ -123,7 +123,7 @@ const Page02 = () => {
 
             <div className="item first">
               <div className="title">
-                <h3>Low-Medium</h3>
+                <h3>Light-Medium</h3>
                 <h4>Max 10 tm</h4>
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
