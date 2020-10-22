@@ -32,7 +32,7 @@ const StyledDiv = styled.div`
     margin: 0 auto;
     margin-top: 0;
     max-width: 900px;
-    margin-bottom: 30vh;
+    margin-bottom: 30px;
   }
   
   .posts{
@@ -101,18 +101,16 @@ const StyledDiv = styled.div`
     }
   }
   .overlay-scroll{
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100vw;
     height: 100%;
     background: rgba(0,0,0, 0.8);
     opacity: 1;
     transition: opacity 2s ease;
     display:flex;
     justify-content: center;
+    background: transparent;
+    margin-bottom: 10vh;
     h1{
-      margin-top: 30vh;
+      margin: 0 0 10px 0;
       font-size: 22px;
     }
     img{
@@ -130,18 +128,25 @@ const StyledDiv = styled.div`
 
 const Page03 = () => {
 
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
+  
+  const removeScrollText = () => {
+    setToggle(false);
+  }
   
   useEffect( () => {
-    setTimeout(() => {
-      setToggle(false);
-    }, 2000);
-  });
+    window.addEventListener('scroll', removeScrollText);
+    setTimeout( () => {
+      setToggle(true);
+    },2000);
+  },[]);
 
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
+          <h1 className="title">Est. 1965. </h1>
+          <h1 className="under-title">Innovating ever since.</h1>
           <div className={`${toggle ? "overlay-scroll" : "overlay-scroll hide"}`}>
             <div>
               <h1>
@@ -150,8 +155,7 @@ const Page03 = () => {
               <img src={ScrollArrow} alt="image1"/>
             </div>
           </div>
-          <h1 className="title">Est. 1965. </h1>
-          <h1 className="under-title">Innovating ever since.</h1>
+
           <div className="posts">
 
             <div className="post">

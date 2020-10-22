@@ -29,9 +29,8 @@ const StyledDiv = styled.div`
     font-size: 22px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 20px;
     max-width: 900px;
-    margin-bottom: 30vh;
+    margin-bottom: 30px;
   }
   
   .posts{
@@ -100,18 +99,16 @@ const StyledDiv = styled.div`
     }
   }
   .overlay-scroll{
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100vw;
     height: 100%;
     background: rgba(0,0,0, 0.8);
     opacity: 1;
     transition: opacity 2s ease;
     display:flex;
     justify-content: center;
+    background: transparent;
+    margin-bottom: 10vh;
     h1{
-      margin-top: 30vh;
+      margin: 0 0 10px 0;
       font-size: 22px;
     }
     img{
@@ -129,18 +126,28 @@ const StyledDiv = styled.div`
 
 const Page03 = () => {
 
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
+
+  
+  const removeScrollText = () => {
+    setToggle(false);
+  }
   
   useEffect( () => {
-    setTimeout(() => {
-      setToggle(false);
-    }, 2000);
-  });
+    window.addEventListener('scroll', removeScrollText);
+    setTimeout( () => {
+      setToggle(true);
+    },4000);
+  },[]);
 
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
+
+          <h1 className="title">And the rest is history</h1>
+          <p className="under-title">Not only did Eric’s new hydraulics company become more successful than his original business, but the method he came up revolutionised load handling forever. </p>
+
           <div className={`${toggle ? "overlay-scroll" : "overlay-scroll hide"}`}>
             <div>
               <h1>
@@ -149,9 +156,6 @@ const Page03 = () => {
               <img src={ScrollArrow} alt="image1"/>
             </div>
           </div>
-
-          <h1 className="title">And the rest is history</h1>
-          <p className="under-title">Not only did Eric’s new hydraulics company become more successful than his original business, but the method he came up revolutionised load handling forever. </p>
 
           <div className="posts">
             <div className="post">
