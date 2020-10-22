@@ -3,7 +3,7 @@ import React from "react";
 import StartPage from "../../pagetemplates/StartPage";
 
 const Start03 = () => {
-  const paragraphText = ["This tool begins with the stories of each brand – where it comes from, what makes it special and how is it perceived, both internally and by our fans. After that we look at each brand’s value proposition, the portfolio spectrum, cases and applications. We finish with a toolbox to help you in your dialogue with customers, as well as a list of additional resources."]
+  const paragraphText = ["This tool begins with the stories of each brand – where it comes from, what makes it special and how it is perceived. We compare each brand’s value proposition, then look at a number of cases and applications to see how the brands complement each other. At the end of the day, everything you find here is to help you in your dialogue with customers."]
 
   return(
     <StartPage 

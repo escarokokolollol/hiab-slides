@@ -20,14 +20,17 @@ const Start04 = () => {
   const items = [
     "be more familiar with the brand you have least experience of",
     "understand each brand’s value proposition",
-    "have a better understanding of how our portfolio, from Low to Super Heavy, can be matched to different customer needs and applications",
+    "feel better equipped to match our portfolio to different customer needs",
     "know which key messages to impress upon customers"
   ];
 
   return(
+
+    
+     
     <StyledDiv>
       <StartPage 
-        headingText="Learn what you need to know"
+        headingText="When done you should"
         paragraphText={paragraphText}
         to="/start05" 
         backTo="/start03" 
