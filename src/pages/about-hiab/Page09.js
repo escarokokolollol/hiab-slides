@@ -29,11 +29,16 @@ const StyledDiv = styled.div`
     margin: 0;
   }
 
-  p{
-    font-weight: 100;
-    max-width: 890px;
-    font-size: 22px;
-    text-align: left;
+  .paragraphs{
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    p{
+      font-weight: 100;
+      max-width: 890px;
+      font-size: 22px;
+      text-align: left;
+    }
   }
   .compare{
     font-size: 22px;
@@ -65,6 +70,11 @@ const StyledDiv = styled.div`
       font-size: 100px;
     }
   }
+  .popup.show-popup{
+    opacity: 1;
+    z-index:1;
+    transition: all .3s ease;
+  }
   .popup{
     display: grid;
     justify-items: center;
@@ -72,18 +82,32 @@ const StyledDiv = styled.div`
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     top: 0;
     left: 0;
     z-index: 100;
     padding: 20px;
+    z-index:-1;
+    opacity: 0;
+    transition: all .3s ease;
     .compare-text{
       padding: 30px 50px;
-      background: #fff;
-      color: #000;
-      width: 50%;
+      background: #555;
+      color: #fff;
+      width: 70%;
+      max-width: 1000px;
       margin: 0 auto;
       position: relative;
+      .paragraphs{
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr;  
+      }
+      h2{
+        margin:0;
+        margin-top: 10px;
+        font-size: 34px;
+      }
       .close-icon{
         position: absolute;
         top: 20px;
@@ -112,23 +136,23 @@ const Page09 = () => {
          <img className="logo" alt="hiab logo" src={HiabLogo} />
 
           <h1>What sets us apart</h1>
-
-          <p>Unlike other manufacturers, HIAB is known for its unique position as <strong>the inventor of the original truck-mounted loader crane</strong> and has been pioneering the industry for over 75 years. Innovations such as Crane Tip Control and Semi Automatic Folding are examples of technologies designed to make crane operation safer, more efficient and easier to use than the competition.</p>
-
-          <p>More than that, we are appreciated for leading the way in <strong>intelligent, data-driven solutions</strong> such as HiConnect that enable optimal service and support, and ultimately smarter operations and maximised uptime.</p>
+          <div className="paragraphs">
+            <p>Unlike other manufacturers, HIAB is known for its unique position as <strong>the inventor of the original truck-mounted loader crane</strong> and has been pioneering the industry for over 75 years. Innovations such as Crane Tip Control and Semi Automatic Folding are examples of technologies designed to make crane operation safer, more efficient and easier to use than the competition.</p>
+            <p>More than that, we are appreciated for leading the way in <strong>intelligent, data-driven solutions</strong> such as HiConnect that enable optimal service and support, and ultimately smarter operations and maximised uptime.</p>
+          </div>
 
           <p onClick={() => setCompare(true)} className="compare">Compare with EFFER</p>
 
-          {compare && 
-            <div className="popup">
-              <div className="compare-text">
-                <h2>What sets us apart (EFFER)</h2>
-                <p>Unlike other manufacturers, EFFER offers customised loader cranes with exceptional reach and power-to-weight ratio in order to reach and carry what others can’t. Innovations such as CroSStab, V-Stab, continuous slewing and the use of second jibs all demonstrate technologies that make this possible.</p>
-                <p>More than that, we are known for providing the industry’s highest level of crane customisation and personal attention, two of the most cited reasons why customers continue to make EFFER their number one choice.</p>
-                <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
+           <div className={`popup ${compare ? "show-popup" : ""}`}>
+            <div className="compare-text">
+              <h2>What sets EFFER apart</h2>
+              <div className="paragraphs">
+                <p>Unlike other manufacturers, EFFER offers customised loader cranes with <strong>exceptional reach and power-to-weight ratio in order to reach and carry what others can’t.</strong> Innovations such as CroSStab, V-Stab, continuous slewing and the use of second jibs all demonstrate technologies that make this possible.</p>
+                <p>More than that, we are known for providing the <strong>industry’s highest level of crane customisation and personal attention,</strong> two of the most cited reasons why customers continue to make EFFER their number one choice.</p>
               </div>
+              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
             </div>
-          }
+          </div>
           <Navigation backTo="/about-hiab/page08" to="/about-hiab/page010"/>
         </StyledDiv>
       </BackgroundImage>

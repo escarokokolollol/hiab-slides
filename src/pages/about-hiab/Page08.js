@@ -29,11 +29,16 @@ const StyledDiv = styled.div`
     margin: 0;
   }
 
-  p{
-    font-weight: 100;
-    max-width: 890px;
-    font-size: 22px;
-    text-align: left;
+  .paragraphs{
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    p{
+      font-weight: 100;
+      max-width: 890px;
+      font-size: 22px;
+      text-align: left;
+    }
   }
   .compare{
     font-size: 22px;
@@ -65,7 +70,11 @@ const StyledDiv = styled.div`
       font-size: 100px;
     }
   }
-
+  .popup.show-popup{
+    opacity: 1;
+    z-index:1;
+    transition: all .3s ease;
+  }
   .popup{
     display: grid;
     justify-items: center;
@@ -73,18 +82,32 @@ const StyledDiv = styled.div`
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     top: 0;
     left: 0;
     z-index: 100;
     padding: 20px;
+    z-index:-1;
+    opacity: 0;
+    transition: all .3s ease;
     .compare-text{
       padding: 30px 50px;
-      background: #fff;
-      color: #000;
-      width: 50%;
+      background: #555;
+      color: #fff;
+      width: 70%;
+      max-width: 1000px;
       margin: 0 auto;
       position: relative;
+      .paragraphs{
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr;  
+      }
+      h2{
+        margin:0;
+        margin-top: 10px;
+        font-size: 34px;
+      }
       .close-icon{
         position: absolute;
         top: 20px;
@@ -113,22 +136,23 @@ const Page08 = () => {
          <img className="logo" alt="hiab logo" src={HiabLogo} />
 
           <h1>What we offer</h1>
-          <p>HIAB helps customers who are seeking reliable, high quality loader cranes that will <strong>enable them to optimise their business.</strong></p>
-
-          <p>We do this by providing smart solutions and intelligent services for achieving consistently <strong>smooth, safe and efficient performance.</strong></p>
+          <div className="paragraphs">
+            <p>HIAB helps customers who are seeking reliable, high quality loader cranes that will <strong>enable them to optimise their business.</strong></p>
+            <p>We do this by providing smart solutions and intelligent services for achieving consistently <strong>smooth, safe and efficient performance.</strong></p>
+          </div>
           
           <p onClick={() => setCompare(true)} className="compare">Compare with EFFER</p>
 
-          {compare && 
-            <div className="popup">
-              <div className="compare-text">
-                <h3>What we offer (EFFER)</h3>
-                <p>EFFER helps customers who need specialized cranes designed to conquer the toughest challenges.</p>
-                <p>We do this by passionately building and configuring cranes to meet these customers’ tough demands for extreme performance and durability.</p>
-                <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
+           <div className={`popup ${compare ? "show-popup" : ""}`}>
+            <div className="compare-text">
+              <h2>What EFFER offers</h2>
+              <div className="paragraphs">
+                <p>EFFER helps customers who need specialized cranes designed <strong>to conquer the toughest challenges.</strong></p>
+                <p>We do this by passionately building and configuring cranes to meet these customers’ tough demands for <strong>extreme performance and durability.</strong></p>
               </div>
+              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
             </div>
-          }
+          </div>
           <Navigation backTo="/about-hiab/page07" to="/about-hiab/page09"/>
         </StyledDiv>
       </BackgroundImage>
