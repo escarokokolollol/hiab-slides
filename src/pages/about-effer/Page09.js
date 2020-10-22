@@ -31,6 +31,7 @@ const StyledDiv = styled.div`
 
   .paragraphs{
     display: grid;
+    grid-gap: 16px;
     grid-template-columns: 1fr 1fr;
     p{
       font-weight: 100;
