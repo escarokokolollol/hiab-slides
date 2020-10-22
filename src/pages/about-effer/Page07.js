@@ -52,7 +52,6 @@ const Page07 = () => {
           <div className={`black-box ${showText ? "show-black-box" : ""}`}>
             <BlackBoxHeading title="How we see ourselves" textUnder="is very much a reflection of the image created by our customers’ experiences. In their eyes, we are the company that provides specialised cranes that enable them to conquer the toughest challenges. In the next section we’ll see how this forms the basis of EFFER’s value proposition."/>
           </div>
-            <h1>hide text</h1>
           <Navigation backTo="/about-effer/page05" to="/about-effer/page08"/>
 
         </StyledDiv>
