@@ -44,7 +44,7 @@ const Page04 = () => {
       <BackgroundImage image={Background}>
         <StyledDiv>
           <div className="BlackBoxHeading-wrapper">
-            <BlackBoxHeading titleOver="Today," title="EFFER fans are our best ambassadors." textUnder="Our customers love EFFER because of what they are able to do with our cranes that they can’t accomplish with others. But also because of how we treat them. For if there’s one thing we’ve always been very good at, it’s sitting down with them, listening to what they need and building solutions around those needs.">
+            <BlackBoxHeading  title="EFFER fans are our best ambassadors." textUnder="Customers tell us over and over again how much they value the attention we give them. How we sit down with them, listen to what they need, and build solutions that enable them to conquer those tough challenges. And their enthusiasm over the results is unmistakeable.">
               <div className="social-media"> 
                 <img className="icon facebook-icon" src={FacebookIcon} alt="facebook"/>
                 <img className="icon instagram-icon"src={InstagramIcon} alt="instagram"/>

@@ -50,7 +50,7 @@ const Page07 = () => {
       <BackgroundImage image={Background}>
         <StyledDiv>
           <div className={`black-box ${showText ? "show-black-box" : ""}`}>
-            <BlackBoxHeading title="How we see ourselves" textUnder="is very much a reflection of the image created by our customers’ experiences. In their eyes, we are the company that provides specialised cranes that enable them to conquer the toughest challenges. In the next section we’ll see how this forms the basis of EFFER’s value proposition."/>
+            <BlackBoxHeading title="Proud, passionate and pumped" textUnder="Our customers love EFFER because they love challenges, and our cranes enable them to go after what others can’t. It’s that spirit that runs through the “Terra dei Motori” and through our veins, and has made us what we are today."/>
           </div>
           <Navigation backTo="/about-effer/page05" to="/about-effer/page08"/>
 
