@@ -10,44 +10,45 @@ import ContinuouSlewing from "./innovations/ContinuouSlewing";
 import SecondJib from "./innovations/SecondJib";
 
 // images
-import Background from "../../assets/images/effer/effer-inovation03.jpg";
+import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
 import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
   height: 100vh;
   display: grid;
-  justify-content: center;
   align-content: center;
 
-  ${'' /* padding: 100px; */}
   .content-inner{
-    background: rgba(0,0,0,0.6);
-    padding: 40px;
     text-align: center;
     h1{
-      margin: 0 auto 40px;
-      max-width: 870px;
+      margin: 0 auto;
+    }
+    p{
+      font-size: 22px;
+      margin-bottom: 40px;
+      padding: 0 60px;
     }
     .grid{
       display: grid;
+      padding: 0 60px;
+      grid-gap: 20px;
       grid-template-columns: 1fr 1fr;
-      justify-content: center;
       align-content: center;
       .grid-item{
         ${'' /* height: 20vh; */}
+        background: ${props => props.theme.red};
         color: #fff;
-        line-height: 90px;
+        padding: 30px 20px;
+        transition: all .3s ease;
         h1{
-          width: 80%;
-          background: ${props => props.theme.red};
-          transition: all .2s ease;
+          font-size: 17px;
         }
-        h1:hover{
-          cursor: pointer;
-          color: ${props => props.theme.red};
-          background: #fff;
-          transition: all .4s ease;
-        }
+      }
+      .grid-item:hover{
+        cursor: pointer;
+        background: #fff;
+        color: ${props => props.theme.red};
+        transition: all .3s ease;
       }
     }
   }
@@ -78,11 +79,58 @@ const StyledDiv = styled.div`
     }
   }
 
+  @media ${props => props.theme.secondBreakpoint}{
+    .content-inner{
+      h1.title{
+        font-size: 67px;
+      }
+      .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .grid-item{
+          h1{
+            font-size: 18px;
+          }  
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px){
+    .content-inner{
+      .grid{
+        .grid-item{
+          h1{
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  
+  }
   @media ${props => props.theme.thirdBreakpoint}{
   .content-inner{
-    h1{
+    h1.title{
+      font-size: 97px;
       max-width: 1200px;
     }
+    .grid{
+      .grid-item{
+        h1{
+          font-size: 26px;
+        }
+      }
+    }
+  }
+ 
+  ${'' /* transition */}
+  .hide{
+    opacity: 0;
+    z-index: -10;
+    transition: opacity .3s ease;
+  }
+  .show{
+    opacity: 1;
+    z-index: 30;
+    transition: opacity .3s ease;
   }
  
 `;
@@ -98,8 +146,26 @@ const Page017 = () => {
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-
           <div className="content-inner">
+            <h1 className="title">A few innovations</h1>
+            <p>Take a look at some of the innovations that have set EFFER apart. Explore each one before moving on.</p>
+            <div className="grid">
+              <div onClick={ () => setCrosstab(true)} className="grid-item">
+                <h1>CroSStab</h1>
+              </div>
+              <div onClick={ () => setVstab(true)} className="grid-item">
+                <h1>V-stab</h1>
+              </div>
+              <div onClick={ () => setContinuouSlewing(true)} className="grid-item">
+                <h1>Continuous Slewing</h1>
+              </div>
+              <div onClick={ () => setSecondJib(true)} className="grid-item">
+                <h1>Second Jib</h1>
+              </div>
+            </div>
+          </div>
+
+          {'' /* <div className="content-inner">
             <h1>Take a look at some of the innovations that have set EFFER apart. Explore each one before moving on.</h1>
             <div className="grid">
               <div className="grid-item">
@@ -115,7 +181,7 @@ const Page017 = () => {
                 <h1 onClick={ () => setSecondJib(true) }>Second Jib</h1>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {crosstab ? 
             <div className="popup">
