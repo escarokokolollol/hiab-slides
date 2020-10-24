@@ -13,7 +13,8 @@ import closeIcon from "../../assets/icons/close-menu.svg";
 const StyledDiv = styled.div`
   margin: 0 auto;
   height: 100vh;
-  width: 80%;
+  width: 90%;
+  max-width:1200px;
   display: flex;
   flex-direction: column;
   text-align:center;
@@ -31,7 +32,7 @@ const StyledDiv = styled.div`
 
   .paragraphs{
     display: grid;
-    grid-gap: 16px;
+    grid-gap: 60px;
     grid-template-columns: 1fr 1fr;
     p{
       font-weight: 100;
@@ -101,7 +102,7 @@ const StyledDiv = styled.div`
       .paragraphs{
         display: grid;
         grid-gap: 16px;
-        grid-template-columns: 1fr 1fr;  
+        grid-template-columns: 1fr 1fr;
       }
       h2{
         margin:0;
@@ -137,13 +138,13 @@ const Page012 = () => {
 
           <h1>What sets us apart</h1>
           <div className="paragraphs">
-            <p>Unlike other manufacturers, EFFER offers customised loader cranes with 
-                <strong> exceptional reach and power-to-weight ratio in order to reach and carry what others can’t. 
+            <p>Unlike other manufacturers, EFFER offers customised loader cranes with
+                <strong> exceptional reach and power-to-weight ratio in order to reach and carry what others can’t.
                 </strong> Innovations such as CroSStab, V-Stab, continuous slewing and the use of second jibs all demonstrate technologies that make this possible.
               </p>
 
             <p>
-              More than that, we are known for providing the  
+              More than that, we are known for providing the
                 <strong> industry’s highest level of crane customisation and personal attention,
                 </strong> two of the most cited reasons why customers continue to make EFFER their number one choice.
             </p>
@@ -158,7 +159,7 @@ const Page012 = () => {
                 <p>Unlike other manufacturers, HIAB is known for its unique position as <strong>the inventor of the original truck-mounted loader</strong> crane and has been pioneering the industry for over 75 years. Innovations such as Crane Tip Control and Semi Automatic Folding are examples of technologies designed to make crane operation safer, more efficient and easier to use than the competition.</p>
                 <p>More than that, we are appreciated for leading the way in <strong>intelligent, data-driven solutions </strong>such as HiConnect that enable optimal service and support, and ultimately smarter operations and maximised uptime.</p>
               </div>
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/>
             </div>
           </div>
 

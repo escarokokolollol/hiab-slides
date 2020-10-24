@@ -13,7 +13,8 @@ import closeIcon from "../../assets/icons/close-menu.svg";
 const StyledDiv = styled.div`
   margin: 0 auto;
   height: 100vh;
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   text-align:center;
@@ -31,11 +32,10 @@ const StyledDiv = styled.div`
 
   .paragraphs{
     display: grid;
-    grid-gap: 16px;
+    grid-gap: 60px;
     grid-template-columns: 1fr 1fr;
     p{
       font-weight: 100;
-      max-width: 890px;
       font-size: 22px;
       text-align: left;
     }
@@ -101,7 +101,7 @@ const StyledDiv = styled.div`
       .paragraphs{
         display: grid;
         grid-gap: 16px;
-        grid-template-columns: 1fr 1fr;  
+        grid-template-columns: 1fr 1fr;
       }
       h2{
         margin:0;
@@ -150,7 +150,7 @@ const Page09 = () => {
                 <p>HIAB helps customers who are seeking reliable, high quality loader cranes that will <strong>enable them to optimise their business.</strong></p>
                 <p>We do this by providing smart solutions and intelligent services for achieving consistently <strong>smooth, safe and efficient performance.</strong></p>
               </div>
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/>
             </div>
           </div>
 
