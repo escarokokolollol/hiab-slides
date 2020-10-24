@@ -15,7 +15,6 @@ const StyledDiv = styled.div`
 `;
 
 const Start04 = () => {
-  const paragraphText = ["After going through this learning tool you will"]
   
   const items = [
     "be more familiar with the brand you have least experience of",
@@ -26,14 +25,13 @@ const Start04 = () => {
 
   return(
 
-    
-     
+
+
     <StyledDiv>
-      <StartPage 
+      <StartPage
         headingText="When done you should"
-        paragraphText={paragraphText}
-        to="/start05" 
-        backTo="/start03" 
+        to="/start05"
+        backTo="/start03"
       >
       <div>
         <UnorderedList items={items}/>
