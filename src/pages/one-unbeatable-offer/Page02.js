@@ -72,7 +72,7 @@ const StyledDiv = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
         h3, h4{
           margin: 0;
         }
@@ -101,7 +101,7 @@ const StyledDiv = styled.div`
   }
 
   @media ${props => props.theme.firstBreakpoint}{
-  
+
   }
   @media ${props => props.theme.secondBreakpoint}{
     .grid{
@@ -123,7 +123,7 @@ const Page02 = () => {
 
             <div className="item first">
               <div className="title">
-                <h3>Light-Medium</h3>
+                <h3>Light</h3>
                 <h4>Max 10 tm</h4>
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
