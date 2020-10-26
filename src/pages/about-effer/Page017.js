@@ -53,6 +53,16 @@ const StyledDiv = styled.div`
       }
     }
   }
+  .popup.show{
+    opacity: 1;
+    z-index: 10;
+    transition: all .4s ease;
+  }
+  .popup.hide{
+    opacity: 0;
+    z-index: -10;
+    transition: all .4s ease;
+  }
   .popup{
     display: grid;
     justify-items: center;
@@ -63,7 +73,6 @@ const StyledDiv = styled.div`
     background: #000;
     top: 0;
     left: 0;
-    z-index: 100;
     padding: 20px;
     .close-arrow{
       position: absolute;
@@ -119,18 +128,7 @@ const StyledDiv = styled.div`
       }
     }
   }
- 
-  ${'' /* transition */}
-  .hide{
-    opacity: 0;
-    z-index: -10;
-    transition: opacity .3s ease;
-  }
-  .show{
-    opacity: 1;
-    z-index: 30;
-    transition: opacity .3s ease;
-  }
+  
  
 `;
 
@@ -164,36 +162,25 @@ const Page017 = () => {
             </div>
           </div>
 
-          {crosstab ?
-            <div className="popup">
-              <CroSStab />
-              <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setCrosstab(false)} />
-            </div>
-            : ""
-          }
-          {vstab ?
-            <div className="popup">
-              <Vstab />
-              <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setVstab(false)} />
-            </div>
-            : ""
-          }
+          <div className={`popup ${crosstab ? "show" : "hide"}`}  >
+            <CroSStab />
+            <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setCrosstab(false)} />
+          </div>
 
-          {continuouSlewing ?
-            <div className="popup">
-              <ContinuouSlewing />
-              <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setContinuouSlewing(false)} />
-            </div>
-            : ""
-          }
+          <div className={`popup ${vstab ? "show" : "hide"}`}  >
+            <Vstab />
+            <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setVstab(false)} />
+          </div>
 
-          {secondJib ?
-            <div className="popup">
-              <SecondJib />
-              <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setSecondJib(false)} />
-            </div>
-            : ""
-          }
+          <div className={`popup ${continuouSlewing ? "show" : "hide"}`}  >
+            <ContinuouSlewing />
+            <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setContinuouSlewing(false)} />
+          </div>
+
+          <div className={`popup ${secondJib ? "show" : "hide"}`}  >
+            <SecondJib />
+            <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setSecondJib(false)} />
+          </div>
 
           <Navigation backTo="/about-effer/page012" to="/about-effer/page015" />
         </StyledDiv>
