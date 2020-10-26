@@ -104,7 +104,7 @@ const CroSStab = () => {
 
   const [toggle, setToggle] = useState(false);
 
-  return(
+  return (
     <StyledDiv>
       <h1>CroSStab – only on EFFER!</h1>
       <div className="wrapper">
@@ -121,14 +121,14 @@ const CroSStab = () => {
         </div>
 
 
-        {toggle ? 
-          <div className="video-popup" onClick={ () => setToggle(!toggle)}>
+        {toggle ?
+          <div className="video-popup" onClick={() => setToggle(!toggle)}>
             <div className="video-popup-inner">
               <iframe className="video" title="CroSStab" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/m5xLC8FS-6k?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
-            <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setToggle(!toggle)}/> 
+            <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setToggle(!toggle)} />
           </div>
-        : ""}
+          : ""}
       </div>
     </StyledDiv>
   );
