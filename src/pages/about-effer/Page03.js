@@ -8,10 +8,14 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 // images
 import ScrollArrow from "../../assets/icons/scroll-arrow.svg";
 import Background from "../../assets/images/dark-background01.jpg";
-import image1 from "../../assets/images/effer/effer-inovation01.jpg";
+import image1 from "../../assets/images/effer/timeline/1966.jpg";
 import image2 from "../../assets/images/effer/effer-inovation02.jpg";
-import image3 from "../../assets/images/effer/effer-inovation03.jpg";
-import image4 from "../../assets/images/effer/effer-inovation04.jpg";
+import image3 from "../../assets/images/effer/timeline/1985.jpg";
+import image4 from "../../assets/images/effer/timeline/1988.jpg";
+import image5 from "../../assets/images/effer/timeline/2001.jpg";
+import image6 from "../../assets/images/effer/timeline/2008.jpg";
+import image7 from "../../assets/images/effer/timeline/2014.jpg";
+import image8 from "../../assets/images/effer/timeline/2018.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -129,17 +133,17 @@ const StyledDiv = styled.div`
 const Page03 = () => {
 
   const [toggle, setToggle] = useState(false);
-  
+
   const removeScrollText = () => {
     setToggle(false);
   }
-  
-  useEffect( () => {
+
+  useEffect(() => {
     window.addEventListener('scroll', removeScrollText);
-    setTimeout( () => {
+    setTimeout(() => {
       setToggle(true);
-    },2000);
-  },[]);
+    }, 2000);
+  }, []);
 
   return (
     <div className="page-transition">
@@ -152,7 +156,7 @@ const Page03 = () => {
               <h1>
                 SCROLL TO NAVIGATE
               </h1>
-              <img src={ScrollArrow} alt="image1"/>
+              <img src={ScrollArrow} alt="scroll icon" />
             </div>
           </div>
 
@@ -160,7 +164,7 @@ const Page03 = () => {
 
             <div className="post">
               <div className="image">
-                <img src={image1} alt="image1"/>
+                <img src={image1} alt="image1" />
               </div>
               <div className="text">
                 <h2>1966</h2>
@@ -174,13 +178,13 @@ const Page03 = () => {
                 <p>Just four years after its start, Effer introduces the first crane with a lifting capacity of 40 Tm – a novelty for its time</p>
               </div>
               <div className="image">
-                <img src={image2} alt="image2"/>
+                <img src={image2} alt="image2" />
               </div>
             </div>
 
             <div className="post">
               <div className="image">
-                <img src={image3} alt="image3"/>
+                <img src={image3} alt="image3" />
               </div>
               <div className="text">
                 <h2>1985</h2>
@@ -194,13 +198,13 @@ const Page03 = () => {
                 <p>At the time of its introduction, the Effer 2200 is the largest crane truck ever built, with a lifting capacity of 200 Tm and a working height of 50 m,</p>
               </div>
               <div className="image">
-                <img src={image4} alt="image4"/>
+                <img src={image4} alt="image4" />
               </div>
             </div>
 
             <div className="post">
               <div className="image">
-                <img src={image4} alt="image4"/>
+                <img src={image5} alt="image5" />
               </div>
               <div className="text">
                 <h2>2001</h2>
@@ -214,13 +218,13 @@ const Page03 = () => {
                 <p>Effer invents CroSStab, a novel and superior stabilization system that increases load capacity and stability of the crane in front of the cabin</p>
               </div>
               <div className="image">
-                <img src={image4} alt="image4"/>
+                <img src={image6} alt="image6" />
               </div>
             </div>
 
             <div className="post">
               <div className="image">
-                <img src={image4} alt="image4"/>
+                <img src={image7} alt="image7" />
               </div>
               <div className="text">
                 <h2>2014</h2>
@@ -234,12 +238,12 @@ const Page03 = () => {
                 <p>The introduction of the JIB XL makes Effer cranes among the most performing in terms of reach and load handling, enabling customers to reach where nobody else can!</p>
               </div>
               <div className="image">
-                <img src={image4} alt="image4"/>
+                <img src={image8} alt="image8" />
               </div>
             </div>
 
           </div>
-          <Navigation backTo="/about-effer/page02" to="/about-effer/page07"/>
+          <Navigation backTo="/about-effer/page02" to="/about-effer/page07" />
         </StyledDiv>
       </BackgroundImage>
     </div>
