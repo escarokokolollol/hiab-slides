@@ -11,7 +11,7 @@ import HiConnect from "./innovations/HiConnect";
 
 // images
 import Background from "../../assets/images/hiab/hiab-bg-dark.jpg";
-import closeIcon from "../../assets/icons/close-menu.svg";
+import closeIcon from "../../assets/icons/big-red-button.png";
 
 const StyledDiv = styled.div`
  height: 100vh;
@@ -52,6 +52,16 @@ const StyledDiv = styled.div`
       }
     }
   }
+  .popup.show{
+    opacity: 1;
+    z-index: 10;
+    transition: all .4s ease;
+  }
+  .popup.hide{
+    opacity: 0;
+    z-index: -10;
+    transition: all .4s ease;
+  }
   .popup{
     display: grid;
     justify-items: center;
@@ -64,18 +74,16 @@ const StyledDiv = styled.div`
     left: 0;
     z-index: 100;
     padding: 20px;
-    .close-icon{
+    .close-arrow{
       position: absolute;
-      top: 40px;
-      right: 40px;
-      width: 40px;
-      height: 40px;
-      transition: all .2s ease;
+      bottom: 60px;
+      right: 60px;
+      width: 70px;
+      height: 70px;
+      transform: rotate(180deg);
     }
-    .close-icon:hover{
+    .close-arrow:hover{
       cursor: pointer;
-      transform: scale(1.2);
-      transition: all .2s ease;
     }
   }
 
@@ -153,36 +161,25 @@ const Page012 = () => {
             </div>
           </div>
 
-          {ctcToggle ?
-            <div className="popup">
-              <CTC />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setCtcToggle(false)} />
-            </div>
-            : ""
-          }
-          {samToggle ?
-            <div className="popup">
-              <SAM />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setSamToggle(false)} />
-            </div>
-            : ""
-          }
+          <div className={`popup ${ctcToggle ? "show" : "hide"}`}  >
+            <CTC />
+            <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setCtcToggle(false)} />
+          </div>
 
-          {safToggle ?
-            <div className="popup">
-              <SAF />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setSafToggle(false)} />
-            </div>
-            : ""
-          }
+          <div className={`popup ${samToggle ? "show" : "hide"}`}  >
+            <SAM />
+            <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setSamToggle(false)} />
+          </div>
 
-          {hiConnectToggle ?
-            <div className="popup">
-              <HiConnect />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setHiConnectToggle(false)} />
-            </div>
-            : ""
-          }
+          <div className={`popup ${safToggle ? "show" : "hide"}`}  >
+            <SAF />
+            <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setSafToggle(false)} />
+          </div>
+
+          <div className={`popup ${hiConnectToggle ? "show" : "hide"}`}  >
+            <HiConnect />
+            <img className="close-arrow" src={closeIcon} alt="close" onClick={() => setHiConnectToggle(false)} />
+          </div>
 
           <Navigation backTo="/about-hiab/page09" to="/about-hiab/page010" />
         </StyledDiv>
