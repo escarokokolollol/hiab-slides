@@ -26,6 +26,7 @@ const StyledDiv = styled.div`
     left: 30px;
   }
 
+
   h1{
     margin: 0;
   }
