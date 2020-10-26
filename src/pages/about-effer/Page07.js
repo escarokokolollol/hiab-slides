@@ -52,7 +52,7 @@ const Page07 = () => {
           <div className={`black-box ${showText ? "show-black-box" : ""}`}>
             <BlackBoxHeading title="Proud, passionate and pumped" textUnder="Our customers love EFFER because they love challenges, and our cranes enable them to go after what others can’t. It’s that spirit that runs through the “Terra dei Motori” and through our veins, and has made us what we are today."/>
           </div>
-          <Navigation backTo="/about-effer/page05" to="/about-effer/page08"/>
+          <Navigation backTo="/about-effer/page03" to="/about-effer/brand-movie"/>
 
         </StyledDiv>
       </BackgroundImage>

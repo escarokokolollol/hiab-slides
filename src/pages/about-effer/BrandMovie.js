@@ -1,0 +1,89 @@
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+import BackgroundImage from "../../components/styled/BackgroundImage";
+import Navigation from "../../components/Navigation";
+
+import EfferLogo from "../../assets/icons/effer-logo.svg";
+import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
+
+
+const StyledDiv = styled.div`
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .video-popup{
+    position: absolute;
+    top:0 ;
+    left : 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0, 0.8);
+    padding: 100px;
+    .close-icon{
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      width: 40px;
+      height: 40px;
+      transition: all .2s ease;
+    }
+    .close-icon:hover{
+      cursor: pointer;
+      transform: scale(1.2);
+      transition: all .2s ease;
+    }
+    .video-popup-inner{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 100%;
+      .video {
+        background: #fff;
+        ${'' /* box-shadow: 1px 1px 12px #888; */}
+        border-radius: 8px;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 70%;
+        height: 100%;
+      }
+    }
+  }
+
+  @media ${props => props.theme.firstBreakpoint}{
+  }
+  @media ${props => props.theme.secondBreakpoint}{
+  }
+  @media ${props => props.theme.thirdBreakpoint}{
+  }
+`;
+
+
+const BrandMovie = props => {
+  return(
+    <div className="page-transition">
+      <BackgroundImage image={Background}>
+        <StyledDiv>
+          <div className="video-popup">
+            <div className="video-popup-inner">
+            {/* <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/X3QfnmKL3yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> */}
+            <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/sVkqRawzebo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div>
+          </div>
+          <Navigation backTo="/about-effer/page07" to="/about-effer/page04"/>
+        </StyledDiv>
+      </BackgroundImage>
+    </div>
+  );
+}
+
+export default BrandMovie;

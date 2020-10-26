@@ -59,6 +59,7 @@ import AboutEfferPage016 from "./pages/about-effer/Page016.js";
 import AboutEfferPage017 from "./pages/about-effer/Page017.js";
 import AboutEfferPage018 from "./pages/about-effer/Page018.js";
 import AboutEfferPage019 from "./pages/about-effer/Page019.js";
+import AboutEfferBrandMovie from "./pages/about-effer/BrandMovie.js";
 
 import OneUnbeatableOffer01 from "./pages/one-unbeatable-offer/Page01.js";
 import OneUnbeatableOffer02 from "./pages/one-unbeatable-offer/Page02.js";
@@ -123,6 +124,8 @@ const App = () => {
                         <Route path="/about-effer/page017" component={AboutEfferPage017} />
                         <Route path="/about-effer/page018" component={AboutEfferPage018} />
                         <Route path="/about-effer/page019" component={AboutEfferPage019} />
+                        <Route path="/about-effer/brand-movie" component={AboutEfferBrandMovie} />
+                        
 
                         <Route path="/one-unbeatable-offer/page01" component={OneUnbeatableOffer01} />
                         <Route path="/one-unbeatable-offer/page02" component={OneUnbeatableOffer02} />

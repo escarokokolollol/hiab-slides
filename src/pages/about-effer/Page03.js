@@ -239,7 +239,7 @@ const Page03 = () => {
             </div>
 
           </div>
-          <Navigation backTo="/about-effer/page02" to="/about-effer/page04"/>
+          <Navigation backTo="/about-effer/page02" to="/about-effer/page07"/>
         </StyledDiv>
       </BackgroundImage>
     </div>

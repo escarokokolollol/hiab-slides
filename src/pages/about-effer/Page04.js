@@ -7,7 +7,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 import BlackBoxHeading from "../../components/BlackBoxHeading";
 
 // images
-import Background from "../../assets/images/effer/effer-big-05.jpg";
+import Background from "../../assets/images/effer/efferimg01.jpg";
 import FacebookIcon from "../../assets/icons/facebook-icon.png";
 import InstagramIcon from "../../assets/icons/instagram-icon.png";
 import YoutubeIcon from "../../assets/icons/youtube-icon.png";
