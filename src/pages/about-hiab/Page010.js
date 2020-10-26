@@ -103,8 +103,8 @@ const Page010 = () => {
   return (
     <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showHiabLogo>
       <StyledDiv>
-        <UnorderedList items={listItems}/>
-        <Navigation backTo="/about-hiab/page09" to="/about-hiab/page011"/>
+        <UnorderedList items={listItems} />
+        <Navigation backTo="/about-hiab/page012" to="/about-hiab/page014" />
 
         <p onClick={() => setCompare(true)} className="compare">Compare with EFFER</p>
 
@@ -116,7 +116,7 @@ const Page010 = () => {
               <li>Highest level of customisation</li>
               <li>Unequalled personal attention</li>
             </ul>
-            <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
+            <img className="close-icon" src={closeIcon} alt="close" onClick={() => setCompare(false)} />
           </div>
         </div>
 

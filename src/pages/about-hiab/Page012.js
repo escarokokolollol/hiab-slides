@@ -138,53 +138,53 @@ const Page012 = () => {
             <h1 className="title">A few innovations</h1>
             <p>Here are just a few of the many innovations that have set HIAB apart. Explore each one before moving on.</p>
             <div className="grid">
-              <div onClick={ () => setCtcToggle(true)} className="grid-item">
+              <div onClick={() => setCtcToggle(true)} className="grid-item">
                 <h1>Crane Tip Control</h1>
               </div>
-              <div onClick={ () => setSamToggle(true)} className="grid-item">
+              <div onClick={() => setSamToggle(true)} className="grid-item">
                 <h1>Semi Automatic Motion</h1>
               </div>
-              <div onClick={ () => setSafToggle(true)} className="grid-item">
+              <div onClick={() => setSafToggle(true)} className="grid-item">
                 <h1>Semi Automatic Folding</h1>
               </div>
-              <div onClick={ () => setHiConnectToggle(true)} className="grid-item">
+              <div onClick={() => setHiConnectToggle(true)} className="grid-item">
                 <h1>HiConnect</h1>
               </div>
             </div>
           </div>
 
-          {ctcToggle ? 
+          {ctcToggle ?
             <div className="popup">
               <CTC />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCtcToggle(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setCtcToggle(false)} />
             </div>
             : ""
           }
-          {samToggle ? 
+          {samToggle ?
             <div className="popup">
               <SAM />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setSamToggle(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setSamToggle(false)} />
             </div>
             : ""
           }
 
-          {safToggle ? 
+          {safToggle ?
             <div className="popup">
               <SAF />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setSafToggle(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setSafToggle(false)} />
             </div>
             : ""
           }
 
-          {hiConnectToggle ? 
+          {hiConnectToggle ?
             <div className="popup">
               <HiConnect />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setHiConnectToggle(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setHiConnectToggle(false)} />
             </div>
             : ""
           }
-          
-          <Navigation backTo="/about-hiab/page011" to="/about-hiab/page013"/>
+
+          <Navigation backTo="/about-hiab/page09" to="/about-hiab/page010" />
         </StyledDiv>
       </BackgroundImage>
     </div>

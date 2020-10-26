@@ -37,7 +37,7 @@ import AboutHiabPage011 from "./pages/about-hiab/Page011.js";
 import AboutHiabPage012 from "./pages/about-hiab/Page012.js";
 import AboutHiabPage013 from "./pages/about-hiab/Page013.js";
 import AboutHiabPage014 from "./pages/about-hiab/Page014.js";
-
+import AboutHiabBrandMovie from "./pages/about-hiab/BrandMovie.js";
 
 // effer pages
 import AboutEfferPage01 from "./pages/about-effer/Page01.js";
@@ -80,81 +80,83 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       {/* <DeviceOrientation lockOrientation={'landscape'}> */}
-        {/* Will only be in DOM in landscape */}
-        {/* <Orientation orientation='landscape' alwaysRender={false}> */}
-          {/* <Router basename="/hiab-beta01"> */}
-          <Router>
-            <div className="App">
-              <Route
-                render={({ location }) => (
-                  <TransitionGroup>
-                    <CSSTransition key={location.key} timeout={700} classNames="fade">
-                      <Switch location={location}>
-                        <Route path="/about-hiab/page01" component={AboutHiabPage01} />
-                        <Route path="/about-hiab/page02" component={AboutHiabPage02} />
-                        <Route path="/about-hiab/page03" component={AboutHiabPage03} />
-                        <Route path="/about-hiab/page04" component={AboutHiabPage04} />
-                        <Route path="/about-hiab/page05" component={AboutHiabPage05} />
-                        <Route path="/about-hiab/page06" component={AboutHiabPage06} />
-                        <Route path="/about-hiab/page07" component={AboutHiabPage07} />
-                        <Route path="/about-hiab/page08" component={AboutHiabPage08} />
-                        <Route path="/about-hiab/page09" component={AboutHiabPage09} />
-                        <Route path="/about-hiab/page010" component={AboutHiabPage010} />
-                        <Route path="/about-hiab/page011" component={AboutHiabPage011} />
-                        <Route path="/about-hiab/page012" component={AboutHiabPage012} />
-                        <Route path="/about-hiab/page013" component={AboutHiabPage013} />
-                        <Route path="/about-hiab/page014" component={AboutHiabPage014} />
+      {/* Will only be in DOM in landscape */}
+      {/* <Orientation orientation='landscape' alwaysRender={false}> */}
+      {/* <Router basename="/hiab-beta01"> */}
+      <Router>
+        <div className="App">
+          <Route
+            render={({ location }) => (
+              <TransitionGroup>
+                <CSSTransition key={location.key} timeout={700} classNames="fade">
+                  <Switch location={location}>
+                    <Route path="/about-hiab/page01" component={AboutHiabPage01} />
+                    <Route path="/about-hiab/page02" component={AboutHiabPage02} />
+                    <Route path="/about-hiab/page03" component={AboutHiabPage03} />
+                    <Route path="/about-hiab/page04" component={AboutHiabPage04} />
+                    <Route path="/about-hiab/page05" component={AboutHiabPage05} />
+                    <Route path="/about-hiab/page06" component={AboutHiabPage06} />
+                    <Route path="/about-hiab/page07" component={AboutHiabPage07} />
+                    <Route path="/about-hiab/page08" component={AboutHiabPage08} />
+                    <Route path="/about-hiab/page09" component={AboutHiabPage09} />
+                    <Route path="/about-hiab/page010" component={AboutHiabPage010} />
+                    <Route path="/about-hiab/page011" component={AboutHiabPage011} />
+                    <Route path="/about-hiab/page012" component={AboutHiabPage012} />
+                    <Route path="/about-hiab/page013" component={AboutHiabPage013} />
+                    <Route path="/about-hiab/page014" component={AboutHiabPage014} />
+                    <Route path="/about-hiab/brand-movie" component={AboutHiabBrandMovie} />
 
-                        <Route path="/about-effer/page01" component={AboutEfferPage01} />
-                        <Route path="/about-effer/page02" component={AboutEfferPage02} />
-                        <Route path="/about-effer/page03" component={AboutEfferPage03}/>
-                        <Route path="/about-effer/page04" component={AboutEfferPage04} />
-                        <Route path="/about-effer/page05" component={AboutEfferPage05} />
-                        <Route path="/about-effer/page06" component={AboutEfferPage06} />
-                        <Route path="/about-effer/page07" component={AboutEfferPage07} />
-                        <Route path="/about-effer/page08" component={AboutEfferPage08} />
-                        <Route path="/about-effer/page09" component={AboutEfferPage09} />
-                        <Route path="/about-effer/page010" component={AboutEfferPage010} />
-                        <Route path="/about-effer/page011" component={AboutEfferPage011} />
-                        <Route path="/about-effer/page012" component={AboutEfferPage012} />
-                        <Route path="/about-effer/page013" component={AboutEfferPage013} />
-                        <Route path="/about-effer/page014" component={AboutEfferPage014} />
-                        <Route path="/about-effer/page015" component={AboutEfferPage015} />
-                        <Route path="/about-effer/page016" component={AboutEfferPage016} />
-                        <Route path="/about-effer/page017" component={AboutEfferPage017} />
-                        <Route path="/about-effer/page018" component={AboutEfferPage018} />
-                        <Route path="/about-effer/page019" component={AboutEfferPage019} />
-                        <Route path="/about-effer/brand-movie" component={AboutEfferBrandMovie} />
-                        
 
-                        <Route path="/one-unbeatable-offer/page01" component={OneUnbeatableOffer01} />
-                        <Route path="/one-unbeatable-offer/page02" component={OneUnbeatableOffer02} />
-                        <Route path="/one-unbeatable-offer/page03" component={OneUnbeatableOffer03} />
-                        <Route path="/one-unbeatable-offer/page04" component={OneUnbeatableOffer04} />
-                        <Route path="/one-unbeatable-offer/page05" component={OneUnbeatableOffer05} />
+                    <Route path="/about-effer/page01" component={AboutEfferPage01} />
+                    <Route path="/about-effer/page02" component={AboutEfferPage02} />
+                    <Route path="/about-effer/page03" component={AboutEfferPage03} />
+                    <Route path="/about-effer/page04" component={AboutEfferPage04} />
+                    <Route path="/about-effer/page05" component={AboutEfferPage05} />
+                    <Route path="/about-effer/page06" component={AboutEfferPage06} />
+                    <Route path="/about-effer/page07" component={AboutEfferPage07} />
+                    <Route path="/about-effer/page08" component={AboutEfferPage08} />
+                    <Route path="/about-effer/page09" component={AboutEfferPage09} />
+                    <Route path="/about-effer/page010" component={AboutEfferPage010} />
+                    <Route path="/about-effer/page011" component={AboutEfferPage011} />
+                    <Route path="/about-effer/page012" component={AboutEfferPage012} />
+                    <Route path="/about-effer/page013" component={AboutEfferPage013} />
+                    <Route path="/about-effer/page014" component={AboutEfferPage014} />
+                    <Route path="/about-effer/page015" component={AboutEfferPage015} />
+                    <Route path="/about-effer/page016" component={AboutEfferPage016} />
+                    <Route path="/about-effer/page017" component={AboutEfferPage017} />
+                    <Route path="/about-effer/page018" component={AboutEfferPage018} />
+                    <Route path="/about-effer/page019" component={AboutEfferPage019} />
+                    <Route path="/about-effer/brand-movie" component={AboutEfferBrandMovie} />
 
-                        <Route path="/start02" component={Start02} />
-                        <Route path="/start03" component={Start03} />
-                        <Route path="/start04" component={Start04} />
-                        <Route path="/start05" component={Start05} />
 
-                        <Route path="/end01" component={End01} />
-                        <Route path="/end02" component={End02} />
-                        <Route path="/end03" component={End03} />
-                        <Route path="/end04" component={End04} />
+                    <Route path="/one-unbeatable-offer/page01" component={OneUnbeatableOffer01} />
+                    <Route path="/one-unbeatable-offer/page02" component={OneUnbeatableOffer02} />
+                    <Route path="/one-unbeatable-offer/page03" component={OneUnbeatableOffer03} />
+                    <Route path="/one-unbeatable-offer/page04" component={OneUnbeatableOffer04} />
+                    <Route path="/one-unbeatable-offer/page05" component={OneUnbeatableOffer05} />
 
-                        <Route path="/" component={Start01} />
-                      </Switch>
-                    </CSSTransition>
-                  </TransitionGroup>
-                )}
-              />
-            </div>
-            {/* <DevNav /> */}
-          </Router>
-        {/* </Orientation> */}
-        {/* Will stay in DOM, but is only visible in portrait */}
-        {/* <Orientation orientation='portrait' alwaysRender={false}>
+                    <Route path="/start02" component={Start02} />
+                    <Route path="/start03" component={Start03} />
+                    <Route path="/start04" component={Start04} />
+                    <Route path="/start05" component={Start05} />
+
+                    <Route path="/end01" component={End01} />
+                    <Route path="/end02" component={End02} />
+                    <Route path="/end03" component={End03} />
+                    <Route path="/end04" component={End04} />
+
+                    <Route path="/" component={Start01} />
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+            )}
+          />
+        </div>
+        {/* <DevNav /> */}
+      </Router>
+      {/* </Orientation> */}
+      {/* Will stay in DOM, but is only visible in portrait */}
+      {/* <Orientation orientation='portrait' alwaysRender={false}>
           <PortraitModeMessage />
         </Orientation> */}
       {/* </DeviceOrientation> */}

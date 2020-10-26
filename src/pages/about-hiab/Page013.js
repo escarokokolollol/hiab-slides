@@ -132,29 +132,29 @@ const Page013 = props => {
 
   const [toggle, setToggle] = useState(false);
 
-  return(
+  return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
           <img className="logo" alt="effer logo" src={HiabLogo} />
-          
+
           <h2>If we could boil it down to just one word, it would be…</h2>
-          <h1>SMART</h1>        
+          <h1>SMART</h1>
 
-          <p className="open-popup" onClick={ () => setToggle(!toggle)}>Play video</p>
+          <p className="open-popup" onClick={() => setToggle(!toggle)}>Play video</p>
 
-          {toggle ? 
-            <div className="video-popup" onClick={ () => setToggle(!toggle)}>
+          {toggle ?
+            <div className="video-popup" onClick={() => setToggle(!toggle)}>
               <div className="video-popup-inner">
                 <iframe className="video" title="SMART" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/Nr7g_POwsYQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
               </div>
-              <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setToggle(!toggle)}/> 
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setToggle(!toggle)} />
             </div>
-          : ""}
+            : ""}
 
           <Link className="compare" to="/about-effer/page018">Compare with EFFER</Link>
 
-          <Navigation backTo="/about-hiab/page012" to="/about-hiab/page014"/>
+          <Navigation backTo="/about-hiab/page012" to="/about-hiab/page014" />
         </StyledDiv>
       </BackgroundImage>
     </div>

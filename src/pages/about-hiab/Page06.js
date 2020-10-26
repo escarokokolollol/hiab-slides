@@ -19,8 +19,8 @@ const Page06 = () => {
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <BlackBoxHeading title="The smart choice" textUnder=" That’s how many customers see us. In their eyes, we are the company that provides intelligent solutions that enable them to optimise their business. In the next section we’ll see how this forms the basis of HIAB’s value proposition."/>
-          <Navigation backTo="/about-hiab/page05" to="/about-hiab/page07"/>
+          <BlackBoxHeading title="The smart choice" textUnder=" That’s how many customers see us. In their eyes, we are the company that provides intelligent solutions that enable them to optimise their business. In the next section we’ll see how this forms the basis of HIAB’s value proposition." />
+          <Navigation backTo="/about-hiab/brand-movie" to="/about-hiab/page05" />
         </StyledDiv>
       </BackgroundImage>
     </div>

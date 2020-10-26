@@ -57,20 +57,20 @@ const Page04 = () => {
 
   const [showText, setShowText] = useState(false);
 
-  useEffect(() =>{
+  useEffect(() => {
     setTimeout(() => {
       setShowText(true);
     }, 1000);
   });
-  
+
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
           <div className={`BlackBoxHeading-wrapper ${showText ? "show-black-box" : ""}`}>
-            <BlackBoxHeading title="Once a pioneer, always a pioneer" textUnder="Yesterday, being a pioneer was about hydraulics and steel. Today it’s about service and data. Why? Because the two things that our customers care more about now than they’ve ever had to before, are reliability and uptime. And that’s why so many love the HIAB brand."/>
+            <BlackBoxHeading title="Once a pioneer, always a pioneer" textUnder="Yesterday, being a pioneer was about hydraulics and steel. Today it’s about service and data. Why? Because the two things that our customers care more about now than they’ve ever had to before, are reliability and uptime. And that’s why so many love the HIAB brand." />
           </div>
-          <Navigation backTo="/about-hiab/page03" to="/about-hiab/page05"/>
+          <Navigation backTo="/about-hiab/page03" to="/about-hiab/brand-movie" />
         </StyledDiv>
       </BackgroundImage>
     </div>

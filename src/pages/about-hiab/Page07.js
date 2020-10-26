@@ -48,9 +48,9 @@ const Page07 = () => {
       <BackgroundImage image={Background}>
         <StyledDiv>
           <div className="BlackBoxHeading-wrapper">
-            <BlackBoxHeading className="BlackBoxHeading" showHiabLogo title="”To optimise your business”"/>
+            <BlackBoxHeading className="BlackBoxHeading" showHiabLogo title="”To optimise your business”" />
           </div>
-          <Navigation backTo="/about-hiab/page06" to="/about-hiab/page08"/>
+          <Navigation backTo="/about-hiab/page05" to="/about-hiab/page08" />
         </StyledDiv>
       </BackgroundImage>
     </div>

@@ -22,7 +22,7 @@ const Page05 = () => {
           <h1>Testamonials 2</h1>
           <h1>Testamonials 3</h1>
           <p>HIAB ej färdig, kanske blir  filmer, kanske blir något annat</p>
-          <Navigation backTo="/about-hiab/page04" to="/about-hiab/page06"/>
+          <Navigation backTo="/about-hiab/page06" to="/about-hiab/page07" />
         </StyledDiv>
       </BackgroundImage>
     </div>
