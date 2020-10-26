@@ -147,74 +147,56 @@ const Page017 = () => {
       <BackgroundImage image={Background}>
         <StyledDiv>
           <div className="content-inner">
-            <h1 className="title">A few innovations</h1>
-            <p>Take a look at some of the innovations that have set EFFER apart. Explore each one before moving on.</p>
+            <h1 className="title">Reach what others can’t</h1>
+            <p>Explore the innovations that have set EFFER apart and enable extreme challenges. </p>
             <div className="grid">
-              <div onClick={ () => setCrosstab(true)} className="grid-item">
+              <div onClick={() => setCrosstab(true)} className="grid-item">
                 <h1>CroSStab</h1>
               </div>
-              <div onClick={ () => setVstab(true)} className="grid-item">
+              <div onClick={() => setVstab(true)} className="grid-item">
                 <h1>V-stab</h1>
               </div>
-              <div onClick={ () => setContinuouSlewing(true)} className="grid-item">
+              <div onClick={() => setContinuouSlewing(true)} className="grid-item">
                 <h1>Continuous Slewing</h1>
               </div>
-              <div onClick={ () => setSecondJib(true)} className="grid-item">
+              <div onClick={() => setSecondJib(true)} className="grid-item">
                 <h1>Second Jib</h1>
               </div>
             </div>
           </div>
 
-          {'' /* <div className="content-inner">
-            <h1>Take a look at some of the innovations that have set EFFER apart. Explore each one before moving on.</h1>
-            <div className="grid">
-              <div className="grid-item">
-                <h1 onClick={ () => setCrosstab(true)}>CroSStab</h1>
-              </div>
-              <div className="grid-item">
-                <h1 onClick={ () => setVstab(true)}>V-Stab</h1>
-              </div>
-              <div className="grid-item">
-                <h1 onClick={ () => setContinuouSlewing(true)}>Continuous Slewing</h1>
-              </div>
-              <div className="grid-item">
-                <h1 onClick={ () => setSecondJib(true) }>Second Jib</h1>
-              </div>
-            </div>
-          </div> */}
-
-          {crosstab ? 
+          {crosstab ?
             <div className="popup">
               <CroSStab />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCrosstab(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setCrosstab(false)} />
             </div>
             : ""
           }
-          {vstab ? 
+          {vstab ?
             <div className="popup">
               <Vstab />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setVstab(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setVstab(false)} />
             </div>
             : ""
           }
 
-          {continuouSlewing ? 
+          {continuouSlewing ?
             <div className="popup">
               <ContinuouSlewing />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setContinuouSlewing(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setContinuouSlewing(false)} />
             </div>
             : ""
           }
 
-          {secondJib ? 
+          {secondJib ?
             <div className="popup">
               <SecondJib />
-              <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setSecondJib(false)}/> 
+              <img className="close-icon" src={closeIcon} alt="close" onClick={() => setSecondJib(false)} />
             </div>
             : ""
           }
-          
-          <Navigation backTo="/about-effer/page012" to="/about-effer/page015"/>
+
+          <Navigation backTo="/about-effer/page012" to="/about-effer/page015" />
         </StyledDiv>
       </BackgroundImage>
     </div>
