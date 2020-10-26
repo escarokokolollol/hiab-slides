@@ -103,7 +103,7 @@ const HiConnect = () => {
 
   const [toggle, setToggle] = useState(false);
 
-  return(
+  return (
     <StyledDiv>
       <h1>HiConnect</h1>
       <div className="wrapper">
@@ -111,15 +111,15 @@ const HiConnect = () => {
           <p>This intelligent, connected service provides fleet managers with real-time data about their HIAB cranes’ operation and condition, giving them the power to improve performance and safety, and to avoid unnecessary downtime.</p>
           <button className="play-video" onClick={() => setToggle(!toggle)}>Play video</button>
         </div>
-       
-        {toggle ? 
-          <div className="video-popup" onClick={ () => setToggle(!toggle)}>
+
+        {toggle ?
+          <div className="video-popup" onClick={() => setToggle(!toggle)}>
             <div className="video-popup-inner">
-               <iframe className="video" title="HiConnect" allowFullScreen   width="560" height="315" src="https://www.youtube.com/embed/BIxWkeqtYQk?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <iframe className="video" title="HiConnect" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/3WHXjZxlZfg?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
-            <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setToggle(!toggle)}/> 
+            <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setToggle(!toggle)} />
           </div>
-        : ""}
+          : ""}
       </div>
     </StyledDiv>
   );
