@@ -52,7 +52,7 @@ const Page04 = () => {
               </div>
             </BlackBoxHeading>
           </div>
-          <Navigation backTo="/about-effer/page03" to="/about-effer/page05"/>
+          <Navigation backTo="/about-effer/brand-movie" to="/about-effer/page05"/>
         </StyledDiv>
       </BackgroundImage>
     </div>

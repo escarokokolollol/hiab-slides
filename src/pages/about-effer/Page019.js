@@ -31,7 +31,7 @@ const Page019 = () => {
   return (
     <StyledDiv>
       <SingleHeadingMiddle overTitle="So… " title="How can this knowledge help you when dealing with customers?" backgroundImage={Background} showEfferLogo={true} >
-        <Navigation backTo="/about-effer/page018" to="/one-unbeatable-offer/page01"/>
+        <Navigation backTo="/about-effer/page015" to="/one-unbeatable-offer/page01"/>
       </SingleHeadingMiddle>
     </StyledDiv>
   );

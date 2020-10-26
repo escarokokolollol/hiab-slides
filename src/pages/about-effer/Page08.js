@@ -57,7 +57,7 @@ const Page08 = () => {
       <BackgroundImage image={Background}>
         <StyledDiv>
           <BlackBoxHeading className="BlackBoxHeading" showEfferLogo title="”To conquer the toughest challenges”" textUnder="Our value proposition"/>
-          <Navigation backTo="/about-effer/page07" to="/about-effer/page09"/>
+          <Navigation backTo="/about-effer/page05" to="/about-effer/page09"/>
         </StyledDiv>
       </BackgroundImage>
     </div>
