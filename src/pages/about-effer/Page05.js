@@ -96,7 +96,7 @@ const Page05 = () => {
               autoPlay={false}
             />
           </div>
-          <Navigation backTo="/about-effer/page04" to="/about-effer/page07"/>
+          <Navigation backTo="/about-effer/page04" to="/about-effer/page08"/>
         </StyledDiv>
       </BackgroundImage>
     </div>
