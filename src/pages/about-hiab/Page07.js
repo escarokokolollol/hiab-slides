@@ -18,6 +18,9 @@ const StyledDiv = styled.div`
         font-size: 52px;
         line-height: 52px;
       }
+      p{
+        font-size: 24px;
+      }
     }
   }
 
@@ -48,7 +51,7 @@ const Page07 = () => {
       <BackgroundImage image={Background}>
         <StyledDiv>
           <div className="BlackBoxHeading-wrapper">
-            <BlackBoxHeading className="BlackBoxHeading" showHiabLogo title="”To optimise your business”" />
+            <BlackBoxHeading className="BlackBoxHeading" showHiabLogo title="”To optimise your business”" textUnder="Our value proposition" />
           </div>
           <Navigation backTo="/about-hiab/page05" to="/about-hiab/page08" />
         </StyledDiv>
