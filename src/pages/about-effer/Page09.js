@@ -100,7 +100,7 @@ const StyledDiv = styled.div`
       position: relative;
       .paragraphs{
         display: grid;
-        grid-gap: 16px;
+        grid-gap: 40px;
         grid-template-columns: 1fr 1fr;
       }
       h2{
