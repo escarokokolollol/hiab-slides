@@ -163,15 +163,15 @@ const Page03 = () => {
                 <img src={image1} alt="image1"/>
               </div>
               <div className="text">
-                <h2>1969</h2>
-                <p>Just four years after its start, EFFER introduced the first crane with a lifting capacity of 40 Tm – a novelty for its time</p>
+                <h2>1966</h2>
+                <p>Effer launches its first mechanical JIB mounted atop its E55 model</p>
               </div>
             </div>
 
             <div className="post">
               <div className="text text-align-right">
-                <h2>1988</h2>
-                <p>Exhibited largest crane truck ever built at SAIE; lifting capacity of 200 Tm and working height of 50 m</p>
+                <h2>1969</h2>
+                <p>Just four years after its start, Effer introduces the first crane with a lifting capacity of 40 Tm – a novelty for its time</p>
               </div>
               <div className="image">
                 <img src={image2} alt="image2"/>
@@ -183,15 +183,55 @@ const Page03 = () => {
                 <img src={image3} alt="image3"/>
               </div>
               <div className="text">
+                <h2>1985</h2>
+                <p>This special application created for the Americas was the first-of-its kind</p>
+              </div>
+            </div>
+
+            <div className="post">
+              <div className="text text-align-right">
+                <h2>1988</h2>
+                <p>At the time of its introduction, the Effer 2200 is the largest crane truck ever built, with a lifting capacity of 200 Tm and a working height of 50 m,</p>
+              </div>
+              <div className="image">
+                <img src={image4} alt="image4"/>
+              </div>
+            </div>
+
+            <div className="post">
+              <div className="image">
+                <img src={image4} alt="image4"/>
+              </div>
+              <div className="text">
                 <h2>2001</h2>
-                <p>Launched decagonal-profile section boom with patented solution taking full advantage of high-tensile strength steel to reduce crane weight</p>
+                <p>Effer invents the decagonal boom section achieving lighter crane weight and maximum resistance even under extreme working conditions.</p>
               </div>
             </div>
 
             <div className="post">
               <div className="text text-align-right">
                 <h2>2008</h2>
-                <p>Patented the CroSStab stabilization system that increases load capacity and stability of the crane in front of the cabin</p>
+                <p>Effer invents CroSStab, a novel and superior stabilization system that increases load capacity and stability of the crane in front of the cabin</p>
+              </div>
+              <div className="image">
+                <img src={image4} alt="image4"/>
+              </div>
+            </div>
+
+            <div className="post">
+              <div className="image">
+                <img src={image4} alt="image4"/>
+              </div>
+              <div className="text">
+                <h2>2014</h2>
+                <p>V-Stab is introduced, an Effer innovation combining exceptional stability and compactness for working in tight spaces</p>
+              </div>
+            </div>
+
+            <div className="post">
+              <div className="text text-align-right">
+                <h2>2018</h2>
+                <p>The introduction of the JIB XL makes Effer cranes among the most performing in terms of reach and load handling, enabling customers to reach where nobody else can!</p>
               </div>
               <div className="image">
                 <img src={image4} alt="image4"/>
