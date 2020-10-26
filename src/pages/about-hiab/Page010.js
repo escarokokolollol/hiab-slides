@@ -11,6 +11,23 @@ import Background from "../../assets/images/hiab/hiab-bg-dark.jpg";
 import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
+  .smart-wrapper{
+    text-align: center;
+    h1{
+      margin: 0;
+      margin-top: 10px;
+      font-size: 100px;
+      line-height: 100px;
+      letter-spacing: 14px;
+    }
+    p{
+      font-size: 22px;
+    }
+  }
+  ul{
+    max-width: 500px;
+    margin: 0 auto;
+  }
   .compare{
     font-size: 22px;
     color: ${props => props.theme.red};
@@ -103,6 +120,10 @@ const Page010 = () => {
   return (
     <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showHiabLogo>
       <StyledDiv>
+        <div className="smart-wrapper">
+          <h1>SMART</h1>
+          <p>That’s HIAB in a single word. Our customers experience it as </p>
+        </div>
         <UnorderedList items={listItems} />
         <Navigation backTo="/about-hiab/page012" to="/about-hiab/page014" />
 

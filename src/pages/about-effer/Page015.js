@@ -121,8 +121,8 @@ const Page015 = () => {
           <h1>EXTREME</h1>
           <p>That’s EFFER in a single word. Our customers experience it as</p>
         </div>
-        <UnorderedList items={listItems}/>
-        <Navigation backTo="/about-effer/page017" to="/about-effer/page019"/>
+        <UnorderedList items={listItems} />
+        <Navigation backTo="/about-effer/page017" to="/about-effer/page019" />
         <p onClick={() => setCompare(true)} className="compare">Compare with HIAB</p>
 
         <div className={`popup ${compare ? "show-popup" : ""}`}>
@@ -133,7 +133,7 @@ const Page015 = () => {
               <li>Exceptional service and support</li>
               <li>Maximised uptime for optimising operations</li>
             </ul>
-            <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/> 
+            <img className="close-icon" src={closeIcon} alt="close" onClick={() => setCompare(false)} />
           </div>
         </div>
       </StyledDiv>
