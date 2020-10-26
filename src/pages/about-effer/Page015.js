@@ -11,6 +11,24 @@ import Background from "../../assets/images/effer_hiab-background.jpg";
 import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
+
+  .extreme-wrapper{
+    text-align: center;
+    h1{
+      margin: 0;
+      margin-top: 10px;
+      font-size: 82px;
+      line-height: 82px;
+      letter-spacing: 14px;
+    }
+    p{
+      font-size: 22px;
+    }
+  }
+  ul{
+    max-width: 420px;
+    margin: 0 auto;
+  }
   .compare{
     font-size: 22px;
     color: ${props => props.theme.red};
@@ -99,6 +117,10 @@ const Page015 = () => {
   return (
     <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showEfferLogo={true} >
       <StyledDiv>
+        <div className="extreme-wrapper">
+          <h1>EXTREME</h1>
+          <p>That’s EFFER in a single word. Our customers experience it as</p>
+        </div>
         <UnorderedList items={listItems}/>
         <Navigation backTo="/about-effer/page012" to="/about-effer/page016"/>
         <p onClick={() => setCompare(true)} className="compare">Compare with HIAB</p>
