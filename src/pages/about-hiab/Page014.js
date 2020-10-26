@@ -13,6 +13,11 @@ const StyledDiv = styled.div`
     width:600px;
   }
 
+  h1:nth-child(even){
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+
   @media ${props => props.theme.secondBreakpoint}{
     h1{
       font-size:42px;
