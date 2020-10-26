@@ -158,7 +158,6 @@ const HamburgerMenu = () => {
             <li><Link to="/end03">Key messages</Link></li>
             <li><Link to="/end04">Learn more</Link></li>
           </ul>
-
         </div>
       </div>
 
