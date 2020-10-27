@@ -121,8 +121,8 @@ const Page03 = () => {
 
   const [flexibility, setFlexibility] = useState(false);
   const [simplicity, setSimplicity] = useState(false);
-  const [repetition , setRepetition] = useState(false);
-  const [basket , setBasket] = useState(false);
+  const [repetition, setRepetition] = useState(false);
+  const [basket, setBasket] = useState(false);
 
   return (
     <div className="page-transition">
@@ -133,54 +133,50 @@ const Page03 = () => {
             <h1 className="title">A few typical cases</h1>
             <p>Let’s have a look at a few example cases to learn how we can match our offer with customer needs. </p>
             <div className="grid">
-              <div onClick={ () => setFlexibility(true)} className="grid-item">
-                <h2>case 1:</h2>
+              <div onClick={() => setFlexibility(true)} className="grid-item">
                 <h1>Flexibility</h1>
               </div>
-              <div onClick={ () => setSimplicity(true)} className="grid-item">
-                <h2>case 2:</h2>
+              <div onClick={() => setSimplicity(true)} className="grid-item">
                 <h1>Simplicity</h1>
               </div>
-              <div onClick={ () => setRepetition(true)} className="grid-item">
-                <h2>case 3:</h2>
+              <div onClick={() => setRepetition(true)} className="grid-item">
                 <h1>Repetition</h1>
               </div>
-              <div onClick={ () => setBasket(true)} className="grid-item">
-                <h2>case 4:</h2>
+              <div onClick={() => setBasket(true)} className="grid-item">
                 <h1>Basket</h1>
               </div>
             </div>
           </div>
 
-          {flexibility ? 
-          <div className={`popup`}>
-            <Flexibility />
-            <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setFlexibility(false)}/> 
-          </div>
-          : "" }
+          {flexibility ?
+            <div className={`popup`}>
+              <Flexibility />
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setFlexibility(false)} />
+            </div>
+            : ""}
 
-          {simplicity ? 
-          <div className={`popup`}>
-            <Simplicity />
-            <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setSimplicity(false)}/> 
-          </div>
-          : "" }
+          {simplicity ?
+            <div className={`popup`}>
+              <Simplicity />
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setSimplicity(false)} />
+            </div>
+            : ""}
 
-          {repetition ? 
-          <div className={`popup`}>
-            <Repetition />
-            <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setRepetition(false)}/> 
-          </div>
-          : "" }
+          {repetition ?
+            <div className={`popup`}>
+              <Repetition />
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setRepetition(false)} />
+            </div>
+            : ""}
 
-          {basket ? 
-          <div className={`popup`}>
-            <Basket />
-            <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setBasket(false)}/> 
-          </div>
-          : "" }
-          
-          <Navigation backTo="/one-unbeatable-offer/page02" to="/one-unbeatable-offer/page04"/>
+          {basket ?
+            <div className={`popup`}>
+              <Basket />
+              <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setBasket(false)} />
+            </div>
+            : ""}
+
+          <Navigation backTo="/one-unbeatable-offer/page02" to="/one-unbeatable-offer/page04" />
         </StyledDiv>
       </BackgroundImage>
     </div>
