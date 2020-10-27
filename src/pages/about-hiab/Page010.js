@@ -83,6 +83,7 @@ const StyledDiv = styled.div`
         text-align: center;
       }
       ul{
+        max-width: 600px;
         li{
           font-size: 22px;
         }
@@ -127,6 +128,7 @@ const Page010 = () => {
         <div className={`popup ${compare ? "show-popup" : ""}`}>
           <div className="compare-text">
             <h2>EFFER a nutshell</h2>
+            <p><strong>EXTREME. </strong>That’s EFFER in a single word. Our customers experience it as</p>
             <ul>
               <li>Extreme performance and durability</li>
               <li>Highest level of customisation</li>
