@@ -5,7 +5,7 @@ import styled from "styled-components";
 import HamburgerIcon from "../assets/icons/hamburger-menu.svg";
 import CloseIcon from "../assets/icons/close-menu.svg";
 
-const StyledDiv= styled.div`
+const StyledDiv = styled.div`
   width: 100%;
   z-index: 9999999;
   img{
@@ -120,13 +120,13 @@ const StyledDiv= styled.div`
 
 const HamburgerMenu = () => {
   const [toggle, setToggle] = useState(false);
-  return(
+  return (
     <StyledDiv>
-      <img className="hamburger-icon" alt="hamburger menu icon" onClick={() => setToggle(!toggle)}src={HamburgerIcon} />
+      <img className="hamburger-icon" alt="hamburger menu icon" onClick={() => setToggle(!toggle)} src={HamburgerIcon} />
 
       <div className={`menu ${toggle ? "show" : "hide"}`}  >
-       <div className="menu-inner">
-          <img className="close-icon" alt="hamburger menu icon" onClick={() => setToggle(!toggle)}src={CloseIcon} />
+        <div className="menu-inner">
+          <img className="close-icon" alt="hamburger menu icon" onClick={() => setToggle(!toggle)} src={CloseIcon} />
           <ul>
             <li><Link to="/">Intro</Link></li>
             <li><Link to="/start05">Choose a road</Link></li>
@@ -137,7 +137,7 @@ const HamburgerMenu = () => {
               <h2>EFFER</h2>
               <ul>
                 <li><Link to="/about-effer/page01">Story</Link></li>
-                <li><Link to="/about-effer/page07">Value proposition</Link></li>
+                <li><Link to="/about-effer/page08">Value proposition</Link></li>
               </ul>
             </div>
 

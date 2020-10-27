@@ -151,7 +151,7 @@ const Page017 = () => {
                 <h1>CroSStab</h1>
               </div>
               <div onClick={() => setVstab(true)} className="grid-item">
-                <h1>V-stab</h1>
+                <h1>V-Stab</h1>
               </div>
               <div onClick={() => setContinuouSlewing(true)} className="grid-item">
                 <h1>Continuous Slewing</h1>

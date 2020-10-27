@@ -195,7 +195,7 @@ const Page03 = () => {
             <div className="post">
               <div className="text text-align-right">
                 <h2>1988</h2>
-                <p>At the time of its introduction, the Effer 2200 is the largest crane truck ever built, with a lifting capacity of 200 Tm and a working height of 50 m,</p>
+                <p>At the time of its introduction, the Effer 2200 is the largest crane truck ever built, with a lifting capacity of 200 Tm and a working height of 50 m</p>
               </div>
               <div className="image">
                 <img src={image4} alt="image4" />
@@ -208,7 +208,7 @@ const Page03 = () => {
               </div>
               <div className="text">
                 <h2>2001</h2>
-                <p>Effer invents the decagonal boom section achieving lighter crane weight and maximum resistance even under extreme working conditions.</p>
+                <p>Effer invents the decagonal boom section achieving lighter crane weight and maximum resistance even under extreme working conditions</p>
               </div>
             </div>
 
