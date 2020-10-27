@@ -104,23 +104,23 @@ const ContinuouSlewing = () => {
 
   const [toggle, setToggle] = useState(false);
 
-  return(
+  return (
     <StyledDiv>
-      <h1>Second jib</h1>
+      <h1>Second jib – reach beyond</h1>
       <div className="wrapper">
         <div className="text">
-          <p>no text yet no text yet no text yet no text yet no text yet no text yet no text yet no text yet </p>
+          <p>Quite unique to EFFER cranes, the second JIB allows you to work at outstanding heights, shifting the knuckle point even higher and considerably increasing the outreach. It can also be operated horizontally</p>
           <button className="play-video" onClick={() => setToggle(!toggle)}>Play video</button>
         </div>
 
-        {toggle ? 
-          <div className="video-popup" onClick={ () => setToggle(!toggle)}>
+        {toggle ?
+          <div className="video-popup" onClick={() => setToggle(!toggle)}>
             <div className="video-popup-inner">
-            <iframe className="video" title="secondjib" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/wbNNpnZ7BuU?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <iframe className="video" title="secondjib" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/wbNNpnZ7BuU?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
-            <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setToggle(!toggle)}/> 
+            <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setToggle(!toggle)} />
           </div>
-        : ""}
+          : ""}
       </div>
     </StyledDiv>
   );

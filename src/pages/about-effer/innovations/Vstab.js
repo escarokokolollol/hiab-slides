@@ -104,9 +104,9 @@ const Vstab = () => {
 
   const [toggle, setToggle] = useState(false);
 
-  return(
+  return (
     <StyledDiv>
-      <h1>V-STAB</h1>
+      <h1>V-STAB – great for tight spaces</h1>
       <div className="wrapper">
         <div className="text">
           <p>Guarantees same advantages of the CroSStab, but with ‘set’ angle stabilizers.  </p>
@@ -115,14 +115,14 @@ const Vstab = () => {
           <button className="play-video" onClick={() => setToggle(!toggle)}>Play video</button>
         </div>
 
-        {toggle ? 
-          <div className="video-popup" onClick={ () => setToggle(!toggle)}>
+        {toggle ?
+          <div className="video-popup" onClick={() => setToggle(!toggle)}>
             <div className="video-popup-inner">
-            <iframe className="video" title="vstab" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/BIxWkeqtYQk?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <iframe className="video" title="vstab" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/BIxWkeqtYQk?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
-            <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setToggle(!toggle)}/> 
+            <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setToggle(!toggle)} />
           </div>
-        : ""}
+          : ""}
       </div>
     </StyledDiv>
   );

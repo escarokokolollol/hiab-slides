@@ -103,23 +103,25 @@ const ContinuouSlewing = () => {
 
   const [toggle, setToggle] = useState(false);
 
-  return(
+  return (
     <StyledDiv>
-      <h1>Continuous slewing </h1>
+      <h1>Continuous slewing – for 360° freedom</h1>
       <div className="wrapper">
         <div className="text">
-          <p>no text yet, and wrong video? this is hiab </p>
+          <p>EFFER was the first manufacturer to introduce the slewing ring on a 20 Tm crane, the revolutionary ICON 215! </p>
+          <p>Enables operation with infinite rotation and precision down to the millimetre, guaranteeing maximum accuracy even at large distances. </p>
+          <p>Ideal  for the construction industry in combination with bucket, allowing you to work at 360° with maximum precision and to load faster using the bucket on two trailers.</p>
           <button className="play-video" onClick={() => setToggle(!toggle)}>Play video</button>
         </div>
-  
-        {toggle ? 
-          <div className="video-popup" onClick={ () => setToggle(!toggle)}>
+
+        {toggle ?
+          <div className="video-popup" onClick={() => setToggle(!toggle)}>
             <div className="video-popup-inner">
               <iframe className="video" title="Continuous slewing" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/BIUZU9nRN9g?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
-            <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setToggle(!toggle)}/> 
+            <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setToggle(!toggle)} />
           </div>
-        : ""}
+          : ""}
       </div>
     </StyledDiv>
   );
