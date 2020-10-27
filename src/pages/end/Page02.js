@@ -26,17 +26,18 @@ const Start02 = () => {
     "have a better understanding of how our portfolio, from Low to Super Heavy, can be matched to different customer needs and applications"
   ];
 
-  return(
+  return (
     <StyledDiv>
-      <StartPage 
+      <StartPage
         className="StartPage"
-        headingText="Having reached this far, you should now"
-        backTo="/end01" 
-        to="/end03" 
+        headingText="By this point you should"
+        backTo="/end01"
+        to="/end03"
       >
-      <div>
-        <UnorderedList items={items}/>
-      </div>
+        <div>
+          <UnorderedList items={items} />
+        </div>
+        <p>Now have a look at what’s available on the next couple of pages before you finish.</p>
       </StartPage>
     </StyledDiv>
   );
