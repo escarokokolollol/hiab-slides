@@ -23,36 +23,52 @@ import hiabLogo from "../assets/icons/hiab-logo.svg";
 ///////////////////
 
 const StyledDiv = styled.div`
-  h1.intro-title{
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 52px;
-    font-weight: 900;
-  }
-  p.intro-text{
-    font-size: 22px;
+  .top-of-page{
+    .grid-top{
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      h1.intro-title{
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      p.intro-text{
+        font-size: 20px;
+        margin-top:0;
+      }
+      img.top-img{
+        width:100%;
+      }
+    }
   }
   .content{
     .image-wrapper{
       display: grid; 
       grid-template-columns: 1fr 1fr;
       justify-items: center;
+      margin-top: 40px;
       img{
-        width: 160px;
+        width: 140px;
       }
     }
     .section{
       margin: 10px;
       h3{
-        text-align: center;
+        text-transform: uppercase;
         padding-bottom: 6px;
         margin-top: 100px;
         margin: 0;
         color: ${props => props.theme.red};
         margin-bottom: 20px;
-        font-size: 30px;
-        font-weight: 500;
-        ${'' /* border-bottom: 3px solid #333; */}
+        font-size: 20px;
+        font-weight: 900;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 10px;
       }
       .grid{
         display: grid;
@@ -86,8 +102,15 @@ const StyledDiv = styled.div`
 const Application = props => {
   return (
     <StyledDiv>
-      <h1 className="intro-title">{props.title}</h1>
-      <p className="intro-text">{props.textUnderTitle}</p>
+      <div className="top-of-page">
+        <div className="grid-top">
+          <div>
+            <h1 className="intro-title">{props.title}</h1>
+            <p className="intro-text">{props.textUnderTitle}</p>
+          </div>
+          <img className="top-img" src={props.image} alt="stuff" />
+        </div>
+      </div>
       <div className="content">
 
         <div className="image-wrapper">

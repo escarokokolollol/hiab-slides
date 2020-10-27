@@ -7,7 +7,9 @@ import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // images
+import constructionImage from "../../assets/images/applications/effercoolt01.jpg";
 import Background from "../../assets/images/effer_hiab-background.jpg";
+
 
 const StyledDiv = styled.div`
   width:96%;
@@ -98,8 +100,8 @@ const StyledDiv = styled.div`
 
 const Page05 = () => {
 
-  const [showTitle, setShowTitle] = useState(true);
-  const [construction, setConstruction] = useState(false);
+  const [showTitle, setShowTitle] = useState(false);
+  const [construction, setConstruction] = useState(true);
   const [roofing, setRoofing] = useState(false);
   const [waste, setWaste] = useState(false);
   const [specialty, setSpecialty] = useState(false);
@@ -133,7 +135,7 @@ const Page05 = () => {
     val === "publicSpaces" && setPublicSpaces(true);
     val === "arboriculture" && setArboriculture(true);
     val === "glass" && setGlass(true);
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }
 
   return (
@@ -155,15 +157,16 @@ const Page05 = () => {
               </ul>
             </div>
             <div className="content-wrapper">
-            {showTitle && 
-              <div className="first-text">
-                <p>Take a look at some of these most common applications to learn more.</p>
-              </div>
-            }
+              {showTitle &&
+                <div className="first-text">
+                  <p>Take a look at some of these most common applications to learn more.</p>
+                </div>
+              }
               {construction &&
                 <article>
                   <Application
                     title="Construction"
+                    image={constructionImage}
                     textUnderTitle="Involves a wide range of tasks, often carried out at very high heights, and a variety of materials, requiring appropriate accessories."
 
                     hiabRange="Numerous light- to medium-capacity models for handling drywall, brick and block, as well as heavy HVAC equipment, compressors, pipe, etc."
@@ -275,7 +278,7 @@ const Page05 = () => {
             </div>
           </div>
 
-          <Navigation backTo="/one-unbeatable-offer/page04" to="/end01"/>
+          <Navigation backTo="/one-unbeatable-offer/page04" to="/end01" />
         </StyledDiv>
       </BackgroundImage>
     </div>
