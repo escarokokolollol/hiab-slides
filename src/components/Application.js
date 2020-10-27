@@ -91,28 +91,28 @@ const Application = props => {
       <div className="content">
 
         <div className="image-wrapper">
-          <img src={hiabLogo} alt="hiab logo"/>
-          <img src={efferLogo} alt="effer logo"/>
+          <img src={hiabLogo} alt="hiab logo" />
+          <img src={efferLogo} alt="effer logo" />
         </div>
 
         <div className="section range">
           <h3>Range</h3>
-            <div className="grid">
-              <div className="grid-item hiab">
-                <p>
-                  {props.hiabRange && props.hiabRange}
-                </p>
-              </div>
-              <div className="grid-item effer">
-                <p>
-                  {props.efferRange && props.efferRange}
-                </p>
+          <div className="grid">
+            <div className="grid-item hiab">
+              <p>
+                {props.hiabRange && props.hiabRange}
+              </p>
+            </div>
+            <div className="grid-item effer">
+              <p>
+                {props.efferRange && props.efferRange}
+              </p>
             </div>
           </div>
         </div>
 
         <div className="section benefits">
-          <h3>Key benefits:</h3>
+          <h3>Key benefits</h3>
           <div className="grid">
             <div className="grid-item hiab">
               <p>
@@ -128,41 +128,41 @@ const Application = props => {
         </div>
 
         <div className="section solutions">
-          <h3>Featured solutions:</h3>
+          <h3>Featured solutions</h3>
           <div className="grid">
             <div className="grid-item hiab">
-              {props.hiabSolutions && Array.isArray(props.hiabSolutions) ? 
+              {props.hiabSolutions && Array.isArray(props.hiabSolutions) ?
                 <ul>
                   {props.hiabSolutions.map((item) => <li>{item}</li>)}
                 </ul>
-              : <p>{props.hiabSolutions}</p> }
+                : <p>{props.hiabSolutions}</p>}
             </div>
             <div className="grid-item effer">
-              {props.efferSolutions && Array.isArray(props.efferSolutions) ? 
+              {props.efferSolutions && Array.isArray(props.efferSolutions) ?
                 <ul>
                   {props.efferSolutions.map((item) => <li>{item}</li>)}
                 </ul>
-              : <p>{props.efferSolutions}</p> }
+                : <p>{props.efferSolutions}</p>}
             </div>
           </div>
         </div>
 
         <div className="section innovations">
-          <h3>Major innovations:</h3>
+          <h3>Major innovations</h3>
           <div className="grid">
             <div className="grid-item hiab">
-              {props.hiabInnovations && Array.isArray(props.hiabInnovations) ? 
+              {props.hiabInnovations && Array.isArray(props.hiabInnovations) ?
                 <ul>
                   {props.hiabInnovations.map((item) => <li>{item}</li>)}
                 </ul>
-              : <p>{props.hiabInnovations}</p> }
+                : <p>{props.hiabInnovations}</p>}
             </div>
             <div className="grid-item effer">
-              {props.efferInnovations && Array.isArray(props.efferInnovations) ? 
+              {props.efferInnovations && Array.isArray(props.efferInnovations) ?
                 <ul>
                   {props.efferInnovations.map((item) => <li>{item}</li>)}
                 </ul>
-              : <p>{props.efferInnovations}</p> }
+                : <p>{props.efferInnovations}</p>}
             </div>
           </div>
         </div>
