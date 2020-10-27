@@ -21,8 +21,16 @@ const StyledDiv = styled.div`
       margin: 0 auto;
       ${'' /* margin-top: 20vh; */}
       max-width: 900px;
+      ${'' /* text-align: center; */}
       h1{
-        font-size: 80px;
+        margin: 0;
+      }
+      h1.title-over{
+        font-size: 52px;
+      }
+      h1.title-under{
+        font-size: 52px;
+        margin-bottom: 20px;
       }
       p{
         font-size: 22px;
@@ -71,11 +79,12 @@ const Page04 = props => {
           <div className="content">
             <div className="text-button-wrapper">
               <div className="start-page-text">
-                <BillboardHeading text="That’s it!"/>
-                <Paragraphs items={["Good luck in your discussions with customers and feel free to return to this tool whenever you need a refresher."]}/>
+                <h1 className="title-over">Well done.</h1>
+                <h1 className="title-under">You’ve now completed “la Sfida”!</h1>
+                <Paragraphs items={["Thanks for taking The Challenge and be sure to let us know if it has helped you in your discussions with customers. Feel free to come back whenever you need a refresher."]} />
               </div>
               <Logos />
-              <Navigation backTo="/start04"/>
+              <Navigation backTo="/start04" />
             </div>
           </div>
         </StyledDiv>
