@@ -228,7 +228,12 @@ const Page05 = () => {
                 <article>
                   <Application
                     title="Heavy Loads"
-                    textUnderTitle="Requires a high degree of safety, ease-of-use and efficiency, as well as attention to environmental issues and city limitations."
+                    textUnderTitle="Requires even higher levels of safety to protect people and equipment, as well as the ability to handle loads of considerable size."
+
+                    efferRange="Models from 100 Tm upwards, especially those equipped with Progress or Progress 2.0 electronic control systems are superior for handling heavy loads."
+                    efferBenefits="Safe, stable and efficient. EFFER cranes offer one of the best power-to-weight ratios, perfect for taking on considerable payloads. Also, excellent stabilisation thanks to CroSStab and V-Stab."
+                    efferSolutions="E955 & E2255"
+                    efferInnovations={["Virtual Shield – protects the cab", "Progressive Deceleration System – eliminates risk of collision", "V-Stab – the only solution that provides 360° crane stability"]}
                   />
                 </article>
               }
@@ -237,7 +242,14 @@ const Page05 = () => {
                 <article>
                   <Application
                     title="Logistics"
-                    textUnderTitle="Requires a high degree of safety, ease-of-use and efficiency, as well as attention to environmental issues and city limitations."
+                    textUnderTitle="This highly demanding sector requires reliable, intelligent solutions to maximise uptime for a fleet of often smaller cranes."
+
+                    hiabRange="HIAB offers a full range of reliable, smaller sized cranes ideal for rental companies or supporting logistics companies that deliver materials. "
+                    hiabBenefits="Built for continuous loading and dropping off of materials close to the truck. Excellent service organisation and intelligent, data-driven solutions help increase uptime and optimise operations."
+                    hiabSolutions="HiConnect"
+                    hiabInnovations="HiConnect – Real-time data about equipment’s operation and condition empowers fleet managers to improve performance and safety, and avoid unnecessary downtime."
+
+                    efferRange="For this application, choose HIAB."
                   />
                 </article>
               }
@@ -246,7 +258,14 @@ const Page05 = () => {
                 <article>
                   <Application
                     title="Public Spaces"
-                    textUnderTitle="Requires a high degree of safety, ease-of-use and efficiency, as well as attention to environmental issues and city limitations."
+                    textUnderTitle="Requires small- to mid-size cranes for small removals, placing and maintenance of monuments, landscaping equipment, etc."
+
+                    hiabRange="Numerous smaller sized cranes with accessories such as bucket or hoist are ideally suited for maintenance of public spaces. "
+                    hiabBenefits="Cost-efficient for municipalities."
+                    hiabSolutions
+                    hiabInnovations
+
+                    efferRange="For this application, choose HIAB."
                   />
                 </article>
               }
@@ -272,6 +291,13 @@ const Page05 = () => {
                   <Application
                     title="Glass Plate Handling"
                     textUnderTitle="Requires a high degree of safety, ease-of-use and efficiency, as well as attention to environmental issues and city limitations."
+
+                    efferRange="Models equipped with Progress or Progress 2.0 electronic control systems are ideal for carrying out these highly delicate tasks."
+                    efferBenefits="Considerable payload thanks to lightweight structure; optimal precision, fluidity and speed, as well as unique ability to work with and maintain outstanding performance at negative angles."
+                    efferSolutions={["Medium: E375", "Big: E395, E1750 & E2255"]}
+                    efferInnovations={["Progressive Deceleration System – eliminates risk of collision", "The possibility to work with negative angles is a highly acclaimed function within this business and is available not only for the main column and booms, but also for the JIB. This double possibility is highly uncommon among the competition."]}
+
+                    hiabRange="For  this application, choose EFFER."
                   />
                 </article>
               }

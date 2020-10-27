@@ -80,10 +80,11 @@ const StyledDiv = styled.div`
             font-size: 18px;
           }
           ul{
+            padding-left: 24px;
             margin: 0px;
             li{
               margin: 0;
-              font-size: 20px;
+              font-size: 18px;
             }
           }
         }
@@ -108,7 +109,7 @@ const Application = props => {
             <h1 className="intro-title">{props.title}</h1>
             <p className="intro-text">{props.textUnderTitle}</p>
           </div>
-          <img className="top-img" src={props.image} alt="stuff" />
+          {props.image && <img className="top-img" src={props.image} alt="stuff" />}
         </div>
       </div>
       <div className="content">
