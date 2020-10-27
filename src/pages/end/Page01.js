@@ -12,17 +12,17 @@ import Background from "../../assets/images/effer/effer-big-05.jpg";
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
   .BlackBoxHeading{
-    width: 500px;
+    width: 560px;
     position: absolute;
     bottom: 60px;
     h1{
-      font-size: 54px;
-      line-height: 54px;
+      font-size: 44px;
+      line-height: 44px;
     }
   }
   @media ${props => props.theme.secondBreakpoint}{
     .BlackBoxHeading{
-      width: 600px;
+      width: 760px;
       h1{
         font-size: 64px;
         line-height: 64px;
@@ -31,10 +31,10 @@ const StyledDiv = styled.div`
   }
   @media ${props => props.theme.thirdBreakpoint}{
     .BlackBoxHeading{
-      width: 900px;
+      width: 1200px;
       h1{
-        font-size:100px;
-        line-height:100px;
+        font-size:70px;
+        line-height:70px;
       }
     }
   }
@@ -45,8 +45,8 @@ const Page01 = () => {
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <BlackBoxHeading className="BlackBoxHeading" title="So what have we learned?" />
-          <Navigation backTo="/one-unbeatable-offer/page05" to="/end02"/>
+          <BlackBoxHeading className="BlackBoxHeading" title="You’re almost there!" />
+          <Navigation backTo="/one-unbeatable-offer/page05" to="/end02" />
         </StyledDiv>
       </BackgroundImage>
     </div>
