@@ -14,15 +14,11 @@ const StyledDiv = styled.div`
 
   .extreme-wrapper{
     text-align: center;
-    h1{
-      margin: 0;
-      margin-top: 10px;
-      font-size: 82px;
-      line-height: 82px;
-      letter-spacing: 14px;
-    }
     p{
       font-size: 22px;
+      strong{
+        font-weight: 900;
+      }
     }
   }
   ul{
@@ -118,8 +114,7 @@ const Page015 = () => {
     <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showEfferLogo={true} >
       <StyledDiv>
         <div className="extreme-wrapper">
-          <h1>EXTREME</h1>
-          <p>That’s EFFER in a single word. Our customers experience it as</p>
+          <p><strong>EXTREME. </strong>That’s EFFER in a single word. Our customers experience it as</p>
         </div>
         <UnorderedList items={listItems} />
         <Navigation backTo="/about-effer/page017" to="/about-effer/page019" />

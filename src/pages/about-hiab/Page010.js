@@ -13,15 +13,11 @@ import closeIcon from "../../assets/icons/close-menu.svg";
 const StyledDiv = styled.div`
   .smart-wrapper{
     text-align: center;
-    h1{
-      margin: 0;
-      margin-top: 10px;
-      font-size: 100px;
-      line-height: 100px;
-      letter-spacing: 14px;
-    }
     p{
       font-size: 22px;
+      strong{
+        font-weight: 900;
+      }
     }
   }
   ul{
@@ -121,8 +117,7 @@ const Page010 = () => {
     <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showHiabLogo>
       <StyledDiv>
         <div className="smart-wrapper">
-          <h1>SMART</h1>
-          <p>That’s HIAB in a single word. Our customers experience it as </p>
+          <p><strong>SMART. </strong>That’s HIAB in a single word. Our customers experience it as </p>
         </div>
         <UnorderedList items={listItems} />
         <Navigation backTo="/about-hiab/page012" to="/about-hiab/page014" />
