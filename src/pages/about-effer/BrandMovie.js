@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 import BackgroundImage from "../../components/styled/BackgroundImage";
 import Navigation from "../../components/Navigation";
 
-import EfferLogo from "../../assets/icons/effer-logo.svg";
 import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
 
 
@@ -69,17 +67,17 @@ const StyledDiv = styled.div`
 
 
 const BrandMovie = props => {
-  return(
+  return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
           <div className="video-popup">
             <div className="video-popup-inner">
-            {/* <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/X3QfnmKL3yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> */}
-            <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/sVkqRawzebo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              {/* <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/X3QfnmKL3yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> */}
+              <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/sVkqRawzebo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
           </div>
-          <Navigation backTo="/about-effer/page07" to="/about-effer/page04"/>
+          <Navigation backTo="/about-effer/page07" to="/about-effer/page04" />
         </StyledDiv>
       </BackgroundImage>
     </div>

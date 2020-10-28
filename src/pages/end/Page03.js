@@ -12,7 +12,6 @@ import BothView from "./Page03Views/Both";
 
 // images
 import Background from "../../assets/images/effer_hiab-background.jpg";
-import BackgroundPopup from "../../assets/images/effer/effer-big-05.jpg";
 import closeIcon from "../../assets/icons/big-red-button.png";
 
 const StyledDiv = styled.div`
