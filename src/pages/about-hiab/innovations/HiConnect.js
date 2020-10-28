@@ -105,7 +105,7 @@ const HiConnect = () => {
 
   return (
     <StyledDiv>
-      <h1>HiConnect</h1>
+      <h1>HiConnect™ - for optimising operations</h1>
       <div className="wrapper">
         <div className="text">
           <p>This intelligent, connected service provides fleet managers with real-time data about their HIAB cranes’ operation and condition, giving them the power to improve performance and safety, and to avoid unnecessary downtime.</p>

@@ -41,7 +41,7 @@ const StyledDiv = styled.div`
         padding: 30px 20px;
         transition: all .3s ease;
         h1{
-          font-size: 17px;
+          font-size: 22px;
         }
       }
       .grid-item:hover{
@@ -96,7 +96,7 @@ const StyledDiv = styled.div`
         grid-template-columns: 1fr 1fr 1fr 1fr;
         .grid-item{
           h1{
-            font-size: 15px;
+            font-size: 26px;
           }  
         }
       }
@@ -107,7 +107,7 @@ const StyledDiv = styled.div`
       .grid{
         .grid-item{
           h1{
-            font-size: 18px;
+            font-size:28px;
           }
         }
       }
@@ -123,7 +123,7 @@ const StyledDiv = styled.div`
     .grid{
       .grid-item{
         h1{
-          font-size: 24px;
+          font-size: 30px;
         }
       }
     }
@@ -147,13 +147,13 @@ const Page012 = () => {
             <p>Explore the innovations that have set HIAB apart and help optimise business.</p>
             <div className="grid">
               <div onClick={() => setCtcToggle(true)} className="grid-item">
-                <h1>Crane Tip Control</h1>
+                <h1>CTC</h1>
               </div>
               <div onClick={() => setSamToggle(true)} className="grid-item">
-                <h1>Semi Automatic Motion</h1>
+                <h1>SAM</h1>
               </div>
               <div onClick={() => setSafToggle(true)} className="grid-item">
-                <h1>Semi Automatic Folding</h1>
+                <h1>SAF</h1>
               </div>
               <div onClick={() => setHiConnectToggle(true)} className="grid-item">
                 <h1>HiConnect</h1>

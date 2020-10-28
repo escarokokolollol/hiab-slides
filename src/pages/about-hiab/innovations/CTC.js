@@ -104,23 +104,23 @@ const CTC = () => {
 
   const [toggle, setToggle] = useState(false);
 
-  return(
+  return (
     <StyledDiv>
-      <h1>CTC</h1>
+      <h1>Crane Tip Control (CTC)</h1>
       <div className="wrapper">
         <div className="text">
           <p>Unlike conventional controls for each individual function, Crane Tip Control enables the operator to control the behaviour of the crane tip using only three levers — slewing, horizontal movement and vertical movement. </p>
           <button className="play-video" onClick={() => setToggle(!toggle)}>Play video</button>
         </div>
 
-        {toggle ? 
-          <div className="video-popup" onClick={ () => setToggle(!toggle)}>
+        {toggle ?
+          <div className="video-popup" onClick={() => setToggle(!toggle)}>
             <div className="video-popup-inner">
               <iframe className="video" title="CTC" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/FJFmWjmH-ow?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
-            <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setToggle(!toggle)}/> 
+            <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setToggle(!toggle)} />
           </div>
-        : ""}
+          : ""}
       </div>
     </StyledDiv>
   );

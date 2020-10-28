@@ -104,23 +104,23 @@ const SAM = () => {
 
   const [toggle, setToggle] = useState(false);
 
-  return(
+  return (
     <StyledDiv>
-      <h1>SAM</h1>
+      <h1>Semi Automatic Motion (SAM)</h1>
       <div className="wrapper">
         <div className="text">
           <p>Semi-Automatic Motion increases productivity and reduces the risk of costly damage by making it fast and easy for any driver to operate the crane in a safe and controlled way. A single control lever performs autonomous movements, rather than the operator needing to individually steer swing, tilt, lift and extension movements.</p>
           <button className="play-video" onClick={() => setToggle(!toggle)}>Play video</button>
         </div>
 
-        {toggle ? 
-          <div className="video-popup" onClick={ () => setToggle(!toggle)}>
+        {toggle ?
+          <div className="video-popup" onClick={() => setToggle(!toggle)}>
             <div className="video-popup-inner">
-               <iframe className="video" title="SAM" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/fqEVt1eUzo4?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <iframe className="video" title="SAM" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/fqEVt1eUzo4?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
-            <img className="close-icon" src={closeIcon} alt="close icon" onClick={ () => setToggle(!toggle)}/> 
+            <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setToggle(!toggle)} />
           </div>
-        : ""}
+          : ""}
       </div>
     </StyledDiv>
   );
