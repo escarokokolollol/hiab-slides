@@ -7,7 +7,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // images
 import ScrollArrow from "../../assets/icons/scroll-arrow.svg";
-import Background from "../../assets/images/hiab/hiab-forestbg.jpg";
+import Background from "../../assets/images/hiab/hiab-bg-dark.jpg";
 import image1 from "../../assets/images/hiab/hiab-192.jpg";
 import image2 from "../../assets/images/hiab/hiab-elefant.jpg";
 import image3 from "../../assets/images/hiab/hiab-million01.jpg";
@@ -128,17 +128,17 @@ const Page03 = () => {
 
   const [toggle, setToggle] = useState(false);
 
-  
+
   const removeScrollText = () => {
     setToggle(false);
   }
-  
-  useEffect( () => {
+
+  useEffect(() => {
     window.addEventListener('scroll', removeScrollText);
-    setTimeout( () => {
+    setTimeout(() => {
       setToggle(true);
-    },4000);
-  },[]);
+    }, 4000);
+  }, []);
 
   return (
     <div className="page-transition">
@@ -153,14 +153,14 @@ const Page03 = () => {
               <h1>
                 SCROLL TO NAVIGATE
               </h1>
-              <img src={ScrollArrow} alt="image1"/>
+              <img src={ScrollArrow} alt="image1" />
             </div>
           </div>
 
           <div className="posts">
             <div className="post">
               <div className="image">
-                <img src={image1} alt="image1"/>
+                <img src={image1} alt="image1" />
               </div>
               <div className="text">
                 <h2>192</h2>
@@ -174,13 +174,13 @@ const Page03 = () => {
                 <p>The year that Hiab launched the “Elefant” loader crane. It was an engineering breakthrough that introduced the “knuckleboom” crane – the standard ever since.</p>
               </div>
               <div className="image">
-                <img src={image2} alt="image2"/>
+                <img src={image2} alt="image2" />
               </div>
             </div>
 
             <div className="post">
               <div className="image">
-                <img src={image3} alt="image3"/>
+                <img src={image3} alt="image3" />
               </div>
               <div className="text">
                 <h2>Half a million</h2>
@@ -194,12 +194,12 @@ const Page03 = () => {
                 <p>Our age. And we’re proud of it. Today the HIAB brand is synonymous with loader cranes. And our parent company, Hiab, with leading brands like LOGLIFT, MOFFET, MULTILIFT, ZEPRO, DEL, WALTCO and of course, EFFER, is considered the premier brand in the global load handling industry.</p>
               </div>
               <div className="image">
-                <img src={image4} alt="image4"/>
+                <img src={image4} alt="image4" />
               </div>
             </div>
 
           </div>
-          <Navigation backTo="/about-hiab/page02" to="/about-hiab/page04"/>
+          <Navigation backTo="/about-hiab/page02" to="/about-hiab/page04" />
         </StyledDiv>
       </BackgroundImage>
     </div>
