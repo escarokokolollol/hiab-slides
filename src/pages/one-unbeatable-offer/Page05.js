@@ -218,7 +218,14 @@ const Page05 = () => {
                 <article>
                   <Application
                     title="Specialty "
-                    textUnderTitle="Requires a high degree of safety, ease-of-use and efficiency, as well as attention to environmental issues and city limitations."
+                    textUnderTitle="In general, these are special projects for answering specific needs in sectors currently lacking cranes and solutions."
+
+                    hiabRange="HIAB works with customers for a wide range of special sectors for which cranes and solutions still do not exist. The mining sector, wind turbines and defence are just some of the many sectors for which we work project-oriented. Also supporting technical innovations via our frameworks division which gives a complete package."
+                    hiabBenefits="Specially designed cranes according to customer specifications. These are typically  special projects designed to fit specific needs."
+                    hiabSolutions={["Special protection measures for cabling and hosing", "Anticorrosion or special materials for components that need to withstand demanding environmental conditions"]}
+                    hiabInnovations="According to needs, e.g. many new control functions have been developed to answer specific needs or requests. The control systems allow the programming of many functions mainly for increasing operator and overall safety."
+
+                    efferRange="For this application, choose HIAB."
                   />
                 </article>
               }
@@ -234,6 +241,8 @@ const Page05 = () => {
                     efferBenefits="Safe, stable and efficient. EFFER cranes offer one of the best power-to-weight ratios, perfect for taking on considerable payloads. Also, excellent stabilisation thanks to CroSStab and V-Stab."
                     efferSolutions="E955 & E2255"
                     efferInnovations={["Virtual Shield – protects the cab", "Progressive Deceleration System – eliminates risk of collision", "V-Stab – the only solution that provides 360° crane stability"]}
+
+                    hiabRange="For this application, choose HIAB."
                   />
                 </article>
               }
@@ -262,8 +271,7 @@ const Page05 = () => {
 
                     hiabRange="Numerous smaller sized cranes with accessories such as bucket or hoist are ideally suited for maintenance of public spaces. "
                     hiabBenefits="Cost-efficient for municipalities."
-                    hiabSolutions
-                    hiabInnovations
+                    hiabSolutions="Ready to go certifications, full installation warranty and ready to go solutions."
 
                     efferRange="For this application, choose HIAB."
                   />

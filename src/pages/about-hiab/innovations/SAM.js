@@ -109,7 +109,7 @@ const SAM = () => {
       <h1>Semi Automatic Motion (SAM)</h1>
       <div className="wrapper">
         <div className="text">
-          <p>Semi-Automatic Motion increases productivity and reduces the risk of costly damage by making it fast and easy for any driver to operate the crane in a safe and controlled way. A single control lever performs autonomous movements, rather than the operator needing to individually steer swing, tilt, lift and extension movements.</p>
+          <p>Semi Automatic Motion increases productivity and reduces the risk of costly damage by making it fast and easy for any driver to operate the crane in a safe and controlled way. A single control lever performs autonomous movements, rather than the operator needing to individually steer swing, tilt, lift and extension movements.</p>
           <button className="play-video" onClick={() => setToggle(!toggle)}>Play video</button>
         </div>
 
