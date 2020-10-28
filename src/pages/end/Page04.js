@@ -20,7 +20,7 @@ const Page04 = () => {
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <h1>Links</h1>
+          <h1>Learn more</h1>
           <Navigation backTo="/end03" to="/end05" />
 
         </StyledDiv>
