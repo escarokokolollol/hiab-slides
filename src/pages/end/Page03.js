@@ -124,8 +124,8 @@ const Page03 = () => {
         <StyledDiv>
 
           <div className="content-inner">
-            <h1 className="title">Key messages</h1>
-            <p>On the next few pages you’ll find a selection of images and key messages that reflect the strengths of these two iconic brands as well as of our combined offer. Use them as inspiration whenever you need to create communication for your market.</p>
+            <h1 className="title">Get inspired</h1>
+            <p>Explore these suggested ideas for how set the tone for your communication</p>
             <div className="grid">
               <div onClick={() => setToggleHiab(true)} className="grid-item">
                 <h1>HIAB</h1>
@@ -134,7 +134,7 @@ const Page03 = () => {
                 <h1>EFFER</h1>
               </div>
               <div onClick={() => setToggleBoth(true)} className="grid-item">
-                <h1>Both</h1>
+                <h1>HIAB & EFFER</h1>
               </div>
             </div>
           </div>
