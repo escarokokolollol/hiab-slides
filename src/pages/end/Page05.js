@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Background from "../../assets/images/effer_hiab-background.jpg";
 
 // components
-import BillboardHeading from "../../components/BillboardHeading";
 import Paragraphs from "../../components/Paragraphs";
 import Logos from "../../components/Logos";
 import Navigation from "../../components/Navigation";
