@@ -8,6 +8,10 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // images
 import constructionImage from "../../assets/images/applications/effercoolt01.jpg";
+import wasteImage from "../../assets/images/applications/waste.jpg";
+import specialityImage from "../../assets/images/applications/speciality.jpg";
+import heavyImage from "../../assets/images/applications/heavy.jpg";
+import glassImage from "../../assets/images/applications/glass.jpg";
 import Background from "../../assets/images/effer_hiab-background.jpg";
 
 
@@ -202,6 +206,7 @@ const Page05 = () => {
                 <article>
                   <Application
                     title="Waste & Recycling"
+                    image={wasteImage}
                     textUnderTitle="Requires a high degree of safety, ease-of-use and efficiency, as well as attention to environmental issues and city limitations."
 
                     hiabRange="Specialized products like the 130 and 230W are designed to handle the stress of highly repetitive operation cycles that put stress on the structure."
@@ -218,6 +223,7 @@ const Page05 = () => {
                 <article>
                   <Application
                     title="Specialty "
+                    image={specialityImage}
                     textUnderTitle="In general, these are special projects for answering specific needs in sectors currently lacking cranes and solutions."
 
                     hiabRange="HIAB works with customers for a wide range of special sectors for which cranes and solutions still do not exist. The mining sector, wind turbines and defence are just some of the many sectors for which we work project-oriented. Also supporting technical innovations via our frameworks division which gives a complete package."
@@ -235,6 +241,7 @@ const Page05 = () => {
                 <article>
                   <Application
                     title="Heavy Loads"
+                    image={heavyImage}
                     textUnderTitle="Requires even higher levels of safety to protect people and equipment, as well as the ability to handle loads of considerable size."
 
                     efferRange="Models from 100 Tm upwards, especially those equipped with Progress or Progress 2.0 electronic control systems are superior for handling heavy loads."
@@ -298,6 +305,7 @@ const Page05 = () => {
                 <article>
                   <Application
                     title="Glass Plate Handling"
+                    image={glassImage}
                     textUnderTitle="Requires a high degree of safety, ease-of-use and efficiency, as well as attention to environmental issues and city limitations."
 
                     efferRange="Models equipped with Progress or Progress 2.0 electronic control systems are ideal for carrying out these highly delicate tasks."

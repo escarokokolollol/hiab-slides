@@ -9,7 +9,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 import ScrollArrow from "../../assets/icons/scroll-arrow.svg";
 import Background from "../../assets/images/dark-background01.jpg";
 import image1 from "../../assets/images/effer/timeline/1966.jpg";
-import image2 from "../../assets/images/missing.jpg";
+import image2 from "../../assets/images/effer/timeline/storia03.jpg";
 import image3 from "../../assets/images/effer/timeline/1985.jpg";
 import image4 from "../../assets/images/effer/timeline/1988.jpg";
 import image5 from "../../assets/images/effer/timeline/2001.jpg";
