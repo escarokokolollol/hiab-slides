@@ -76,6 +76,16 @@ const StyledDiv = styled.div`
       }
     }
   }
+  @media (min-width: 1660px){
+    .video-popup{
+      .video-popup-inner{
+        .video{
+          width: 1000px;
+          height: 572px;
+        }
+      }
+    }
+  }
 `;
 
 
