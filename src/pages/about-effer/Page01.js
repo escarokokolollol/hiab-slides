@@ -13,6 +13,13 @@ import InfoIcon from "../../assets/icons/info-red.svg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
+  .box{
+    opacity: 0;
+  }
+  .show-box{
+    opacity: 1;
+    transition: opacity 2s ease;
+  }
   .jump{
     animation-name: jumpAni; 
     animation-duration: 1.5s;
@@ -61,31 +68,36 @@ const StyledDiv = styled.div`
 const Page01 = () => {
   const [toggle, setToggle] = useState();
   const [infoButtonJump, setInfoButtonJump] = useState(false);
+  const [showBox, setShowBox] = useState(false);
 
-  useEffect( () => {
-    setTimeout( () => {
+  useEffect(() => {
+    setTimeout(() => {
       setInfoButtonJump(true);
-    },3000);
+    }, 5000);
+
+    setTimeout(() => {
+      setShowBox(true);
+    }, 1000);
   });
+
   return (
     <div className="page-transition">
-      <BackgroundImage image={Background}> 
+      <BackgroundImage image={Background}>
         <StyledDiv>
-          <BlackBoxHeading title="But what do you know about EFFER?" textOver="So you know the story of HIAB already">
-
-            <img 
-              onClick={() => setToggle(!toggle)} 
-              className={`info-button ${infoButtonJump ? "jump" : ""}`}
-              src={InfoIcon} 
-              alt="button for toggle info"
-            />
-
+          <div className={`box ${showBox ? "show-box" : ""}`}>
+            <BlackBoxHeading title="But what do you know about EFFER?" textOver="So you know the story of HIAB already">
+              <img
+                onClick={() => setToggle(!toggle)}
+                className={`info-button ${infoButtonJump ? "jump" : ""}`}
+                src={InfoIcon}
+                alt="button for toggle info"
+              />
               <div className={`info-wrapper-wrapper ${toggle ? "show" : "hide"}`}>
-                <InfoWrapper text="Did you know…The Via Emilia is a 2000 year old artery running through the vital region of Italy known as “Emilia Romagna”, and is a marvel of Roman engineering."/>
+                <InfoWrapper text="Did you know…The Via Emilia is a 2000 year old artery running through the vital region of Italy known as “Emilia Romagna”, and is a marvel of Roman engineering." />
               </div>
-
-          </BlackBoxHeading>
-          <Navigation to="/about-effer/page02"/>
+            </BlackBoxHeading>
+          </div>
+          <Navigation to="/about-effer/page02" />
         </StyledDiv>
       </BackgroundImage>
     </div>
