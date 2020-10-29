@@ -35,6 +35,7 @@ const StyledDiv = styled.div`
   
   .posts{
     padding: 20px 0;
+    opacity: 0;
     .post{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -122,15 +123,20 @@ const StyledDiv = styled.div`
     pointer-events: none;
     transition: opacity 2s ease;
   }
+  .show-posts{
+    opacity: 1;
+    transition: opacity 3s ease;
+  }
 `;
 
 const Page03 = () => {
 
   const [toggle, setToggle] = useState(false);
-
+  const [showPosts, setShowPosts] = useState(false);
 
   const removeScrollText = () => {
     setToggle(false);
+    setShowPosts(true);
   }
 
   useEffect(() => {
@@ -157,7 +163,7 @@ const Page03 = () => {
             </div>
           </div>
 
-          <div className="posts">
+          <div className={`posts ${showPosts && "show-posts"}`}>
             <div className="post">
               <div className="image">
                 <img src={image1} alt="image1" />
