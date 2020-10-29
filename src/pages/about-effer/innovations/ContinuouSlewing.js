@@ -117,7 +117,7 @@ const ContinuouSlewing = () => {
         {toggle ?
           <div className="video-popup" onClick={() => setToggle(!toggle)}>
             <div className="video-popup-inner">
-              <iframe className="video" title="Continuous slewing" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/BIUZU9nRN9g?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <iframe className="video" title="Continuous slewing" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/l4z6myTRi3g?autoplay=1&start=134" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
             <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setToggle(!toggle)} />
           </div>

@@ -157,7 +157,7 @@ const Page017 = () => {
                 <h1>Continuous Slewing</h1>
               </div>
               <div onClick={() => setSecondJib(true)} className="grid-item">
-                <h1>Second Jib</h1>
+                <h1>KJ & Second Jibs</h1>
               </div>
             </div>
           </div>

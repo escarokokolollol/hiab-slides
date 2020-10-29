@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
 import closeIcon from "../../../assets/icons/close-menu.svg";
+
 
 const StyledDiv = styled.div`
   h1{
@@ -37,6 +37,12 @@ const StyledDiv = styled.div`
       p{
         font-size: 22px;
         margin-top:0;
+      }
+      ul{
+        li{
+          margin-bottom: 4px;
+          font-size: 22px;
+        }
       }
     }
   }
@@ -106,17 +112,21 @@ const ContinuouSlewing = () => {
 
   return (
     <StyledDiv>
-      <h1>Second jib – reach beyond</h1>
+      <h1>KJ & second jibs – reach beyond!</h1>
       <div className="wrapper">
         <div className="text">
-          <p>Quite unique to EFFER cranes, the second JIB allows you to work at outstanding heights, shifting the knuckle point even higher and considerably increasing the outreach. It can also be operated horizontally</p>
+          <p>These two revolutionary jib innovations are quite unique to EFFER cranes and enable you to work at outstanding heights:</p>
+          <ul>
+            <li>Second jib: shifts the knuckle point even higher and considerably increases the outreach. It can also be operated horizontally.</li>
+            <li>KJ: stowed inside the second boom and lifts you two floors higher.</li>
+          </ul>
           <button className="play-video" onClick={() => setToggle(!toggle)}>Play video</button>
         </div>
 
         {toggle ?
           <div className="video-popup" onClick={() => setToggle(!toggle)}>
             <div className="video-popup-inner">
-              <iframe className="video" title="secondjib" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/wbNNpnZ7BuU?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <iframe className="video" title="secondjib" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/X6z7kkyGfjA?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
             <img className="close-icon" src={closeIcon} alt="close icon" onClick={() => setToggle(!toggle)} />
           </div>
