@@ -47,12 +47,9 @@ const StyledDiv = styled.div`
         ${'' /* box-shadow: 1px 1px 12px #888; */}
         border-radius: 8px;
         padding: 10px;
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        width: 70%;
-        height: 100%;
+        
+        width: 544px;
+        height: 315px;
       }
     }
   }
@@ -60,8 +57,24 @@ const StyledDiv = styled.div`
   @media ${props => props.theme.firstBreakpoint}{
   }
   @media ${props => props.theme.secondBreakpoint}{
+    .video-popup{
+      .video-popup-inner{
+        .video{
+          width: 700px;
+          height: 403px;
+        }
+      }
+    }
   }
   @media ${props => props.theme.thirdBreakpoint}{
+    .video-popup{
+      .video-popup-inner{
+        .video{
+          width: 800px;
+          height: 459px;
+        }
+      }
+    }
   }
 `;
 
@@ -73,7 +86,6 @@ const BrandMovie = props => {
         <StyledDiv>
           <div className="video-popup">
             <div className="video-popup-inner">
-              {/* <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/X3QfnmKL3yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> */}
               <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/sVkqRawzebo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
           </div>
