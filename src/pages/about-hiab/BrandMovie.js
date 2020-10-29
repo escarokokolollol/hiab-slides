@@ -47,21 +47,42 @@ const StyledDiv = styled.div`
         ${'' /* box-shadow: 1px 1px 12px #888; */}
         border-radius: 8px;
         padding: 10px;
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        width: 70%;
-        height: 100%;
+        
+        width: 544px;
+        height: 315px;
       }
     }
   }
 
-  @media ${props => props.theme.firstBreakpoint}{
-  }
   @media ${props => props.theme.secondBreakpoint}{
+    .video-popup{
+      .video-popup-inner{
+        .video{
+          width: 700px;
+          height: 403px;
+        }
+      }
+    }
   }
   @media ${props => props.theme.thirdBreakpoint}{
+    .video-popup{
+      .video-popup-inner{
+        .video{
+          width: 800px;
+          height: 459px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1660px){
+    .video-popup{
+      .video-popup-inner{
+        .video{
+          width: 1000px;
+          height: 572px;
+        }
+      }
+    }
   }
 `;
 
