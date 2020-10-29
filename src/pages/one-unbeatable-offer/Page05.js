@@ -249,7 +249,7 @@ const Page05 = () => {
                     efferSolutions="E955 & E2255"
                     efferInnovations={["Virtual Shield – protects the cab", "Progressive Deceleration System – eliminates risk of collision", "V-Stab – the only solution that provides 360° crane stability"]}
 
-                    hiabRange="For this application, choose HIAB."
+                    hiabRange="For this application, choose EFFER."
                   />
                 </article>
               }
