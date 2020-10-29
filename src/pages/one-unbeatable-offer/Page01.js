@@ -6,7 +6,7 @@ import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // images
-import Background from "../../assets/images/hiabeffer01.jpg";
+import Background from "../../assets/images/hiabeffer222.jpg";
 import EfferLogo from "../../assets/icons/effer-logo.svg";
 import HiabLogo from "../../assets/icons/hiab-logo.svg";
 
@@ -82,14 +82,14 @@ const Page01 = () => {
 
           <div className="BlackBoxHeading-wrapper">
             <div className="logos">
-              <img src={EfferLogo} alt="effer logo"/>
-              <img src={HiabLogo} alt="hiab logo"/>
+              <img src={EfferLogo} alt="effer logo" />
+              <img src={HiabLogo} alt="hiab logo" />
             </div>
             <h1>Two remarkable brands</h1>
             <h1>One unbeatable offer</h1>
           </div>
 
-          <Navigation to="/one-unbeatable-offer/page02"/>
+          <Navigation to="/one-unbeatable-offer/page02" />
 
         </StyledDiv>
       </BackgroundImage>
