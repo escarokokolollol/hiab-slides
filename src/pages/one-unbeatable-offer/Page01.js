@@ -13,17 +13,19 @@ import HiabLogo from "../../assets/icons/hiab-logo.svg";
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
   height: 100vh;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
   .BlackBoxHeading-wrapper{
+    position: absolute;
+    bottom: 90px;
+    left: 100px; 
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: rgba(0,0,0,0.8);
     width: 500px;
-    padding: 60px;
+    padding: 40px;
+    background: rgba(255,255,255, 0.8);
+    color: #000;
     .logos{
       display: grid;
       grid-gap: 40px;
@@ -38,37 +40,38 @@ const StyledDiv = styled.div`
   }
   @media ${props => props.theme.firstBreakpoint}{
     .BlackBoxHeading-wrapper{
-      width: 700px;
+      width: 460px;
       .logos{
         img{
           width: 140px;
         }
       }
       h1{
-        font-size: 42px;
-        line-height:42px;
+        font-size: 30px;
+        line-height:30px;
       }
     }
   }
   @media ${props => props.theme.secondBreakpoint}{
     .BlackBoxHeading-wrapper{
+      width: 600px;
       h1{
-        font-size:48px;
-        line-height:48px;
+        font-size:42px;
+        line-height:42px;
       }
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
     .BlackBoxHeading-wrapper{
-      width: 900px;
+      width: 800px;
       .logos{
         img{
           width: 200px;
         }
       }
       h1{
-        font-size: 68px;
-        line-height: 68px;
+        font-size: 58px;
+        line-height: 58px;
       }
     }
   }
@@ -81,10 +84,10 @@ const Page01 = () => {
         <StyledDiv>
 
           <div className="BlackBoxHeading-wrapper">
-            <div className="logos">
+            {/* <div className="logos">
               <img src={EfferLogo} alt="effer logo" />
               <img src={HiabLogo} alt="hiab logo" />
-            </div>
+            </div> */}
             <h1>Two remarkable brands</h1>
             <h1>One unbeatable offer</h1>
           </div>
