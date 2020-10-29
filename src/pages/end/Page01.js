@@ -15,6 +15,8 @@ const StyledDiv = styled.div`
     width: 560px;
     position: absolute;
     bottom: 60px;
+    background: rgba(255,255,255, 0.8);
+    color: #000;
     h1{
       font-size: 44px;
       line-height: 44px;

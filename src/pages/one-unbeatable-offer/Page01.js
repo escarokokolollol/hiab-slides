@@ -7,8 +7,8 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // images
 import Background from "../../assets/images/hiabeffer222.jpg";
-import EfferLogo from "../../assets/icons/effer-logo.svg";
-import HiabLogo from "../../assets/icons/hiab-logo.svg";
+// import EfferLogo from "../../assets/icons/effer-logo.svg";
+// import HiabLogo from "../../assets/icons/hiab-logo.svg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};

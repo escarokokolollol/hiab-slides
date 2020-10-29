@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 // components
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
-import BlackBoxHeading from "../../components/BlackBoxHeading";
 
 // images
 import Background from "../../assets/images/effer/effer-bg03.jpg";
@@ -17,10 +16,16 @@ const StyledDiv = styled.div`
     padding: 40px 60px;
     background: rgba(255,255,255, 0.8);
     color: #000;
+
+    opacity: 0;
     h1{
       margin: 0;
       font-size: 47px;
     }
+  }
+  .show-wrapper{
+    opacity: 1;
+    transition: opacity 2s ease;
   }
   @media ${props => props.theme.secondBreakpoint}{
     .wrapper{
@@ -29,16 +34,23 @@ const StyledDiv = styled.div`
         font-size: 57px;
       }
     }
-
   }
 `;
 
 const Page04 = () => {
+  const [showText, setShowText] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowText(true);
+    }, 1000);
+  }, []);
+
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <div className="wrapper">
+          <div className={`wrapper ${showText ? "show-wrapper" : ""}`}>
             <h1>Solutions for different applications</h1>
             <p>Another way to look at providing customers with the best solutions to meet their specific needs is to think in terms of applications.</p>
           </div>
