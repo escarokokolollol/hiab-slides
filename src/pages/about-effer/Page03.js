@@ -38,8 +38,8 @@ const StyledDiv = styled.div`
     max-width: 900px;
     margin-bottom: 30px;
   }
-  
   .posts{
+    opacity: 0;
     padding: 20px 0;
     .post{
       display: grid;
@@ -128,21 +128,29 @@ const StyledDiv = styled.div`
     pointer-events: none;
     transition: opacity 2s ease;
   }
+
+  .show-posts{
+    opacity: 1;
+    transition: opacity 3s ease;
+  }
 `;
 
 const Page03 = () => {
 
   const [toggle, setToggle] = useState(false);
+  const [showPosts, setShowPosts] = useState(false);
 
   const removeScrollText = () => {
     setToggle(false);
+    setShowPosts(true);
   }
 
   useEffect(() => {
     window.addEventListener('scroll', removeScrollText);
     setTimeout(() => {
       setToggle(true);
-    }, 2000);
+    }, 1000);
+
   }, []);
 
   return (
@@ -160,7 +168,7 @@ const Page03 = () => {
             </div>
           </div>
 
-          <div className="posts">
+          <div className={`posts ${showPosts && "show-posts"}`}>
 
             <div className="post">
               <div className="image">
