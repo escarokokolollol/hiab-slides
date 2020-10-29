@@ -6,70 +6,73 @@ import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 
 import Background from "../../assets/images/motor.png";
-import WordCloud from "../../assets/images/effer/wordcloud-effer.svg";
+import WordCloud from "../../assets/images/effer/wordcloud_white.svg";
 
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
-  .grid{
-    width: 400px;
-    padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .text{
+    padding: 20px;
     background: rgba(10,10,10, 0.9);
-    display: grid;
-    grid-template-columns: 1fr;
-    .grid-item{
-      .wordcloud{
-        width: 200px;
-      }
+    h1{
+      margin:0;
+      font-size: 24px;
+    }
+  }
+  .wordcloud-wrapper{
+    padding: 60px 40px;
+    img{
+      width: 200px;
+      -webkit-filter: drop-shadow( 10px 10px 10px rgba(0, 0, 0, .7));
+        filter: drop-shadow( 10px 10px 10px rgba(0, 0, 0, .7));
     }
   }
   @media ${props => props.theme.firstBreakpoint}{
-    .grid{
-      width: 600px;
-      grid-template-columns: 2fr 1fr;
+    .text{
       h1{
         font-size: 32px;
         line-height: 32px;
       }
-      .wordcloud-wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .wordcloud{
-          width: 200px;
-        }
+    }
+    .wordcloud-wrapper{
+      img{
+        width: 300px;
       }
     }
   }
   @media ${props => props.theme.secondBreakpoint}{
-    .grid{
-      width: 800px;
-      grid-template-columns: 1fr 1fr;
+    .text{
+      padding: 60px;
+      width: 480px;
       h1{
-        font-size: 34px;
-        line-height: 34px;
+        font-size: 45px;
+        line-height: 45px;
       }
-      .wordcloud-wrapper{
-        .wordcloud{
-          padding-left: 40px;
-          width: 400px;
-        }
+    }
+    .wordcloud-wrapper{
+      margin-top: 80px;
+      img{
+        width:440px;
       }
     }
   }
-  @media ${props => props.theme.secondBreakpoint}{
-    .grid{
-      width: 900px;
-      grid-template-columns: 1fr 1fr;
+  @media ${props => props.theme.thirdBreakpoint}{
+    .text{
+      padding: 60px;
+      width: 580px;
       h1{
-        font-size: 48px;
-        line-height: 48px;
+        font-size: 58px;
+        line-height: 58px;
       }
-      .wordcloud-wrapper{
-        .wordcloud{
-          padding-left: 80px;
-          width: 400px;
-        }
+      p{
+        font-size: 20px;
+      }
+    }
+    .wordcloud-wrapper{
+      img{
+        width: 560px;
       }
     }
   }
@@ -78,20 +81,18 @@ const StyledDiv = styled.div`
 const Page02 = () => {
   return (
     <div className="page-transition">
-      <BackgroundImage image={Background}> 
+      <BackgroundImage image={Background}>
         <StyledDiv>
-          <div className="grid">
-            <div className="grid-item">
-              <h1>To understand EFFER you need to know where we come from.</h1>
-              <p>The “Terra dei Motori”, or “Motor Valley” is home to some of the world’s most legendary and innovative motor companies including Ferrari, Lamborghini, Maserati and Ducati. No wonder EFFER is passionate about engineering.</p>
-            </div>
-            <div className="grid-item wordcloud-wrapper">
-              <img className="wordcloud" src={WordCloud} alt="wordcloud"/>
-            </div>
+          <div className="text">
+            <h1>To understand EFFER you need to know where we come from.</h1>
+            <p>The “Terra dei Motori”, or “Motor Valley” is home to some of the world’s most legendary and innovative motor companies including Ferrari, Lamborghini, Maserati and Ducati. No wonder EFFER is passionate about engineering.</p>
           </div>
-          <Navigation backTo="/about-effer/page01" to="/about-effer/page03"/>
+          <div className="wordcloud-wrapper">
+            <img className="wordcloud" src={WordCloud} alt="wordcloud" />
+          </div>
+          <Navigation backTo="/about-effer/page01" to="/about-effer/page03" />
         </StyledDiv>
-        
+
       </BackgroundImage>
     </div>
   );
