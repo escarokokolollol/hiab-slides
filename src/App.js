@@ -72,6 +72,7 @@ import End02 from "./pages/end/Page02.js";
 import End03 from "./pages/end/Page03.js";
 import End04 from "./pages/end/Page04.js";
 import End05 from "./pages/end/Page05.js";
+import End06 from "./pages/end/Page06.js";
 
 
 // message for portrait mode
@@ -146,6 +147,7 @@ const App = () => {
                     <Route path="/end03" component={End03} />
                     <Route path="/end04" component={End04} />
                     <Route path="/end05" component={End05} />
+                    <Route path="/end06" component={End06} />
 
                     <Route path="/" component={Start01} />
                   </Switch>
