@@ -10,20 +10,26 @@ import BlackBoxHeading from "../../components/BlackBoxHeading";
 import Background from "../../assets/images/effer/effer-bg03.jpg";
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
-  .BlackBoxHeading-wrapper{
-    width: 90%;
+  .wrapper{
+    width: 400px;
     position: absolute;
     bottom: 60px;
-    div{
+    padding: 40px 60px;
+    background: rgba(255,255,255, 0.8);
+    color: #000;
+    h1{
+      margin: 0;
+      font-size: 47px;
     }
   }
-  @media ${props => props.theme.thirdBreakpoint}{
-    .BlackBoxHeading-wrapper{
+  @media ${props => props.theme.secondBreakpoint}{
+    .wrapper{
+      width: 700px;
       h1{
-        font-size:80px;
-        line-height:80px;
+        font-size: 57px;
       }
     }
+
   }
 `;
 
@@ -32,10 +38,11 @@ const Page04 = () => {
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <div className="BlackBoxHeading-wrapper">
-            <BlackBoxHeading title="Solutions for different applications" textUnder="Another way to look at providing customers with the best solutions to meet their specific needs is to think in terms of applications. "/>
+          <div className="wrapper">
+            <h1>Solutions for different applications</h1>
+            <p>Another way to look at providing customers with the best solutions to meet their specific needs is to think in terms of applications.</p>
           </div>
-          <Navigation backTo="/one-unbeatable-offer/page03" to="/one-unbeatable-offer/page05"/>
+          <Navigation backTo="/one-unbeatable-offer/page03" to="/one-unbeatable-offer/page05" />
         </StyledDiv>
       </BackgroundImage>
     </div>
