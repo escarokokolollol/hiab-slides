@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 // components
@@ -26,6 +26,7 @@ const StyledDiv = styled.div`
     padding: 40px;
     background: rgba(255,255,255, 0.8);
     color: #000;
+    opacity: 0;
     .logos{
       display: grid;
       grid-gap: 40px;
@@ -75,15 +76,29 @@ const StyledDiv = styled.div`
       }
     }
   }
+
+  .show-box{
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
 `;
 
 const Page01 = () => {
+
+  const [showBox, setShowBox] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowBox(true);
+    }, 1000);
+  }, []);
+
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
 
-          <div className="BlackBoxHeading-wrapper">
+          <div className={`BlackBoxHeading-wrapper ${showBox && "show-box"}`}>
             {/* <div className="logos">
               <img src={EfferLogo} alt="effer logo" />
               <img src={HiabLogo} alt="hiab logo" />
