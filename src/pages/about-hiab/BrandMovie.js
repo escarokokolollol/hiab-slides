@@ -94,7 +94,7 @@ const BrandMovie = props => {
         <StyledDiv>
           <div className="video-popup" >
             <div className="video-popup-inner">
-              <iframe className="video" title="SMART" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/Nr7g_POwsYQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <iframe className="video" title="SMART" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/ZidHKMgaV_U?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
           </div>
           <Navigation backTo="/about-hiab/page04" to="/about-hiab/page06" />
