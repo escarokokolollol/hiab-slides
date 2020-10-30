@@ -145,7 +145,7 @@ const HamburgerMenu = () => {
               <h2>HIAB</h2>
               <ul>
                 <li><Link to="/about-hiab/page01">Story</Link></li>
-                <li><Link to="/about-hiab/page06">Value proposition</Link></li>
+                <li><Link to="/about-hiab/page07">Value proposition</Link></li>
               </ul>
             </div>
           </div>
@@ -156,7 +156,7 @@ const HamburgerMenu = () => {
             <li><Link to="/one-unbeatable-offer/page03">Cases</Link></li>
             <li><Link to="/one-unbeatable-offer/page05">Applications</Link></li>
             <li><Link to="/end03">Key messages</Link></li>
-            <li><Link to="/end04">Learn more</Link></li>
+            <li><Link to="/end05">Learn more</Link></li>
           </ul>
         </div>
       </div>
