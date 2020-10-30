@@ -127,7 +127,7 @@ const Page010 = () => {
 
         <div className={`popup ${compare ? "show-popup" : ""}`}>
           <div className="compare-text">
-            <h2>EFFER a nutshell</h2>
+            <h2>EFFER in a nutshell</h2>
             <p><strong>EXTREME. </strong>That’s EFFER in a single word. Our customers experience it as</p>
             <ul>
               <li>Extreme performance and durability</li>

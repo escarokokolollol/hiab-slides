@@ -123,7 +123,7 @@ const Page015 = () => {
 
         <div className={`popup ${compare ? "show-popup" : ""}`}>
           <div className="compare-text">
-            <h2>HIAB a nutshell</h2>
+            <h2>HIAB in a nutshell</h2>
             <p><strong>SMART. </strong>That’s HIAB in a single word. Our customers experience it as</p>
             <ul>
               <li>Smooth, safe and efficient performance</li>
