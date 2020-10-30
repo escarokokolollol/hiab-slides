@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 
-import Background from "../../assets/images/motor.png";
+import Background from "../../assets/images/effer/motor04.jpg";
 import WordCloud from "../../assets/images/effer/wordcloud_white.svg";
 
 
