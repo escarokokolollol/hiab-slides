@@ -94,10 +94,6 @@ const StyledDiv = styled.div`
       }
       .grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        .grid-item{
-          h1{
-            font-size: 26px;
-          }  
         }
       }
     }
@@ -105,11 +101,6 @@ const StyledDiv = styled.div`
   @media (min-width: 1200px){
     .content-inner{
       .grid{
-        .grid-item{
-          h1{
-            font-size:28px;
-          }
-        }
       }
     }
   

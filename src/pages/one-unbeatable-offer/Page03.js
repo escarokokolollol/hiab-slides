@@ -42,10 +42,10 @@ const StyledDiv = styled.div`
         ${'' /* height: 20vh; */}
         background: ${props => props.theme.red};
         color: #fff;
-        padding: 20px;
+        padding: 30px 20px;
         transition: all .3s ease;
         h1{
-          ${'' /* width: 80%; */}
+          font-size: 22px;
         }
         h2{
           font-size: 17px;
