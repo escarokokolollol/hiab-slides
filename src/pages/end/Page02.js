@@ -23,7 +23,7 @@ const Start02 = () => {
   const items = [
     "be more familiar with the brand that you have least experience of ",
     "understand each brand’s value proposition",
-    "have a better understanding of how our portfolio, from Low to Super Heavy, can be matched to different customer needs and applications"
+    "have a better understanding of how our portfolio, from Light to Super Heavy, can be matched to different customer needs and applications"
   ];
 
   return (
