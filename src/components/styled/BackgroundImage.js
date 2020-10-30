@@ -6,6 +6,7 @@ import HamburgerMenu from "../HamburgerMenu";
 const BackgroundImageDiv = styled.div`
   min-width: 100vw;
   min-height: 100vh;
+  background: #fff;
   background-size: cover;
   background-attachment: fixed;
   .content{
@@ -18,7 +19,7 @@ const BackgroundImage = props => {
   const style = {
     backgroundImage: `url(${props.image})`,
   }
-  return(
+  return (
     <BackgroundImageDiv style={style}>
       <HamburgerMenu />
       <div className="content">

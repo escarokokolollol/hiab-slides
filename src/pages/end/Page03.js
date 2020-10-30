@@ -49,7 +49,7 @@ const Page03 = () => {
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <BlackBoxHeading className="BlackBoxHeading" title="Key messages" textUnder="On the next few pages you’ll find a selection of images and key messages that reflect the strengths of these two iconic brands as well as of our combined offer. Use them as inspiration whenever you need to create communication for your market." />
+          <BlackBoxHeading className="BlackBoxHeading" title="Key messages" textUnder="On the next few pages we present some of the key messages that reflect the strengths of these two iconic brands as well as our combined offer. Use them as inspiration whenever you need to create communication for your market." />
           <Navigation backTo="/end02" to="/end04" />
         </StyledDiv>
       </BackgroundImage>
