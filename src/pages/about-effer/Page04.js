@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 // components
@@ -36,23 +36,42 @@ const StyledDiv = styled.div`
       }
     }
   }
+
+  .hide{
+    opacity: 0;
+  }
+  .show{
+    opacity: 1;
+    transition: opacity 2s ease;
+  }
 `;
 
 const Page04 = () => {
+
+  const [show, setShow] = useState(false);
+
+  useState(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 1400);
+  });
+
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <div className="BlackBoxHeading-wrapper">
-            <BlackBoxHeading  title="EFFER fans are our best ambassadors." textUnder="Customers tell us over and over again how much they value the attention we give them. How we sit down with them, listen to what they need, and build solutions that enable them to conquer those tough challenges. And their enthusiasm over the results is unmistakeable.">
-              <div className="social-media"> 
-                <img className="icon facebook-icon" src={FacebookIcon} alt="facebook"/>
-                <img className="icon instagram-icon"src={InstagramIcon} alt="instagram"/>
-                <img className="icon youtube-icon"src={YoutubeIcon} alt="youtube"/>
-              </div>
-            </BlackBoxHeading>
+          <div className={`hide ${show && "show"}`}>
+            <div className="BlackBoxHeading-wrapper">
+              <BlackBoxHeading title="EFFER fans are our best ambassadors." textUnder="Customers tell us over and over again how much they value the attention we give them. How we sit down with them, listen to what they need, and build solutions that enable them to conquer those tough challenges. And their enthusiasm over the results is unmistakeable.">
+                <div className="social-media">
+                  <img className="icon facebook-icon" src={FacebookIcon} alt="facebook" />
+                  <img className="icon instagram-icon" src={InstagramIcon} alt="instagram" />
+                  <img className="icon youtube-icon" src={YoutubeIcon} alt="youtube" />
+                </div>
+              </BlackBoxHeading>
+            </div>
           </div>
-          <Navigation backTo="/about-effer/brand-movie" to="/about-effer/page05"/>
+          <Navigation backTo="/about-effer/brand-movie" to="/about-effer/page05" />
         </StyledDiv>
       </BackgroundImage>
     </div>
