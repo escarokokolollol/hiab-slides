@@ -40,7 +40,7 @@ const Page05 = () => {
             <h1>Learn more</h1>
             <p>To find more materials and information regarding EFFER products, please visit <a href="https://www.effer.com/">effer.com</a> and request access to the reserved area and to our product sharing platform, MySource. Or send a request via e-mail to <a href="mailto:carolina.deganutti@hiab.com">carolina.deganutti@hiab.com</a>.</p>
           </div>
-          <Navigation backTo="/end04" to="/end06" />
+          <Navigation backTo="/end08" to="/end010" />
         </StyledDiv>
       </BackgroundImage>
     </div>

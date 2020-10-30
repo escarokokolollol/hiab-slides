@@ -156,8 +156,8 @@ const App = () => {
                     <Route path="/end08" component={KeyMessage05} />
 
                     {/* last two pages */}
-                    <Route path="/end055" component={End05} />
-                    <Route path="/end066" component={End06} />
+                    <Route path="/end09" component={End05} />
+                    <Route path="/end010" component={End06} />
 
                     <Route path="/end044" component={End04} />
 

@@ -83,7 +83,7 @@ const Page06 = props => {
                 <Paragraphs items={["Thanks for taking The Challenge and be sure to let us know if it has helped you in your discussions with customers. Feel free to come back whenever you need a refresher."]} />
               </div>
               <Logos />
-              <Navigation backTo="/end05" />
+              <Navigation backTo="/end09" />
             </div>
           </div>
         </StyledDiv>
