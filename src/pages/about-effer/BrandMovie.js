@@ -96,7 +96,7 @@ const BrandMovie = props => {
         <StyledDiv>
           <div className="video-popup">
             <div className="video-popup-inner">
-              <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/sVkqRawzebo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <iframe className="video" title="EXTREME" allowFullScreen width="560" height="315" src="https://www.youtube.com/embed/qDBIR1FrCjU?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
           </div>
           <Navigation backTo="/about-effer/page07" to="/about-effer/page04" />
