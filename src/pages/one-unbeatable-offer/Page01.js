@@ -16,7 +16,10 @@ const StyledDiv = styled.div`
   .BlackBoxHeading-wrapper{
     position: absolute;
     bottom: 90px;
-    left: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     display: flex; 
     flex-direction: column;
     justify-content: center;
