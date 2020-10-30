@@ -6,8 +6,8 @@ import Navigation from "../../../components/Navigation";
 import BackgroundImage from "../../../components/styled/BackgroundImage";
 
 // images
-import Background from "../../../assets/images/hiabeffer222.jpg";
-import Logo from "../../../assets/icons/effer-logo.svg";
+import Background from "../../../assets/images/messages/message03.jpg";
+import Logo from "../../../assets/icons/hiab-logo.svg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -39,8 +39,8 @@ const StyledDiv = styled.div`
     img.logo{
       width: 200px;
       position: absolute;
-      left: 0px;
-      bottom: 0px;
+      right: 0px;
+      top: 0px;
       padding: 16px 30px;
     }
   }
@@ -76,18 +76,20 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Message01 = () => {
+const Message03 = () => {
   return (
     <div className="page-transition">
       <BackgroundImage backgroundWhite={true}>
         <StyledDiv>
 
           <div className="text-wrapper">
-            <h1>For people passionate about the challenge</h1>
-            <p>Reach what others can’t</p>
-            <p>Conquer the toughest challenges</p>
-            <p>Extreme reach. Extreme satisfaction.</p>
-            <p>Tough challenges. Tougher solutions.</p>
+            <h1>Once a pioneer.</h1>
+            <h1>Always a pioneer.</h1>
+            <p>Built to last</p>
+            <p>Inventor of the original loader crane</p>
+            <p>Built to perform since 1944</p>
+            <p>Smarter. Faster. Safer.</p>
+            <p>High quality. Low TCO</p>
             <learne more efter />
           </div>
 
@@ -96,11 +98,11 @@ const Message01 = () => {
             <img src={Logo} className="logo" alt="logotype" />
           </div>
 
-          <Navigation backTo="/end03" to="/end05" />
+          <Navigation backTo="/end05" to="/end07" />
         </StyledDiv>
       </BackgroundImage>
     </div>
   );
 }
 
-export default Message01;
+export default Message03;

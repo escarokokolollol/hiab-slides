@@ -98,7 +98,7 @@ const Message02 = () => {
             <img src={Logo} className="logo" alt="logotype" />
           </div>
 
-          <Navigation backTo="/end03" to="/end05" />
+          <Navigation backTo="/end04" to="/end06" />
         </StyledDiv>
       </BackgroundImage>
     </div>
