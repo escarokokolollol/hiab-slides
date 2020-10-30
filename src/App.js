@@ -73,7 +73,8 @@ import End03 from "./pages/end/Page03.js";
 import End04 from "./pages/end/Page04.js";
 import End05 from "./pages/end/Page05.js";
 import End06 from "./pages/end/Page06.js";
-import KeyMessage01 from "./pages/end/KeyMessages/Page01.js";
+import KeyMessage01 from "./pages/end/KeyMessages/Message01.js";
+import KeyMessage02 from "./pages/end/KeyMessages/Message02.js";
 
 
 // message for portrait mode
@@ -147,8 +148,11 @@ const App = () => {
                     <Route path="/end02" component={End02} />
                     <Route path="/end03" component={End03} />
                     <Route path="/end04" component={KeyMessage01} />
-                    <Route path="/end05" component={End05} />
-                    <Route path="/end06" component={End06} />
+                    <Route path="/end05" component={KeyMessage02} />
+
+                    {/* last two pages */}
+                    <Route path="/end055" component={End05} />
+                    <Route path="/end066" component={End06} />
 
                     <Route path="/end044" component={End04} />
 

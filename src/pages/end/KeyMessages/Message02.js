@@ -6,7 +6,7 @@ import Navigation from "../../../components/Navigation";
 import BackgroundImage from "../../../components/styled/BackgroundImage";
 
 // images
-import Background from "../../../assets/images/hiabeffer222.jpg";
+import Background from "../../../assets/images/messages/message02.jpg";
 import Logo from "../../../assets/icons/effer-logo.svg";
 
 const StyledDiv = styled.div`
@@ -39,7 +39,7 @@ const StyledDiv = styled.div`
     img.logo{
       width: 200px;
       position: absolute;
-      right: 0px;
+      left: 0px;
       bottom: 0px;
       padding: 16px 30px;
     }
@@ -76,18 +76,20 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Page01 = () => {
+const Message02 = () => {
   return (
     <div className="page-transition">
       <BackgroundImage backgroundWhite={true}>
         <StyledDiv>
 
           <div className="text-wrapper">
-            <h1>For people passionate about the challenge</h1>
-            <p>Reach what others can’t</p>
-            <p>Conquer the toughest challenges</p>
-            <p>Extreme reach. Extreme satisfaction.</p>
-            <p>Tough challenges. Tougher solutions.</p>
+            <h1>Heavy duty.</h1>
+            <h1>Lighter weight.</h1>
+            <p>Built to last</p>
+            <p>Outstanding durability</p>
+            <p>Carry more payload</p>
+            <p>Customised to suit your needs</p>
+            <p>No. 1 in customisation</p>
             <learne more efter />
           </div>
 
@@ -103,4 +105,4 @@ const Page01 = () => {
   );
 }
 
-export default Page01;
+export default Message02;
