@@ -7,7 +7,8 @@ import BackgroundImage from "../../../components/styled/BackgroundImage";
 
 // images
 import Background from "../../../assets/images/hiabeffer222.jpg";
-import Logo from "../../../assets/icons/hiab-logo.svg";
+import EfferLogo from "../../../assets/icons/effer-logo.svg";
+import HiabLogo from "../../../assets/icons/hiab-logo.svg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -29,6 +30,7 @@ const StyledDiv = styled.div`
     }
     p{
       margin: 10px 0;
+      font-size: 20px;
     }
   }
   .image-wrapper{
@@ -36,13 +38,21 @@ const StyledDiv = styled.div`
     img.big-img{
       width: 100%;
     }
-    img.logo{
+    img.logo.hiab{
       width: 200px;
       position: absolute;
       left: 0px;
-      top: 0px;
+      bottom: 0px;
       padding: 16px 30px;
     }
+    img.logo.effer{
+      width: 200px;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      padding: 16px 30px;
+    }
+
   }
   @media ${props => props.theme.firstdBreakpoint}{
     .text-wrapper{
@@ -56,7 +66,7 @@ const StyledDiv = styled.div`
       width: 40%;
       h1{
         width: 340px;
-        font-size: 38px;
+        font-size: 50px;
       }
     }
     .image-wrapper{
@@ -91,7 +101,10 @@ const Message03 = () => {
 
           <div className="image-wrapper">
             <img src={Background} className="big-img" alt="cool image" />
-            <img src={Logo} className="logo" alt="logotype" />
+            <div className="logos">
+              <img src={HiabLogo} className="logo hiab" alt="logotype" />
+              <img src={EfferLogo} className="logo effer" alt="logotype" />
+            </div>
           </div>
 
           <Navigation backTo="/end07" to="/end09" />

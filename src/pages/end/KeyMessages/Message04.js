@@ -29,6 +29,7 @@ const StyledDiv = styled.div`
     }
     p{
       margin: 10px 0;
+      font-size: 20px;
     }
   }
   .image-wrapper{
@@ -56,7 +57,7 @@ const StyledDiv = styled.div`
       width: 40%;
       h1{
         width: 340px;
-        font-size: 38px;
+        font-size: 44px;
       }
     }
     .image-wrapper{

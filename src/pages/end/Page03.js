@@ -4,41 +4,71 @@ import styled from "styled-components";
 // components
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
-import BlackBoxHeading from "../../components/BlackBoxHeading";
 
 // images
-import Background from "../../assets/images/hiabeffer222.jpg";
+import Background from "../../assets/images/messages/posters.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
-  .BlackBoxHeading{
-    width: 560px;
-    position: absolute;
-    bottom: 60px;
-    padding: 40px 60px;
-    background: rgba(255,255,255, 0.8);
-    color: #000;
+  padding-top: 100px;
+  height: 100vh;
+  background: #fff;
+  color: #000;
+
+  .image-wrapper,
+  .text-wrapper{
+    float: left;
+    width: 50%;
+  }
+
+  .text-wrapper{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: end;
+    padding-right: 40px;
     h1{
-      margin:0;
-      font-size: 44px;
-      line-height: 44px;
+      margin: 0;
+    }
+    p{
+      margin: 10px 0;
+      font-size: 20px;
     }
   }
-  @media ${props => props.theme.secondBreakpoint}{
-    .BlackBoxHeading{
-      width: 760px;
+  .image-wrapper{
+    position: relative;
+    img.big-img{
+      width: 100%;
+    }
+  }
+  @media ${props => props.theme.firstdBreakpoint}{
+    .text-wrapper{
       h1{
-        font-size: 64px;
-        line-height: 64px;
+        font-size: 34px;
       }
     }
   }
-  @media ${props => props.theme.thirdBreakpoint}{
-    .BlackBoxHeading{
-      width: 1200px;
+  @media ${props => props.theme.secondBreakpoint}{
+    .text-wrapper{
+      width: 40%;
       h1{
-        font-size:70px;
-        line-height:70px;
+        width: 340px;
+        font-size: 44px;
+      }
+    }
+    .image-wrapper{
+      width: 60%;
+    }
+  }
+  @media ${props => props.theme.thirdBreakpoint}{
+    .text-wrapper{
+      h1{
+        width: 500px;
+        font-size: 58px;
+      }
+      p{
+        font-size: 22px;
       }
     }
   }
@@ -47,9 +77,18 @@ const StyledDiv = styled.div`
 const Page03 = () => {
   return (
     <div className="page-transition">
-      <BackgroundImage image={Background}>
+      <BackgroundImage backgroundWhite={true}>
         <StyledDiv>
-          <BlackBoxHeading className="BlackBoxHeading" title="Key messages" textUnder="On the next few pages we present some of the key messages that reflect the strengths of these two iconic brands as well as our combined offer. Use them as inspiration whenever you need to create communication for your market." />
+
+          <div className="text-wrapper">
+            <h1>Key messages</h1>
+            <p>On the next few pages we present some of the key messages that reflect the strengths of these two iconic brands as well as our combined offer. Use them as inspiration whenever you need to create communication for your market.</p>
+          </div>
+
+          <div className="image-wrapper">
+            <img src={Background} className="big-img" alt="cool image" />
+          </div>
+
           <Navigation backTo="/end02" to="/end04" />
         </StyledDiv>
       </BackgroundImage>
