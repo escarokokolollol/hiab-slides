@@ -118,7 +118,8 @@ const Page010 = () => {
     <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showHiabLogo>
       <StyledDiv>
         <div className="smart-wrapper">
-          <p><strong>SMART. </strong>That’s HIAB in a single word. Our customers experience it as </p>
+          <p><strong>SMART. </strong> That’s HIAB in a single word.</p>
+          <p>Our customers experience it as </p>
         </div>
         <UnorderedList items={listItems} />
         <Navigation backTo="/about-hiab/page012" to="/about-hiab/page014" />

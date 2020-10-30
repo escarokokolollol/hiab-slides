@@ -115,7 +115,8 @@ const Page015 = () => {
     <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showEfferLogo={true} >
       <StyledDiv>
         <div className="extreme-wrapper">
-          <p><strong>EXTREME. </strong>That’s EFFER in a single word. Our customers experience it as</p>
+          <p><strong>EXTREME. </strong>That’s EFFER in a single word.</p>
+          <p>Our customers experience it as</p>
         </div>
         <UnorderedList items={listItems} />
         <Navigation backTo="/about-effer/page017" to="/about-effer/page019" />
