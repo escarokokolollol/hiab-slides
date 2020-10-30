@@ -6,7 +6,7 @@ import Navigation from "../../../components/Navigation";
 import BackgroundImage from "../../../components/styled/BackgroundImage";
 
 // images
-import Background from "../../../assets/images/hiabeffer222.jpg";
+import Background from "../../../assets/images/messages/message01.jpg";
 import Logo from "../../../assets/icons/effer-logo.svg";
 
 const StyledDiv = styled.div`
@@ -39,8 +39,8 @@ const StyledDiv = styled.div`
     img.logo{
       width: 200px;
       position: absolute;
-      left: 0px;
-      bottom: 0px;
+      top: 0px;
+      right: 0px;
       padding: 16px 30px;
     }
   }
@@ -88,7 +88,6 @@ const Message01 = () => {
             <p>Conquer the toughest challenges</p>
             <p>Extreme reach. Extreme satisfaction.</p>
             <p>Tough challenges. Tougher solutions.</p>
-            <learne more efter />
           </div>
 
           <div className="image-wrapper">

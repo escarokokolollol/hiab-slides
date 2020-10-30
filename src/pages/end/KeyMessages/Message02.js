@@ -90,7 +90,6 @@ const Message02 = () => {
             <p>Carry more payload</p>
             <p>Customised to suit your needs</p>
             <p>No. 1 in customisation</p>
-            <learne more efter />
           </div>
 
           <div className="image-wrapper">

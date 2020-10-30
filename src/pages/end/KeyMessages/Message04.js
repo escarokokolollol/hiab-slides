@@ -6,7 +6,7 @@ import Navigation from "../../../components/Navigation";
 import BackgroundImage from "../../../components/styled/BackgroundImage";
 
 // images
-import Background from "../../../assets/images/messages/message03.jpg";
+import Background from "../../../assets/images/messages/message04.jpg";
 import Logo from "../../../assets/icons/hiab-logo.svg";
 
 const StyledDiv = styled.div`
@@ -39,7 +39,7 @@ const StyledDiv = styled.div`
     img.logo{
       width: 200px;
       position: absolute;
-      right: 0px;
+      left: 0px;
       top: 0px;
       padding: 16px 30px;
     }
@@ -83,13 +83,12 @@ const Message03 = () => {
         <StyledDiv>
 
           <div className="text-wrapper">
-            <h1>Once a pioneer.</h1>
-            <h1>Always a pioneer.</h1>
-            <p>Built to last</p>
-            <p>Inventor of the original loader crane</p>
-            <p>Built to perform since 1944</p>
-            <p>Smarter. Faster. Safer.</p>
-            <p>High quality. Low TCO</p>
+            <h1>For enterprises that crave perfection</h1>
+            <p>Optimise your business</p>
+            <p>When reliability is everything</p>
+            <p>Intelligent solutions to maximise uptime</p>
+            <p>The best time of the day…UPTIME</p>
+            <p>No. 1 in service</p>
           </div>
 
           <div className="image-wrapper">
@@ -97,7 +96,7 @@ const Message03 = () => {
             <img src={Logo} className="logo" alt="logotype" />
           </div>
 
-          <Navigation backTo="/end05" to="/end07" />
+          <Navigation backTo="/end06" to="/end08" />
         </StyledDiv>
       </BackgroundImage>
     </div>
