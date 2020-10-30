@@ -154,9 +154,9 @@ const HamburgerMenu = () => {
           <ul>
             <li><Link to="/one-unbeatable-offer/page01">One unbeatable offer</Link></li>
             <li><Link to="/one-unbeatable-offer/page03">Cases</Link></li>
-            <li><Link to="/one-unbeatable-offer/page05">Applications</Link></li>
+            <li><Link to="/one-unbeatable-offer/page04">Applications</Link></li>
             <li><Link to="/end03">Key messages</Link></li>
-            <li><Link to="/end05">Learn more</Link></li>
+            <li><Link to="/end09">Learn more</Link></li>
           </ul>
         </div>
       </div>
