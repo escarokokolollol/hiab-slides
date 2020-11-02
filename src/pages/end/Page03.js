@@ -86,7 +86,7 @@ const Page03 = () => {
           </div>
 
           <div className="image-wrapper">
-            <img src={Background} className="big-img" alt="cool image" />
+            <img src={Background} className="big-img" alt="cool" />
           </div>
 
           <Navigation backTo="/end02" to="/end04" />

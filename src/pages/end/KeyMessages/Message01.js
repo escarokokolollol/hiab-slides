@@ -92,7 +92,7 @@ const Message01 = () => {
           </div>
 
           <div className="image-wrapper">
-            <img src={Background} className="big-img" alt="cool image" />
+            <img src={Background} className="big-img" alt="cool" />
             <img src={Logo} className="logo" alt="logotype" />
           </div>
 
