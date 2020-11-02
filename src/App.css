@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Rubik+Mono+One&display=swap");
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("./assets/fonts/HelveticaNeueLTPro-Cn.otf") format("opentype");
+}
+
 @font-face {
   font-family: "Folio";
   font-style: normal;
@@ -31,7 +37,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff !important;
-  /* font-family: Helvetica Neue; */
+  font-family: Open sans !important;
   font-family: Helvetica Neue, Open sans !important;
 
   overflow-x: hidden; /* to remove scrollx bar when site is more than 100vh*/
