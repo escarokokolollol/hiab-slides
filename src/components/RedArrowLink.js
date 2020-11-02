@@ -19,17 +19,18 @@ const StyledDiv = styled.div`
   }
   p {
     font-size: 22px;
+    font-weight:600;
     color: #fff;
     text-transform: none;
   }
 `;
 
 const RedArrowLink = (props) => {
-  return(
+  return (
     <Link to={props.toWhere}>
       <StyledDiv>
         <p>{props.text}</p>
-        <img src={arrowIconSvg} alt="link"/>
+        <img src={arrowIconSvg} alt="link" />
       </StyledDiv>
     </Link>
   );
