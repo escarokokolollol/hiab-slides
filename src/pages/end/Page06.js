@@ -9,6 +9,7 @@ import Paragraphs from "../../components/Paragraphs";
 import Logos from "../../components/Logos";
 import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
+import RedArrowLink from "../../components/RedArrowLink";
 
 const StyledDiv = styled.div`
   .content {
@@ -33,6 +34,10 @@ const StyledDiv = styled.div`
       }
       p{
         font-size: 22px;
+      }
+      .RedArrowLink-wrapper{
+        width: 50%;
+        margin-top: 40px;
       }
     }
 
@@ -81,6 +86,9 @@ const Page06 = props => {
                 <h1 className="title-over">Well done.</h1>
                 <h1 className="title-under">You’ve now completed “la Sfida”!</h1>
                 <Paragraphs items={["Thanks for taking The Challenge and be sure to let us know if it has helped you in your discussions with customers. Feel free to come back whenever you need a refresher."]} />
+                <div className="RedArrowLink-wrapper">
+                  <RedArrowLink text="Start over" toWhere="/start05"/>
+                </div>
               </div>
               <Logos />
               <Navigation backTo="/end09" />
