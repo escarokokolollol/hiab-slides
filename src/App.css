@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: HelveticaNeue;
-  src: url("./assets/fonts/HelveticaNeueLTPro-Cn.otf") format("opentype");
+  src: url("./assets/fonts/HelveticaNeueLTPro-Md.otf") format("opentype");
 }
 
 @font-face {
@@ -39,7 +39,6 @@ body {
   color: #fff !important;
   font-family: Open sans !important;
   font-family: HelveticaNeue !important;
-
   overflow-x: hidden; /* to remove scrollx bar when site is more than 100vh*/
 }
 
