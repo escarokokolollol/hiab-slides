@@ -25,6 +25,7 @@ const StyledDiv = styled.div`
       font-size: 22px;
       a{
         color: ${props => props.theme.red};
+        font-weight:500;
       }
     }
   }
