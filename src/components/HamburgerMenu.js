@@ -61,7 +61,7 @@ const StyledDiv = styled.div`
         a{
           color: #fff;
           font-size: 22px;
-          font-weight: 800;
+          font-weight: 100;
           ${'' /* text-transform: uppercase; */}
           margin: 4px 0;
           transition: color .2s linear;
@@ -124,7 +124,7 @@ const HamburgerMenu = () => {
     <StyledDiv>
       <img className="hamburger-icon" alt="hamburger menu icon" onClick={() => setToggle(!toggle)} src={HamburgerIcon} />
 
-      <div className={`menu ${toggle ? "show" : "hide"}`}  >
+      <div className={`menu hamburger-menu ${toggle ? "show" : "hide"}`}  >
         <div className="menu-inner">
           <img className="close-icon" alt="hamburger menu icon" onClick={() => setToggle(!toggle)} src={CloseIcon} />
           <ul>

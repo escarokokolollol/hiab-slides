@@ -43,6 +43,11 @@ body {
   overflow-x: hidden; /* to remove scrollx bar when site is more than 100vh*/
 }
 
+.hamburger-menu ul li a {
+  font-family: HelveticaNeue !important;
+  font-weight: 100;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
