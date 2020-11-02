@@ -32,7 +32,7 @@ body {
   background-attachment: fixed;
   color: #fff !important;
   /* font-family: Helvetica Neue; */
-  font-family: Open sans !important;
+  font-family: Helvetica Neue, Open sans !important;
 
   overflow-x: hidden; /* to remove scrollx bar when site is more than 100vh*/
 }
