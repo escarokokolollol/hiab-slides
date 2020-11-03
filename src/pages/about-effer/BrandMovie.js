@@ -4,7 +4,7 @@ import styled from "styled-components";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 import Navigation from "../../components/Navigation";
 
-import Background from "../../assets/images/effer/effernew01.png";
+import Background from "../../assets/images/effer/efferasdbg02.jpg";
 
 
 const StyledDiv = styled.div`
@@ -21,7 +21,7 @@ const StyledDiv = styled.div`
     left : 0;
     height: 100vh;
     width: 100vw;
-    background: rgba(0,0,0, 0.8);
+    background: rgba(0,0,0, 0.0);
     padding: 100px;
     .close-icon{
       position: absolute;

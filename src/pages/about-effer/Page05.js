@@ -19,7 +19,7 @@ import img09 from "../../assets/images/effer/testamonials/09.png";
 import img10 from "../../assets/images/effer/testamonials/10.png";
 
 // images
-import Background from "../../assets/images/effer/effernewbg.png";
+import Background from "../../assets/images/effer/efferasdbg02.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
