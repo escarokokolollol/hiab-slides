@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 // images
 import BigRedButton from "../../assets/icons/big-red-button.png";
-import Background from "../../assets/images/effer_hiab-background.jpg";
+import Background from "../../assets/images/test-bg-start02.jpg";
 import HiabLogo from "../../assets/icons/hiab-logo.svg";
 import EfferLogo from "../../assets/icons/effer-logo.svg";
 

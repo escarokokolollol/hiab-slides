@@ -12,7 +12,7 @@ import React from "react";
 import styled from "styled-components";
 
 // images
-import Background from "../assets/images/effer_hiab-background.jpg";
+import Background from "../assets/images/test-bg-start02.jpg";
 
 // components
 import BillboardHeading from "../components/BillboardHeading";
