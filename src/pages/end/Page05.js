@@ -6,7 +6,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage.js";
 import Navigation from "../../components/Navigation";
 
 // images
-import Background from "../../assets/images/effer_hiab-background.jpg";
+import Background from "../../assets/images/test-bg-start02.jpg";
 
 const StyledDiv = styled.div`
   min-height: 90vh;
