@@ -6,7 +6,7 @@ import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // images
-import Background from "../../assets/images/effer_hiab-background.jpg";
+import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
 import EfferLogo from "../../assets/icons/effer-logo.svg";
 import HiabLogo from "../../assets/icons/hiab-logo.svg";
 import Kettlebell from "../../assets/images/kettlebell.svg";

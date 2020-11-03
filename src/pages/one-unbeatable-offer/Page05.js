@@ -12,7 +12,7 @@ import wasteImage from "../../assets/images/applications/waste.jpg";
 import specialityImage from "../../assets/images/applications/speciality.jpg";
 import heavyImage from "../../assets/images/applications/heavy.jpg";
 import glassImage from "../../assets/images/applications/glass.jpg";
-import Background from "../../assets/images/effer_hiab-background.jpg";
+import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
 
 
 const StyledDiv = styled.div`
@@ -44,9 +44,10 @@ const StyledDiv = styled.div`
           margin: 4px 0;
           padding: 6px 12px;
           margin: 6px 0;
-          font-weight: 900;
           transition: all .3s ease;
           font-size: 14px;
+          font-family: 'HelveticaNeue' !important;
+          font-weight: 100;
         }
         li:hover{
           cursor: pointer;

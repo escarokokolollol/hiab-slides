@@ -20,7 +20,10 @@ const StyledDiv = styled.div`
     opacity: 0;
     h1{
       margin: 0;
-      font-size: 47px;
+      font-size: 48px;
+    }
+    p{
+      font-size: 18px;
     }
   }
   .show-wrapper{
@@ -31,7 +34,10 @@ const StyledDiv = styled.div`
     .wrapper{
       width: 700px;
       h1{
-        font-size: 57px;
+        font-size: 59px;
+      }
+      p{
+        font-size:20px;
       }
     }
   }

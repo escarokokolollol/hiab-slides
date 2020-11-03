@@ -12,7 +12,7 @@ import Repetition from "./views/Repetition";
 import Basket from "./views/Basket";
 
 // images
-import Background from "../../assets/images/effer_hiab-background.jpg";
+import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
 import BackgroundPopup from "../../assets/images/effer/effer-big-05.jpg";
 import closeIcon from "../../assets/icons/big-red-button.png";
 
