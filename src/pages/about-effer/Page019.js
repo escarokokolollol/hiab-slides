@@ -5,7 +5,7 @@ import SingleHeadingMiddle from "../../pagetemplates/SingleHeadingMiddle";
 import Navigation from "../../components/Navigation";
 
 // images
-import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
+import Background from "../../assets/images/effer/effernewbg.png";
 
 const StyledDiv = styled.div`
   h1{

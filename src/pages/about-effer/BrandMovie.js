@@ -4,7 +4,7 @@ import styled from "styled-components";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 import Navigation from "../../components/Navigation";
 
-import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
+import Background from "../../assets/images/effer/effernew01.png";
 
 
 const StyledDiv = styled.div`

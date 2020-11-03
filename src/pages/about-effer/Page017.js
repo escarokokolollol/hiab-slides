@@ -10,7 +10,7 @@ import ContinuouSlewing from "./innovations/ContinuouSlewing";
 import SecondJib from "./innovations/SecondJib";
 
 // images
-import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
+import Background from "../../assets/images/effer/effernewbg.png";
 import closeIcon from "../../assets/icons/big-red-button.png";
 
 

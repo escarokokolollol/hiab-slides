@@ -7,7 +7,7 @@ import UnorderedList from "../../components/UnorderedList";
 // page template
 import ParagraphMiddle from "../../pagetemplates/ParagraphMiddle";
 // images
-import Background from "../../assets/images/effer_hiab-background.jpg";
+import Background from "../../assets/images/effer/effernewbg.png";
 import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
