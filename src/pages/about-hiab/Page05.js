@@ -7,7 +7,7 @@ import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // images
-import Background from "../../assets/images/hiab/hiab-bg.png";
+import Background from "../../assets/images/hiab/hiab-bg-dark02.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -21,14 +21,20 @@ const StyledDiv = styled.div`
   .image-gallery-slide:focus{
     outline: none;
   }
+  .image-gallery-right-nav{
+    margin-right: 80px;
+  }
+  .image-gallery-left-nav{
+    margin-left: 80px;
+  }
   .item{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background: #333;
-    height: 80vh;
+    /* background: #333; */
+    height: 70vh;
     width: 60vw;
     max-width: 700px;
     margin: 0 auto;
@@ -42,6 +48,7 @@ const StyledDiv = styled.div`
     .item{
       iframe.video{
         width: 400px;
+        height: 225px;
       }
     }
   }
@@ -49,6 +56,7 @@ const StyledDiv = styled.div`
     .item{
       iframe.video{
         width: 600px;
+        height: 337px;
       }
     }
   }
@@ -57,8 +65,14 @@ const StyledDiv = styled.div`
       max-width: 800px;
       iframe.video{
         width: 700px;
-        height: 400px;
+        height: 393px;
       }
+    }
+    .image-gallery-right-nav{
+      margin-right: 180px;
+    }
+    .image-gallery-left-nav{
+      margin-left: 180px;
     }
   }
 `;
