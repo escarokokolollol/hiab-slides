@@ -13,6 +13,13 @@ import InfoIcon from "../../assets/icons/info-red.svg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
+  .box{
+    opacity: 0;
+  }
+  .show-box{
+    opacity: 1;
+    transition: opacity 2s ease;
+  }
   .jump{
     animation-name: jumpAni; 
     animation-duration: 1.5s;
@@ -62,30 +69,35 @@ const Page01 = () => {
 
   const [toggle, setToggle] = useState();
   const [infoButtonJump, setInfoButtonJump] = useState(false);
+  const [showBox, setShowBox] = useState(false);
 
   useEffect( () => {
     setTimeout( () => {
       setInfoButtonJump(true);
     },3000);
+
+    setTimeout(() => {
+      setShowBox(true);
+    }, 1000);
   });
 
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}> 
         <StyledDiv>
-          <BlackBoxHeading textOver="All roads lead to…" title="Hudiksvall!">
-
-            <img 
-              onClick={() => setToggle(!toggle)} 
-              className={`info-button ${infoButtonJump ? "jump" : ""}`}
-              src={InfoIcon}
-              alt="info button"
-            />
-              <div className={`info-wrapper-wrapper ${toggle ? "show" : "hide"}`}>
-                <InfoWrapper text="Did you know… Sweden is so long, that the drive from Abisko in the north to Malmö in the south, is just over 2,000 km, the same as from Malmö to Rome, Italy."/>
-              </div>
-
-          </BlackBoxHeading>
+          <div className={`box ${showBox ? "show-box" : ""}`}>
+            <BlackBoxHeading textOver="All roads lead to…" title="Hudiksvall!">
+              <img 
+                onClick={() => setToggle(!toggle)} 
+                className={`info-button ${infoButtonJump ? "jump" : ""}`}
+                src={InfoIcon}
+                alt="info button"
+              />
+                <div className={`info-wrapper-wrapper ${toggle ? "show" : "hide"}`}>
+                  <InfoWrapper text="Did you know… Sweden is so long, that the drive from Abisko in the north to Malmö in the south, is just over 2,000 km, the same as from Malmö to Rome, Italy."/>
+                </div>
+            </BlackBoxHeading>
+          </div>
           <Navigation to="/about-hiab/page02"/>
         </StyledDiv>
       </BackgroundImage>
