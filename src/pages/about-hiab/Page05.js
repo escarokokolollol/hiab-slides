@@ -7,7 +7,7 @@ import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // images
-import Background from "../../assets/images/hiab/hiab-bg-dark02.jpg";
+import Background from "../../assets/images/hiab/hiab-bg.png";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -33,8 +33,8 @@ const StyledDiv = styled.div`
     justify-content: center;
     align-items: center;
 
-    /* background: #333; */
-    height: 70vh;
+    background: #333;
+    height: 80vh;
     width: 60vw;
     max-width: 700px;
     margin: 0 auto;
@@ -48,7 +48,6 @@ const StyledDiv = styled.div`
     .item{
       iframe.video{
         width: 400px;
-        height: 225px;
       }
     }
   }
@@ -56,7 +55,6 @@ const StyledDiv = styled.div`
     .item{
       iframe.video{
         width: 600px;
-        height: 337px;
       }
     }
   }
@@ -65,7 +63,7 @@ const StyledDiv = styled.div`
       max-width: 800px;
       iframe.video{
         width: 700px;
-        height: 393px;
+        height: 400px;
       }
     }
     .image-gallery-right-nav{
