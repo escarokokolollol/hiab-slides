@@ -70,8 +70,8 @@ const StyledDiv = styled.div`
     .video-popup{
       .video-popup-inner{
         .video{
-          width: 800px;
-          height: 459px;
+          width: 900px;
+          height: 516px;
         }
       }
     }
@@ -80,8 +80,8 @@ const StyledDiv = styled.div`
     .video-popup{
       .video-popup-inner{
         .video{
-          width: 1000px;
-          height: 572px;
+          width: 1100px;
+          height: 630px;
         }
       }
     }
