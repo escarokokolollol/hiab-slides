@@ -143,7 +143,7 @@ const Page03 = () => {
     window.addEventListener('scroll', removeScrollText);
     setTimeout(() => {
       setToggle(true);
-    }, 4000);
+    }, 700);
   }, []);
 
   return (
