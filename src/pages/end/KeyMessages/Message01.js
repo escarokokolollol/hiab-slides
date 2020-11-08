@@ -21,15 +21,17 @@ const StyledDiv = styled.div`
     float: left;
     width: 50%;
   }
-
   .text-wrapper{
     padding-right: 40px;
     h1{
       margin: 0;
+      margin-bottom: 20px;
     }
     p{
-      margin: 10px 0;
+      margin: 0;
+      margin-bottom: 34px; 
       font-size: 20px;
+      font-style: italic;
     }
   }
   .image-wrapper{
@@ -85,10 +87,10 @@ const Message01 = () => {
 
           <div className="text-wrapper">
             <h1>For people passionate about the challenge</h1>
-            <p>Reach what others can’t</p>
-            <p>Conquer the toughest challenges</p>
-            <p>Extreme reach. Extreme satisfaction.</p>
-            <p>Tough challenges. Tougher solutions.</p>
+            <p>"Reach what others can’t"</p>
+            <p>"Conquer the toughest challenges"</p>
+            <p>"Extreme reach. Extreme satisfaction."</p>
+            <p>"Tough challenges. Tougher solutions."</p>
           </div>
 
           <div className="image-wrapper">

@@ -27,10 +27,13 @@ const StyledDiv = styled.div`
     padding-right: 40px;
     h1{
       margin: 0;
+      margin-bottom: 20px;
     }
     p{
-      margin: 10px 0;
+      margin: 0;
+      margin-bottom: 34px; 
       font-size: 20px;
+      font-style: italic;
     }
   }
   .image-wrapper{
@@ -94,9 +97,9 @@ const Message03 = () => {
 
           <div className="text-wrapper">
             <h1>A solution for every need</h1>
-            <p>Stronger together.</p>
-            <p>Two remarkable brands. One unbeatable offer.</p>
-            <p>Outstanding service and support</p>
+            <p>"Stronger together."</p>
+            <p>"Two remarkable brands. One unbeatable offer."</p>
+            <p>"Outstanding service and support"</p>
           </div>
 
           <div className="image-wrapper">
