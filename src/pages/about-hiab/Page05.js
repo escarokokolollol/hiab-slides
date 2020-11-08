@@ -7,7 +7,7 @@ import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // images
-import Background from "../../assets/images/hiab/hiab-bg.png";
+import Background from "../../assets/images/hiab/hiab-bg-dark02.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
