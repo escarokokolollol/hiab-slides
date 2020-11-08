@@ -12,6 +12,10 @@ import wasteImage from "../../assets/images/applications/waste.jpg";
 import specialityImage from "../../assets/images/applications/speciality.jpg";
 import heavyImage from "../../assets/images/applications/heavy.jpg";
 import glassImage from "../../assets/images/applications/glass.jpg";
+import roofingImage from "../../assets/images/applications/ROOFING.jpg";
+import logisticsImage from "../../assets/images/applications/logistics.jpg";
+import publicImage from "../../assets/images/applications/PUBLIC.jpg";
+import arboricultureImage from "../../assets/images/applications/JuletreTornplass.JPG";
 import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
 
 
@@ -191,6 +195,7 @@ const Page05 = () => {
               {roofing &&
                 <article>
                   <Application
+                    image={roofingImage}
                     title="Roofing"
                     textUnderTitle="Requires precise, powerful rotation as well excellent crane weight, boom length ratio and lifting capacity even at considerable heights."
                     hiabRange="For this application, choose EFFER."
@@ -223,7 +228,7 @@ const Page05 = () => {
               {specialty &&
                 <article>
                   <Application
-                    title="Specialty "
+                    title="Specialty"
                     image={specialityImage}
                     textUnderTitle="In general, these are special projects for answering specific needs in sectors currently lacking cranes and solutions."
 
@@ -259,6 +264,7 @@ const Page05 = () => {
                 <article>
                   <Application
                     title="Logistics"
+                    image={logisticsImage}
                     textUnderTitle="This highly demanding sector requires reliable, intelligent solutions to maximise uptime for a fleet of often smaller cranes."
 
                     hiabRange="HIAB offers a full range of reliable, smaller sized cranes ideal for rental companies or supporting logistics companies that deliver materials. "
@@ -275,6 +281,7 @@ const Page05 = () => {
                 <article>
                   <Application
                     title="Public Spaces"
+                    image={publicImage}
                     textUnderTitle="Requires small- to mid-size cranes for small removals, placing and maintenance of monuments, landscaping equipment, etc."
 
                     hiabRange="Numerous smaller sized cranes with accessories such as bucket or hoist are ideally suited for maintenance of public spaces. "
@@ -290,6 +297,7 @@ const Page05 = () => {
                 <article>
                   <Application
                     title="Arboriculture"
+                    image={arboricultureImage}
                     textUnderTitle="Requires excellent stability and versatility to manage tight spaces, uneven ground, and many types of obstacles."
 
                     hiabRange="For  this application, choose EFFER."
