@@ -7,7 +7,6 @@ import BackgroundImage from "../../../components/styled/BackgroundImage";
 
 // images
 import Background from "../../../assets/images/messages/message02.jpg";
-import Logo from "../../../assets/icons/effer-logo.svg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -24,6 +23,11 @@ const StyledDiv = styled.div`
 
   .text-wrapper{
     padding-right: 40px;
+    h2.brand-name{
+      color: ${props => props.theme.red};
+      font-size: 32px;
+      margin: 0 0 20px;
+    }
     h1{
       margin: 0;
       margin-bottom: 20px;
@@ -36,16 +40,8 @@ const StyledDiv = styled.div`
     }
   }
   .image-wrapper{
-    position: relative;
     img.big-img{
       width: 100%;
-    }
-    img.logo{
-      width: 200px;
-      position: absolute;
-      left: 0px;
-      bottom: 0px;
-      padding: 16px 30px;
     }
   }
   @media ${props => props.theme.firstdBreakpoint}{
@@ -87,6 +83,7 @@ const Message02 = () => {
         <StyledDiv>
 
           <div className="text-wrapper">
+            <h2 className="brand-name">EFFER</h2>
             <h1>Heavy duty.</h1>
             <h1>Lighter weight.</h1>
             <p>"Built to last"</p>
@@ -98,7 +95,6 @@ const Message02 = () => {
 
           <div className="image-wrapper">
             <img src={Background} className="big-img" alt="cool" />
-            <img src={Logo} className="logo" alt="logotype" />
           </div>
 
           <Navigation backTo="/end04" to="/end06" />

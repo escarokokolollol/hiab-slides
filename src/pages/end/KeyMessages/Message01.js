@@ -7,7 +7,6 @@ import BackgroundImage from "../../../components/styled/BackgroundImage";
 
 // images
 import Background from "../../../assets/images/messages/message01.jpg";
-import Logo from "../../../assets/icons/effer-logo.svg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -23,6 +22,12 @@ const StyledDiv = styled.div`
   }
   .text-wrapper{
     padding-right: 40px;
+    position: relative;
+    h2.brand-name{
+      color: ${props => props.theme.red};
+      font-size: 32px;
+      margin: 0 0 20px;
+    }
     h1{
       margin: 0;
       margin-bottom: 20px;
@@ -35,16 +40,8 @@ const StyledDiv = styled.div`
     }
   }
   .image-wrapper{
-    position: relative;
     img.big-img{
       width: 100%;
-    }
-    img.logo{
-      width: 200px;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      padding: 16px 30px;
     }
   }
   @media ${props => props.theme.firstdBreakpoint}{
@@ -84,20 +81,17 @@ const Message01 = () => {
     <div className="page-transition">
       <BackgroundImage backgroundWhite={true}>
         <StyledDiv>
-
           <div className="text-wrapper">
+            <h2 className="brand-name">EFFER</h2>
             <h1>For people passionate about the challenge</h1>
             <p>"Reach what others can’t"</p>
             <p>"Conquer the toughest challenges"</p>
             <p>"Extreme reach. Extreme satisfaction."</p>
             <p>"Tough challenges. Tougher solutions."</p>
           </div>
-
           <div className="image-wrapper">
             <img src={Background} className="big-img" alt="cool" />
-            <img src={Logo} className="logo" alt="logotype" />
           </div>
-
           <Navigation backTo="/end03" to="/end05" />
         </StyledDiv>
       </BackgroundImage>

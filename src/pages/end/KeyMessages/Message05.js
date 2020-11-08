@@ -7,8 +7,6 @@ import BackgroundImage from "../../../components/styled/BackgroundImage";
 
 // images
 import Background from "../../../assets/images/hiabeffer222.jpg";
-import EfferLogo from "../../../assets/icons/effer-logo.svg";
-import HiabLogo from "../../../assets/icons/hiab-logo.svg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -25,6 +23,11 @@ const StyledDiv = styled.div`
 
   .text-wrapper{
     padding-right: 40px;
+    h2.brand-name{
+      color: ${props => props.theme.red};
+      font-size: 32px;
+      margin: 0 0 20px;
+    }
     h1{
       margin: 0;
       margin-bottom: 20px;
@@ -37,25 +40,9 @@ const StyledDiv = styled.div`
     }
   }
   .image-wrapper{
-    position: relative;
     img.big-img{
       width: 100%;
     }
-    img.logo.hiab{
-      width: 200px;
-      position: absolute;
-      left: 0px;
-      bottom: 0px;
-      padding: 16px 30px;
-    }
-    img.logo.effer{
-      width: 200px;
-      position: absolute;
-      right: 0px;
-      bottom: 0px;
-      padding: 16px 30px;
-    }
-
   }
   @media ${props => props.theme.firstdBreakpoint}{
     .text-wrapper{
@@ -96,6 +83,7 @@ const Message03 = () => {
         <StyledDiv>
 
           <div className="text-wrapper">
+            <h2 className="brand-name">HIAB & EFFER</h2>
             <h1>A solution for every need</h1>
             <p>"Stronger together."</p>
             <p>"Two remarkable brands. One unbeatable offer."</p>
@@ -104,10 +92,6 @@ const Message03 = () => {
 
           <div className="image-wrapper">
             <img src={Background} className="big-img" alt="cool" />
-            <div className="logos">
-              <img src={HiabLogo} className="logo hiab" alt="logotype" />
-              <img src={EfferLogo} className="logo effer" alt="logotype" />
-            </div>
           </div>
 
           <Navigation backTo="/end07" to="/end09" />

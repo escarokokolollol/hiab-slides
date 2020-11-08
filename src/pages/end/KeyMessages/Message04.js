@@ -7,7 +7,6 @@ import BackgroundImage from "../../../components/styled/BackgroundImage";
 
 // images
 import Background from "../../../assets/images/messages/message04.jpg";
-import Logo from "../../../assets/icons/hiab-logo.svg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
@@ -24,6 +23,11 @@ const StyledDiv = styled.div`
 
   .text-wrapper{
     padding-right: 40px;
+    h2.brand-name{
+      color: ${props => props.theme.red};
+      font-size: 32px;
+      margin: 0 0 20px;
+    }
     h1{
       margin: 0;
       margin-bottom: 20px;
@@ -36,16 +40,8 @@ const StyledDiv = styled.div`
     }
   }
   .image-wrapper{
-    position: relative;
     img.big-img{
       width: 100%;
-    }
-    img.logo{
-      width: 200px;
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      padding: 16px 30px;
     }
   }
   @media ${props => props.theme.firstdBreakpoint}{
@@ -87,6 +83,7 @@ const Message03 = () => {
         <StyledDiv>
 
           <div className="text-wrapper">
+            <h2 className="brand-name">HIAB</h2>
             <h1>For enterprises that crave perfection</h1>
             <p>"Optimise your business"</p>
             <p>"When reliability is everything"</p>
@@ -97,7 +94,6 @@ const Message03 = () => {
 
           <div className="image-wrapper">
             <img src={Background} className="big-img" alt="cool" />
-            <img src={Logo} className="logo" alt="logotype" />
           </div>
 
           <Navigation backTo="/end06" to="/end08" />
