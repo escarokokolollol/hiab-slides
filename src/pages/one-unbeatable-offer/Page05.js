@@ -15,7 +15,7 @@ import glassImage from "../../assets/images/applications/glass.jpg";
 import roofingImage from "../../assets/images/applications/ROOFING.jpg";
 import logisticsImage from "../../assets/images/applications/logistics.jpg";
 import publicImage from "../../assets/images/applications/PUBLIC.jpg";
-import arboricultureImage from "../../assets/images/applications/JuletreTornplass.JPG";
+import arboricultureImage from "../../assets/images/applications/JuletreTornplass.jpg";
 import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
 
 
