@@ -21,7 +21,7 @@ const StyledDiv = styled.div`
     left : 0;
     height: 100vh;
     width: 100vw;
-    background: rgba(0,0,0, 0.8);
+    ${'' /* background: rgba(0,0,0, 0.8); */}
     padding: 100px;
     .close-icon{
       position: absolute;
