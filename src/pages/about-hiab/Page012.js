@@ -10,7 +10,7 @@ import SAF from "./innovations/SAF";
 import HiConnect from "./innovations/HiConnect";
 
 // images
-import Background from "../../assets/images/hiab/hiab-bg-dark.jpg";
+import Background from "../../assets/images/hiab/hiabnewbg0102.jpg";
 import closeIcon from "../../assets/icons/big-red-button.png";
 
 const StyledDiv = styled.div`

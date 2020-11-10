@@ -6,7 +6,7 @@ import Navigation from "../../components/Navigation";
 import BackgroundImage from "../../components/styled/BackgroundImage";
 
 // images
-import Background from "../../assets/images/hiab/hiab-bg-dark.jpg";
+import Background from "../../assets/images/hiab/hiabnewbg0102.jpg";
 import HiabLogo from "../../assets/icons/hiab-logo.svg";
 import closeIcon from "../../assets/icons/close-menu.svg";
 

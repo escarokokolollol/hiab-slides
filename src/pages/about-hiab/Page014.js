@@ -5,7 +5,7 @@ import SingleHeadingMiddle from "../../pagetemplates/SingleHeadingMiddle";
 import Navigation from "../../components/Navigation";
 
 // images
-import Background from "../../assets/images//hiab/hiab-bg-dark.jpg";
+import Background from "../../assets/images//hiab/hiabnewbg0102.jpg";
 
 const StyledDiv = styled.div`
   h1{

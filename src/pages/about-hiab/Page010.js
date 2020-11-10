@@ -7,7 +7,7 @@ import UnorderedList from "../../components/UnorderedList";
 // page template
 import ParagraphMiddle from "../../pagetemplates/ParagraphMiddle";
 // images
-import Background from "../../assets/images/hiab/hiab-bg-dark.jpg";
+import Background from "../../assets/images/hiab/hiabnewbg0102.jpg";
 import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
