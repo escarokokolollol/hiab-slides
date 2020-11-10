@@ -32,6 +32,8 @@ const StyledDiv = styled.div`
     max-width: 800px;
     font-weight: 700;
     margin: 0;
+    font-family: "HelveticaNeue" !important;
+    letter-spacing: 5px;
   }
   div.line{
     border-bottom: 2px solid ${props => props.theme.red};

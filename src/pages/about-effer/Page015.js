@@ -11,11 +11,14 @@ import Background from "../../assets/images/effer/effernewbg.png";
 import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
-
+  .paragraph-middle{
+    font-size: 76px !important;
+  }
   .extreme-wrapper{
     text-align: center;
     p{
-      font-size: 22px;
+      margin-bottom: 40px;
+      font-size: 26px;
       strong{
         font-weight: 900;
       }
@@ -78,11 +81,17 @@ const StyledDiv = styled.div`
       color: #fff;
       margin: 0 auto;
       position: relative;
+      max-width: 900px;
+      p{
+        font-size: 22px;
+      }
       h2{
         text-align: center;
       }
       ul{
-        max-width: 620px;
+        max-width:800px;
+        width: max-content;
+        margin: 0 auto;
         li{
           font-size: 22px;
         }
@@ -112,11 +121,10 @@ const Page015 = () => {
     "Unequalled personal attention"
   ]
   return (
-    <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showEfferLogo={true} >
-      <StyledDiv>
+    <StyledDiv>
+      <ParagraphMiddle hideLine title="EXTREME" backgroundImage={Background} showEfferLogo={true} >
         <div className="extreme-wrapper">
-          <p><strong>EXTREME. </strong>That’s EFFER in a single word.</p>
-          <p>Our customers experience it as</p>
+          <p>That’s EFFER in a single word. Our customers experience it as</p>
         </div>
         <UnorderedList items={listItems} />
         <Navigation backTo="/about-effer/page017" to="/about-effer/page019" />
@@ -134,8 +142,8 @@ const Page015 = () => {
             <img className="close-icon" src={closeIcon} alt="close" onClick={() => setCompare(false)} />
           </div>
         </div>
-      </StyledDiv>
-    </ParagraphMiddle>
+      </ParagraphMiddle>
+    </StyledDiv>
   );
 }
 

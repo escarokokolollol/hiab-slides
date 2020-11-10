@@ -11,10 +11,14 @@ import Background from "../../assets/images/hiab/hiabnewbg0102.jpg";
 import closeIcon from "../../assets/icons/close-menu.svg";
 
 const StyledDiv = styled.div`
+  .paragraph-middle{
+    font-size: 76px !important;
+  }
   .smart-wrapper{
     text-align: center;
     p{
-      font-size: 22px;
+      margin-bottom: 40px;
+      font-size: 26px;
       strong{
         font-weight: 900;
       }
@@ -79,11 +83,17 @@ const StyledDiv = styled.div`
       color: #fff;
       margin: 0 auto;
       position: relative;
+      max-width: 900px;
+      p{
+        font-size: 22px;
+      }
       h2{
         text-align: center;
       }
       ul{
-        max-width: 600px;
+        max-width:1500px;
+        width: max-content;
+        margin: 0 auto;
         li{
           font-size: 22px;
         }
@@ -115,11 +125,10 @@ const Page010 = () => {
     "Maximised uptime for optimising operations"
   ]
   return (
-    <ParagraphMiddle hideLine title="In a nutshell" backgroundImage={Background} showHiabLogo>
-      <StyledDiv>
+    <StyledDiv>
+      <ParagraphMiddle hideLine title="SMART" backgroundImage={Background} showHiabLogo>
         <div className="smart-wrapper">
-          <p><strong>SMART. </strong> That’s HIAB in a single word.</p>
-          <p>Our customers experience it as </p>
+          <p>That’s HIAB in a single word. Our customers experience it as</p>
         </div>
         <UnorderedList items={listItems} />
         <Navigation backTo="/about-hiab/page012" to="/about-hiab/page014" />
@@ -139,8 +148,8 @@ const Page010 = () => {
           </div>
         </div>
 
-      </StyledDiv>
-    </ParagraphMiddle>
+      </ParagraphMiddle>
+    </StyledDiv>
   );
 }
 
