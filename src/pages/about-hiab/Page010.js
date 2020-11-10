@@ -84,6 +84,7 @@ const StyledDiv = styled.div`
       margin: 0 auto;
       position: relative;
       max-width: 900px;
+      text-align: center;
       p{
         font-size: 22px;
       }
@@ -95,6 +96,7 @@ const StyledDiv = styled.div`
         width: max-content;
         margin: 0 auto;
         li{
+          text-align: left;
           font-size: 22px;
         }
       }
@@ -137,8 +139,7 @@ const Page010 = () => {
 
         <div className={`popup ${compare ? "show-popup" : ""}`}>
           <div className="compare-text">
-            <h2>EFFER in a nutshell</h2>
-            <p><strong>EXTREME. </strong>That’s EFFER in a single word. Our customers experience it as</p>
+            <p><strong>EXTREME. </strong></p><p>That’s EFFER in a single word. Our customers experience it as</p>
             <ul>
               <li>Extreme performance and durability</li>
               <li>Highest level of customisation</li>

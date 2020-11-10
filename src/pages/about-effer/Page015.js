@@ -82,6 +82,7 @@ const StyledDiv = styled.div`
       margin: 0 auto;
       position: relative;
       max-width: 900px;
+      text-align: center;
       p{
         font-size: 22px;
       }
@@ -93,6 +94,7 @@ const StyledDiv = styled.div`
         width: max-content;
         margin: 0 auto;
         li{
+          text-align: left;
           font-size: 22px;
         }
       }
@@ -132,8 +134,8 @@ const Page015 = () => {
 
         <div className={`popup ${compare ? "show-popup" : ""}`}>
           <div className="compare-text">
-            <h2>HIAB in a nutshell</h2>
-            <p><strong>SMART. </strong>That’s HIAB in a single word. Our customers experience it as</p>
+            <p><strong>SMART. </strong></p>
+            <p>That’s HIAB in a single word. Our customers experience it as</p>
             <ul>
               <li>Smooth, safe and efficient performance</li>
               <li>Exceptional service and support</li>
