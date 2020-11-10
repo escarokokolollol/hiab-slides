@@ -62,6 +62,33 @@ const StyledDiv = styled.div`
     transform: scale(1.5);
     transition: all .1s ease;
   }
+
+  @media ${props => props.theme.secondBreakpoint}{
+    .box{
+      .BlackBoxHeading{
+        width: 500px;
+        p.over{
+          font-size: 32px;
+        }
+        h1{
+          font-size: 66px;
+        }
+      }
+    }
+  }
+  @media ${props => props.theme.thirdBreakpoint}{
+    .box{
+      .BlackBoxHeading{
+        width: 600px;
+        p.over{
+          font-size: 36px;
+        }
+        h1{
+          font-size: 82px;
+        }
+      }
+    }
+  }
   
 `;
 
@@ -86,7 +113,7 @@ const Page01 = () => {
       <BackgroundImage image={Background}> 
         <StyledDiv>
           <div className={`box ${showBox ? "show-box" : ""}`}>
-            <BlackBoxHeading textOver="All roads lead to…" title="Hudiksvall!">
+            <BlackBoxHeading className="BlackBoxHeading" textOver="All roads lead to…" title="Hudiksvall!">
               <img 
                 onClick={() => setToggle(!toggle)} 
                 className={`info-button ${infoButtonJump ? "jump" : ""}`}
