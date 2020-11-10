@@ -148,7 +148,7 @@ const Page09 = () => {
               <h2>What HIAB offers</h2>
               <div className="paragraphs">
                 <p>HIAB helps customers who are seeking reliable, high quality loader cranes that will <strong>enable them to optimise their business.</strong></p>
-                <p>We do this by providing smart solutions and intelligent services for achieving consistently <strong>smooth, safe and efficient performance.</strong></p>
+                <p>HIAB does this by providing smart solutions and intelligent services for achieving consistently <strong>smooth, safe and efficient performance.</strong></p>
               </div>
               <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/>
             </div>

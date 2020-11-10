@@ -157,7 +157,7 @@ const Page012 = () => {
               <h2>What sets HIAB apart</h2>
               <div className="paragraphs">
                 <p>Unlike other manufacturers, HIAB is known for its unique position as <strong>the inventor of the original truck-mounted loader</strong> crane and has been pioneering the industry for over 75 years. Innovations such as Crane Tip Control and Semi Automatic Folding are examples of technologies designed to make crane operation safer, more efficient and easier to use than the competition.</p>
-                <p>More than that, we are appreciated for leading the way in <strong>intelligent, data-driven solutions </strong>such as HiConnect that enable optimal service and support, and ultimately smarter operations and maximised uptime.</p>
+                <p>More than that, HIAB is appreciated for leading the way in <strong>intelligent, data-driven solutions </strong>such as HiConnect that enable optimal service and support, and ultimately smarter operations and maximised uptime.</p>
               </div>
               <img className="close-icon" src={closeIcon} alt="close" onClick={() => setCompare(false)} />
             </div>

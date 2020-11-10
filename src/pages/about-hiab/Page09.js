@@ -149,7 +149,7 @@ const Page09 = () => {
               <h2>What sets EFFER apart</h2>
               <div className="paragraphs">
                 <p>Unlike other manufacturers, EFFER offers customised loader cranes with <strong>exceptional reach and power-to-weight ratio in order to reach and carry what others can’t.</strong> Innovations such as CroSStab, V-Stab, continuous slewing and the use of second jibs all demonstrate technologies that make this possible.</p>
-                <p>More than that, we are known for providing the <strong>industry’s highest level of crane customisation and personal attention,</strong> two of the most cited reasons why customers continue to make EFFER their number one choice.</p>
+                <p>More than that, EFFER is known for providing the <strong>industry’s highest level of crane customisation and personal attention,</strong> two of the most cited reasons why customers continue to make EFFER their number one choice.</p>
               </div>
               <img className="close-icon" src={closeIcon} alt="close" onClick={() => setCompare(false)} />
             </div>

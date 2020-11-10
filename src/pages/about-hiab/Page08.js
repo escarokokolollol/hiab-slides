@@ -150,7 +150,7 @@ const Page08 = () => {
               <h2>What EFFER offers</h2>
               <div className="paragraphs">
                 <p>EFFER helps customers who need specialized cranes designed <strong>to conquer the toughest challenges.</strong></p>
-                <p>We do this by passionately building and configuring cranes to meet these customers’ tough demands for <strong>extreme performance and durability.</strong></p>
+                <p>EFFER does this by passionately building and configuring cranes to meet these customers’ tough demands for <strong>extreme performance and durability.</strong></p>
               </div>
               <img className="close-icon" src={closeIcon} alt="close" onClick={ () => setCompare(false)}/>
             </div>
