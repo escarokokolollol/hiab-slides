@@ -33,7 +33,7 @@ const StyledDiv = styled.div`
     justify-content: center;
     align-items: center;
 
-    background: #333;
+    ${'' /* background: #333; */}
     height: 80vh;
     width: 60vw;
     max-width: 700px;
@@ -48,6 +48,7 @@ const StyledDiv = styled.div`
     .item{
       iframe.video{
         width: 400px;
+        height: 225px;
       }
     }
   }
@@ -55,6 +56,7 @@ const StyledDiv = styled.div`
     .item{
       iframe.video{
         width: 600px;
+        height: 337px;
       }
     }
   }
@@ -63,7 +65,7 @@ const StyledDiv = styled.div`
       max-width: 800px;
       iframe.video{
         width: 700px;
-        height: 400px;
+        height: 393px;
       }
     }
     .image-gallery-right-nav{
@@ -73,7 +75,23 @@ const StyledDiv = styled.div`
       margin-left: 180px;
     }
   }
+  @media (min-width: 1660px){
+    .item{
+      max-width: 800px;
+      iframe.video{
+        width: 900px;
+        height: 505px;
+      }
+    }
+    .image-gallery-right-nav{
+      margin-right: 140px;
+    }
+    .image-gallery-left-nav{
+      margin-left: 140px;
+    }
+  }
 `;
+
 
 const item1 = () => {
   return (
@@ -143,7 +161,6 @@ const Page05 = () => {
   const stopVideo = () => {
     let iframes = document.querySelectorAll(".video");
 
-    console.log(iframes);
     iframes.forEach(iframe => {
       if (iframe !== null) {
         let iframeSrc = iframe.src;
