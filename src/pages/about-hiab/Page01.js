@@ -68,10 +68,11 @@ const StyledDiv = styled.div`
       .BlackBoxHeading{
         width: 500px;
         p.over{
-          font-size: 32px;
+          font-size: 22px;
         }
         h1{
-          font-size: 66px;
+          font-size: 59px;
+          line-height: 59px;
         }
       }
     }
@@ -81,10 +82,11 @@ const StyledDiv = styled.div`
       .BlackBoxHeading{
         width: 600px;
         p.over{
-          font-size: 36px;
+          font-size: 27px;
         }
         h1{
-          font-size: 82px;
+          font-size: 76px;
+          line-height: 76px;
         }
       }
     }
@@ -113,7 +115,7 @@ const Page01 = () => {
       <BackgroundImage image={Background}> 
         <StyledDiv>
           <div className={`box ${showBox ? "show-box" : ""}`}>
-            <BlackBoxHeading className="BlackBoxHeading" textOver="All roads lead to…" title="Hudiksvall!">
+            <BlackBoxHeading className="BlackBoxHeading" textOver="When it comes to the loader crane" title="All roads lead to Hudiksvall!">
               <img 
                 onClick={() => setToggle(!toggle)} 
                 className={`info-button ${infoButtonJump ? "jump" : ""}`}
@@ -121,7 +123,7 @@ const Page01 = () => {
                 alt="info button"
               />
                 <div className={`info-wrapper-wrapper ${toggle ? "show" : "hide"}`}>
-                  <InfoWrapper text="Did you know… Sweden is so long, that the drive from Abisko in the north to Malmö in the south, is just over 2,000 km, the same as from Malmö to Rome, Italy."/>
+                  <InfoWrapper text="Did you know… Sweden is so long that to drive from Malmö in the south to Abisko in the north is just over 2,000 km, the same as from Malmö to Rome, Italy."/>
                 </div>
             </BlackBoxHeading>
           </div>
