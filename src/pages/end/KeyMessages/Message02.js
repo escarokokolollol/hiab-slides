@@ -91,8 +91,7 @@ const Message02 = () => {
 
           <div className="text-wrapper">
             <h2 className="brand-name">EFFER <span className="cat">Key messages</span></h2>
-            <h1>Heavy duty.</h1>
-            <h1>Lighter weight.</h1>
+            <h1>Heavy duty. Lighter weight.</h1>
             <p>"Built to last"</p>
             <p>"Outstanding durability"</p>
             <p>"Carry more payload"</p>

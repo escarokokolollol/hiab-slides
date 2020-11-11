@@ -63,7 +63,7 @@ const StyledDiv = styled.div`
       width: 40%;
       h1{
         width: 340px;
-        font-size: 44px;
+        font-size: 37px;
       }
     }
     .image-wrapper{
@@ -74,7 +74,7 @@ const StyledDiv = styled.div`
     .text-wrapper{
       h1{
         width: 500px;
-        font-size: 58px;
+        font-size: 50px;
       }
       p{
         font-size: 22px;

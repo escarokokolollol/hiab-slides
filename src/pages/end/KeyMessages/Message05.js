@@ -75,6 +75,7 @@ const StyledDiv = styled.div`
       h1{
         width: 500px;
         font-size: 58px;
+        line-height: 52px;
       }
       p{
         font-size: 22px;
