@@ -91,7 +91,7 @@ const Message03 = () => {
         <StyledDiv>
 
           <div className="text-wrapper">
-            <h2 className="brand-name">HIAB & EFFER <span className="cat">Key messages</span></h2>
+            <h2 className="brand-name">HIAB & EFFER <span className="cat">together</span></h2>
             <h1>A solution for every need</h1>
             <p>"Stronger together."</p>
             <p>"Two remarkable brands. One unbeatable offer."</p>

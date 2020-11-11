@@ -92,11 +92,10 @@ const Message03 = () => {
           <div className="text-wrapper">
             <h2 className="brand-name">HIAB <span className="cat">Key messages</span></h2>
             <h1>For enterprises that crave perfection</h1>
-            <p>"Optimise your business"</p>
-            <p>"When reliability is everything"</p>
-            <p>"Intelligent solutions to maximise uptime"</p>
-            <p>"The best time of the day…UPTIME"</p>
-            <p>"No. 1 in service"</p>
+            <p>“No. 1 in service”</p>
+            <p>“Optimise your business”</p>
+            <p>”When reliability is everything”</p>
+            <p>“Intelligent solutions to maximise uptime”</p>
           </div>
 
           <div className="image-wrapper">

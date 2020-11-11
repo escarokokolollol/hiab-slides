@@ -91,10 +91,10 @@ const Message01 = () => {
           <div className="text-wrapper">
             <h2 className="brand-name">EFFER <span className="cat">Key messages</span></h2>
             <h1>For people passionate about the challenge</h1>
-            <p>"Reach what others can’t"</p>
-            <p>"Conquer the toughest challenges"</p>
-            <p>"Extreme reach. Extreme satisfaction."</p>
-            <p>"Tough challenges. Tougher solutions."</p>
+            <p>“Reach what others can’t”</p>
+            <p>“Conquer the toughest challenges”</p>
+            <p>“Extreme reach. Extreme satisfaction.”</p>
+            <p>“Tough challenges. Tougher solutions.”</p>
           </div>
           <div className="image-wrapper">
             <img src={Background} className="big-img" alt="cool" />
