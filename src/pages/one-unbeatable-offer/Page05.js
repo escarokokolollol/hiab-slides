@@ -239,7 +239,7 @@ const Page05 = () => {
                     image={roofingImage}
                     title="Roofing"
                     textUnderTitle="Requires precise, powerful rotation as well excellent crane weight, boom length ratio and lifting capacity even at considerable heights."
-                    hiabRange="For this application, choose EFFER."
+                    hiabRange="EFFER cranes are generally a stronger match for this application."
 
                     efferRange="Models from 50 Tm upward, and others too, are much appreciated in this sector. In Belgium EFFER cranes have replaced traditional telescopic aluminium cranes for the roofing sector."
                     efferBenefits="Precise and powerful rotation thanks to slewing ring. Decagonal structure of arms and extensions allows operation at significant heights with large loads applied to the winch without the risk of uncontrolled side slipping."
@@ -261,7 +261,7 @@ const Page05 = () => {
                     hiabSolutions={["X-HiPro 130W & 230W"]}
                     hiabInnovations="Special functions like Semi Automatic Motion (SAM) assure continuous assistance to drivers who have to operate in tighter city environments."
 
-                    efferRange="For  this application, choose HIAB."
+                    efferRange="HIAB cranes are overall a stronger match for this application."
                   />
                 </article>
               }
@@ -278,7 +278,7 @@ const Page05 = () => {
                     hiabSolutions={["Special protection measures for cabling and hosing", "Anticorrosion or special materials for components that need to withstand demanding environmental conditions"]}
                     hiabInnovations="According to needs, e.g. many new control functions have been developed to answer specific needs or requests. The control systems allow the programming of many functions mainly for increasing operator and overall safety."
 
-                    efferRange="For this application, choose HIAB."
+                    efferRange="Many EFFER cranes are customised for specific applications. EFFER is also a world-leading name in Marine cranes. Similarly HIAB offers several well-established solutions in areas such as defence, as well as for sea, rail and wind turbine applications ¬ – see left."
                   />
                 </article>
               }
@@ -296,7 +296,7 @@ const Page05 = () => {
                     efferSolutions="E955 & E2255"
                     efferInnovations={["Virtual Shield – protects the cab", "Progressive Deceleration System – eliminates risk of collision", "V-Stab – the only solution that provides 360° crane stability"]}
 
-                    hiabRange="For this application, choose EFFER."
+                    hiabRange="EFFER cranes are generally a stronger match for this application."
                   />
                 </article>
               }
@@ -313,7 +313,7 @@ const Page05 = () => {
                     hiabSolutions="HiConnect"
                     hiabInnovations="HiConnect – Real-time data about equipment’s operation and condition empowers fleet managers to improve performance and safety, and avoid unnecessary downtime."
 
-                    efferRange="For this application, choose HIAB."
+                    efferRange="HIAB cranes are overall a stronger match for this application."
                   />
                 </article>
               }
@@ -329,7 +329,7 @@ const Page05 = () => {
                     hiabBenefits="Cost-efficient for municipalities."
                     hiabSolutions="Ready to go certifications, full installation warranty and ready to go solutions."
 
-                    efferRange="For this application, choose HIAB."
+                    efferRange="HIAB cranes are overall a stronger match for this application."
                   />
                 </article>
               }
@@ -341,7 +341,7 @@ const Page05 = () => {
                     image={arboricultureImage}
                     textUnderTitle="Requires excellent stability and versatility to manage tight spaces, uneven ground, and many types of obstacles."
 
-                    hiabRange="For  this application, choose EFFER."
+                    hiabRange="EFFER cranes are generally a stronger match for this application."
 
                     efferRange="Models from 60 Tm upwards equipped with Progress or Progress 2.0 electronic control systems, are ideal for the challenges of tree pruning, removal and transport; can also be mounted on tracked vehicles for extreme situations."
                     efferBenefits="Optimised stability, safety and efficiency thanks to electronic control systems coupled with CroSStab or V-Stab that provide good stabilisation even in the most challenging areas."
@@ -363,7 +363,7 @@ const Page05 = () => {
                     efferSolutions={["Medium: E375", "Big: E395, E1750 & E2255"]}
                     efferInnovations={["Progressive Deceleration System – eliminates risk of collision", "The possibility to work with negative angles is a highly acclaimed function within this business and is available not only for the main column and booms, but also for the JIB. This double possibility is highly uncommon among the competition."]}
 
-                    hiabRange="For  this application, choose EFFER."
+                    hiabRange="EFFER cranes are generally a stronger match for this application."
                   />
                 </article>
               }
