@@ -12,28 +12,20 @@ import Background from "../../assets/images/hiabeffer222.jpg";
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
   .BlackBoxHeading{
+    padding: 40px;
     width: 560px;
     position: absolute;
     bottom: 60px;
     background: rgba(255,255,255, 0.8);
     color: #000;
     h1{
-      font-size: 44px;
-      line-height: 44px;
-    }
-  }
-  @media ${props => props.theme.secondBreakpoint}{
-    .BlackBoxHeading{
-      width: 760px;
-      h1{
-        font-size: 64px;
-        line-height: 64px;
-      }
+      font-size: 50px;
+      line-height: 50px;
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
     .BlackBoxHeading{
-      width: 1200px;
+      width: 750px;
       h1{
         font-size:70px;
         line-height:70px;
