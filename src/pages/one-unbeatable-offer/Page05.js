@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from "styled-components";
 
 // components
@@ -17,21 +17,46 @@ import logisticsImage from "../../assets/images/applications/logistics.jpg";
 import publicImage from "../../assets/images/applications/PUBLIC.jpg";
 import arboricultureImage from "../../assets/images/applications/JuletreTornplass.jpg";
 import Background from "../../assets/images/effer/effer-bg-dark04.jpg";
-
+import ScrollArrow from "../../assets/icons/scroll-arrow.svg";
 
 const StyledDiv = styled.div`
   width:96%;
   margin: 0 auto;
-  .first-text{
-    margin: 90px 0 6vh;
-    padding: 30px 50px;
-    background: rgba(0,0,0, 0.5);
-    p.title{
-      font-size: 42px;
-      font-weight: 900;
+  .box{
+    opacity: 0;
+  }
+  .show-box{
+    transition: opacity 2s ease;
+    opacity: 1;
+  }
+  .first-text-wrapper{
+    .first-text{
+      margin: 90px 0 0;
+      padding: 30px 50px;
+      background: rgba(0,0,0, 0.5);
+      h1.title{
+        font-size: 42px;
+        font-weight: 900;
+      }
+      p.text{
+        font-size: 26px;
+      }
     }
-    p.text{
-      font-size: 26px;
+    p.nav-info{
+      font-size: 24px;
+      position: relative;
+      margin-left: 20px;
+    }
+    p.nav-info:before{
+      background-image: url(${ScrollArrow});
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      transform: rotate(90deg);
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px; 
+      height: 20px;
+      content:"";
     }
   }
   .container-grid{
@@ -112,6 +137,8 @@ const StyledDiv = styled.div`
 
 const Page05 = () => {
 
+  const [showBox, setShowBox] = useState(false);
+
   const [showTitle, setShowTitle] = useState(true);
   const [construction, setConstruction] = useState(false);
   const [roofing, setRoofing] = useState(false);
@@ -150,6 +177,12 @@ const Page05 = () => {
     window.scrollTo(0, 0);
   }
 
+  useEffect( () => {
+    setTimeout(() => {
+      setShowBox(true);
+    },1000);
+  });
+
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
@@ -170,9 +203,14 @@ const Page05 = () => {
             </div>
             <div className="content-wrapper">
               {showTitle &&
-                <div className="first-text">
-                  <p className="title">Take a look at some of these most common applications to learn more.</p>
-                  <p className="text">To navigate click on each section in the left menu.</p>
+                <div className="first-text-wrapper">
+                  <div className="first-text">
+                    <h1 className="title">Take a look at some of these most common applications to learn more.</h1>
+                    <p className="text">To the left are some of the most  common loader crane applications </p>
+                  </div>
+                  <div className={`box ${showBox ? "show-box" : ""}`}>
+                    <p className="nav-info">Click each one to learn how each brand compares</p>
+                  </div>
                 </div>
               }
               {construction &&
