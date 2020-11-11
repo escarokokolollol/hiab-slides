@@ -27,6 +27,13 @@ const StyledDiv = styled.div`
       color: ${props => props.theme.red};
       font-size: 32px;
       margin: 0 0 20px;
+      span.cat{
+        color: #000;
+        margin:0;
+        font-size: 22px;
+        padding-bottom: 20px;
+        font-family: Open sans;
+      }
     }
     h1{
       margin: 0;
@@ -83,7 +90,7 @@ const Message03 = () => {
         <StyledDiv>
 
           <div className="text-wrapper">
-            <h2 className="brand-name">HIAB</h2>
+            <h2 className="brand-name">HIAB <span className="cat">Key messages</span></h2>
             <h1>For enterprises that crave perfection</h1>
             <p>"Optimise your business"</p>
             <p>"When reliability is everything"</p>
