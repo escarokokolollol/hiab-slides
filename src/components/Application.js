@@ -162,14 +162,14 @@ const Application = props => {
               <div className="grid-item hiab">
                 {props.hiabSolutions && Array.isArray(props.hiabSolutions) ?
                   <ul>
-                    {props.hiabSolutions.map((item) => <li>{item}</li>)}
+                    {props.hiabSolutions.map((item, index) => <li key={index}>{item}</li>)}
                   </ul>
                   : <p>{props.hiabSolutions}</p>}
               </div>
               <div className="grid-item effer">
                 {props.efferSolutions && Array.isArray(props.efferSolutions) ?
                   <ul>
-                    {props.efferSolutions.map((item) => <li>{item}</li>)}
+                    {props.efferSolutions.map((item, index) => <li key={index}>{item}</li>)}
                   </ul>
                   : <p>{props.efferSolutions}</p>}
               </div>
@@ -184,14 +184,14 @@ const Application = props => {
               <div className="grid-item hiab">
                 {props.hiabInnovations && Array.isArray(props.hiabInnovations) ?
                   <ul>
-                    {props.hiabInnovations.map((item) => <li>{item}</li>)}
+                    {props.hiabInnovations.map((item, index) => <li key={index}>{item}</li>)}
                   </ul>
                   : <p>{props.hiabInnovations}</p>}
               </div>
               <div className="grid-item effer">
                 {props.efferInnovations && Array.isArray(props.efferInnovations) ?
                   <ul>
-                    {props.efferInnovations.map((item) => <li>{item}</li>)}
+                    {props.efferInnovations.map((item, index) => <li key={index}>{item}</li>)}
                   </ul>
                   : <p>{props.efferInnovations}</p>}
               </div>
