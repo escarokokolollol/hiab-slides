@@ -45,7 +45,6 @@ const StyledDiv = styled.div`
     p.nav-info{
       font-size: 24px;
       position: relative;
-      margin-left: 20px;
     }
     p.nav-info:before{
       background-image: url(${ScrollArrow});
@@ -205,12 +204,12 @@ const Page05 = () => {
               {showTitle &&
                 <div className="first-text-wrapper">
                   <div className="first-text">
-                    <h1 className="title">Take a look at some of these most common applications to learn more.</h1>
-                    <p className="text">To the left are some of the most  common loader crane applications </p>
+                    <h1 className="title">To the left are some of the most  common loader crane applications.</h1>
+                    <div className={`box ${showBox ? "show-box" : ""}`}>
+                      <p className="nav-info">Click each one to learn how each brand compares</p>
+                    </div>
                   </div>
-                  <div className={`box ${showBox ? "show-box" : ""}`}>
-                    <p className="nav-info">Click each one to learn how each brand compares</p>
-                  </div>
+                  
                 </div>
               }
               {construction &&
