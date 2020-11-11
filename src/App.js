@@ -94,6 +94,7 @@ const App = () => {
           <Route
             render={({ location }) => (
               <TransitionGroup>
+                {/* change key to location.pathname if HashRouter is used oon CSSTransition */}
                 <CSSTransition key={location.key} timeout={700} classNames="fade">
                   <Switch location={location}>
                     <Route path="/about-hiab/page01" component={AboutHiabPage01} />
