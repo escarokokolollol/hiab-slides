@@ -124,7 +124,7 @@ const Page015 = () => {
   ]
   return (
     <StyledDiv>
-      <ParagraphMiddle hideLine title="EXTREME" backgroundImage={Background} showEfferLogo={true} >
+      <ParagraphMiddle hideLine title="EXTREME." backgroundImage={Background} showEfferLogo={true} >
         <div className="extreme-wrapper">
           <p>That’s EFFER in a single word. Our customers experience it as</p>
         </div>
