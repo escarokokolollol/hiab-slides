@@ -82,7 +82,7 @@ const Page03 = () => {
 
           <div className="text-wrapper">
             <h1>Key messages</h1>
-            <p>On the next few pages we present some of the key messages that reflect the strengths of these two iconic brands as well as our combined offer. Use them as inspiration whenever you need to create communication for your market.</p>
+            <p>On the next few pages we present some of the key messages that reflect the strengths of each iconic brand individually, as well as their combined strength. Use them as inspiration whenever you need to create communication for your market.</p>
           </div>
 
           <div className="image-wrapper">
