@@ -128,7 +128,7 @@ const Page010 = () => {
   ]
   return (
     <StyledDiv>
-      <ParagraphMiddle hideLine title="SMART" backgroundImage={Background} showHiabLogo>
+      <ParagraphMiddle hideLine title="SMART." backgroundImage={Background} showHiabLogo>
         <div className="smart-wrapper">
           <p>That’s HIAB in a single word. Our customers experience it as</p>
         </div>
