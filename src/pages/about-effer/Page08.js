@@ -12,39 +12,41 @@ import Background from "../../assets/images/effer/efferasd02.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
-
   .BlackBoxHeading{
     h1{
       font-size: 52px;
       line-height: 52px;
     }
     p.under{
-      font-size: 38px;
+      font-size: 28px;
+      margin: 0;
     }
   }
 
   @media ${props => props.theme.firstBreakpoint}{
     .BlackBoxHeading{
+      width: 400px;
       h1{
-        font-size: 52px;
-        line-height: 52px;
+        font-size: 47px;
+        line-height: 47px;
       }
     }
   }
   @media ${props => props.theme.secondBreakpoint}{
     .BlackBoxHeading{
+      width: 600px;
       h1{
-        font-size: 72px;
-        line-height: 72px;
+        font-size: 48px;
+        line-height: 48px;
       }
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
     .BlackBoxHeading{
-      width: 670px;
+      width: 770px;
       h1{
-        font-size: 90px;
-        line-height: 90px;
+        font-size: 65px;
+        line-height: 65px;
       }
     }
   }
