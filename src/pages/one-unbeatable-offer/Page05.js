@@ -23,12 +23,15 @@ const StyledDiv = styled.div`
   width:96%;
   margin: 0 auto;
   .first-text{
-    margin: 0 auto;
-    text-align: center;
-    p{
-      margin: 26vh 0 6vh;
+    margin: 90px 0 6vh;
+    padding: 30px 50px;
+    background: rgba(0,0,0, 0.5);
+    p.title{
       font-size: 42px;
       font-weight: 900;
+    }
+    p.text{
+      font-size: 26px;
     }
   }
   .container-grid{
@@ -109,8 +112,8 @@ const StyledDiv = styled.div`
 
 const Page05 = () => {
 
-  const [showTitle, setShowTitle] = useState(false);
-  const [construction, setConstruction] = useState(true);
+  const [showTitle, setShowTitle] = useState(true);
+  const [construction, setConstruction] = useState(false);
   const [roofing, setRoofing] = useState(false);
   const [waste, setWaste] = useState(false);
   const [specialty, setSpecialty] = useState(false);
@@ -168,7 +171,8 @@ const Page05 = () => {
             <div className="content-wrapper">
               {showTitle &&
                 <div className="first-text">
-                  <p>Take a look at some of these most common applications to learn more.</p>
+                  <p className="title">Take a look at some of these most common applications to learn more.</p>
+                  <p className="text">To navigate click on each section in the left menu.</p>
                 </div>
               }
               {construction &&
