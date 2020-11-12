@@ -117,7 +117,7 @@ const ContinuouSlewing = () => {
         <div className="text">
           <p>In addition to unique second jibs that shift the knuckle point even higher, increase outreach and can be operated horizontally, these EFFER innovations enable you to work at outstanding heights:</p>
           <ul>
-            <li>JIB XL: for operations not possible with other equipment.</li>
+            <li>JIB XL: enables even greater outreach and load capacity.</li>
             <li>KJ: stowed inside the second boom and lifts you two floors higher.</li>
           </ul>
           <button className="play-video" onClick={() => setToggle(!toggle)}>Play video</button>

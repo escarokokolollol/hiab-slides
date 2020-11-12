@@ -25,7 +25,7 @@ const StyledDiv = styled.div`
     }
   }
   ul{
-    max-width: 420px;
+    max-width: 500px;
     margin: 0 auto;
   }
   .compare{
@@ -75,6 +75,7 @@ const StyledDiv = styled.div`
     padding: 20px;
     opacity: 0;
     z-index:-1;
+    transition: all .3s ease;
     .compare-text{
       padding: 30px 50px;
       background: #555;
@@ -118,7 +119,7 @@ const StyledDiv = styled.div`
 const Page015 = () => {
   const [compare, setCompare] = useState(false);
   const listItems = [
-    "Extreme performance and durability",
+    "Extreme performance, reach and durability",
     "Highest level of customisation",
     "Unequalled personal attention"
   ]
