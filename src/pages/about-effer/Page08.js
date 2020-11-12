@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 // components
@@ -12,6 +12,13 @@ import Background from "../../assets/images/effer/efferasd02.jpg";
 
 const StyledDiv = styled.div`
   padding: ${props => props.theme.windowPadding};
+  .box{
+    opacity: 0;
+  }
+  .show-box{
+    opacity: 1;
+    transition: opacity 2s ease;
+  }
   .BlackBoxHeading{
     h1{
       font-size: 52px;
@@ -34,19 +41,22 @@ const StyledDiv = styled.div`
   }
   @media ${props => props.theme.secondBreakpoint}{
     .BlackBoxHeading{
-      width: 600px;
+      width: 800px;
       h1{
-        font-size: 48px;
-        line-height: 48px;
+        font-size: 68px;
+        line-height: 68px;
+      }
+      p.under{
+        font-size: 40px;
       }
     }
   }
   @media ${props => props.theme.thirdBreakpoint}{
     .BlackBoxHeading{
-      width: 770px;
+      width: 1000px;
       h1{
-        font-size: 65px;
-        line-height: 65px;
+        font-size: 68px;
+        line-height: 68px;
       }
     }
   }
@@ -54,11 +64,20 @@ const StyledDiv = styled.div`
 `;
 
 const Page08 = () => {
+  const [showBox, setShowBox] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowBox(true);
+    }, 700);
+  });
   return (
     <div className="page-transition">
       <BackgroundImage image={Background}>
         <StyledDiv>
-          <BlackBoxHeading className="BlackBoxHeading" showEfferLogo title="”To conquer the toughest challenges”" textUnder="Our value proposition"/>
+          <div className={`box ${showBox ? "show-box" : ""}`}>
+            <BlackBoxHeading className="BlackBoxHeading" showEfferLogo title="”To conquer the toughest challenges”" textUnder="Our value proposition"/>
+          </div>
           <Navigation backTo="/about-effer/page05" to="/about-effer/page09"/>
         </StyledDiv>
       </BackgroundImage>
