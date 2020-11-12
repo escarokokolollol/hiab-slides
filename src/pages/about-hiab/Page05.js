@@ -97,10 +97,10 @@ const item1 = () => {
   return (
     <div className="item">
       <div className="video-container">
-        <iframe className="video" title="video" src="https://www.youtube.com/embed/oU4r2A70eh4" allowFullScreen width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        <iframe className="video" title="video" src="https://www.youtube.com/embed/JX0Q2DmH-R0" allowFullScreen width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
       </div>
-      <p><i>”Lawsons always pride themselves to have the best vehicles in the industry.”</i></p>
-      <p>– Paul Sexton, Managing Director Lawsons with over 90 trucks</p>
+      <p><i>”We’re very satisfied with the HIAB crane’s reliability.”</i></p>
+      <p>– Fabrice Mosser, Foreman, SPIE CityNetworks</p>
     </div>
   );
 };
