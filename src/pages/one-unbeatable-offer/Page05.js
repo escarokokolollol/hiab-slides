@@ -278,7 +278,7 @@ const Page05 = () => {
                     hiabSolutions={["Special protection measures for cabling and hosing", "Anticorrosion or special materials for components that need to withstand demanding environmental conditions"]}
                     hiabInnovations="According to needs, e.g. many new control functions have been developed to answer specific needs or requests. The control systems allow the programming of many functions mainly for increasing operator and overall safety."
 
-                    efferRange="Many EFFER cranes are customised for specific applications. EFFER is also a world-leading name in Marine cranes. Similarly HIAB offers several well-established solutions in areas such as defence, as well as for sea, rail and wind turbine applications ¬ – see left."
+                    efferRange="Many EFFER cranes are customised for specific applications, and some are built for highly unusual ones. HIAB, on the other hand, offers several well-established solutions in areas such as defence, as well as for sea, rail and wind turbine applications  – see left."
                   />
                 </article>
               }
