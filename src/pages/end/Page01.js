@@ -16,6 +16,10 @@ const StyledDiv = styled.div`
     width: 560px;
     position: absolute;
     bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     background: rgba(255,255,255, 0.8);
     color: #000;
     h1{

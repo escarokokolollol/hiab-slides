@@ -88,7 +88,7 @@ const App = () => {
       {/* <DeviceOrientation lockOrientation={'landscape'}> */}
       {/* Will only be in DOM in landscape */}
       {/* <Orientation orientation='landscape' alwaysRender={false}> */}
-      <Router basename="/hiab-beta01">
+      <Router basename="/lasfida">
         {/* <Router> */}
         <div className="App">
           <Route
