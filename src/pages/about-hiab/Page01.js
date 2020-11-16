@@ -8,7 +8,7 @@ import BackgroundImage from "../../components/styled/BackgroundImage";
 import InfoWrapper from "../../components/InfoWrapper";
 
 //images
-import Background from "../../assets/images/hiab/hiabtrees.png";
+import Background from "../../assets/images/hiab/hiabtrees01.jpg";
 import InfoIcon from "../../assets/icons/info-red.svg";
 
 const StyledDiv = styled.div`
