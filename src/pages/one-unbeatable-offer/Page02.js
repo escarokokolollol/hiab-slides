@@ -20,6 +20,10 @@ const StyledDiv = styled.div`
     text-align: center;
     font-size: 44px;
     margin: 0;
+  }
+  p{
+    font-size: 22px;
+    text-align: center;
     margin-bottom:40px;
   }
   .grid{
@@ -119,6 +123,7 @@ const Page02 = () => {
       <BackgroundImage image={Background}>
         <StyledDiv>
           <h1>Covering the full spectrum</h1>
+          <p>Both brands cover all crane sizes, but their core competencies are as shown below</p>
           <div className="grid">
 
             <div className="item first">
@@ -139,8 +144,8 @@ const Page02 = () => {
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
               <div className="logo">
-                <img src={EfferLogo} alt="effer logo"/>
                 <img src={HiabLogo} alt="hiab logo"/>
+                <img src={EfferLogo} alt="effer logo"/>
               </div>
             </div>
 
@@ -151,8 +156,8 @@ const Page02 = () => {
                 <img src={Kettlebell} alt="kettlebell"/>
               </div>
               <div className="logo">
-                <img src={EfferLogo} alt="effer logo"/>
                 <img src={HiabLogo} alt="hiab logo"/>
+                <img src={EfferLogo} alt="effer logo"/>
               </div>
             </div>
 
